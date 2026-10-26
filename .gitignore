@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+server/.env
+node_modules/
+app/node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+app/dist/
+qa/playwright-report/
+qa/test-results/
+reference/
+bookshelf-benchmark/
+.DS_Store
+*/.DS_Store
