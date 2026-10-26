@@ -1,0 +1,427 @@
+{
+  "bay_id": "bay_m1",
+  "bay_code": "M1",
+  "bay_name": "Bay M1 · Wellness & Modern Thought",
+  "photo_filename": "d.jpg",
+  "photo_url": "/photos/d.jpg",
+  "scanned_at": "Today, 08:32 AM",
+  "model": "Claude Opus 5.5",
+  "effort": "high",
+  "inference_duration_seconds": 6.8,
+  "tokens_used": 4246,
+  "estimated_cost_usd": 0.05,
+  "metrics": {
+    "planogram_expected_items": 10,
+    "shelf_items_detected": 7,
+    "matched_count": 6,
+    "missing_count": 4,
+    "misplaced_count": 1,
+    "planogram_compliance_pct": 60.0
+  },
+  "planogram_items": [
+    {
+      "sku": "SKU-205537",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "assigned_bay_id": "bay_m1",
+      "price": 15.99,
+      "sales_velocity_units_per_day": 2.5,
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock",
+      "physically_on_shelf": false,
+      "days_since_stockout": 2
+    },
+    {
+      "sku": "SKU-269436",
+      "title": "Win Your Inner Battles",
+      "author": "Darius Foroux",
+      "assigned_bay_id": "bay_m1",
+      "price": 22.03,
+      "sales_velocity_units_per_day": 1.1,
+      "simulated_on_hand": 14,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-789139",
+      "title": "Fast Like a Girl",
+      "author": "Mindy Pelz",
+      "assigned_bay_id": "bay_m1",
+      "price": 22.54,
+      "sales_velocity_units_per_day": 1.4,
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock_in_system",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-155255",
+      "title": "The Obstacle Is the Way",
+      "author": "Ryan Holiday",
+      "assigned_bay_id": "bay_m1",
+      "price": 25.28,
+      "sales_velocity_units_per_day": 1.5,
+      "simulated_on_hand": 2,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-261098",
+      "title": "All Religions Are Not the Same",
+      "author": "Sanjay Dixit",
+      "assigned_bay_id": "bay_m1",
+      "price": 26.84,
+      "sales_velocity_units_per_day": 1.4,
+      "simulated_on_hand": 6,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-939740",
+      "title": "The Art of Thinking Clearly",
+      "author": "Rolf Dobelli",
+      "assigned_bay_id": "bay_m1",
+      "price": 19.75,
+      "sales_velocity_units_per_day": 2.3,
+      "simulated_on_hand": 3,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-523139",
+      "title": "Determined",
+      "author": "Robert Sapolsky",
+      "assigned_bay_id": "bay_m1",
+      "price": 16.71,
+      "sales_velocity_units_per_day": 1.8,
+      "simulated_on_hand": 3,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-183347",
+      "title": "Rock Paper Scissors",
+      "author": "Alice Feeney",
+      "assigned_bay_id": "bay_m1",
+      "price": 26.72,
+      "sales_velocity_units_per_day": 0.8,
+      "simulated_on_hand": 7,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-185663",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "assigned_bay_id": "bay_m1",
+      "price": 28.0,
+      "sales_velocity_units_per_day": 2.1,
+      "simulated_on_hand": 9,
+      "system_status": "phantom",
+      "physically_on_shelf": false,
+      "days_since_stockout": 3
+    },
+    {
+      "sku": "SKU-701323",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "assigned_bay_id": "bay_m1",
+      "price": 24.99,
+      "sales_velocity_units_per_day": 1.7,
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock",
+      "physically_on_shelf": false,
+      "days_since_stockout": 4
+    }
+  ],
+  "shelf_items": [
+    {
+      "id": "item-1",
+      "title": "The Art of Thinking Clearly",
+      "author": "Rolf Dobelli",
+      "confidence": 0.95,
+      "box": {
+        "top": 0.03,
+        "left": 0.35,
+        "width": 0.38,
+        "height": 0.038,
+        "shelf_tier": 1,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-939740",
+      "price": 19.75
+    },
+    {
+      "id": "item-2",
+      "title": "All Religions Are Not the Same",
+      "author": "Sanjay Dixit",
+      "confidence": 0.99,
+      "box": {
+        "top": 0.07,
+        "left": 0.35,
+        "width": 0.38,
+        "height": 0.038,
+        "shelf_tier": 1,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-261098",
+      "price": 26.84
+    },
+    {
+      "id": "item-3",
+      "title": "The Obstacle Is the Way",
+      "author": "Ryan Holiday",
+      "confidence": 0.99,
+      "box": {
+        "top": 0.11,
+        "left": 0.35,
+        "width": 0.38,
+        "height": 0.038,
+        "shelf_tier": 1,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-155255",
+      "price": 25.28
+    },
+    {
+      "id": "item-4",
+      "title": "Rock Paper Scissors",
+      "author": "Alice Feeney",
+      "confidence": 0.92,
+      "box": {
+        "top": 0.16,
+        "left": 0.35,
+        "width": 0.38,
+        "height": 0.038,
+        "shelf_tier": 1,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-183347",
+      "price": 26.72
+    },
+    {
+      "id": "item-5",
+      "title": "Fast Like a Girl",
+      "author": "Mindy Pelz",
+      "confidence": 0.95,
+      "box": {
+        "top": 0.42,
+        "left": 0.11,
+        "width": 0.32,
+        "height": 0.072,
+        "shelf_tier": 2,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-789139",
+      "price": 22.54
+    },
+    {
+      "id": "item-6",
+      "title": "Win Your Inner Battles",
+      "author": "Darius Foroux",
+      "confidence": 0.97,
+      "box": {
+        "top": 0.5,
+        "left": 0.11,
+        "width": 0.32,
+        "height": 0.072,
+        "shelf_tier": 2,
+        "orientation": "horizontal"
+      },
+      "status": "matched",
+      "status_label": "Correctly Placed",
+      "misplaced_reason": null,
+      "target_bay_name": null,
+      "sku": "SKU-269436",
+      "price": 22.03
+    },
+    {
+      "id": "item-7",
+      "title": "The Secret of the Nagas",
+      "author": "Amish",
+      "confidence": 0.97,
+      "box": {
+        "top": 0.58,
+        "left": 0.11,
+        "width": 0.32,
+        "height": 0.072,
+        "shelf_tier": 2,
+        "orientation": "horizontal"
+      },
+      "status": "misplaced",
+      "status_label": "Misplaced",
+      "misplaced_reason": "Belongs to Bay B2 · World Mythology & Fiction",
+      "target_bay_name": "Bay B2 · World Mythology & Fiction",
+      "sku": null,
+      "price": 25.28
+    }
+  ],
+  "missing_items": [
+    {
+      "sku": "SKU-523139",
+      "title": "Determined",
+      "author": "Robert Sapolsky",
+      "planogram_bay_id": "bay_m1",
+      "simulated_on_hand": 3,
+      "price": 16.71,
+      "sales_velocity": 1.8,
+      "is_phantom_inventory": true,
+      "reason": "System shows 3 on hand, but spine missing from shelf",
+      "action": "Check backroom / adjust on-hand count"
+    },
+    {
+      "sku": "SKU-185663",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "planogram_bay_id": "bay_m1",
+      "simulated_on_hand": 9,
+      "price": 28.0,
+      "sales_velocity": 2.1,
+      "is_phantom_inventory": true,
+      "reason": "System shows 9 on hand, but spine missing from shelf",
+      "action": "Check backroom / adjust on-hand count"
+    },
+    {
+      "sku": "SKU-205537",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "planogram_bay_id": "bay_m1",
+      "simulated_on_hand": 0,
+      "price": 15.99,
+      "sales_velocity": 2.5,
+      "is_phantom_inventory": false,
+      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
+      "action": "Replenish from warehouse"
+    },
+    {
+      "sku": "SKU-701323",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "planogram_bay_id": "bay_m1",
+      "simulated_on_hand": 0,
+      "price": 24.99,
+      "sales_velocity": 1.7,
+      "is_phantom_inventory": false,
+      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
+      "action": "Replenish from warehouse"
+    }
+  ],
+  "misplaced_items": [
+    {
+      "id": "item-7",
+      "title": "The Secret of the Nagas",
+      "author": "Amish",
+      "confidence": 0.97,
+      "box": {
+        "top": 0.58,
+        "left": 0.11,
+        "width": 0.32,
+        "height": 0.072,
+        "shelf_tier": 2,
+        "orientation": "horizontal"
+      },
+      "status": "misplaced",
+      "status_label": "Misplaced",
+      "misplaced_reason": "Belongs to Bay B2 · World Mythology & Fiction",
+      "target_bay_name": "Bay B2 · World Mythology & Fiction",
+      "sku": null,
+      "price": 25.28
+    }
+  ],
+  "action_tasks": [
+    {
+      "id": "alert-record-error-Fast_Like_a_Girl",
+      "type": "record_error",
+      "severity": "high",
+      "badge": "📋 Record Error",
+      "title": "Fast Like a Girl",
+      "author": "Mindy Pelz",
+      "headline": "Found on shelf, but store record shows 0 (item blocked online)",
+      "suggested_action": "Correct record to 1 to restore online availability",
+      "system_on_hand": 0,
+      "shelf_count": 1
+    },
+    {
+      "id": "alert-missing-SKU-523139",
+      "type": "missing_item",
+      "severity": "critical",
+      "badge": "👻 Phantom Inventory",
+      "title": "Determined",
+      "author": "Robert Sapolsky",
+      "sku": "SKU-523139",
+      "headline": "Missing from shelf · System shows 3 on hand, but spine missing from shelf",
+      "suggested_action": "Check backroom / adjust on-hand count",
+      "system_on_hand": 3,
+      "shelf_count": 0
+    },
+    {
+      "id": "alert-missing-SKU-185663",
+      "type": "missing_item",
+      "severity": "critical",
+      "badge": "👻 Phantom Inventory",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "sku": "SKU-185663",
+      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
+      "suggested_action": "Check backroom / adjust on-hand count",
+      "system_on_hand": 9,
+      "shelf_count": 0
+    },
+    {
+      "id": "alert-missing-SKU-205537",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "⚠️ Stockout",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "sku": "SKU-205537",
+      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
+      "suggested_action": "Replenish from warehouse",
+      "system_on_hand": 0,
+      "shelf_count": 0
+    },
+    {
+      "id": "alert-missing-SKU-701323",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "⚠️ Stockout",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "sku": "SKU-701323",
+      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
+      "suggested_action": "Replenish from warehouse",
+      "system_on_hand": 0,
+      "shelf_count": 0
+    },
+    {
+      "id": "alert-misplaced-item-7",
+      "type": "misplaced_item",
+      "severity": "warning",
+      "badge": "↔️ Misplaced Item",
+      "title": "The Secret of the Nagas",
+      "author": "Amish",
+      "headline": "Found on Bay M1 · Wellness & Modern Thought · Belongs to Bay B2 · World Mythology & Fiction",
+      "suggested_action": "Move book to Bay B2 · World Mythology & Fiction",
+      "shelf_count": 1
+    }
+  ]
+}
