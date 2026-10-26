@@ -1,9 +1,14 @@
 import type { ScanProgress } from './types';
 
 // fetch supports POST and AbortController; EventSource only supports GET.
-export async function consumeScanEvents(response: Response, onEvent: (event: ScanProgress) => void) {
+export async function consumeScanEvents(
+  response: Response,
+  onEvent: (event: ScanProgress) => void,
+  onAuthenticationFailure?: () => void,
+) {
   if (!response.ok) {
     const body = await response.json().catch(() => null);
+    if (response.status === 401) onAuthenticationFailure?.();
     throw new Error(typeof body?.detail === 'string' ? body.detail : `Scan request failed (${response.status}).`);
   }
   if (!response.body || !response.headers.get('content-type')?.includes('text/event-stream')) {
@@ -23,7 +28,10 @@ export async function consumeScanEvents(response: Response, onEvent: (event: Sca
         const data = frame.split(/\r?\n/).filter(line => line.startsWith('data:')).map(line => line.slice(5).trimStart()).join('\n');
         if (!data) continue; // heartbeat
         const event = JSON.parse(data) as ScanProgress;
-        if (event.status === 'error') throw new Error(event.message || 'Live scan failed.');
+        if (event.status === 'error') {
+          if (event.code === 'authentication') onAuthenticationFailure?.();
+          throw new Error(event.message || 'Live scan failed.');
+        }
         if (event.status === 'complete' && !event.result) throw new Error('Scan finished without a result.');
         onEvent(event);
         if (event.status === 'complete') completed = true;

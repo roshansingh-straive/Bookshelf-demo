@@ -45,7 +45,7 @@ def test_store_data_structure():
 
 
 def test_multiple_bay_allocations_do_not_overwrite_inventory():
-    store = json.loads(STORE_FILE.read_text())
+    store = json.loads(STORE_FILE.read_text(encoding="utf-8"))
     copies = [item for item in store["catalogue"].values() if item["title"] == "Atomic Habits"]
     assert len(copies) == 2
     assert len({item["sku"] for item in copies}) == 2

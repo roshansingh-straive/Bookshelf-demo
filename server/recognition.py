@@ -8,7 +8,6 @@ import base64
 import hashlib
 import io
 import json
-import os
 import time
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
@@ -26,10 +25,18 @@ RUNS_DIR = Path(__file__).resolve().parent / "runs"
 MAX_IMAGE_BYTES = 20 * 1024 * 1024
 MAX_IMAGE_PIXELS = 40_000_000
 MAX_OUTPUT_TOKENS = 16384
+INFERENCE_REQUEST_DEADLINE_SECONDS = 240
+MAX_ADAPTIVE_SPLIT_DEPTH = 2
+FOUNDRY_ENDPOINT = "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-3.1-pro-preview:streamGenerateContent?alt=sse"
+FOUNDRY_PROJECT = "llmproxy-playground"
 
 
 class RecognitionError(Exception):
     """Safe, user-facing error. Never contains provider response bodies or keys."""
+
+    def __init__(self, message, code="inference"):
+        super().__init__(message)
+        self.code = code
 
 
 class Box(BaseModel):
@@ -92,6 +99,103 @@ def provider_schema():
     return simplify(Readings.model_json_schema())
 
 
+def normalize_recognition_payload(payload, image_size):
+    if not isinstance(payload, dict) or not isinstance(payload.get("books"), list):
+        return payload
+    payload["books"] = [
+        book for book in payload["books"]
+        if not isinstance(book, dict)
+        or (isinstance(book.get("title"), str) and book["title"].strip())
+    ]
+    image_width, image_height = image_size
+    dimensions = {"top": image_height, "height": image_height,
+                  "left": image_width, "width": image_width}
+    for book in payload["books"]:
+        if not isinstance(book, dict) or not isinstance(book.get("box"), dict):
+            continue
+        box = book["box"]
+        values = {name: box.get(name) for name in dimensions}
+        if any(not isinstance(value, (int, float)) or isinstance(value, bool)
+               for value in values.values()):
+            continue
+        top, left, width, height = (values[name] for name in ("top", "left", "width", "height"))
+        image_width, image_height = image_size
+        pixel_coordinates_fit = (
+            0 <= top and 0 <= left and width > 0 and height > 0
+            and top + height <= image_height and left + width <= image_width
+        )
+        thousand_scale_fits = (
+            all(0 <= value <= 1000 for value in values.values())
+            and width > 0 and height > 0
+            and top + height <= 1000 and left + width <= 1000
+        )
+        if not pixel_coordinates_fit and thousand_scale_fits:
+            for coordinate, value in values.items():
+                box[coordinate] = value / 1000
+            continue
+        for coordinate, dimension in dimensions.items():
+            value = values[coordinate]
+            if value <= 1:
+                continue
+            if float(value).is_integer():
+                box[coordinate] = value / dimension
+            elif value <= 100:
+                box[coordinate] = value / 100
+    return payload
+
+
+def parse_readings(payload, image_size):
+    normalized = normalize_recognition_payload(payload, image_size)
+    if not isinstance(normalized, dict) or not isinstance(normalized.get("books"), list):
+        return Readings.model_validate(normalized), 0
+
+    readings, rejected = [], 0
+    for book in normalized["books"]:
+        try:
+            readings.append(Reading.model_validate(book))
+        except ValidationError:
+            rejected += 1
+    if rejected and not readings:
+        raise RecognitionError("The model returned no valid book readings for this section.", "invalid_readings")
+    return Readings.model_validate({"books": readings}), rejected
+
+
+def split_rotated_crop(image):
+    width, height = image.size
+    x_split, y_split = width // 2, height // 2
+    x_overlap, y_overlap = max(1, width // 20), max(1, height // 20)
+    bounds = [
+        (0, 0, min(width, x_split + x_overlap), min(height, y_split + y_overlap)),
+        (max(0, x_split - x_overlap), 0, width, min(height, y_split + y_overlap)),
+        (0, max(0, y_split - y_overlap), min(width, x_split + x_overlap), height),
+        (max(0, x_split - x_overlap), max(0, y_split - y_overlap), width, height),
+    ]
+    return [(f"sub-{index + 1}", box, image.crop(box)) for index, box in enumerate(bounds)]
+
+
+def map_rotated_subtile_box(box, sub_bounds, rotated_size, tile_bounds, image_size):
+    rx0, ry0, rx1, ry1 = sub_bounds
+    rotated_width, rotated_height = rotated_size
+    top = (ry0 + box["top"] * (ry1 - ry0)) / rotated_height
+    left = (rx0 + box["left"] * (rx1 - rx0)) / rotated_width
+    width = box["width"] * (rx1 - rx0) / rotated_width
+    height = box["height"] * (ry1 - ry0) / rotated_height
+    return map_box({"top": 1 - left - width, "left": top, "width": height, "height": width},
+                   tile_bounds, image_size)
+
+
+def map_subtile_box(box, sub_bounds, root_size, tile_bounds, image_size, *, rotated):
+    x0, y0, x1, y1 = sub_bounds
+    root_width, root_height = root_size
+    root_box = {
+        "top": (y0 + box["top"] * (y1 - y0)) / root_height,
+        "left": (x0 + box["left"] * (x1 - x0)) / root_width,
+        "width": box["width"] * (x1 - x0) / root_width,
+        "height": box["height"] * (y1 - y0) / root_height,
+    }
+    return map_box(root_box, tile_bounds, image_size, rotated=rotated)
+
+
 PROMPT = """Read every book title you can actually see in this bookshelf image.
 Inspect the whole image systematically, including edges, thin spines, horizontal
 stacks, vertical and upside-down text, partly occluded covers and non-Latin text.
@@ -105,6 +209,8 @@ Return each readable physical book with its tight rectangular box in THIS image:
 top/left/width/height are fractions from 0 to 1, measured from its upper left.
 Return only a JSON object with books. Every book must have title, author,
 visible_text, uncertain and box. An empty books list is valid if no title is legible.
+Keep visible_text to the shortest readable title evidence. Return compact JSON on
+one line with no indentation, padding, or extra whitespace.
 """
 
 
@@ -204,99 +310,238 @@ def merge_readings(observations):
 
 
 class VisionClient:
-    def __init__(self, profile: ModelProfile, transport=None):
+    def __init__(self, profile: ModelProfile, token: str, transport=None):
         self.profile = profile
+        self.token = token
         self.transport = transport
         self.calls = []
 
     async def read(self, image, phase, tile_id):
         encoded = encode_image(image)
         prompt = PROMPT + ("\nIndependently re-read this rotated section from scratch. Check difficult and upside-down text carefully. Prior readings are intentionally withheld." if phase == "verify" else "\nRead this section from top to bottom and left to right.")
-        schema = provider_schema()
-        if self.profile.provider == "anthropic":
-            url = "https://api.anthropic.com/v1/messages"
-            headers = {"x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01"}
-            body = {"model": self.profile.model_id, "max_tokens": MAX_OUTPUT_TOKENS,
-                    "thinking": {"type": "adaptive"},
-                    "output_config": {"effort": "high", "format": {"type": "json_schema", "schema": schema}},
-                    "messages": [{"role": "user", "content": [{"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": encoded}}, {"type": "text", "text": prompt}]}]}
-        else:
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.profile.model_id}:generateContent"
-            headers = {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}
-            body = {"contents": [{"role": "user", "parts": [{"inlineData": {"mimeType": "image/png", "data": encoded}}, {"text": prompt}]}],
-                    "generationConfig": {"maxOutputTokens": MAX_OUTPUT_TOKENS, "thinkingConfig": {"thinkingLevel": "HIGH"}, "mediaResolution": "MEDIA_RESOLUTION_HIGH", "responseMimeType": "application/json", "responseJsonSchema": schema}}
-        async with httpx.AsyncClient(timeout=httpx.Timeout(240, connect=15), transport=self.transport) as client:
-            # Retry only explicit transient failures, never bad keys/model IDs or
-            # an ambiguous network timeout that may have already incurred cost.
-            for attempt in range(3):
-                try:
-                    response = await client.post(url, headers=headers, json=body)
-                except httpx.HTTPError as exc:
-                    raise RecognitionError("The vision provider could not be reached. No result was substituted; try again.") from exc
-                if response.status_code in {429, 502, 503, 529} and attempt < 2:
-                    await asyncio.sleep(2 ** attempt)
-                    continue
-                if response.status_code >= 400:
-                    raise RecognitionError(f"{self.profile.name} request failed (HTTP {response.status_code}). Check server credentials, model access and quota. No replay was substituted.")
-                break
+        body = {
+            "contents": [{"role": "user", "parts": [
+                {"inlineData": {"mimeType": "image/png", "data": encoded}},
+                {"text": prompt},
+            ]}],
+            "generationConfig": {
+                "temperature": 1,
+                "maxOutputTokens": MAX_OUTPUT_TOKENS,
+                "thinkingConfig": {"thinkingLevel": "HIGH"},
+                "responseMimeType": "application/json",
+                "responseJsonSchema": provider_schema(),
+            },
+        }
+        headers = {
+            "Authorization": f"Bearer {self.token}:{FOUNDRY_PROJECT}",
+            "Content-Type": "application/json",
+        }
         try:
-            payload = response.json()
-            if self.profile.provider == "anthropic":
-                actual_model = payload["model"]
-                content = "".join(p["text"] for p in payload.get("content", []) if p.get("type") == "text")
-                complete = payload.get("stop_reason") == "end_turn"
-                usage = payload.get("usage", {})
-            else:
-                actual_model = payload["modelVersion"]
-                candidate = payload["candidates"][0]
-                content = "".join(p.get("text", "") for p in candidate.get("content", {}).get("parts", []) if not p.get("thought"))
-                complete = candidate.get("finishReason") == "STOP"
-                usage = payload.get("usageMetadata", {})
-            audit = {"tile_id": tile_id, "pass": phase, "requested_model": self.profile.model_id, "actual_model": actual_model, "usage": usage, "complete": complete, "response_text": content}
+            async with asyncio.timeout(INFERENCE_REQUEST_DEADLINE_SECONDS):
+                async with httpx.AsyncClient(timeout=httpx.Timeout(240, connect=15), transport=self.transport) as client:
+                    async with client.stream("POST", FOUNDRY_ENDPOINT, headers=headers, json=body) as response:
+                        if response.status_code >= 400:
+                            if response.status_code == 401:
+                                raise RecognitionError("Straive sign-in has expired. Sign in again before retrying.", "authentication")
+                            if response.status_code == 403:
+                                raise RecognitionError("Your Straive account does not have access to this inference route. Contact the Foundry administrator.", "permission")
+                            if response.status_code == 429:
+                                raise RecognitionError("Straive inference is rate-limited. Wait before starting another scan.", "rate_limit")
+                            raise RecognitionError(f"Straive inference request failed (HTTP {response.status_code}). No retry was attempted.")
+                        payload, finish_reason, usage = await self._read_sse(response)
+        except TimeoutError as exc:
+            raise RecognitionError(
+                "A model reading exceeded the 4-minute time limit. The scan was stopped; no retry was attempted.",
+                "timeout",
+            ) from exc
+        except httpx.HTTPError as exc:
+            raise RecognitionError("The Straive inference service could not be reached. No retry was attempted.") from exc
+
+        try:
+            actual_model = payload["modelVersion"]
+            candidate = payload["candidates"][0]
+            content = "".join(
+                part.get("text", "")
+                for part in candidate.get("content", {}).get("parts", [])
+                if not part.get("thought")
+            )
+            complete = finish_reason == "STOP"
+            audit = {
+                "tile_id": tile_id,
+                "pass": phase,
+                "requested_model": self.profile.model_id,
+                "actual_model": actual_model,
+                "image_size": image.size,
+                "finish_reason": finish_reason,
+                "usage": usage,
+                "complete": complete,
+                "rejected_readings": 0,
+                "response_text": content,
+            }
             self.calls.append(audit)
             if actual_model != self.profile.model_id and not actual_model.startswith(self.profile.model_id + "-"):
-                raise RecognitionError("The provider returned a different model than requested. The scan was stopped.")
+                raise RecognitionError("The inference service returned a different model than requested. The scan was stopped.")
             if not complete:
+                if finish_reason == "MAX_TOKENS":
+                    raise RecognitionError(
+                        "A model reading exceeded the response-size limit. The scan was stopped; no retry was attempted.",
+                        "output_limit",
+                    )
                 raise RecognitionError("The model response was incomplete or blocked. The scan was stopped; partial output is not treated as a complete shelf scan.")
-            # JSON is validated again even when a provider enforces the schema.
-            parsed = Readings.model_validate_json(content)
-            return [b.model_dump() for b in parsed.books]
-        except (KeyError, IndexError, ValueError, ValidationError) as exc:
-            raise RecognitionError("The vision provider returned invalid recognition data. The scan was stopped; no replay was substituted.") from exc
+            parsed, rejected_readings = parse_readings(json.loads(content), image.size)
+            audit["rejected_readings"] = rejected_readings
+            return [book.model_dump() for book in parsed.books]
+        except RecognitionError:
+            raise
+        except (KeyError, IndexError, TypeError, ValueError, ValidationError) as exc:
+            raise RecognitionError("The inference service returned invalid recognition data. The scan was stopped; no replay was substituted.") from exc
+
+    @staticmethod
+    async def _read_sse(response):
+        data_lines = []
+        candidate = {"content": {"parts": []}}
+        aggregate = {"candidates": [candidate], "usageMetadata": {}, "modelVersion": None}
+        finish_reason = None
+
+        async def dispatch():
+            nonlocal finish_reason
+            if not data_lines:
+                return
+            raw = "\n".join(data_lines)
+            data_lines.clear()
+            if raw == "[DONE]":
+                return
+            try:
+                event = json.loads(raw)
+            except ValueError as exc:
+                raise RecognitionError("The inference service returned malformed stream data.") from exc
+            if event.get("error"):
+                raise RecognitionError("The inference service reported an error. No retry was attempted.")
+            if event.get("modelVersion"):
+                aggregate["modelVersion"] = event["modelVersion"]
+            if event.get("usageMetadata"):
+                aggregate["usageMetadata"].update(event["usageMetadata"])
+            for candidate_event in event.get("candidates", []):
+                for part in candidate_event.get("content", {}).get("parts", []):
+                    candidate["content"]["parts"].append(part)
+                if candidate_event.get("finishReason"):
+                    finish_reason = candidate_event["finishReason"]
+
+        async for line in response.aiter_lines():
+            if not line:
+                await dispatch()
+            elif line.startswith("data:"):
+                data_lines.append(line[5:].lstrip())
+        await dispatch()
+        if not candidate["content"]["parts"] and finish_reason is None:
+            raise RecognitionError("The inference stream ended without a model response.")
+        if finish_reason is None:
+            raise RecognitionError("The inference stream ended before completion. Partial output was discarded.")
+        return aggregate, finish_reason, aggregate["usageMetadata"]
 
 
-async def run_recognition(raw, profile, emit, *, transport=None):
+async def run_recognition(raw, profile, emit, token, *, transport=None):
     started = time.monotonic()
     image = load_image(raw)
     tiles = tile_image(image.size)
-    client = VisionClient(profile, transport)
+    client = VisionClient(profile, token, transport)
     observations = []
     run_id = uuid4().hex
+    image_hash = hashlib.sha256(raw).hexdigest()
     audit = {"run_id": run_id, "created_at": datetime.now(timezone.utc).isoformat(),
-             "image_sha256": hashlib.sha256(raw).hexdigest(), "image_size": image.size,
+             "image_sha256": image_hash, "image_size": image.size,
              "profile": asdict(profile), "tile_edge": TILE_EDGE, "overlap": OVERLAP,
              "tiles": [asdict(t) for t in tiles], "prompt": PROMPT,
              "verification": "Independent reading, rotated 90 degrees clockwise; no prior titles supplied",
-             "calls": client.calls, "status": "in_progress"}
-    await emit({"step": 0, "status": "preparing", "message": f"Orientation corrected; {len(tiles)} overlapping full-resolution sections, two readings each.", "total_calls": len(tiles)*2, "completed_calls": 0, "model": profile.name})
+             "calls": [], "status": "in_progress"}
+    total_checks = len(tiles) * 2
+    completed_new_requests = 0
+    progress = {"total_calls": total_checks, "completed_calls": 0,
+                "total_checks": total_checks}
+
+    await emit({"step": 0, "status": "preparing",
+                "message": f"Orientation corrected; {len(tiles)} overlapping full-resolution sections, two readings each.",
+                **progress})
     try:
-        # Sequential reads keep memory bounded and preserve cancellation on
-        # disconnect. Every tile is processed; coverage is never silently capped.
+        # Each invocation starts from the first tile. Only crops within this run
+        # are split; results from previous runs are never replayed.
+        async def request_reading(crop, phase, call_id, tile_index):
+            nonlocal completed_new_requests, progress
+            await emit({"step": 1 if phase == "read" else 2,
+                        "status": "reading" if phase == "read" else "verifying",
+                        "message": f"{'Reading' if phase == 'read' else 'Independently verifying'} section {tile_index+1} of {len(tiles)}",
+                        **progress})
+            call_count = len(client.calls)
+            try:
+                books = await client.read(crop, phase, call_id)
+            except BaseException:
+                audit["calls"].extend(client.calls[call_count:])
+                raise
+            audit["calls"].extend(client.calls[call_count:])
+            completed_new_requests += 1
+            progress = {**progress, "completed_calls": completed_new_requests}
+            await emit({"step": 1 if phase == "read" else 2,
+                        "status": "reading" if phase == "read" else "verifying",
+                        "message": f"Completed {phase} for section {tile_index+1} of {len(tiles)}",
+                        **progress})
+            return books
+
+        async def process_crop(crop, phase, call_id, tile, tile_index, *,
+                              root_size, root_bounds, depth=0):
+            nonlocal completed_new_requests, progress
+            try:
+                books = await request_reading(crop, phase, call_id, tile_index)
+            except RecognitionError as exc:
+                if exc.code not in {"output_limit", "invalid_readings"}:
+                    raise
+                completed_new_requests += 1
+                progress = {**progress, "completed_calls": completed_new_requests}
+                if depth >= MAX_ADAPTIVE_SPLIT_DEPTH:
+                    raise RecognitionError(
+                        "A smaller image crop returned no usable readings. Use a closer photo of fewer shelves.",
+                        exc.code,
+                    ) from exc
+                children = split_rotated_crop(crop)
+                progress = {**progress, "total_calls": progress["total_calls"] + len(children)}
+                await emit({"step": 1 if phase == "read" else 2, "status": "splitting",
+                            "message": f"Section {tile_index+1} returned an unusable response; splitting into smaller overlapping crops.",
+                            **progress})
+                mapped = []
+                parent_width, parent_height = crop.size
+                for child_id, child_bounds, child in children:
+                    child_root_bounds = (
+                        root_bounds[0] + child_bounds[0] * (root_bounds[2] - root_bounds[0]) / parent_width,
+                        root_bounds[1] + child_bounds[1] * (root_bounds[3] - root_bounds[1]) / parent_height,
+                        root_bounds[0] + child_bounds[2] * (root_bounds[2] - root_bounds[0]) / parent_width,
+                        root_bounds[1] + child_bounds[3] * (root_bounds[3] - root_bounds[1]) / parent_height,
+                    )
+                    child_books = await process_crop(
+                        child, phase, f"{call_id}/{child_id}", tile, tile_index,
+                        root_size=root_size, root_bounds=child_root_bounds, depth=depth + 1,
+                    )
+                    mapped.extend(child_books)
+                return mapped
+
+            return [{**book, "box": map_subtile_box(
+                book["box"], root_bounds, root_size, tile.bounds, image.size,
+                rotated=phase == "verify",
+            ), "tile_id": tile.id, "pass": phase} for book in books]
+
         for phase in ("read", "verify"):
             for index, tile in enumerate(tiles):
                 crop = image.crop(tile.bounds)
                 if phase == "verify":
                     crop = crop.transpose(Image.Transpose.ROTATE_270)
-                done = index + (len(tiles) if phase == "verify" else 0)
-                await emit({"step": 1 if phase == "read" else 2, "status": "reading" if phase == "read" else "verifying", "message": f"{'Reading' if phase == 'read' else 'Independently verifying rotated'} section {index+1} of {len(tiles)}", "total_calls": len(tiles)*2, "completed_calls": done, "model": profile.name})
-                books = await client.read(crop, phase, tile.id)
-                for book in books:
-                    observations.append({**book, "box": map_box(book["box"], tile.bounds, image.size, rotated=phase == "verify"), "tile_id": tile.id, "pass": phase})
+                mapped = await process_crop(
+                    crop, phase, tile.id, tile, index, root_size=crop.size,
+                    root_bounds=(0, 0, crop.width, crop.height),
+                )
+                observations.extend(mapped)
         merged = merge_readings(observations)
         audit.update(status="complete", observations=observations, merged=merged)
         usage = {"input_tokens": 0, "output_tokens": 0}
         usage_complete = True
-        for call in client.calls:
+        for call in audit["calls"]:
             u = call["usage"]
             if profile.provider == "anthropic":
                 usage_complete &= "input_tokens" in u and "output_tokens" in u
@@ -311,10 +556,16 @@ async def run_recognition(raw, profile, emit, *, transport=None):
                         "inference_duration_seconds": round(time.monotonic()-started, 2),
                         "tokens_used": sum(usage.values()) if usage_complete else None,
                         "token_usage": usage if usage_complete else None, "estimated_cost_usd": None,
-                        "harness": {"native_resolution": True, "tile_edge": TILE_EDGE, "overlap": OVERLAP, "tile_count": len(tiles), "calls_completed": len(client.calls), "rotated_verification": True, "measured_accuracy": None},
+                        "harness": {"native_resolution": True, "tile_edge": TILE_EDGE, "overlap": OVERLAP, "tile_count": len(tiles), "calls_completed": len(client.calls), "model_requests_made": len(client.calls), "rejected_readings": sum(call["rejected_readings"] for call in audit["calls"]), "rotated_verification": True, "measured_accuracy": None},
                         "disclosure": "Live API readings with independent rotated verification. Agreement is not calibrated confidence. Unconfirmed presence needs a physical check."}
-    except BaseException:
+    except RecognitionError as exc:
         audit["status"] = "failed_or_cancelled"
+        audit["failure"] = {"code": exc.code, "message": str(exc)}
+        raise
+    except BaseException as exc:
+        audit["status"] = "failed_or_cancelled"
+        audit["failure"] = {"code": "cancelled" if isinstance(exc, asyncio.CancelledError) else "unexpected_error",
+                            "type": type(exc).__name__}
         raise
     finally:
         # No keys, full images, or hidden reasoning are written to this audit.

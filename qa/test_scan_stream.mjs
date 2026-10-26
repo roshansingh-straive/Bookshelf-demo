@@ -27,6 +27,24 @@ test('provider failure is surfaced without reporting completion', async () => {
   await assert.rejects(consumeScanEvents(response(['data: {"status":"error","message":"Provider failed"}\n\n']), () => assert.fail()), /Provider failed/);
 });
 
+test('authentication failures trigger a session refresh callback', async () => {
+  let refreshes = 0;
+  await assert.rejects(
+    consumeScanEvents(
+      new Response('{"detail":"Sign in again"}', { status: 401, headers: { 'Content-Type': 'application/json' } }),
+      () => {},
+      () => { refreshes += 1; },
+    ),
+    /Sign in again/,
+  );
+  assert.equal(refreshes, 1);
+  await assert.rejects(
+    consumeScanEvents(response(['data: {"status":"error","code":"authentication","message":"Session expired"}\n\n']), () => {}, () => { refreshes += 1; }),
+    /Session expired/,
+  );
+  assert.equal(refreshes, 2);
+});
+
 test('interrupted connection never counts as a completed scan', async () => {
   await assert.rejects(consumeScanEvents(response(['data: {"step":1,"status":"reading"}\n\n']), () => {}), /ended before completion/);
 });

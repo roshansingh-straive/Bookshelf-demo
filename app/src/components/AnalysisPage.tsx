@@ -7,6 +7,7 @@ import { Step3DiscrepancyView } from './Step3DiscrepancyView';
 import { TrustModal } from './TrustModal';
 import { consumeScanEvents } from '../scanStream';
 import type { Bay, ScanHealth, ScanProgress, ScanResult, StoreData, UploadedPhoto } from '../types';
+import type { FoundryAuthState } from '../foundryAuth';
 
 interface AnalysisPageProps {
   bayId: string;
@@ -14,6 +15,10 @@ interface AnalysisPageProps {
   store: StoreData | null;
   health: ScanHealth | null;
   healthChecked: boolean;
+  auth: FoundryAuthState;
+  onSignIn: () => void;
+  onRefreshAuth: () => void;
+  onAuthenticationFailure: () => void;
   storeError: string | null;
   onHome: () => void;
   onSelectBay: (id: string) => void;
@@ -28,15 +33,30 @@ function emptyAnalysis(store: StoreData, bay: Bay, photo: UploadedPhoto): ScanRe
 }
 function analysisError(error: unknown): string {
   const message = error instanceof Error ? error.message : '';
-  if (/API_KEY|credentials|configured|unavailable|HTTP 40[13]/i.test(message)) {
-    return 'Live photo analysis is currently unavailable on this server. Your photo is ready; please try again when the service is available.';
+  if (/does not have access|HTTP 403|permission/i.test(message)) {
+    return 'Your company account does not have access to live analysis. Contact the LLM Foundry administrator; your photo and previous result are unchanged.';
+  }
+  if (/sign in|authentication|HTTP 401/i.test(message)) {
+    return 'Your company sign-in is required for live analysis. Sign in again; your photo and previous result are unchanged.';
+  }
+  if (/unavailable|could not be reached|HTTP 5\d\d/i.test(message)) {
+    return 'Live photo analysis is currently unavailable. Your photo and previous result are unchanged; try again later.';
+  }
+  if (/time limit|timed out|deadline/i.test(message)) {
+    return 'A model reading took longer than the 4-minute limit, so the scan stopped. Your photo is still available; try again later.';
+  }
+  if (/response-size limit|output limit/i.test(message)) {
+    return 'A photo section exceeded the response-size limit. No partial result was used. A retry starts again from the first section; oversized crops are split into smaller crops during that run.';
+  }
+  if (/no valid book readings|no usable readings/i.test(message)) {
+    return 'A smaller photo section still returned invalid book boxes, so the scan stopped without using partial results. Try a closer photo of fewer shelves.';
   }
   if (/already running|queued/i.test(message)) return 'Another shelf analysis is running. Please wait for it to finish, then try again.';
   if (/connection ended|before completion/i.test(message)) return 'The connection ended before analysis finished. Your photo is still available; please try again.';
   return 'The photo could not be analyzed. Your photo has been kept; please try again or contact the app administrator.';
 }
 
-export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, store, health, healthChecked, storeError, onHome, onSelectBay }) => {
+export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, store, health, auth, onSignIn, onRefreshAuth, onAuthenticationFailure, storeError, onHome, onSelectBay }) => {
   const [scan, setScan] = useState<ScanResult | null>(null);
   const [photo, setPhoto] = useState<UploadedPhoto | null>(null);
   const [resultReady, setResultReady] = useState(false);
@@ -51,9 +71,10 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
   const [resolvedIds, setResolvedIds] = useState<Set<string>>(new Set());
   const scanController = useRef<AbortController | null>(null);
   const generation = useRef(0);
-  const autoStarted = useRef(false);
   const bay = store?.bays.find(item => item.id === bayId && item.scannable);
-  const liveAvailable = uploadId ? !!health?.upload_analysis_available : !!health?.live_available_by_difficulty[bay?.difficulty || 'hard'];
+  const liveAvailable = auth.status === 'signed-in' && (uploadId
+    ? !!health?.upload_analysis_available
+    : !!health?.live_available_by_difficulty[bay?.difficulty || 'hard']);
 
   useEffect(() => {
     if (!store || !bay) return;
@@ -87,6 +108,12 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
 
   const runScan = async (requestedMode = mode) => {
     if (isScanning || !scan) return;
+    if (requestedMode === 'live' && auth.status !== 'signed-in') {
+      setError(auth.status === 'connection-error'
+        ? 'Company sign-in could not be checked. Retry the status check before starting analysis.'
+        : 'Sign in to your company account before starting live analysis.');
+      return;
+    }
     if (requestedMode === 'live' && !liveAvailable) { setError(analysisError(new Error('unavailable'))); return; }
     const controller = new AbortController();
     scanController.current = controller;
@@ -103,8 +130,13 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
         if (generation.current === current) { setScan(result); setResultReady(true); }
       } else {
         const response = await fetch('/api/scan/stream', {
-          method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
-          body: JSON.stringify({ bay_id: bayId, mode: 'live', policy: uploadId ? 'opus' : 'auto', ...(uploadId ? { upload_id: uploadId } : {}) }),
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(auth.status === 'signed-in' ? { Authorization: `Bearer ${auth.token}` } : {}),
+          },
+          signal: controller.signal,
+          body: JSON.stringify({ bay_id: bayId, mode: 'live', ...(uploadId ? { upload_id: uploadId } : {}) }),
         });
         await consumeScanEvents(response, event => {
           if (generation.current !== current) return;
@@ -114,7 +146,7 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
             setResultReady(true);
           }
           setProgress(event);
-        });
+        }, onAuthenticationFailure);
       }
       if (generation.current === current) { setResolvedIds(new Set()); setHoveredItemId(null); setHighlightedSku(null); }
     } catch (err) {
@@ -123,11 +155,6 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
       if (generation.current === current) { setIsScanning(false); setProgress(null); scanController.current = null; }
     }
   };
-  useEffect(() => {
-    if (!uploadId || !scan || !photo || !healthChecked || autoStarted.current || resultReady) return;
-    autoStarted.current = true;
-    void runScan('live');
-  });
   const cancelScan = () => {
     generation.current += 1;
     scanController.current?.abort();
@@ -143,6 +170,7 @@ export const AnalysisPage: React.FC<AnalysisPageProps> = ({ bayId, uploadId, sto
   const tasks = scan.action_tasks.map(task => ({ ...task, resolved: resolvedIds.has(task.id) }));
   return <div className="min-h-dvh bg-slate-100/70 flex flex-col font-sans">
     <Header bays={store.bays} selectedBayId={bayId} onSelectBay={onSelectBay} onHome={onHome} isUpload={!!uploadId} isScanning={isScanning} resultMode={scan.mode}
+      auth={auth} onSignIn={onSignIn} onRefreshAuth={onRefreshAuth}
       onReset={() => { setMode('replay'); void runScan('replay'); }} onOpenInfo={() => setTrustOpen(true)} />
     <main className="flex-1 max-w-[1700px] w-full mx-auto p-4 sm:p-6 lg:p-8">
       <div className="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">

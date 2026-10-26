@@ -96,52 +96,54 @@ def test_upload_cannot_use_a_saved_sample_result():
 def test_unavailable_live_service_keeps_upload_without_claiming_results():
     photo = upload().json()
     response = client.post('/api/scan/stream', json={'bay_id': 'bay_f3', 'upload_id': photo['upload_id'], 'mode': 'live'})
-    assert response.status_code == 503
+    assert response.status_code == 401
     assert client.get(photo['photo_url']).status_code == 200
     assert client.get(f"/api/uploads/{photo['upload_id']}/analysis/bay_f3").json() == {'result': None}
-    assert not client.get('/api/health').json()['upload_analysis_available']
+    assert client.get('/api/health').json()['upload_analysis_available']
 
 
-def test_upload_does_not_inherit_tidy_sample_configuration(monkeypatch):
+def test_personal_provider_key_does_not_replace_foundry_session(monkeypatch):
     monkeypatch.setenv('GEMINI_API_KEY', 'test-only')
     photo = upload().json()
     response = client.post('/api/scan/stream', json={'bay_id': 'bay_a1', 'upload_id': photo['upload_id'], 'mode': 'live'})
-    assert response.status_code == 503
+    assert response.status_code == 401
     health = client.get('/api/health').json()
     assert health['live_available_by_difficulty']['easy']
-    assert not health['upload_analysis_available']
+    assert health['upload_analysis_available']
 
 
 def test_analysis_reads_uploaded_bytes_and_persists_result_for_refresh(monkeypatch):
-    monkeypatch.setenv('ANTHROPIC_API_KEY', 'test-only')
-    monkeypatch.setenv('GEMINI_API_KEY', 'test-only')
     raw = picture()
     photo = upload(raw, 'actual-upload.png').json()
     calls = []
-    async def recognize(image, profile, emit):
-        calls.append((image, profile))
+    async def recognize(image, profile, emit, token):
+        calls.append((image, profile, token))
         await emit({'step': 1, 'status': 'reading'})
         return [], {'mode': 'live', 'model': profile.name, 'effort': 'high', 'run_id': 'test-run'}
     monkeypatch.setattr('server.main.run_recognition', recognize)
-    response = client.post('/api/scan/stream', json={'bay_id': 'bay_a1', 'upload_id': photo['upload_id'], 'mode': 'live'})
+    token = 'ephemeral-test-token'
+    headers = {'Authorization': f'Bearer {token}'}
+    response = client.post('/api/scan/stream', json={'bay_id': 'bay_a1', 'upload_id': photo['upload_id'], 'mode': 'live'}, headers=headers)
     assert response.status_code == 200
     events = [json.loads(line[6:]) for line in response.text.splitlines() if line.startswith('data: ')]
     assert [event['status'] for event in events] == ['reading', 'comparing', 'complete']
     result = events[-1]['result']
     assert calls[0][0] == raw
-    assert calls[0][1].model_id == 'claude-opus-5-5'
+    assert calls[0][1].model_id == 'gemini-3.1-pro-preview'
+    assert calls[0][2] == token
     assert result['upload_id'] == photo['upload_id']
     assert result['source_kind'] == 'upload'
     assert result['photo_url'] == photo['photo_url']
     assert result['photo_filename'] == 'actual-upload.png'
     assert result['shelf_items'] == []
     assert result['metrics']['matched_count'] == 0
+    assert token not in json.dumps(result)
     assert client.get(f"/api/uploads/{photo['upload_id']}/analysis/bay_a1").json()['result'] == result
     assert client.get(f"/api/uploads/{photo['upload_id']}/analysis/bay_f3").json()['result'] is None
     # A later failed rescan must leave the completed analysis intact.
     async def fail(*args):
         raise RecognitionError('Provider unavailable')
     monkeypatch.setattr('server.main.run_recognition', fail)
-    failed = client.post('/api/scan/stream', json={'bay_id': 'bay_a1', 'upload_id': photo['upload_id'], 'mode': 'live'})
+    failed = client.post('/api/scan/stream', json={'bay_id': 'bay_a1', 'upload_id': photo['upload_id'], 'mode': 'live'}, headers=headers)
     assert '"status": "error"' in failed.text
     assert client.get(f"/api/uploads/{photo['upload_id']}/analysis/bay_a1").json()['result'] == result

@@ -13,10 +13,10 @@ def test_health_never_exposes_secrets():
     data = res.json()
     assert data["status"] == "healthy"
     assert data["default_mode"] == "replay"
-    assert "keys_configured" in data
-    # Ensure boolean indicators only, no secret tokens
-    for k, v in data["keys_configured"].items():
-        assert isinstance(v, bool), f"Key {k} must be boolean, found {type(v)}"
+    assert data["upload_analysis_available"]
+    assert data["inference_authentication_required"]
+    assert data["inference_access"] == "per-user-session"
+    assert "keys_configured" not in data
 
 
 def test_store_endpoint():
@@ -58,23 +58,20 @@ def test_replay_stream_does_not_claim_live_model_or_verification():
     assert not events[-1]["result"]["harness"]["rotated_verification"]
 
 
-def test_live_without_credentials_fails_explicitly(monkeypatch):
-    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+def test_live_requires_a_per_user_foundry_session():
     res = client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"})
-    assert res.status_code == 503
-    assert "ANTHROPIC_API_KEY" in res.json()["detail"]
+    assert res.status_code == 401
+    assert "Sign in" in res.json()["detail"]
     health = client.get("/api/health").json()
-    assert not health["live_mode_available"]
-    assert not any(health["live_available_by_difficulty"].values())
+    assert health["live_mode_available"]
+    assert all(health["live_available_by_difficulty"].values())
 
 
-def test_other_credentials_do_not_falsely_enable_live_scans(monkeypatch):
-    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+def test_legacy_personal_provider_keys_do_not_replace_per_user_sign_in(monkeypatch):
     monkeypatch.setenv("OPENAI_API_KEY", "test-only")
     monkeypatch.setenv("LLM_PROXY_TOKEN", "test-only")
-    assert not client.get("/api/health").json()["live_mode_available"]
+    assert client.get("/api/health").json()["inference_authentication_required"]
+    assert client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"}).status_code == 401
 
 
 def test_scan_request_rejects_unknown_modes_models_and_paths():
@@ -88,41 +85,44 @@ def test_scan_request_rejects_unknown_modes_models_and_paths():
 
 
 def test_live_stream_runs_recognition_and_compares_actual_output(monkeypatch, tmp_path):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only")
     monkeypatch.setattr("server.main.PHOTOS_DIR", tmp_path)
     (tmp_path / "f.jpg").write_bytes(b"test photo supplied to mocked recognition")
     calls = []
-    async def recognize(raw, profile, emit):
-        calls.append((raw, profile))
+    async def recognize(raw, profile, emit, token):
+        calls.append((raw, profile, token))
         await emit({"step": 1, "status": "reading", "message": "real work"})
         return [], {"mode": "live", "model": profile.name, "effort": "high"}
     monkeypatch.setattr("server.main.run_recognition", recognize)
-    events = parse_events(client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"}))
+    token = "transient-user-token"
+    events = parse_events(client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"},
+                                      headers={"Authorization": f"Bearer {token}"}))
     assert [e["status"] for e in events] == ["reading", "comparing", "complete"]
     result = events[-1]["result"]
     assert result["mode"] == "live"
     assert result["shelf_items"] == []
     assert result["metrics"]["matched_count"] == 0
     assert len(calls) == 1
-    assert calls[0][1].model_id == "claude-opus-5-5"
+    assert calls[0][1].model_id == "gemini-3.1-pro-preview"
+    assert calls[0][2] == token
+    assert token not in events[-1]["result"].values()
 
 
 def test_streamed_failure_does_not_substitute_replay(monkeypatch):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only")
-    async def fail(raw, profile, emit):
+    async def fail(raw, profile, emit, token):
         raise RecognitionError("Provider unavailable")
     monkeypatch.setattr("server.main.run_recognition", fail)
-    events = parse_events(client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"}))
-    assert events == [{"status": "error", "message": "Provider unavailable"}]
+    events = parse_events(client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"},
+                                      headers={"Authorization": "Bearer transient-token"}))
+    assert events == [{"status": "error", "message": "Provider unavailable", "code": "inference"}]
 
 
 def test_server_will_not_start_multiple_paid_scans(monkeypatch):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only")
     class BusyLock:
         def locked(self):
             return True
     monkeypatch.setattr("server.main._live_scan_lock", BusyLock())
-    res = client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"})
+    res = client.post("/api/scan/stream", json={"bay_id": "bay_f3", "mode": "live"},
+                      headers={"Authorization": "Bearer transient-token"})
     assert res.status_code == 409
 
 

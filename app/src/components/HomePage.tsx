@@ -1,18 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronRight, ImagePlus, Layers, LoaderCircle, ScanLine, Upload, X } from 'lucide-react';
 import type { StoreData, UploadedPhoto } from '../types';
+import type { FoundryAuthState } from '../foundryAuth';
+import { FoundryStatus } from './FoundryStatus';
 
 interface HomePageProps {
   store: StoreData | null;
   loadError: string | null;
   liveAvailable: boolean | null;
+  auth: FoundryAuthState;
+  onSignIn: () => void;
+  onRefreshAuth: () => void;
   onAnalyze: (photo: UploadedPhoto, bayId: string) => void;
   onSample: (bayId: string) => void;
 }
 const MAX_BYTES = 20 * 1024 * 1024;
 const FORMATS = new Set(['image/jpeg', 'image/png', 'image/webp']);
 
-export const HomePage: React.FC<HomePageProps> = ({ store, loadError, liveAvailable, onAnalyze, onSample }) => {
+export const HomePage: React.FC<HomePageProps> = ({ store, loadError, liveAvailable, auth, onSignIn, onRefreshAuth, onAnalyze, onSample }) => {
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState('');
   const [bayId, setBayId] = useState('');
@@ -75,9 +80,12 @@ export const HomePage: React.FC<HomePageProps> = ({ store, loadError, liveAvaila
 
   return <div className="min-h-dvh bg-[#f7f9fc] text-slate-900 flex flex-col">
     <header className="bg-white border-b border-slate-200/80">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 min-h-20 py-3 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 sm:gap-4 sm:h-20 sm:py-0">
         <div className="flex items-center gap-2.5"><span className="w-9 h-9 rounded-xl bg-blue-600 text-white grid place-items-center"><Layers className="w-5 h-5" /></span><span className="text-lg font-bold tracking-tight">Shelf Check</span></div>
-        <button onClick={() => onSample('bay_f3')} className="text-xs sm:text-sm text-slate-600 hover:text-blue-700 flex items-center gap-1.5">Explore a sample <ChevronRight className="w-4 h-4" /></button>
+        <div className="flex flex-wrap items-center justify-end gap-x-3 gap-y-2 min-w-0">
+          <FoundryStatus auth={auth} onSignIn={onSignIn} onRefresh={onRefreshAuth} />
+          <button onClick={() => onSample('bay_f3')} className="text-xs sm:text-sm text-slate-600 hover:text-blue-700 flex items-center gap-1.5">Explore a sample <ChevronRight className="w-4 h-4" /></button>
+        </div>
       </div>
     </header>
     <main className="w-full max-w-6xl mx-auto px-5 sm:px-8 py-10 sm:py-16 lg:py-20 flex-1">
@@ -112,7 +120,13 @@ export const HomePage: React.FC<HomePageProps> = ({ store, loadError, liveAvaila
           </select>
           <p className="text-[11px] text-slate-400 mt-2">The selected shelf provides the planogram for comparison.</p>
           {(error || loadError) && <div role="alert" className="mt-4 p-3 rounded-lg border border-red-200 bg-red-50 text-xs leading-5 text-red-800">{error || loadError}</div>}
-          {liveAvailable === false && <p className="mt-4 rounded-lg bg-amber-50 border border-amber-100 p-3 text-xs leading-5 text-amber-800">Live photo analysis is currently unavailable on this server. You can upload your photo to the analysis page or explore a saved sample.</p>}
+          {liveAvailable === false && <p className="mt-4 rounded-lg bg-amber-50 border border-amber-100 p-3 text-xs leading-5 text-amber-800">
+            {auth.status === 'signed-in'
+              ? 'Live analysis is not ready on this server. Your photo can still be uploaded and kept without inventing results.'
+              : auth.status === 'connection-error'
+                ? 'Company sign-in could not be checked. Retry the status check above; uploads remain available without starting inference.'
+              : 'Sign in with your company account to enable live photo analysis. You can still upload a photo or explore a saved sample.'}
+          </p>}
           <button type="submit" disabled={!file || !bayId || uploading || !!loadError} className="mt-5 w-full inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed transition-colors">{uploading ? <><LoaderCircle className="w-4 h-4 animate-spin" /> Preparing your photo…</> : <>Analyze shelf <ArrowRight className="w-4 h-4" /></>}</button>
           <p className="mt-3 text-center text-[11px] leading-5 text-slate-400">Your photo is uploaded to this app for recognition.<br />No inventory records are changed automatically.</p>
         </form>

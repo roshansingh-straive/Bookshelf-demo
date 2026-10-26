@@ -1,5 +1,6 @@
 """Accuracy regression cases: geometry, corroboration, matching and API contracts."""
 import asyncio
+import base64
 import io
 import json
 
@@ -8,10 +9,11 @@ import pytest
 from PIL import Image
 from pydantic import ValidationError
 
-from server.accuracy import FLASH, OPUS, select_profile
+from server.accuracy import FOUNDRY_GEMINI, select_profile
 from server.comparison import compare_books, normalize, title_score
 from server.recognition import (
-    Box, Readings, RecognitionError, VisionClient, load_image, map_box,
+    Box, Readings, RecognitionError, VisionClient, load_image, map_box, map_rotated_subtile_box,
+    normalize_recognition_payload, parse_readings, split_rotated_crop,
     merge_readings, provider_schema, run_recognition, tile_image,
 )
 
@@ -39,32 +41,19 @@ def reading(title="Determined", **extra):
             "box": {"top": .2, "left": .1, "width": .3, "height": .4}, **extra}
 
 
-def response(books, profile=OPUS, complete=True, **overrides):
-    if profile == OPUS:
-        payload = {"model": profile.model_id, "stop_reason": "end_turn" if complete else "max_tokens", "content": [{"type": "text", "text": json.dumps({"books": books})}], "usage": {"input_tokens": 100, "output_tokens": 20}}
-    else:
-        payload = {"modelVersion": profile.model_id, "candidates": [{"finishReason": "STOP" if complete else "MAX_TOKENS", "content": {"parts": [{"text": json.dumps({"books": books})}]}}], "usageMetadata": {"promptTokenCount": 100, "candidatesTokenCount": 20, "thoughtsTokenCount": 7}}
-    return httpx.Response(200, json={**payload, **overrides})
+def response(books, profile=FOUNDRY_GEMINI, complete=True, response_text=None, **overrides):
+    candidate = {"content": {"parts": [{"text": response_text if response_text is not None else json.dumps({"books": books})}]},
+                 "finishReason": "STOP" if complete else "MAX_TOKENS"}
+    payload = {"modelVersion": profile.model_id, "candidates": [candidate],
+               "usageMetadata": {"promptTokenCount": 100, "candidatesTokenCount": 20, "thoughtsTokenCount": 7}}
+    payload.update(overrides)
+    return httpx.Response(200, headers={"content-type": "text/event-stream"},
+                          content=f"data: {json.dumps(payload)}\n\n".encode())
 
 
-@pytest.mark.parametrize("difficulty,expected", [("easy", FLASH), ("medium", OPUS), ("hard", OPUS)])
-def test_report_policy_by_difficulty(difficulty, expected):
-    assert select_profile(difficulty) == expected
-
-
-def test_live_capabilities_and_explicit_fallback(monkeypatch):
-    with pytest.raises(ValueError, match="ANTHROPIC_API_KEY"):
-        select_profile("hard", live=True)
-    monkeypatch.setenv("GEMINI_API_KEY", "test-key")
-    assert select_profile("easy", live=True) == FLASH
-    with pytest.raises(ValueError):
-        select_profile("hard", live=True)
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
-    monkeypatch.delenv("GEMINI_API_KEY")
-    selected = select_profile("easy", live=True)
-    assert selected.model_id == OPUS.model_id
-    assert "unavailable" in selected.reason
-    assert select_profile("easy", "opus", live=True) == OPUS
+@pytest.mark.parametrize("difficulty", ["easy", "medium", "hard"])
+def test_foundry_model_is_not_selected_by_unmeasured_benchmark_policy(difficulty):
+    assert select_profile() == FOUNDRY_GEMINI
 
 
 @pytest.mark.parametrize("size", [(100, 90), (1400, 1400), (1401, 1401), (1300, 956), (1080, 1440), (4284, 5712), (5712, 4284)])
@@ -112,6 +101,23 @@ def test_rotated_boxes_map_back_to_same_native_location():
     assert normal["left"] == pytest.approx(1260/4284)
 
 
+def test_rotated_subtile_boxes_map_back_to_original_photo_coordinates():
+    mapped = map_rotated_subtile_box(
+        {"top": 0, "left": 0, "width": 1, "height": 1},
+        (0, 0, 55, 27), (100, 50), (100, 200, 150, 300), (300, 500),
+    )
+
+    assert mapped == pytest.approx({"top": .49, "left": 1 / 3, "width": .09, "height": .11})
+
+
+def test_dense_rotated_crop_splits_into_four_overlapping_sections():
+    children = split_rotated_crop(Image.new("RGB", (100, 50)))
+
+    assert len(children) == 4
+    assert [child_id for child_id, _, _ in children] == ["sub-1", "sub-2", "sub-3", "sub-4"]
+    assert all(child.size[0] < 100 and child.size[1] < 50 for _, _, child in children)
+
+
 @pytest.mark.parametrize("box", [
     {"top": -.1, "left": 0, "width": .1, "height": .1},
     {"top": 0, "left": .9, "width": .2, "height": .1},
@@ -122,6 +128,79 @@ def test_rotated_boxes_map_back_to_same_native_location():
 def test_invalid_geometry_never_becomes_an_outline(box):
     with pytest.raises(ValidationError):
         Box.model_validate(box)
+
+
+def test_pixel_coordinates_from_model_are_normalized_to_tile_fractions():
+    payload = {"books": [reading(box={"top": 956, "left": 0, "width": 255, "height": .093})]}
+
+    normalized = normalize_recognition_payload(payload, (1400, 1400))
+
+    assert normalized["books"][0]["box"] == pytest.approx(
+        {"top": 956 / 1400, "left": 0, "width": 255 / 1400, "height": .093}
+    )
+    assert Readings.model_validate(normalized).books[0].box.top == pytest.approx(956 / 1400)
+
+
+def test_thousand_scale_coordinates_are_normalized_when_pixel_bounds_do_not_fit():
+    payload = {"books": [reading(box={
+        "top": 218, "left": 0, "width": 140, "height": 781,
+    })]}
+
+    parsed, rejected = parse_readings(payload, (770, 770))
+
+    assert rejected == 0
+    assert parsed.books[0].box.model_dump() == pytest.approx({
+        "top": .218, "left": 0, "width": .14, "height": .781,
+    })
+
+
+def test_percentage_coordinates_from_model_are_normalized_to_tile_fractions():
+    payload = {"books": [reading(box={"top": 8.528, "left": 0.439, "width": 6.1, "height": 15.8})]}
+
+    normalized = normalize_recognition_payload(payload, (1400, 1400))
+
+    assert normalized["books"][0]["box"] == pytest.approx(
+        {"top": .08528, "left": .439, "width": .061, "height": .158}
+    )
+    assert Readings.model_validate(normalized).books[0].box.top == pytest.approx(.08528)
+
+
+def test_invalid_fractional_box_coordinates_are_still_rejected():
+    payload = {"books": [reading(box={"top": .2, "left": .1, "width": 101.2, "height": .4})]}
+
+    with pytest.raises(ValidationError):
+        Readings.model_validate(normalize_recognition_payload(payload, (1400, 1400)))
+
+
+def test_unreadable_blank_titles_are_omitted_without_rejecting_other_books():
+    payload = {"books": [
+        reading("Readable title"),
+        reading("", visible_text="Author only"),
+        reading("   ", visible_text="Unclear letters"),
+    ]}
+
+    parsed = Readings.model_validate(normalize_recognition_payload(payload, (1400, 1400)))
+
+    assert [book.title for book in parsed.books] == ["Readable title"]
+
+
+def test_invalid_book_box_is_omitted_without_rejecting_valid_readings():
+    payload = {"books": [
+        reading("Readable title"),
+        reading("Out of bounds", box={"top": .8, "left": .1, "width": .3, "height": .3}),
+    ]}
+
+    parsed, rejected = parse_readings(payload, (1400, 1400))
+
+    assert [book.title for book in parsed.books] == ["Readable title"]
+    assert rejected == 1
+
+
+def test_all_invalid_readings_are_not_reported_as_an_empty_valid_section():
+    payload = {"books": [reading("Out of bounds", box={"top": .8, "left": .1, "width": .3, "height": .3})]}
+
+    with pytest.raises(RecognitionError, match="no valid book readings"):
+        parse_readings(payload, (1400, 1400))
 
 
 def obs(phase="read", title="Determined", **kwargs):
@@ -242,79 +321,198 @@ def test_api_schema_compatible_but_local_validation_strict():
     assert Readings.model_validate({"books": [reading(visible_text="Robert Sapolsky")]}).books[0].uncertain
 
 
-@pytest.mark.parametrize("profile", [OPUS, FLASH])
-def test_provider_payload_enforces_high_settings_and_validates_identity(monkeypatch, profile):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only-key")
-    monkeypatch.setenv("GEMINI_API_KEY", "test-only-key")
-    seen = []
+def test_foundry_payload_uses_gemini_schema_stream_and_ephemeral_token():
+    profile = FOUNDRY_GEMINI
+    token = "ephemeral-test-token"
+    requests = []
     def handler(request):
         body = json.loads(request.content)
-        seen.append(body)
-        if profile == OPUS:
-            assert body["model"] == "claude-opus-5-5"
-            assert body["thinking"] == {"type": "adaptive"}
-            assert body["output_config"]["effort"] == "high"
-            assert len(body["messages"][0]["content"]) == 2
-            assert request.headers["x-api-key"] == "test-only-key"
-        else:
-            config = body["generationConfig"]
-            assert config["thinkingConfig"] == {"thinkingLevel": "HIGH"}
-            assert config["mediaResolution"] == "MEDIA_RESOLUTION_HIGH"
-            assert config["responseMimeType"] == "application/json"
-            assert len(body["contents"][0]["parts"]) == 2
-            assert request.headers["x-goog-api-key"] == "test-only-key"
+        requests.append(request)
+        assert str(request.url) == "https://llmfoundry.straive.com/gemini/v1beta/models/gemini-3.1-pro-preview:streamGenerateContent?alt=sse"
+        assert request.headers["authorization"] == f"Bearer {token}:llmproxy-playground"
+        assert request.headers["content-type"] == "application/json"
+        config = body["generationConfig"]
+        assert config["temperature"] == 1
+        assert config["thinkingConfig"] == {"thinkingLevel": "HIGH"}
+        assert config["responseMimeType"] == "application/json"
+        assert config["responseJsonSchema"] == provider_schema()
+        assert len(body["contents"][0]["parts"]) == 2
+        assert "compact JSON on" in body["contents"][0]["parts"][1]["text"]
         return response([reading()], profile)
-    client = VisionClient(profile, httpx.MockTransport(handler))
+    client = VisionClient(profile, token, httpx.MockTransport(handler))
     books = asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
-    assert len(books) == 1 and len(seen) == 1
+    assert len(books) == 1 and len(requests) == 1
     assert client.calls[0]["actual_model"] == profile.model_id
 
 
 @pytest.mark.parametrize("failure", ["truncated", "model_substitution", "invalid_json", "invalid_box"])
-def test_invalid_responses_fail_instead_of_using_partial_output(monkeypatch, failure):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only-key")
+def test_incomplete_or_invalid_foundry_responses_are_rejected(failure):
     def handler(request):
         if failure == "truncated":
             return response([reading()], complete=False)
         if failure == "model_substitution":
-            return response([reading()], model="claude-sonnet-5-5")
+            return response([reading()], modelVersion="gemini-2.5-pro")
         if failure == "invalid_json":
-            return response([], content=[{"type": "text", "text": '{"books": ['}])
+            return response([], response_text='{"books": [')
         return response([reading(box={"top": .9, "left": .9, "width": .5, "height": .5})])
-    client = VisionClient(OPUS, httpx.MockTransport(handler))
+    client = VisionClient(FOUNDRY_GEMINI, "test-token", httpx.MockTransport(handler))
     with pytest.raises(RecognitionError):
         asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
 
 
-def test_bad_credentials_are_not_retried_and_never_echo_secrets(monkeypatch):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "private-test-key")
+def test_output_limit_is_reported_distinctly_and_logged():
+    client = VisionClient(
+        FOUNDRY_GEMINI, "test-token",
+        httpx.MockTransport(lambda request: response([], complete=False)),
+    )
+
+    with pytest.raises(RecognitionError, match="response-size limit") as exc:
+        asyncio.run(client.read(Image.new("RGB", (10, 10)), "verify", "tile-19"))
+
+    assert exc.value.code == "output_limit"
+    assert client.calls[0]["finish_reason"] == "MAX_TOKENS"
+    assert not client.calls[0]["complete"]
+
+
+def test_authentication_failure_is_not_retried_or_echoed():
+    token = "private-test-token"
     requests = []
     def handler(request):
         requests.append(request)
-        return httpx.Response(401, text="private-test-key and sensitive response body")
-    client = VisionClient(OPUS, httpx.MockTransport(handler))
+        return httpx.Response(401, text=f"{token} and sensitive response body")
+    client = VisionClient(FOUNDRY_GEMINI, token, httpx.MockTransport(handler))
     with pytest.raises(RecognitionError) as exc:
         asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
     assert len(requests) == 1
-    assert "private-test-key" not in str(exc.value)
+    assert exc.value.code == "authentication"
+    assert token not in str(exc.value)
 
 
-def test_transient_failure_has_bounded_retry(monkeypatch):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only-key")
-    async def no_wait(seconds):
-        pass
-    monkeypatch.setattr("server.recognition.asyncio.sleep", no_wait)
+def test_permission_denial_is_distinct_and_provider_errors_do_not_leak():
     requests = []
     def handler(request):
         requests.append(request)
-        return httpx.Response(429) if len(requests) < 3 else response([])
-    client = VisionClient(OPUS, httpx.MockTransport(handler))
-    assert asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1")) == []
-    assert len(requests) == 3
+        return httpx.Response(403, text="private upstream detail")
+    client = VisionClient(FOUNDRY_GEMINI, "token", httpx.MockTransport(handler))
+    with pytest.raises(RecognitionError) as exc:
+        asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
+    assert exc.value.code == "permission"
+    assert "private upstream detail" not in str(exc.value)
+    assert len(requests) == 1
+
+
+def test_rate_limit_is_reported_without_retry():
+    requests = []
+    def handler(request):
+        requests.append(request)
+        return httpx.Response(429)
+    client = VisionClient(FOUNDRY_GEMINI, "token", httpx.MockTransport(handler))
+    with pytest.raises(RecognitionError) as exc:
+        asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
+    assert exc.value.code == "rate_limit"
+    assert len(requests) == 1
+
+
+def test_cancellation_closes_the_upstream_stream():
+    class WaitingStream(httpx.AsyncByteStream):
+        def __init__(self):
+            self.started = asyncio.Event()
+            self.closed = False
+
+        async def __aiter__(self):
+            self.started.set()
+            await asyncio.Event().wait()
+            yield b""
+
+        async def aclose(self):
+            self.closed = True
+
+    stream = WaitingStream()
+    requests = []
+    def handler(request):
+        requests.append(request)
+        return httpx.Response(200, headers={"content-type": "text/event-stream"}, stream=stream)
+    client = VisionClient(FOUNDRY_GEMINI, "token", httpx.MockTransport(handler))
+
+    async def run_cancelled_read():
+        task = asyncio.create_task(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
+        await asyncio.wait_for(stream.started.wait(), timeout=1)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+
+    asyncio.run(run_cancelled_read())
+    assert stream.closed
+    assert len(requests) == 1
+
+
+def test_total_request_deadline_closes_a_continuously_open_upstream_stream(monkeypatch):
+    class SlowStream(httpx.AsyncByteStream):
+        def __init__(self):
+            self.started = asyncio.Event()
+            self.closed = False
+
+        async def __aiter__(self):
+            self.started.set()
+            await asyncio.Event().wait()
+            yield b""
+
+        async def aclose(self):
+            self.closed = True
+
+    stream = SlowStream()
+    monkeypatch.setattr("server.recognition.INFERENCE_REQUEST_DEADLINE_SECONDS", 0.02)
+    client = VisionClient(
+        FOUNDRY_GEMINI, "test-token",
+        httpx.MockTransport(lambda request: httpx.Response(
+            200, headers={"content-type": "text/event-stream"}, stream=stream,
+        )),
+    )
+
+    async def run_timeout():
+        with pytest.raises(RecognitionError) as exc:
+            await client.read(Image.new("RGB", (10, 10)), "read", "tile-1")
+        assert exc.value.code == "timeout"
+
+    asyncio.run(run_timeout())
+    assert stream.closed
+
+
+def test_sse_fragments_are_joined_and_finish_and_usage_are_required():
+    events = [
+        {"modelVersion": FOUNDRY_GEMINI.model_id, "candidates": [{"content": {"parts": [{"text": '{"books":'}]}}]},
+        {"candidates": [{"content": {"parts": [{"text": f'{json.dumps([reading()])}' + "}"}]}}]},
+        {"usageMetadata": {"promptTokenCount": 31, "candidatesTokenCount": 9},
+         "candidates": [{"finishReason": "STOP"}]},
+    ]
+    stream = "".join(f"data: {json.dumps(event)}\n\n" for event in events)
+    request_count = 0
+    def handler(request):
+        nonlocal request_count
+        request_count += 1
+        return httpx.Response(200, headers={"content-type": "text/event-stream"}, content=stream.encode())
+    client = VisionClient(FOUNDRY_GEMINI, "token", httpx.MockTransport(handler))
+    books = asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
+    assert books[0]["title"] == "Determined"
+    assert client.calls[0]["usage"] == {"promptTokenCount": 31, "candidatesTokenCount": 9}
+    assert request_count == 1
+
+
+def test_provider_stream_errors_and_missing_finish_reason_fail():
+    for content, expected in [
+        ('data: {"error":{"message":"private provider text"}}\n\n', "reported an error"),
+        ('data: {"modelVersion":"gemini-3.1-pro-preview","candidates":[{"content":{"parts":[{"text":"partial"}]}}]}\n\n', "before completion"),
+    ]:
+        client = VisionClient(
+            FOUNDRY_GEMINI, "token",
+            httpx.MockTransport(lambda request, content=content: httpx.Response(200, text=content)),
+        )
+        with pytest.raises(RecognitionError, match=expected) as exc:
+            asyncio.run(client.read(Image.new("RGB", (10, 10)), "read", "tile-1"))
+        assert "private provider text" not in str(exc.value)
 
 
 def test_complete_harness_reads_verifies_maps_and_audits(monkeypatch, tmp_path):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "private-test-key")
     monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
     requests, events = [], []
     def handler(request):
@@ -323,35 +521,221 @@ def test_complete_harness_reads_verifies_maps_and_audits(monkeypatch, tmp_path):
         if len(requests) == 1:
             return response([reading()])
         # The independent request has no candidate titles from the first pass.
-        text = body["messages"][0]["content"][1]["text"]
+        text = body["contents"][0]["parts"][1]["text"]
         assert "Determined" not in text
         return response([reading(box={"top": .1, "left": .4, "width": .4, "height": .3})])
     async def emit(event):
         events.append(event)
-    books, metadata = asyncio.run(run_recognition(image_bytes(), OPUS, emit, transport=httpx.MockTransport(handler)))
+    token = "ephemeral-test-token"
+    books, metadata = asyncio.run(run_recognition(image_bytes(), FOUNDRY_GEMINI, emit, token, transport=httpx.MockTransport(handler)))
     assert len(requests) == 2
     assert books[0]["verification_status"] == "verified"
     assert books[0]["box"] == pytest.approx(reading()["box"])
     assert metadata["mode"] == "live"
-    assert metadata["tokens_used"] == 240
+    assert metadata["tokens_used"] == 254
     assert metadata["harness"]["calls_completed"] == 2
     assert metadata["harness"]["measured_accuracy"] is None
     audit_text = (tmp_path / f"{metadata['run_id']}.json").read_text()
     audit = json.loads(audit_text)
     assert audit["status"] == "complete"
-    assert "private-test-key" not in audit_text
+    assert token not in audit_text
     assert "base64" not in audit_text
-    assert audit["calls"][0]["actual_model"] == OPUS.model_id
-    assert [e["status"] for e in events] == ["preparing", "reading", "verifying"]
+    assert audit["calls"][0]["actual_model"] == FOUNDRY_GEMINI.model_id
+    assert [e["status"] for e in events] == ["preparing", "reading", "reading", "verifying", "verifying"]
+    assert events[0]["total_calls"] == 2
+    assert events[0]["completed_calls"] == 0
+    assert events[-1]["completed_calls"] == 2
+
+
+def test_same_photo_retry_starts_a_fresh_scan(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests, first_events, retry_events = [], [], []
+
+    def handler(request):
+        requests.append(request)
+        return response([reading()])
+
+    async def emit_first(event):
+        first_events.append(event)
+
+    async def emit_retry(event):
+        retry_events.append(event)
+
+    raw = image_bytes()
+    transport = httpx.MockTransport(handler)
+    first_books, first_metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit_first, "test-token", transport=transport)
+    )
+    retry_books, retry_metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit_retry, "test-token", transport=transport)
+    )
+
+    assert first_books == retry_books
+    assert len(requests) == 4
+    assert first_metadata["harness"]["model_requests_made"] == 2
+    assert retry_metadata["harness"]["model_requests_made"] == 2
+    assert [event["status"] for event in retry_events] == ["preparing", "reading", "reading", "verifying", "verifying"]
+    assert retry_events[0]["total_calls"] == 2
+    assert retry_events[0]["completed_calls"] == 0
+    assert retry_events[-1]["completed_calls"] == 2
+
+
+def test_output_limited_verification_splits_and_retry_starts_from_first_tile(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests, first_events, retry_events = [], [], []
+
+    def handler(request):
+        body = json.loads(request.content)
+        image = Image.open(io.BytesIO(base64.b64decode(body["contents"][0]["parts"][0]["inlineData"]["data"])))
+        requests.append(image.size)
+        if len(requests) == 2:
+            return response([], complete=False)
+        return response([reading()])
+
+    async def emit_first(event):
+        first_events.append(event)
+
+    async def emit_retry(event):
+        retry_events.append(event)
+
+    raw = image_bytes()
+    transport = httpx.MockTransport(handler)
+    books, first_metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit_first, "test-token", transport=transport)
+    )
+    request_count_after_first = len(requests)
+    retry_books, retry_metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit_retry, "test-token", transport=transport)
+    )
+
+    assert request_count_after_first == 6
+    assert len(requests) == request_count_after_first + 2
+    assert first_metadata["harness"]["model_requests_made"] == 6
+    assert retry_metadata["harness"]["model_requests_made"] == 2
+    assert [book["title"] for book in retry_books] == [book["title"] for book in books]
+    assert any(event["status"] == "splitting" for event in first_events)
+    assert not any(event["status"] == "splitting" for event in retry_events)
+    assert requests[request_count_after_first:] == [(100, 50), (50, 100)]
+    assert retry_events[0]["total_calls"] == 2
+
+
+def test_interrupted_split_retry_starts_over_from_first_tile(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests = []
+
+    def handler(_request):
+        requests.append(None)
+        if len(requests) in (2, 6):
+            if len(requests) == 2:
+                return response([], complete=False)
+            raise httpx.ConnectError("simulated connection loss")
+        return response([reading()])
+
+    async def emit(_event):
+        return None
+
+    raw = image_bytes()
+    transport = httpx.MockTransport(handler)
+    with pytest.raises(RecognitionError, match="could not be reached"):
+        asyncio.run(run_recognition(raw, FOUNDRY_GEMINI, emit, "test-token", transport=transport))
+
+    failed_audit = json.loads(next(tmp_path.glob("*.json")).read_text(encoding="utf-8"))
+    assert failed_audit["status"] == "failed_or_cancelled"
+    assert failed_audit["failure"]["code"] == "inference"
+    assert len(failed_audit["calls"]) == 5
+
+    books, metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit, "test-token", transport=transport)
+    )
+
+    assert books
+    assert len(requests) == 8
+    assert metadata["harness"]["model_requests_made"] == 2
+    assert all("reused_from_run_id" not in call for call in failed_audit["calls"])
+
+
+def test_section_with_only_invalid_boxes_is_split_instead_of_aborting_scan(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests, events = [], []
+
+    def handler(_request):
+        requests.append(None)
+        if len(requests) == 1:
+            return response([reading(box={"top": .8, "left": .1, "width": .3, "height": .3})])
+        return response([reading()])
+
+    async def emit(event):
+        events.append(event)
+
+    books, metadata = asyncio.run(
+        run_recognition(
+            image_bytes(), FOUNDRY_GEMINI, emit, "test-token",
+            transport=httpx.MockTransport(handler),
+        )
+    )
+
+    assert books
+    assert len(requests) == 6
+    assert metadata["harness"]["model_requests_made"] == 6
+    assert any(event["status"] == "splitting" for event in events)
+
+
+def test_output_limited_reading_recursively_splits_and_retry_starts_over(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests = []
+
+    def handler(_request):
+        requests.append(None)
+        if len(requests) in (1, 3):
+            return response([], complete=False)
+        return response([reading()])
+
+    async def emit(_event):
+        return None
+
+    raw = image_bytes()
+    transport = httpx.MockTransport(handler)
+    books, metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit, "test-token", transport=transport)
+    )
+    retry_books, retry_metadata = asyncio.run(
+        run_recognition(raw, FOUNDRY_GEMINI, emit, "test-token", transport=transport)
+    )
+
+    assert books
+    assert [book["title"] for book in retry_books] == [book["title"] for book in books]
+    assert len(requests) == 12
+    assert metadata["harness"]["model_requests_made"] == 10
+    assert retry_metadata["harness"]["model_requests_made"] == 2
+
+
+def test_retries_always_make_new_requests_for_each_photo(monkeypatch, tmp_path):
+    monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
+    requests = []
+
+    def handler(request):
+        requests.append(request)
+        return response([reading()])
+
+    async def emit(_event):
+        return None
+
+    transport = httpx.MockTransport(handler)
+    asyncio.run(run_recognition(image_bytes(), FOUNDRY_GEMINI, emit, "test-token", transport=transport))
+    _, metadata = asyncio.run(
+        run_recognition(image_bytes((101, 50)), FOUNDRY_GEMINI, emit, "test-token", transport=transport)
+    )
+
+    assert len(requests) == 4
+    assert metadata["harness"]["model_requests_made"] == 2
 
 
 def test_failure_is_audited_and_never_returns_replay(monkeypatch, tmp_path):
-    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-only-key")
     monkeypatch.setattr("server.recognition.RUNS_DIR", tmp_path)
     async def emit(event):
         pass
     with pytest.raises(RecognitionError):
-        asyncio.run(run_recognition(image_bytes(), OPUS, emit, transport=httpx.MockTransport(lambda request: httpx.Response(403))))
+        asyncio.run(run_recognition(image_bytes(), FOUNDRY_GEMINI, emit, "test-token", transport=httpx.MockTransport(lambda request: httpx.Response(403))))
     files = list(tmp_path.glob("*.json"))
     assert len(files) == 1
     assert json.loads(files[0].read_text())["status"] == "failed_or_cancelled"

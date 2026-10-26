@@ -25,6 +25,7 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
   hoveredItemId, onHoverItem, onSelectItem, isScanning, scanStep, onTriggerScan,
 }) => {
   const [outlineFilter, setOutlineFilter] = useState<'all' | 'issues' | 'none'>('none');
+  const [waitSeconds, setWaitSeconds] = useState(0);
   const [activeTooltip, setActiveTooltip] = useState<ShelfItem | null>(null);
   const [photoOpen, setPhotoOpen] = useState(false);
   const [zoom, setZoom] = useState(1);
@@ -39,6 +40,19 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
     if (photoOpen) dialog.current?.showModal();
     else dialog.current?.close();
   }, [photoOpen]);
+
+  useEffect(() => {
+    if (!isScanning || progress?.completed_calls == null) {
+      setWaitSeconds(0);
+      return;
+    }
+    setWaitSeconds(0);
+    const startedAt = Date.now();
+    const timer = window.setInterval(() => {
+      setWaitSeconds(Math.floor((Date.now() - startedAt) / 1000));
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, [isScanning, progress?.completed_calls, progress?.message, progress?.status]);
 
   const selectItem = (item: ShelfItem) => {
     setActiveTooltip(item);
@@ -76,7 +90,7 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
           </div>
           <button onClick={onTriggerScan} disabled={isScanning || (mode === 'live' && !liveAvailable)} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white hover:bg-blue-700 disabled:bg-slate-200 disabled:text-slate-500 disabled:cursor-not-allowed">
             {isScanning ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Camera className="w-3.5 h-3.5" />}
-            <span>{isScanning ? 'Analyzing…' : mode === 'live' ? (resultReady ? 'Analyze again' : 'Analyze photo') : 'Reload sample'}</span>
+            <span>{isScanning ? 'Analyzing…' : mode === 'live' ? (resultReady ? (isUpload ? 'Start fresh scan' : 'Analyze again') : 'Analyze photo') : 'Reload sample'}</span>
           </button>
         </div>
         {!isUpload && <div className="flex flex-wrap gap-2 items-center mb-2">
@@ -93,7 +107,10 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
             ? 'We read the photo section by section and cross-check titles in a second pass.'
             : 'This sample uses saved recognition results. Run a new analysis to inspect the sample photo again.'}
         </p>
-        {!liveAvailable && !error && <p className="text-[11px] text-amber-800 mt-1">New photo analysis is currently unavailable on this server.</p>}
+        {isUpload && mode === 'live' && !resultReady && !isScanning && <p className="mt-2 rounded-md border border-amber-200 bg-amber-50 p-2 text-xs text-amber-900">
+          Each full-photo attempt starts from the first section and makes fresh Gemini requests; results from failed attempts are never reused. There are up to 40 base checks, with oversized reading or verification crops split into smaller overlapping crops. Refreshing will not start a scan.
+        </p>}
+        {!liveAvailable && !error && <p className="text-[11px] text-amber-800 mt-1">Company sign-in and inference access are required for live photo analysis.</p>}
         {error && <div role="alert" className="mt-2 p-2 text-xs text-red-800 border border-red-200 bg-red-50 rounded-md">{error}</div>}
         <div className="mt-3 pt-3 border-t border-slate-200/60 text-xs space-y-2">
           <div className="flex flex-wrap items-center justify-between gap-2">
@@ -120,8 +137,14 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
           <RefreshCw className="w-10 h-10 text-blue-400 animate-spin mb-4" />
           <div className="text-sm font-bold mb-2">{mode === 'live' ? ['Preparing image', 'Reading full-resolution sections', 'Independent verification', 'Comparing planogram'][scanStep] : 'Loading saved reply'}</div>
           <p className="text-xs text-blue-200 max-w-xs mb-4">{scanStep === 0 ? 'Preparing your photo for a detailed reading.' : scanStep === 1 ? 'Reading visible titles across the shelf.' : scanStep === 2 ? 'Taking a second look at each section.' : 'Comparing recognized titles with the shelf planogram.'}</p>
-          {!!progress?.total_calls && <><div className="text-xs mb-2">{progress.completed_calls} of {progress.total_calls} reading checks completed</div><progress className="w-64 max-w-full accent-blue-500" value={progress.completed_calls ?? 0} max={progress.total_calls} /></>}
-          <p className="text-[11px] text-slate-400 mt-3">Detailed scans can take several minutes.</p>
+          {!!progress?.total_checks && <>
+            <div className="text-xs mb-2">
+              {progress.completed_calls ?? 0} of {progress.total_calls} Gemini requests completed this run
+              {(progress.completed_calls ?? 0) < (progress.total_calls ?? 0) && ` · Check in progress · ${Math.floor(waitSeconds / 60)}m ${waitSeconds % 60}s`}
+            </div>
+            <progress className="w-64 max-w-full accent-blue-500" value={progress.completed_calls ?? 0} max={Math.max(progress.total_calls ?? 0, 1)} />
+          </>}
+          <p className="text-[11px] text-slate-400 mt-3">Each model check is limited to 4 minutes.</p>
           <button onClick={onCancel} className="mt-4 px-4 py-1.5 rounded border border-slate-500 text-xs">Cancel scan</button>
         </div>}
       </div>
@@ -142,6 +165,7 @@ export const Step2ShelfScan: React.FC<Step2ShelfScanProps> = ({
       </details>}
       <div className="p-2.5 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 space-y-1">
         <div className="break-words">{scan.photo_filename} · {resultReady ? (scan.mode === 'replay' ? 'Saved sample' : 'Estimated outlines; inspect the photo to confirm') : 'Uploaded photo'}</div>
+        {!!scan.harness?.rejected_readings && <div role="status" className="text-amber-800">{scan.harness.rejected_readings} invalid model reading{scan.harness.rejected_readings === 1 ? '' : 's'} omitted; review the photo for missed titles.</div>}
         <div>{resultReady && scan.inference_duration_seconds != null ? `Analysis time: ${scan.inference_duration_seconds}s` : 'Review readings against the original photo before taking action.'}</div>
       </div>
 

@@ -17,6 +17,7 @@ const health = enabled => ({ upload_analysis_available: enabled, live_available_
     // No test is ever permitted to reach a paid recognition endpoint.
     await page.route('**/api/scan/stream', route => route.fulfill({ status: 503, json: { detail: 'Live recognition unavailable' } }));
     await page.route('**/api/health', route => route.fulfill({ json: health(false) }));
+    await page.route('**/token', route => route.fulfill({ json: {} }));
     await page.goto(url);
     await page.getByRole('heading', { name: /A clear picture/ }).waitFor();
     await page.getByLabel('Shelf to check').selectOption('bay_f3');
@@ -55,7 +56,7 @@ const health = enabled => ({ upload_analysis_available: enabled, live_available_
     assert.deepEqual(await sourceImage.body(), fs.readFileSync(path.join(root, 'app/public/photos/c.png')));
     await page.getByRole('heading', { name: 'Your shelf analysis', exact: true }).waitFor();
     await page.getByText('Your photo · Awaiting analysis', { exact: true }).waitFor();
-    await page.getByRole('alert').filter({ hasText: 'currently unavailable' }).waitFor();
+    await page.getByText('Company sign-in and inference access are required for live photo analysis.').waitFor();
     const displayedImage = page.locator('img', { hasNot: page.locator('dialog img') }).first();
     assert.equal(await displayedImage.getAttribute('src'), photo.photo_url);
     assert.equal(await page.getByText('Your results will appear here', { exact: true }).count(), 1);
@@ -72,14 +73,17 @@ const health = enabled => ({ upload_analysis_available: enabled, live_available_
     console.log('PASS real upload flow: homepage, validation, drag/drop, preview/remove, selected shelf, submit, original image, unavailable state, refresh and history');
 
     // Enable fixture capabilities, then return a fixture analysis for this upload.
+    await page.unroute('**/token');
+    await page.route('**/token', route => route.fulfill({ json: { email: 'test@company.invalid', token: 'mock-browser-token' } }));
     await page.unroute('**/api/health');
     await page.route('**/api/health', route => route.fulfill({ json: health(true) }));
     await page.unroute('**/api/scan/stream');
-    const live = { ...base, source_kind: 'upload', upload_id: uploadId, mode: 'live', photo_filename: photo.filename, photo_url: photo.photo_url, model: 'Claude Opus 5.5', run_id: 'ui-fixture', inference_duration_seconds: 3.5 };
+    const live = { ...base, source_kind: 'upload', upload_id: uploadId, mode: 'live', photo_filename: photo.filename, photo_url: photo.photo_url, model: 'fixture', run_id: 'ui-fixture', inference_duration_seconds: 3.5 };
     let calls = 0;
     await page.route('**/api/scan/stream', route => {
       calls += 1;
-      assert.deepEqual(route.request().postDataJSON(), { bay_id: 'bay_f3', upload_id: uploadId, mode: 'live', policy: 'opus' });
+      assert.deepEqual(route.request().postDataJSON(), { bay_id: 'bay_f3', upload_id: uploadId, mode: 'live' });
+      assert.equal(route.request().headers().authorization, 'Bearer mock-browser-token');
       return route.fulfill({ contentType: 'text/event-stream', body: `data: ${JSON.stringify({ step: 4, status: 'complete', result: live })}\n\n` });
     });
     await page.reload();
@@ -95,9 +99,9 @@ const health = enabled => ({ upload_analysis_available: enabled, live_available_
     await page.getByText('Your photo · Analysis complete', { exact: true }).waitFor();
     assert.equal(calls, 1, 'Refreshing completed analysis must not repeat recognition');
     await page.unroute('**/api/scan/stream');
-    await page.route('**/api/scan/stream', route => route.fulfill({ contentType: 'text/event-stream', body: 'data: {"status":"error","message":"Claude Opus 5.5 request failed (HTTP 403). ANTHROPIC_API_KEY invalid"}\n\n' }));
+    await page.route('**/api/scan/stream', route => route.fulfill({ contentType: 'text/event-stream', body: 'data: {"status":"error","code":"permission","message":"Your Straive account does not have access to this inference route."}\n\n' }));
     await page.getByRole('button', { name: 'Analyze again', exact: true }).click();
-    await page.getByRole('alert').filter({ hasText: 'currently unavailable' }).waitFor();
+    await page.getByRole('alert').filter({ hasText: 'does not have access' }).waitFor();
     await page.getByText('Your photo · Analysis complete', { exact: true }).waitFor();
     assert.doesNotMatch(await page.locator('body').innerText(), names);
     await page.unroute('**/api/scan/stream');

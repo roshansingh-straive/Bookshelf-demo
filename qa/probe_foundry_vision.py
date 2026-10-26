@@ -15,6 +15,8 @@ import httpx
 
 ROOT = Path(__file__).resolve().parent.parent
 ENDPOINT = 'https://llmfoundry.straive.com/gemini/v1beta/models/gemini-3.1-pro-preview:streamGenerateContent?alt=sse'
+MODEL_ID = 'gemini-3.1-pro-preview'
+PROJECT = 'llmproxy-playground'
 IMAGE = ROOT / 'qa/foundry_probe_crop.jpg'
 OUT = ROOT / 'qa/foundry_probe_result.json'
 
@@ -53,7 +55,8 @@ def main():
     parts, finish_reason, events = [], None, 0
     try:
         with httpx.Client(timeout=httpx.Timeout(60, connect=15), follow_redirects=False, transport=httpx.HTTPTransport(retries=0)) as client:
-            with client.stream('POST', ENDPOINT, headers={'Authorization': f'Bearer {token}:llmproxy-playground', 'Content-Type': 'application/json'}, json=body) as response:
+            headers = {'Authorization': f'Bearer {token}:{PROJECT}', 'Content-Type': 'application/json'}
+            with client.stream('POST', ENDPOINT, headers=headers, json=body) as response:
                 report['http_status'] = response.status_code
                 report['content_type'] = response.headers.get('content-type', '')
                 if not 200 <= response.status_code < 300:
@@ -73,7 +76,7 @@ def main():
                         events += 1
                         if event.get('error'):
                             report['status'] = 'provider_error'
-                            report['error'] = str(event['error'].get('message', 'Provider returned an error'))[:500]
+                            report['error'] = 'The inference service returned an error event.'
                             break
                         if 'usageMetadata' in event:
                             report['usage'] = event['usageMetadata']
@@ -87,10 +90,17 @@ def main():
                                 finish_reason = candidate['finishReason']
                     else:
                         if report['status'] == 'started':
-                            report['status'] = 'complete' if finish_reason == 'STOP' else 'incomplete'
+                            report['status'] = 'incomplete'
                     report['sse_events'] = events
                     report['finish_reason'] = finish_reason
                     text = ''.join(parts).strip()
+                    returned_model = report.get('returned_model', '')
+                    if finish_reason == 'STOP' and text and (
+                        returned_model == MODEL_ID or returned_model.startswith(MODEL_ID + '-')
+                    ):
+                        report['status'] = 'complete'
+                    elif finish_reason == 'STOP' and text and returned_model:
+                        report['status'] = 'model_mismatch'
                     # Responses may wrap JSON in a Markdown code fence.
                     cleaned = text
                     if cleaned.startswith('```'):

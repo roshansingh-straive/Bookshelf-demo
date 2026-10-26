@@ -3,18 +3,16 @@ import asyncio
 import contextlib
 import json
 import logging
-import os
-from dataclasses import asdict
 from pathlib import Path
 from typing import Literal
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, ConfigDict, Field
 
-from server.accuracy import OVERLAP, TILE_EDGE, configured_providers, select_profile
+from server.accuracy import OVERLAP, TILE_EDGE, select_profile
 from server.comparison import compare_books
 from server.recognition import MAX_IMAGE_BYTES, RecognitionError, run_recognition
 from server.uploads import get_upload, save_upload, saved_analysis_path, upload_directory
@@ -24,20 +22,11 @@ DIST_DIR = ROOT / "app" / "dist"
 DATA_DIR = ROOT / "app" / "public" / "data"
 PHOTOS_DIR = ROOT / "app" / "public" / "photos"
 
-# Optional local configuration. Never send secret values to the browser.
-env_file = ROOT / "server" / ".env"
-if env_file.exists():
-    for line in env_file.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if line and not line.startswith("#") and "=" in line:
-            key, value = line.split("=", 1)
-            os.environ.setdefault(key.strip(), value.strip().strip("'\""))
-
 app = FastAPI(title="Shelf Check API", version="2.0.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[f"http://{host}:{port}" for host in ("localhost", "127.0.0.1") for port in (3000, 8000)],
-    allow_methods=["GET", "POST", "OPTIONS"], allow_headers=["Content-Type"],
+    allow_origins=[f"http://{host}:{port}" for host in ("localhost", "127.0.0.1") for port in (3000, 5173, 8000, 8001)],
+    allow_methods=["GET", "POST", "OPTIONS"], allow_headers=["Authorization", "Content-Type"],
 )
 # One active live scan per server avoids accidentally multiplying paid crop runs.
 _live_scan_lock = asyncio.Lock()
@@ -47,27 +36,18 @@ class ScanRequest(BaseModel):
     model_config = ConfigDict(extra="forbid")
     bay_id: str = Field(pattern=r"^bay_[a-z0-9]+$", max_length=40)
     mode: Literal["replay", "live"] = "replay"
-    policy: Literal["auto", "opus"] = "auto"
     upload_id: str | None = Field(default=None, pattern=r"^[a-f0-9]{32}$")
 
 
 @app.get("/api/health")
 def health():
-    providers = configured_providers()
-    profiles, available = {}, {}
-    for difficulty in ("easy", "medium", "hard"):
-        try:
-            profiles[difficulty] = asdict(select_profile(difficulty, live=True))
-            available[difficulty] = True
-        except ValueError:
-            profiles[difficulty] = asdict(select_profile(difficulty))
-            available[difficulty] = False
     return {
         "status": "healthy", "default_mode": "replay",
-        "default_model": "Best measured setup for the shelf",
-        "keys_configured": providers, "live_mode_available": any(available.values()),
-        "live_available_by_difficulty": available, "profiles_by_difficulty": profiles,
-        "upload_analysis_available": providers["anthropic"],
+        "live_mode_available": True,
+        "live_available_by_difficulty": {"easy": True, "medium": True, "hard": True},
+        "upload_analysis_available": True,
+        "inference_authentication_required": True,
+        "inference_access": "per-user-session",
         "accuracy_settings": {"tile_edge": TILE_EDGE, "overlap": OVERLAP, "independent_rotated_verification": True},
         "disclaimer": "Simulated store data",
     }
@@ -130,7 +110,7 @@ def uploaded_analysis(upload_id: str, bay_id: str):
 
 
 @app.post("/api/scan/stream")
-async def stream_scan(req: ScanRequest):
+async def stream_scan(req: ScanRequest, authorization: str | None = Header(default=None)):
     store, bay = get_bay(req.bay_id)
     upload = get_upload(req.upload_id) if req.upload_id else None
     if upload and req.mode != "live":
@@ -146,12 +126,13 @@ async def stream_scan(req: ScanRequest):
                 yield f"data: {json.dumps(event, ensure_ascii=False)}\n\n"
         return StreamingResponse(replay_events(), media_type="text/event-stream", headers={"Cache-Control": "no-cache"})
 
-    try:
-        # A new photo's difficulty is unknown; its selected bay must not cause a
-        # crowded upload to inherit a tidy sample photo's model configuration.
-        profile = select_profile("hard", "opus", live=True) if upload else select_profile(bay.get("difficulty", "hard"), req.policy, live=True)
-    except ValueError as exc:
-        raise HTTPException(503, str(exc)) from exc
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(401, "Sign in to Straive LLM Foundry before starting live recognition.")
+    token = authorization[7:].strip()
+    if not token or len(token) > 4096 or "\r" in token or "\n" in token:
+        raise HTTPException(401, "Sign in to Straive LLM Foundry before starting live recognition.")
+
+    profile = select_profile()
     if _live_scan_lock.locked():
         raise HTTPException(409, "A live shelf scan is already running. Wait for it to finish or cancel it.")
     photo_path = upload_directory(req.upload_id) / "image" if upload else (PHOTOS_DIR / bay["photo"]).resolve()
@@ -170,7 +151,7 @@ async def stream_scan(req: ScanRequest):
                 return
             async with _live_scan_lock:
                 try:
-                    books, metadata = await run_recognition(raw, profile, queue.put)
+                    books, metadata = await run_recognition(raw, profile, queue.put, token)
                     await queue.put({"step": 3, "status": "comparing", "message": "Matching independently read titles to the planogram; unconfirmed titles require review."})
                     result = {"bay_id": bay["id"], "bay_code": bay["code"], "bay_name": bay["name"],
                               "photo_filename": upload["filename"] if upload else bay["photo"],
@@ -181,7 +162,7 @@ async def stream_scan(req: ScanRequest):
                         saved_analysis_path(req.upload_id, bay["id"]).write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
                     await queue.put({"step": 4, "status": "complete", "result": result})
                 except RecognitionError as exc:
-                    await queue.put({"status": "error", "message": str(exc)})
+                    await queue.put({"status": "error", "message": str(exc), "code": exc.code})
                 except Exception:
                     logging.getLogger(__name__).exception("Live shelf scan failed")
                     await queue.put({"status": "error", "message": "Live scan failed. Previous results are unchanged; no replay was substituted."})

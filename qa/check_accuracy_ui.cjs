@@ -8,7 +8,6 @@ const url = process.env.SHELF_CHECK_URL || 'http://127.0.0.1:8888';
 const result = JSON.parse(fs.readFileSync(path.join(root, 'app/public/data/scans/bay_f3.json')));
 const health = {
   live_available_by_difficulty: { easy: true, medium: true, hard: true },
-  profiles_by_difficulty: { easy: { name: 'Gemini 3.8 Flash' }, medium: { name: 'Claude Opus 5.5' }, hard: { name: 'Claude Opus 5.5' } },
 };
 const errors = [];
 (async () => {
@@ -16,6 +15,7 @@ const errors = [];
   try {
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     page.on('pageerror', e => errors.push(e.message));
+    await page.route('**/token', route => route.fulfill({ json: {} }));
     await page.goto(url);
     await page.getByRole('button', { name: 'Explore a sample' }).click();
     await page.getByRole('heading', { name: 'Shelf Photo & AI Recognition' }).waitFor();
@@ -67,6 +67,8 @@ const errors = [];
 
     // Exercise live UI behavior with deterministic network fixtures, never paid calls.
     await page.setViewportSize({ width: 1440, height: 1000 });
+    await page.unroute('**/token');
+    await page.route('**/token', route => route.fulfill({ json: { email: 'test@company.invalid', token: 'mock-browser-token' } }));
     await page.route('**/api/health', route => route.fulfill({ json: health }));
     await page.reload();
     await page.getByRole('combobox', { name: 'Scan mode' }).selectOption('live');
@@ -75,6 +77,7 @@ const errors = [];
       shelf_items: result.shelf_items.map((item, index) => ({ ...item, verification_status: 'verified', box_source: 'model_estimate', box: index === 0 ? { top: .2, left: .1, width: .3, height: .4 } : null })) };
     await page.route('**/api/scan/stream', route => {
       requested = route.request().postDataJSON();
+      assert.equal(route.request().headers().authorization, 'Bearer mock-browser-token');
       const events = [{ step: 1, status: 'reading', message: 'Reading section 1' }, { step: 2, status: 'verifying', message: 'Verifying rotated section 1' }, { step: 4, status: 'complete', result: live }];
       return route.fulfill({ contentType: 'text/event-stream', body: events.map(e => `data: ${JSON.stringify(e)}\n\n`).join('') });
     });
@@ -83,7 +86,7 @@ const errors = [];
     assert.equal(await page.getByRole('button', { name: 'All', exact: true }).isDisabled(), false);
     await page.getByRole('button', { name: `${live.shelf_items[0].title}: ${live.shelf_items[0].status_label}` }).click();
     await page.getByRole('button', { name: 'Close title details' }).click();
-    assert.deepEqual(requested, { bay_id: 'bay_f3', mode: 'live', policy: 'auto' });
+    assert.deepEqual(requested, { bay_id: 'bay_f3', mode: 'live' });
     await page.unroute('**/api/scan/stream');
     await page.route('**/api/scan/stream', route => route.fulfill({ status: 503, json: { detail: 'Provider unavailable: test fixture' } }));
     await page.getByRole('button', { name: 'Analyze again', exact: true }).click();

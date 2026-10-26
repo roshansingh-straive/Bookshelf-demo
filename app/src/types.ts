@@ -95,7 +95,7 @@ export interface ScanResult {
   selection_reason?: string;
   run_id?: string;
   source?: { source_path: string; interface: string; original_mode: string; source_date: string | null };
-  harness?: { tile_count: number; calls_completed: number; rotated_verification: boolean };
+  harness?: { tile_count: number; calls_completed: number; rejected_readings?: number; rotated_verification: boolean };
   metrics: ScanMetrics;
   planogram_items: PlanogramItem[];
   shelf_items: ShelfItem[];
@@ -108,16 +108,18 @@ export interface ScanProgress {
   step: number;
   status: string;
   message?: string;
+  code?: string;
   completed_calls?: number;
   total_calls?: number;
+  total_checks?: number;
   model?: string;
   result?: ScanResult;
 }
 
 export interface ScanHealth {
   upload_analysis_available?: boolean;
+  inference_authentication_required?: boolean;
   live_available_by_difficulty: Record<string, boolean>;
-  profiles_by_difficulty: Record<string, { name: string; reason: string }>;
 }
 
 export interface UploadedPhoto {
