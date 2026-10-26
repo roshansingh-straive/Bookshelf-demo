@@ -4,34 +4,31 @@
   "bay_name": "Bay F1 · General Fiction & Classics",
   "photo_filename": "e.jpg",
   "photo_url": "/photos/e.jpg",
-  "scanned_at": "Today, 08:32 AM",
+  "mode": "replay",
+  "scanned_at": null,
   "model": "Claude Opus 5.5",
   "effort": "high",
-  "inference_duration_seconds": 6.5,
-  "tokens_used": 3531,
-  "estimated_cost_usd": 0.05,
-  "metrics": {
-    "planogram_expected_items": 110,
-    "shelf_items_detected": 83,
-    "matched_count": 77,
-    "missing_count": 33,
-    "misplaced_count": 1,
-    "planogram_compliance_pct": 70.0
+  "inference_duration_seconds": null,
+  "tokens_used": null,
+  "estimated_cost_usd": null,
+  "selection_reason": "Use Flash extended thinking for easy shelves, Opus high for medium shelves, and the Opus high single-photo experiment for hard shelves. Selected by difficulty-level results, not per-photo best scores.",
+  "source": {
+    "source_path": "results/exp2-one-photo/details/claude-opus-5.5__high.json",
+    "interface": "Claude.ai web app",
+    "original_mode": "high",
+    "source_date": null
   },
+  "harness": {
+    "native_resolution": false,
+    "tile_count": 0,
+    "calls_completed": 0,
+    "rotated_verification": false,
+    "measured_accuracy": null
+  },
+  "disclosure": "Saved benchmark predictions. No live model call or zoom verification. Book positions and confidence were not annotated; per-photo cost and latency were not measured.",
   "planogram_items": [
     {
-      "sku": "SKU-471371",
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "assigned_bay_id": "bay_f1",
-      "price": 29.15,
-      "sales_velocity_units_per_day": 2.2,
-      "simulated_on_hand": 4,
-      "system_status": "in_stock",
-      "physically_on_shelf": true
-    },
-    {
-      "sku": "SKU-819537",
+      "sku": "SKU-DA4FB1F31D9E",
       "title": "After You",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -42,7 +39,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-907153",
+      "sku": "SKU-A6BAE242CA20",
       "title": "The Giver of Stars",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -53,7 +50,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-821391",
+      "sku": "SKU-49550AF16F26",
       "title": "Still Me",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -64,7 +61,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-343273",
+      "sku": "SKU-37EAC1439CB5",
       "title": "The Winner Stands Alone",
       "author": "Paulo Coelho",
       "assigned_bay_id": "bay_f1",
@@ -75,7 +72,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-216511",
+      "sku": "SKU-532A79DC6ED6",
       "title": "Nasty Nature",
       "author": "Nick Arnold",
       "assigned_bay_id": "bay_f1",
@@ -86,7 +83,18 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-163872",
+      "sku": "SKU-56691846B9D2",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "assigned_bay_id": "bay_f1",
+      "price": 29.15,
+      "sales_velocity_units_per_day": 2.2,
+      "simulated_on_hand": 4,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-9DEF818A286E",
       "title": "The Small House at Allington",
       "author": "Anthony Trollope",
       "assigned_bay_id": "bay_f1",
@@ -97,7 +105,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-854003",
+      "sku": "SKU-8E833229F4D8",
       "title": "Jane Austen",
       "author": "David Nokes",
       "assigned_bay_id": "bay_f1",
@@ -108,7 +116,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-640452",
+      "sku": "SKU-D8E336573247",
       "title": "The Witches",
       "author": "Roald Dahl",
       "assigned_bay_id": "bay_f1",
@@ -119,7 +127,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-120067",
+      "sku": "SKU-9AFB2E0DB1C9",
       "title": "Wish You Were Dead",
       "author": "Peter James",
       "assigned_bay_id": "bay_f1",
@@ -130,7 +138,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-225910",
+      "sku": "SKU-6FE5A6B5F296",
       "title": "The Spiritual Practices of Rumi",
       "author": "Will Johnson",
       "assigned_bay_id": "bay_f1",
@@ -141,7 +149,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-705233",
+      "sku": "SKU-02E264BFC82E",
       "title": "The Secret Garden",
       "author": "Frances Hodgson Burnett",
       "assigned_bay_id": "bay_f1",
@@ -152,7 +160,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-679060",
+      "sku": "SKU-0D759FD6366F",
       "title": "Harry Potter and the Cursed Child",
       "author": "J.K. Rowling",
       "assigned_bay_id": "bay_f1",
@@ -163,7 +171,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-957503",
+      "sku": "SKU-9756EF407F65",
       "title": "The War of Jenkins' Ear",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -174,7 +182,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-675020",
+      "sku": "SKU-A1D8021FA05E",
       "title": "The Personal MBA",
       "author": "Josh Kaufman",
       "assigned_bay_id": "bay_f1",
@@ -185,7 +193,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-726473",
+      "sku": "SKU-97DA3E0C2539",
       "title": "Rotten Romans",
       "author": "Terry Deary",
       "assigned_bay_id": "bay_f1",
@@ -196,7 +204,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-467719",
+      "sku": "SKU-AFC52A8D2C20",
       "title": "Way of the Warrior Kid",
       "author": "Jocko Willink",
       "assigned_bay_id": "bay_f1",
@@ -207,7 +215,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-839986",
+      "sku": "SKU-E69EEC124772",
       "title": "Lorna Doone",
       "author": "R.D. Blackmore",
       "assigned_bay_id": "bay_f1",
@@ -218,7 +226,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-535223",
+      "sku": "SKU-01434F4B7D4E",
       "title": "साबरमती का संत",
       "author": "यशपाल जैन",
       "assigned_bay_id": "bay_f1",
@@ -229,7 +237,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-635152",
+      "sku": "SKU-2F8055B966C9",
       "title": "डेरे वाले",
       "author": "शैलेश मटियानी",
       "assigned_bay_id": "bay_f1",
@@ -240,7 +248,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-617424",
+      "sku": "SKU-3DB4C0067586",
       "title": "The Lost Symbol",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -251,7 +259,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-673552",
+      "sku": "SKU-3FEF64C0D6B5",
       "title": "One Hundred Names",
       "author": "Cecelia Ahern",
       "assigned_bay_id": "bay_f1",
@@ -262,7 +270,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-599047",
+      "sku": "SKU-86991647BE78",
       "title": "Long Way Home",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -273,7 +281,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-959693",
+      "sku": "SKU-EFC67DB78EE8",
       "title": "Bad Day for Badger",
       "author": null,
       "assigned_bay_id": "bay_f1",
@@ -284,7 +292,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-404729",
+      "sku": "SKU-535310F20242",
       "title": "Everyday Confidence",
       "author": null,
       "assigned_bay_id": "bay_f1",
@@ -295,7 +303,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-956791",
+      "sku": "SKU-675407E2700F",
       "title": "The Audacity of Hope",
       "author": "Barack Obama",
       "assigned_bay_id": "bay_f1",
@@ -306,7 +314,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-283149",
+      "sku": "SKU-CD85EF083431",
       "title": "Diary of a Wimpy Kid: The Long Haul",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -317,7 +325,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-191492",
+      "sku": "SKU-0F05ABCCA8B9",
       "title": "I Don't Love You Anymore",
       "author": "Rithvik Singh",
       "assigned_bay_id": "bay_f1",
@@ -328,7 +336,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-457919",
+      "sku": "SKU-C7409E1FD397",
       "title": "Diary of a Wimpy Kid: Rodrick Rules",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -339,7 +347,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-508873",
+      "sku": "SKU-476583CDD723",
       "title": "The Short Fiction Scenario",
       "author": "Sergei Eisenstein",
       "assigned_bay_id": "bay_f1",
@@ -350,7 +358,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-154909",
+      "sku": "SKU-DB67E3B7A33F",
       "title": "Summer Adventure Stories",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -361,7 +369,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-062316",
+      "sku": "SKU-1818F6009555",
       "title": "Chocolat",
       "author": "Joanne Harris",
       "assigned_bay_id": "bay_f1",
@@ -372,7 +380,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-671433",
+      "sku": "SKU-E23FAB8B2853",
       "title": "Mother Courage and Her Children",
       "author": "Bertolt Brecht",
       "assigned_bay_id": "bay_f1",
@@ -383,7 +391,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-765139",
+      "sku": "SKU-9567A5271B32",
       "title": "Don't Let's Go to the Dogs Tonight",
       "author": "Alexandra Fuller",
       "assigned_bay_id": "bay_f1",
@@ -394,7 +402,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-993168",
+      "sku": "SKU-A8F53F3762D7",
       "title": "Frankenstein",
       "author": "Mary Shelley",
       "assigned_bay_id": "bay_f1",
@@ -405,7 +413,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-502697",
+      "sku": "SKU-0B4FB47CEE2D",
       "title": "White Fang",
       "author": "Jack London",
       "assigned_bay_id": "bay_f1",
@@ -416,7 +424,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-911460",
+      "sku": "SKU-32C5242D1DD9",
       "title": "The Wimpy Kid Do-It-Yourself Book",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -427,7 +435,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-858199",
+      "sku": "SKU-A7F468C2E3A5",
       "title": "A Certain Justice",
       "author": "P.D. James",
       "assigned_bay_id": "bay_f1",
@@ -438,7 +446,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-217123",
+      "sku": "SKU-714FB132CB86",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "assigned_bay_id": "bay_f1",
@@ -449,7 +457,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-488024",
+      "sku": "SKU-F014ECBFE8CA",
       "title": "Stranger Things: Suspicious Minds",
       "author": "Gwenda Bond",
       "assigned_bay_id": "bay_f1",
@@ -460,7 +468,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-287391",
+      "sku": "SKU-0ADF5BC930D8",
       "title": "The Lottie Project",
       "author": "Jacqueline Wilson",
       "assigned_bay_id": "bay_f1",
@@ -471,7 +479,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-413868",
+      "sku": "SKU-A2042176F29F",
       "title": "The Nine Lives of Montezuma",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -482,7 +490,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-339689",
+      "sku": "SKU-99E87EDB39A4",
       "title": "Venus on Fire, Mars on Ice",
       "author": "John Gray",
       "assigned_bay_id": "bay_f1",
@@ -493,7 +501,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-436595",
+      "sku": "SKU-4FC5E16CC1FD",
       "title": "Angels & Demons",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -504,7 +512,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-276883",
+      "sku": "SKU-946B078C1A47",
       "title": "The Girl with the Dragon Tattoo",
       "author": "Stieg Larsson",
       "assigned_bay_id": "bay_f1",
@@ -515,7 +523,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-123954",
+      "sku": "SKU-D988B052FB67",
       "title": "The Herbal Alchemist's Handbook",
       "author": "Karen Harrison",
       "assigned_bay_id": "bay_f1",
@@ -526,7 +534,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-371938",
+      "sku": "SKU-815DA4B0F2B3",
       "title": "Mappillai",
       "author": "Carlo Pizzati",
       "assigned_bay_id": "bay_f1",
@@ -537,7 +545,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-933422",
+      "sku": "SKU-52B6A22CD3AC",
       "title": "Alice in Wonderland",
       "author": "Lewis Carroll",
       "assigned_bay_id": "bay_f1",
@@ -548,7 +556,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-420538",
+      "sku": "SKU-CA334EBA60C2",
       "title": "Inferno",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -559,7 +567,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-142923",
+      "sku": "SKU-082BB678135C",
       "title": "Prince Caspian",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -570,7 +578,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-330608",
+      "sku": "SKU-3DDF762026B3",
       "title": "The Horse and His Boy",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -581,7 +589,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-424636",
+      "sku": "SKU-7FDD37926618",
       "title": "The Magician's Nephew",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -592,7 +600,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-986340",
+      "sku": "SKU-AD7467F85AD2",
       "title": "The Lion, the Witch and the Wardrobe",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -603,7 +611,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-151536",
+      "sku": "SKU-EEC4BEFBFFCF",
       "title": "Leading",
       "author": "Alex Ferguson with Michael Moritz",
       "assigned_bay_id": "bay_f1",
@@ -614,7 +622,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-915196",
+      "sku": "SKU-923C904F4A86",
       "title": "The Da Vinci Code",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -625,7 +633,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-132427",
+      "sku": "SKU-A800572F305C",
       "title": "The Scorch Trials",
       "author": "James Dashner",
       "assigned_bay_id": "bay_f1",
@@ -636,7 +644,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-660853",
+      "sku": "SKU-FE8DEF51120A",
       "title": "Srilaaji",
       "author": "Shobhaa De",
       "assigned_bay_id": "bay_f1",
@@ -647,7 +655,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-858243",
+      "sku": "SKU-86A1FC75CD9E",
       "title": "The Fry Chronicles",
       "author": "Stephen Fry",
       "assigned_bay_id": "bay_f1",
@@ -658,7 +666,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-787289",
+      "sku": "SKU-E91CAE146B98",
       "title": "मेघनाद",
       "author": "केविन मिसल (Kevin Missal)",
       "assigned_bay_id": "bay_f1",
@@ -669,7 +677,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-176065",
+      "sku": "SKU-D0847E2B6296",
       "title": "Our Game",
       "author": "John le Carré",
       "assigned_bay_id": "bay_f1",
@@ -680,7 +688,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-292237",
+      "sku": "SKU-045C5818B1D7",
       "title": "The Girls' Book of Spells",
       "author": "Rachel Elliot",
       "assigned_bay_id": "bay_f1",
@@ -691,7 +699,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-160412",
+      "sku": "SKU-C008401D7B38",
       "title": "लाइफ के कड़वे सच",
       "author": "श्वेताभ गंगवार",
       "assigned_bay_id": "bay_f1",
@@ -702,7 +710,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-451297",
+      "sku": "SKU-B9BB253D38FE",
       "title": "The Woman in the Window",
       "author": "A.J. Finn",
       "assigned_bay_id": "bay_f1",
@@ -713,7 +721,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-037166",
+      "sku": "SKU-CC50BAF792EF",
       "title": "A Wing and a Prayer",
       "author": "Lyn Andrews",
       "assigned_bay_id": "bay_f1",
@@ -724,7 +732,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-581081",
+      "sku": "SKU-80C89B2047F7",
       "title": "The Stars Shine Down",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -735,7 +743,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-757412",
+      "sku": "SKU-6480E9917F7F",
       "title": "Tears of the Giraffe",
       "author": "Alexander McCall Smith",
       "assigned_bay_id": "bay_f1",
@@ -746,7 +754,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-549130",
+      "sku": "SKU-4B8F8BF229F0",
       "title": "When Coal Turned Gold",
       "author": "Partha Sarathi Bhattacharyya",
       "assigned_bay_id": "bay_f1",
@@ -757,7 +765,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-419455",
+      "sku": "SKU-063809F84D4F",
       "title": "Maskerade",
       "author": "Terry Pratchett",
       "assigned_bay_id": "bay_f1",
@@ -768,7 +776,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-015271",
+      "sku": "SKU-714454088089",
       "title": "The Captain's Daughter",
       "author": "Leah Fleming",
       "assigned_bay_id": "bay_f1",
@@ -779,7 +787,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-690823",
+      "sku": "SKU-63CF1D02952B",
       "title": "The Doomsday Conspiracy",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -790,7 +798,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-970406",
+      "sku": "SKU-4D11661AE410",
       "title": "The Inheritance of Loss",
       "author": "Kiran Desai",
       "assigned_bay_id": "bay_f1",
@@ -801,7 +809,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-425192",
+      "sku": "SKU-AD8DF0B67EF2",
       "title": "Speaking for Myself",
       "author": "Cherie Blair",
       "assigned_bay_id": "bay_f1",
@@ -812,7 +820,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-705221",
+      "sku": "SKU-0D2AB0BC0BBE",
       "title": "The Gods of Guilt",
       "author": "Michael Connelly",
       "assigned_bay_id": "bay_f1",
@@ -823,7 +831,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-600401",
+      "sku": "SKU-A2FDB7F09299",
       "title": "All Cheeses Great & Small",
       "author": "Alex James",
       "assigned_bay_id": "bay_f1",
@@ -834,7 +842,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-479768",
+      "sku": "SKU-5114C6CA3202",
       "title": "The Woman in White",
       "author": "Wilkie Collins",
       "assigned_bay_id": "bay_f1",
@@ -845,7 +853,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-334572",
+      "sku": "SKU-503EECBB4309",
       "title": "Before I Go to Sleep",
       "author": "S.J. Watson",
       "assigned_bay_id": "bay_f1",
@@ -856,7 +864,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-743637",
+      "sku": "SKU-F7D4A7BB8C45",
       "title": "Brilliance of the Moon",
       "author": "Lian Hearn",
       "assigned_bay_id": "bay_f1",
@@ -867,7 +875,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-761417",
+      "sku": "SKU-A289155DF152",
       "title": "Tell Me Your Dreams",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -878,7 +886,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-976546",
+      "sku": "SKU-4730212AED36",
       "title": "Hannibal",
       "author": "Thomas Harris",
       "assigned_bay_id": "bay_f1",
@@ -889,7 +897,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-332083",
+      "sku": "SKU-95368E800A77",
       "title": "Sixteen Horses",
       "author": "Greg Buchanan",
       "assigned_bay_id": "bay_f1",
@@ -900,7 +908,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-457131",
+      "sku": "SKU-7417162A358F",
       "title": "Agent 21: Codebreaker",
       "author": "Chris Ryan",
       "assigned_bay_id": "bay_f1",
@@ -911,7 +919,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-308311",
+      "sku": "SKU-9B7BC446C2F5",
       "title": "Stolen",
       "author": "Lesley Pearse",
       "assigned_bay_id": "bay_f1",
@@ -922,7 +930,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-745469",
+      "sku": "SKU-397062FEB7D4",
       "title": "The High Lord",
       "author": "Trudi Canavan",
       "assigned_bay_id": "bay_f1",
@@ -933,7 +941,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-981032",
+      "sku": "SKU-D1F7C4441EB1",
       "title": "Harry Potter and the Goblet of Fire",
       "author": "J.K. Rowling",
       "assigned_bay_id": "bay_f1",
@@ -944,7 +952,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-975825",
+      "sku": "SKU-D44D447334CE",
       "title": "Wolves of the Calla",
       "author": "Stephen King",
       "assigned_bay_id": "bay_f1",
@@ -955,7 +963,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-083828",
+      "sku": "SKU-F94A52192BE8",
       "title": "The Seven Husbands of Evelyn Hugo",
       "author": "Taylor Jenkins Reid",
       "assigned_bay_id": "bay_f1",
@@ -966,7 +974,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-631176",
+      "sku": "SKU-D83AF64A8449",
       "title": "The Girl Who Takes an Eye for an Eye",
       "author": "David Lagercrantz",
       "assigned_bay_id": "bay_f1",
@@ -977,7 +985,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-597841",
+      "sku": "SKU-55AD474B1B03",
       "title": "Dirty Bertie: Worms!",
       "author": "Alan MacDonald",
       "assigned_bay_id": "bay_f1",
@@ -988,7 +996,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-337751",
+      "sku": "SKU-6D649E1A57D3",
       "title": "Viking at School",
       "author": "Jeremy Strong",
       "assigned_bay_id": "bay_f1",
@@ -999,7 +1007,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-273505",
+      "sku": "SKU-F73FF1A44C49",
       "title": "The Owls of Blossom Wood: To the Rescue",
       "author": "Catherine Coe",
       "assigned_bay_id": "bay_f1",
@@ -1010,7 +1018,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-688281",
+      "sku": "SKU-79C07D2B7C7F",
       "title": "Magic Ballerina: Delphie and the Magic Spell",
       "author": "Darcey Bussell",
       "assigned_bay_id": "bay_f1",
@@ -1021,7 +1029,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-701217",
+      "sku": "SKU-4A381FF41438",
       "title": "The Mayor of Casterbridge",
       "author": "Thomas Hardy",
       "assigned_bay_id": "bay_f1",
@@ -1032,7 +1040,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-017189",
+      "sku": "SKU-4C220A6A6CDA",
       "title": "Silas Marner",
       "author": "George Eliot",
       "assigned_bay_id": "bay_f1",
@@ -1043,7 +1051,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-458636",
+      "sku": "SKU-17DAA8F4FAEE",
       "title": "In the Fifth at Malory Towers",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -1054,7 +1062,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-169094",
+      "sku": "SKU-14DD54976AA0",
       "title": "First Term at Malory Towers",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -1065,7 +1073,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-425257",
+      "sku": "SKU-240DDEBBD071",
       "title": "Tom Gates: Everything's Amazing (Sort Of)",
       "author": "Liz Pichon",
       "assigned_bay_id": "bay_f1",
@@ -1076,7 +1084,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-666166",
+      "sku": "SKU-52F11A3DBD3E",
       "title": "Tom Gates: Excellent Excuses (and Other Good Stuff)",
       "author": "Liz Pichon",
       "assigned_bay_id": "bay_f1",
@@ -1087,7 +1095,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-731731",
+      "sku": "SKU-E53BE6401B77",
       "title": "Riding the Storm",
       "author": "Lucy Daniels",
       "assigned_bay_id": "bay_f1",
@@ -1098,7 +1106,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-471001",
+      "sku": "SKU-E8572AFE57AE",
       "title": "The Troublesome Offspring of Cardinal Guzman",
       "author": "Louis de Bernières",
       "assigned_bay_id": "bay_f1",
@@ -1109,7 +1117,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-543162",
+      "sku": "SKU-0414D24BBCEF",
       "title": "Horrible Science: Disgusting Digestion",
       "author": "Nick Arnold",
       "assigned_bay_id": "bay_f1",
@@ -1120,7 +1128,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-694115",
+      "sku": "SKU-A83E22AE6207",
       "title": "Hunted",
       "author": "P.C. Cast & Kristin Cast",
       "assigned_bay_id": "bay_f1",
@@ -1131,7 +1139,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-454451",
+      "sku": "SKU-3B08EF9AD1C8",
       "title": "Ah, Sweet Mystery of Life",
       "author": "Roald Dahl",
       "assigned_bay_id": "bay_f1",
@@ -1142,7 +1150,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-776864",
+      "sku": "SKU-AAAB17C54CD7",
       "title": "The Wind in the Willows",
       "author": "Kenneth Grahame",
       "assigned_bay_id": "bay_f1",
@@ -1153,7 +1161,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-216598",
+      "sku": "SKU-70CBE527C7C0",
       "title": "The Phantom Tollbooth",
       "author": "Norton Juster",
       "assigned_bay_id": "bay_f1",
@@ -1164,7 +1172,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-089761",
+      "sku": "SKU-E3F0E814F81F",
       "title": "The Chamber",
       "author": "John Grisham",
       "assigned_bay_id": "bay_f1",
@@ -1175,7 +1183,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-912260",
+      "sku": "SKU-C2F13A51CBB4",
       "title": "What Katy Did",
       "author": "Susan M. Coolidge",
       "assigned_bay_id": "bay_f1",
@@ -1186,7 +1194,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-898338",
+      "sku": "SKU-490C1E090D67",
       "title": "The Thirty-Nine Steps",
       "author": "John Buchan",
       "assigned_bay_id": "bay_f1",
@@ -1197,7 +1205,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-501790",
+      "sku": "SKU-971C393ECB58",
       "title": "The Midnight Library",
       "author": "Matt Haig",
       "assigned_bay_id": "bay_f1",
@@ -1209,7 +1217,7 @@
       "days_since_stockout": 3
     },
     {
-      "sku": "SKU-302707",
+      "sku": "SKU-C74FB917B0B8",
       "title": "Klara and the Sun",
       "author": "Kazuo Ishiguro",
       "assigned_bay_id": "bay_f1",
@@ -1221,7 +1229,7 @@
       "days_since_stockout": 2
     },
     {
-      "sku": "SKU-763509",
+      "sku": "SKU-B48603A98089",
       "title": "A Gentleman in Moscow",
       "author": "Amor Towles",
       "assigned_bay_id": "bay_f1",
@@ -1235,2041 +1243,1712 @@
   ],
   "shelf_items": [
     {
-      "id": "item-1",
       "title": "The Thirty-Nine Steps",
       "author": "John Buchan",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.26,
-        "left": 0.125,
-        "width": 0.18,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-1",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-490C1E090D67",
+      "price": 19.65,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-898338",
-      "price": 19.65
+      "target_bay_name": null
     },
     {
-      "id": "item-2",
       "title": "What Katy Did",
       "author": "Susan M. Coolidge",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.274,
-        "left": 0.112,
-        "width": 0.183,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-2",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-C2F13A51CBB4",
+      "price": 31.08,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-912260",
-      "price": 31.08
+      "target_bay_name": null
     },
     {
-      "id": "item-3",
       "title": "The High Lord",
       "author": "Trudi Canavan",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.289,
-        "left": 0.127,
-        "width": 0.18,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-3",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-397062FEB7D4",
+      "price": 21.31,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-745469",
-      "price": 21.31
+      "target_bay_name": null
     },
     {
-      "id": "item-4",
       "title": "Stolen",
       "author": "Lesley Pearse",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.303,
-        "left": 0.114,
-        "width": 0.177,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-4",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9B7BC446C2F5",
+      "price": 20.37,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-308311",
-      "price": 20.37
+      "target_bay_name": null
     },
     {
-      "id": "item-5",
+      "title": "Agent 21: Codebreaker",
+      "author": "Chris Ryan",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-5",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-7417162A358F",
+      "price": 17.78,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Sixteen Horses",
       "author": "Greg Buchanan",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.317,
-        "left": 0.113,
-        "width": 0.189,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-6",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-95368E800A77",
+      "price": 31.5,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-332083",
-      "price": 31.5
+      "target_bay_name": null
     },
     {
-      "id": "item-6",
       "title": "Hannibal",
       "author": "Thomas Harris",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.331,
-        "left": 0.128,
-        "width": 0.188,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-7",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4730212AED36",
+      "price": 16.29,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-976546",
-      "price": 16.29
+      "target_bay_name": null
     },
     {
-      "id": "item-7",
       "title": "Tell Me Your Dreams",
       "author": "Sidney Sheldon",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.346,
-        "left": 0.122,
-        "width": 0.18,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-8",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A289155DF152",
+      "price": 20.65,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-761417",
-      "price": 20.65
+      "target_bay_name": null
     },
     {
-      "id": "item-8",
       "title": "Brilliance of the Moon",
       "author": "Lian Hearn",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.26,
-        "left": 0.302,
-        "width": 0.277,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-9",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F7D4A7BB8C45",
+      "price": 30.27,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-743637",
-      "price": 30.27
+      "target_bay_name": null
     },
     {
-      "id": "item-9",
       "title": "Before I Go to Sleep",
       "author": "S.J. Watson",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.274,
-        "left": 0.32,
-        "width": 0.286,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-10",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-503EECBB4309",
+      "price": 24.1,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-334572",
-      "price": 24.1
+      "target_bay_name": null
     },
     {
-      "id": "item-10",
       "title": "All Cheeses Great and Small",
       "author": "Alex James",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.289,
-        "left": 0.305,
-        "width": 0.275,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-11",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A2FDB7F09299",
+      "price": 16.35,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-600401",
-      "price": 16.35
+      "target_bay_name": null
     },
     {
-      "id": "item-11",
       "title": "The Gods of Guilt",
       "author": "Michael Connelly",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.303,
-        "left": 0.311,
-        "width": 0.272,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-12",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0D2AB0BC0BBE",
+      "price": 18.98,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-705221",
-      "price": 18.98
+      "target_bay_name": null
     },
     {
-      "id": "item-12",
       "title": "Speaking for Myself",
       "author": "Cherie Blair",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.317,
-        "left": 0.315,
-        "width": 0.286,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-13",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-AD8DF0B67EF2",
+      "price": 14.91,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-425192",
-      "price": 14.91
+      "target_bay_name": null
     },
     {
-      "id": "item-13",
       "title": "The Inheritance of Loss",
       "author": "Kiran Desai",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.331,
-        "left": 0.32,
-        "width": 0.281,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-14",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4D11661AE410",
+      "price": 18.75,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-970406",
-      "price": 18.75
+      "target_bay_name": null
     },
     {
-      "id": "item-14",
       "title": "The Doomsday Conspiracy",
       "author": "Sidney Sheldon",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.346,
-        "left": 0.303,
-        "width": 0.283,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-15",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-63CF1D02952B",
+      "price": 20.17,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-690823",
-      "price": 20.17
+      "target_bay_name": null
     },
     {
-      "id": "item-15",
       "title": "The Captain's Daughter",
       "author": "Leah Fleming",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.26,
-        "left": 0.619,
-        "width": 0.213,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-16",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-714454088089",
+      "price": 18.9,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-015271",
-      "price": 18.9
+      "target_bay_name": null
     },
     {
-      "id": "item-16",
       "title": "Maskerade",
       "author": "Terry Pratchett",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.274,
-        "left": 0.611,
-        "width": 0.222,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-17",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-063809F84D4F",
+      "price": 30.01,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-419455",
-      "price": 30.01
+      "target_bay_name": null
     },
     {
-      "id": "item-17",
       "title": "The Chamber",
       "author": "John Grisham",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.289,
-        "left": 0.619,
-        "width": 0.229,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-18",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-E3F0E814F81F",
+      "price": 26.07,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-089761",
-      "price": 26.07
+      "target_bay_name": null
     },
     {
-      "id": "item-18",
       "title": "When Coal Turned Gold",
       "author": "Partha Sarathi Bhattacharyya",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.303,
-        "left": 0.615,
-        "width": 0.224,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-19",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4B8F8BF229F0",
+      "price": 30.9,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-549130",
-      "price": 30.9
+      "target_bay_name": null
     },
     {
-      "id": "item-19",
       "title": "Tears of the Giraffe",
       "author": "Alexander McCall Smith",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.317,
-        "left": 0.614,
-        "width": 0.218,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-20",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6480E9917F7F",
+      "price": 23.98,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-757412",
-      "price": 23.98
+      "target_bay_name": null
     },
     {
-      "id": "item-20",
       "title": "The Phantom Tollbooth",
       "author": "Norton Juster",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.331,
-        "left": 0.613,
-        "width": 0.217,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-21",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-70CBE527C7C0",
+      "price": 26.36,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-216598",
-      "price": 26.36
+      "target_bay_name": null
     },
     {
-      "id": "item-21",
       "title": "The Stars Shine Down",
       "author": "Sidney Sheldon",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.346,
-        "left": 0.618,
-        "width": 0.219,
-        "height": 0.013,
-        "shelf_tier": 1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-22",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-80C89B2047F7",
+      "price": 25.77,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-581081",
-      "price": 25.77
+      "target_bay_name": null
     },
     {
-      "id": "item-22",
       "title": "A Wing and a Prayer",
       "author": "Lyn Andrews",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.38,
-        "left": 0.115,
-        "width": 0.171,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-23",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-CC50BAF792EF",
+      "price": 26.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-037166",
-      "price": 26.66
+      "target_bay_name": null
     },
     {
-      "id": "item-23",
       "title": "The Woman in the Window",
       "author": "A.J. Finn",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.404,
-        "left": 0.11,
-        "width": 0.181,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-24",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-B9BB253D38FE",
+      "price": 19.13,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-451297",
-      "price": 19.13
+      "target_bay_name": null
     },
     {
-      "id": "item-24",
-      "title": "लाइफ के कड़वे सच",
-      "author": "श्वेताभ गंगवार",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.429,
-        "left": 0.122,
-        "width": 0.17,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-160412",
-      "price": 29.86
-    },
-    {
-      "id": "item-25",
       "title": "The Girls' Book of Spells",
       "author": "Rachel Elliot",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.453,
-        "left": 0.124,
-        "width": 0.171,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-25",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-045C5818B1D7",
+      "price": 23.11,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-292237",
-      "price": 23.11
+      "target_bay_name": null
     },
     {
-      "id": "item-26",
       "title": "Our Game",
       "author": "John le Carré",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.477,
-        "left": 0.111,
-        "width": 0.171,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-26",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D0847E2B6296",
+      "price": 31.93,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-176065",
-      "price": 31.93
+      "target_bay_name": null
     },
     {
-      "id": "item-27",
       "title": "The Fry Chronicles",
       "author": "Stephen Fry",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.501,
-        "left": 0.117,
-        "width": 0.18,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-27",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-86A1FC75CD9E",
+      "price": 19.69,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-858243",
-      "price": 19.69
+      "target_bay_name": null
     },
     {
-      "id": "item-28",
       "title": "The Scorch Trials",
       "author": "James Dashner",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.526,
-        "left": 0.116,
-        "width": 0.18,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-28",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A800572F305C",
+      "price": 26.89,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-132427",
-      "price": 26.89
+      "target_bay_name": null
     },
     {
-      "id": "item-29",
       "title": "The Da Vinci Code",
       "author": "Dan Brown",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.38,
-        "left": 0.311,
-        "width": 0.284,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-29",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-923C904F4A86",
+      "price": 19.69,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-915196",
-      "price": 19.69
+      "target_bay_name": null
     },
     {
-      "id": "item-30",
       "title": "Leading",
       "author": "Alex Ferguson with Michael Moritz",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.404,
-        "left": 0.318,
-        "width": 0.282,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-30",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-EEC4BEFBFFCF",
+      "price": 21.55,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-151536",
-      "price": 21.55
+      "target_bay_name": null
     },
     {
-      "id": "item-31",
+      "title": "The Magician's Nephew",
+      "author": "C.S. Lewis",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-31",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-7FDD37926618",
+      "price": 16.16,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "The Lion, the Witch and the Wardrobe",
       "author": "C.S. Lewis",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.429,
-        "left": 0.305,
-        "width": 0.279,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-32",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-AD7467F85AD2",
+      "price": 24.42,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-986340",
-      "price": 24.42
+      "target_bay_name": null
     },
     {
-      "id": "item-32",
+      "title": "The Horse and His Boy",
+      "author": "C.S. Lewis",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-33",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-3DDF762026B3",
+      "price": 15.22,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Prince Caspian",
       "author": "C.S. Lewis",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.453,
-        "left": 0.308,
-        "width": 0.272,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-34",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-082BB678135C",
+      "price": 15.44,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-142923",
-      "price": 15.44
+      "target_bay_name": null
     },
     {
-      "id": "item-33",
       "title": "Inferno",
       "author": "Dan Brown",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.477,
-        "left": 0.313,
-        "width": 0.277,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-35",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-CA334EBA60C2",
+      "price": 23.56,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-420538",
-      "price": 23.56
+      "target_bay_name": null
     },
     {
-      "id": "item-34",
       "title": "Alice in Wonderland",
       "author": "Lewis Carroll",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.501,
-        "left": 0.308,
-        "width": 0.287,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-36",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-52B6A22CD3AC",
+      "price": 24.52,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-933422",
-      "price": 24.52
+      "target_bay_name": null
     },
     {
-      "id": "item-35",
       "title": "Mappillai",
       "author": "Carlo Pizzati",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.526,
-        "left": 0.301,
-        "width": 0.283,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-37",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-815DA4B0F2B3",
+      "price": 15.1,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-371938",
-      "price": 15.1
+      "target_bay_name": null
     },
     {
-      "id": "item-36",
       "title": "The Herbal Alchemist's Handbook",
       "author": "Karen Harrison",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.38,
-        "left": 0.613,
-        "width": 0.211,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-38",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D988B052FB67",
+      "price": 31.44,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-123954",
-      "price": 31.44
+      "target_bay_name": null
     },
     {
-      "id": "item-37",
       "title": "The Girl with the Dragon Tattoo",
       "author": "Stieg Larsson",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.404,
-        "left": 0.615,
-        "width": 0.226,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-39",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-946B078C1A47",
+      "price": 22.76,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-276883",
-      "price": 22.76
+      "target_bay_name": null
     },
     {
-      "id": "item-38",
       "title": "Angels & Demons",
       "author": "Dan Brown",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.429,
-        "left": 0.602,
-        "width": 0.214,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-40",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4FC5E16CC1FD",
+      "price": 31.92,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-436595",
-      "price": 31.92
+      "target_bay_name": null
     },
     {
-      "id": "item-39",
       "title": "Don't Let's Go to the Dogs Tonight",
       "author": "Alexandra Fuller",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.453,
-        "left": 0.611,
-        "width": 0.213,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-41",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9567A5271B32",
+      "price": 22.08,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-765139",
-      "price": 22.08
+      "target_bay_name": null
     },
     {
-      "id": "item-40",
+      "title": "Mother Courage and Her Children",
+      "author": "Bertolt Brecht",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-42",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-E23FAB8B2853",
+      "price": 15.97,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Chocolat",
       "author": "Joanne Harris",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.477,
-        "left": 0.604,
-        "width": 0.219,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-43",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-1818F6009555",
+      "price": 21.25,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-062316",
-      "price": 21.25
+      "target_bay_name": null
     },
     {
-      "id": "item-41",
-      "title": "Diary of a Wimpy Kid: Rodrick Rules",
-      "author": "Jeff Kinney",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.501,
-        "left": 0.617,
-        "width": 0.212,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
+      "title": "I Don't Love You Anymore",
+      "author": "Rithvik Singh",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-44",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0F05ABCCA8B9",
+      "price": 28.53,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-457919",
-      "price": 25.86
+      "target_bay_name": null
     },
     {
-      "id": "item-42",
-      "title": "Diary of a Wimpy Kid: The Long Haul",
-      "author": "Jeff Kinney",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.526,
-        "left": 0.616,
-        "width": 0.227,
-        "height": 0.022,
-        "shelf_tier": 2,
-        "orientation": "horizontal"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-283149",
-      "price": 24.37
-    },
-    {
-      "id": "item-43",
       "title": "The Audacity of Hope",
       "author": "Barack Obama",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.58,
-        "left": 0.112,
-        "width": 0.183,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-45",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-675407E2700F",
+      "price": 16.38,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-956791",
-      "price": 16.38
+      "target_bay_name": null
     },
     {
-      "id": "item-44",
       "title": "Everyday Confidence",
       "author": null,
-      "confidence": 0.97,
-      "box": {
-        "top": 0.603,
-        "left": 0.121,
-        "width": 0.17,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-46",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-535310F20242",
+      "price": 19.01,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-404729",
-      "price": 19.01
+      "target_bay_name": null
     },
     {
-      "id": "item-45",
       "title": "Bad Day for Badger",
       "author": null,
-      "confidence": 0.93,
-      "box": {
-        "top": 0.626,
-        "left": 0.112,
-        "width": 0.185,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-47",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-EFC67DB78EE8",
+      "price": 29.47,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-959693",
-      "price": 29.47
+      "target_bay_name": null
     },
     {
-      "id": "item-46",
       "title": "Long Way Home",
       "author": "Michael Morpurgo",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.649,
-        "left": 0.115,
-        "width": 0.178,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-48",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-86991647BE78",
+      "price": 25.36,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-599047",
-      "price": 25.36
+      "target_bay_name": null
     },
     {
-      "id": "item-47",
       "title": "One Hundred Names",
       "author": "Cecelia Ahern",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.671,
-        "left": 0.12,
-        "width": 0.187,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-49",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-3FEF64C0D6B5",
+      "price": 24.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-673552",
-      "price": 24.59
+      "target_bay_name": null
     },
     {
-      "id": "item-48",
       "title": "The Lost Symbol",
       "author": "Dan Brown",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.694,
-        "left": 0.128,
-        "width": 0.173,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-50",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-3DB4C0067586",
+      "price": 20.09,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-617424",
-      "price": 20.09
+      "target_bay_name": null
     },
     {
-      "id": "item-49",
       "title": "Venus on Fire, Mars on Ice",
       "author": "John Gray",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.717,
-        "left": 0.11,
-        "width": 0.178,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-51",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-99E87EDB39A4",
+      "price": 19.13,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-339689",
-      "price": 19.13
+      "target_bay_name": null
     },
     {
-      "id": "item-50",
       "title": "The Lottie Project",
       "author": "Jacqueline Wilson",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.58,
-        "left": 0.319,
-        "width": 0.286,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-52",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0ADF5BC930D8",
+      "price": 16.96,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-287391",
-      "price": 16.96
+      "target_bay_name": null
     },
     {
-      "id": "item-51",
       "title": "Stranger Things: Suspicious Minds",
       "author": "Gwenda Bond",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.603,
-        "left": 0.306,
-        "width": 0.284,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-53",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F014ECBFE8CA",
+      "price": 22.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-488024",
-      "price": 22.66
+      "target_bay_name": null
     },
     {
-      "id": "item-52",
       "title": "Wuthering Heights",
-      "author": "Emily Brontë",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.626,
-        "left": 0.315,
-        "width": 0.286,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "author": "Brontë",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-54",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-714FB132CB86",
+      "price": 29.28,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-217123",
-      "price": 29.28
+      "target_bay_name": null
     },
     {
-      "id": "item-53",
       "title": "A Certain Justice",
       "author": "P.D. James",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.649,
-        "left": 0.313,
-        "width": 0.28,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-55",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A7F468C2E3A5",
+      "price": 29.05,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-858199",
-      "price": 29.05
+      "target_bay_name": null
     },
     {
-      "id": "item-54",
+      "title": "Diary of a Wimpy Kid: Rodrick Rules",
+      "author": "Jeff Kinney",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-56",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Diary of a Wimpy Kid: The Long Haul",
+      "author": "Jeff Kinney",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-57",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "White Fang",
       "author": "Jack London",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.671,
-        "left": 0.304,
-        "width": 0.274,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-58",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0B4FB47CEE2D",
+      "price": 21.98,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-502697",
-      "price": 21.98
+      "target_bay_name": null
     },
     {
-      "id": "item-55",
       "title": "Frankenstein",
-      "author": "Mary Shelley",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.694,
-        "left": 0.301,
-        "width": 0.285,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-59",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A8F53F3762D7",
+      "price": 22.33,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-993168",
-      "price": 22.33
+      "target_bay_name": null
     },
     {
-      "id": "item-56",
       "title": "Lorna Doone",
-      "author": "R.D. Blackmore",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.717,
-        "left": 0.301,
-        "width": 0.276,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "author": "R. D. Blackmore",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-60",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-E69EEC124772",
+      "price": 17.62,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-839986",
-      "price": 17.62
+      "target_bay_name": null
     },
     {
-      "id": "item-57",
       "title": "Way of the Warrior Kid",
       "author": "Jocko Willink",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.58,
-        "left": 0.601,
-        "width": 0.22,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-61",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-AFC52A8D2C20",
+      "price": 30.72,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-467719",
-      "price": 30.72
+      "target_bay_name": null
     },
     {
-      "id": "item-58",
       "title": "Rotten Romans",
       "author": "Terry Deary",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.603,
-        "left": 0.618,
-        "width": 0.221,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-62",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-97DA3E0C2539",
+      "price": 23.5,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-726473",
-      "price": 23.5
+      "target_bay_name": null
     },
     {
-      "id": "item-59",
       "title": "The Personal MBA",
       "author": "Josh Kaufman",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.626,
-        "left": 0.601,
-        "width": 0.22,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-63",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A1D8021FA05E",
+      "price": 22.56,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-675020",
-      "price": 22.56
+      "target_bay_name": null
     },
     {
-      "id": "item-60",
       "title": "Harry Potter and the Cursed Child",
       "author": "J.K. Rowling",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.649,
-        "left": 0.617,
-        "width": 0.211,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-64",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0D759FD6366F",
+      "price": 27.17,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-679060",
-      "price": 27.17
+      "target_bay_name": null
     },
     {
-      "id": "item-61",
       "title": "The Secret Garden",
       "author": "Frances Hodgson Burnett",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.671,
-        "left": 0.601,
-        "width": 0.227,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-65",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-02E264BFC82E",
+      "price": 29.8,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-705233",
-      "price": 29.8
+      "target_bay_name": null
     },
     {
-      "id": "item-62",
       "title": "Wish You Were Dead",
       "author": "Peter James",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.694,
-        "left": 0.608,
-        "width": 0.229,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-66",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9AFB2E0DB1C9",
+      "price": 30.72,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-120067",
-      "price": 30.72
+      "target_bay_name": null
     },
     {
-      "id": "item-63",
       "title": "The Witches",
       "author": "Roald Dahl",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.717,
-        "left": 0.611,
-        "width": 0.222,
-        "height": 0.021,
-        "shelf_tier": 3,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-67",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D8E336573247",
+      "price": 24.78,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-640452",
-      "price": 24.78
+      "target_bay_name": null
     },
     {
-      "id": "item-64",
       "title": "Jane Austen",
       "author": "David Nokes",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.76,
-        "left": 0.111,
-        "width": 0.172,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-68",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-8E833229F4D8",
+      "price": 31.16,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-854003",
-      "price": 31.16
+      "target_bay_name": null
     },
     {
-      "id": "item-65",
       "title": "The Small House at Allington",
       "author": "Anthony Trollope",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.78,
-        "left": 0.123,
-        "width": 0.181,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-69",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9DEF818A286E",
+      "price": 16.75,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-163872",
-      "price": 16.75
+      "target_bay_name": null
     },
     {
-      "id": "item-66",
       "title": "First Term at Malory Towers",
       "author": "Enid Blyton",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.8,
-        "left": 0.116,
-        "width": 0.175,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-70",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-14DD54976AA0",
+      "price": 19.02,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-169094",
-      "price": 19.02
+      "target_bay_name": null
     },
     {
-      "id": "item-67",
       "title": "In the Fifth at Malory Towers",
       "author": "Enid Blyton",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.82,
-        "left": 0.123,
-        "width": 0.176,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-71",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-17DAA8F4FAEE",
+      "price": 19.91,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-458636",
-      "price": 19.91
+      "target_bay_name": null
     },
     {
-      "id": "item-68",
       "title": "The Mayor of Casterbridge",
       "author": "Thomas Hardy",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.84,
-        "left": 0.115,
-        "width": 0.173,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-72",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4A381FF41438",
+      "price": 19.49,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-701217",
-      "price": 19.49
+      "target_bay_name": null
     },
     {
-      "id": "item-69",
       "title": "The Seven Husbands of Evelyn Hugo",
       "author": "Taylor Jenkins Reid",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.86,
-        "left": 0.123,
-        "width": 0.179,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-73",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F94A52192BE8",
+      "price": 14.45,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-083828",
-      "price": 14.45
+      "target_bay_name": null
     },
     {
-      "id": "item-70",
       "title": "Atomic Habits",
       "author": "James Clear",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.88,
-        "left": 0.129,
-        "width": 0.189,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-74",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-56691846B9D2",
+      "price": 29.15,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-471371",
-      "price": 29.15
+      "target_bay_name": null
     },
     {
-      "id": "item-71",
       "title": "Wolves of the Calla",
       "author": "Stephen King",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.76,
-        "left": 0.3,
-        "width": 0.282,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-75",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D44D447334CE",
+      "price": 31.57,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-975825",
-      "price": 31.57
+      "target_bay_name": null
     },
     {
-      "id": "item-72",
       "title": "Nasty Nature",
       "author": "Nick Arnold",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.78,
-        "left": 0.311,
-        "width": 0.272,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-76",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-532A79DC6ED6",
+      "price": 18.74,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-216511",
-      "price": 18.74
+      "target_bay_name": null
     },
     {
-      "id": "item-73",
       "title": "Star Wars Episode V: The Empire Strikes Back",
       "author": "Ryder Windham",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.8,
-        "left": 0.311,
-        "width": 0.28,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-77",
       "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay D1 · Sci-Fi & Media Arts",
-      "target_bay_name": "Bay D1 · Sci-Fi & Media Arts",
-      "sku": null,
-      "price": 25.76
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-595FDCB7BC08",
+      "price": 23.14,
+      "misplaced_reason": "Planogram assigns to Bay D1 · Science & Astronomy",
+      "target_bay_name": "Bay D1 · Science & Astronomy"
     },
     {
-      "id": "item-74",
       "title": "Still Me",
       "author": "Jojo Moyes",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.82,
-        "left": 0.303,
-        "width": 0.277,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-78",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-49550AF16F26",
+      "price": 20.12,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-821391",
-      "price": 20.12
+      "target_bay_name": null
     },
     {
-      "id": "item-75",
       "title": "The Giver of Stars",
       "author": "Jojo Moyes",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.84,
-        "left": 0.301,
-        "width": 0.275,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-79",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A6BAE242CA20",
+      "price": 27.52,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-907153",
-      "price": 27.52
+      "target_bay_name": null
     },
     {
-      "id": "item-76",
       "title": "After You",
       "author": "Jojo Moyes",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.86,
-        "left": 0.306,
-        "width": 0.279,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-80",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-DA4FB1F31D9E",
+      "price": 26.25,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-819537",
-      "price": 26.25
+      "target_bay_name": null
     },
     {
-      "id": "item-77",
       "title": "Harry Potter and the Goblet of Fire",
       "author": "J.K. Rowling",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.88,
-        "left": 0.311,
-        "width": 0.276,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-81",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D1F7C4441EB1",
+      "price": 30.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-981032",
-      "price": 30.66
+      "target_bay_name": null
     },
     {
-      "id": "item-78",
-      "title": "Excellent Excuses (and other good stuff)",
+      "title": "Excellent Excuses (and Other Good Stuff)",
       "author": "Liz Pichon",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.76,
-        "left": 0.62,
-        "width": 0.226,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-82",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-52F11A3DBD3E",
+      "price": 30.91,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-666166",
-      "price": 30.91
+      "target_bay_name": null
     },
     {
-      "id": "item-79",
-      "title": "Everything's Amazing (sort of)",
+      "title": "Everything's Amazing (Sort Of)",
       "author": "Liz Pichon",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.783,
-        "left": 0.611,
-        "width": 0.223,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-83",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-240DDEBBD071",
+      "price": 26.23,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 26.23
+      "target_bay_name": null
     },
     {
-      "id": "item-80",
-      "title": "Dirty Bertie",
-      "author": "Alan MacDonald",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.807,
-        "left": 0.611,
-        "width": 0.229,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 29.55
-    },
-    {
-      "id": "item-81",
       "title": "Delphie and the Magic Spell",
       "author": "Darcey Bussell",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.83,
-        "left": 0.602,
-        "width": 0.228,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-84",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-79C07D2B7C7F",
+      "price": 17.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 17.59
+      "target_bay_name": null
     },
     {
-      "id": "item-82",
-      "title": "Codebreaker",
-      "author": "Chris Ryan",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.853,
-        "left": 0.605,
-        "width": 0.228,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 17.78
-    },
-    {
-      "id": "item-83",
       "title": "Disgusting Digestion",
       "author": "Nick Arnold",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.877,
-        "left": 0.615,
-        "width": 0.213,
-        "height": 0.021,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-85",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 27.11
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Farm Boy",
+      "author": "Michael Morpurgo",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-86",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Diary of a Wimpy Kid",
+      "author": "Jeff Kinney",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-87",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Stories of Magic and Adventure",
+      "author": "Enid Blyton",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-88",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Life Ke Kadve Sach",
+      "author": "Shwetabh Gangwar",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-89",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    }
+  ],
+  "misplaced_items": [
+    {
+      "title": "Star Wars Episode V: The Empire Strikes Back",
+      "author": "Ryder Windham",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f1-item-77",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-595FDCB7BC08",
+      "price": 23.14,
+      "misplaced_reason": "Planogram assigns to Bay D1 · Science & Astronomy",
+      "target_bay_name": "Bay D1 · Science & Astronomy"
     }
   ],
   "missing_items": [
     {
-      "sku": "SKU-343273",
+      "sku": "SKU-37EAC1439CB5",
       "title": "The Winner Stands Alone",
       "author": "Paulo Coelho",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 12,
       "price": 22.17,
       "sales_velocity": 3.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 12 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-225910",
+      "sku": "SKU-6FE5A6B5F296",
       "title": "The Spiritual Practices of Rumi",
       "author": "Will Johnson",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 4,
       "price": 28.52,
       "sales_velocity": 1.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-957503",
+      "sku": "SKU-9756EF407F65",
       "title": "The War of Jenkins' Ear",
       "author": "Michael Morpurgo",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 11,
       "price": 23.59,
       "sales_velocity": 1.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-535223",
+      "sku": "SKU-01434F4B7D4E",
       "title": "साबरमती का संत",
       "author": "यशपाल जैन",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 9,
       "price": 25.7,
       "sales_velocity": 2.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 9 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-635152",
+      "sku": "SKU-2F8055B966C9",
       "title": "डेरे वाले",
       "author": "शैलेश मटियानी",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 2,
       "price": 22.13,
       "sales_velocity": 1.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-191492",
-      "title": "I Don't Love You Anymore",
-      "author": "Rithvik Singh",
+      "sku": "SKU-CD85EF083431",
+      "title": "Diary of a Wimpy Kid: The Long Haul",
+      "author": "Jeff Kinney",
       "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 2,
-      "price": 28.53,
-      "sales_velocity": 1.2,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "simulated_on_hand": 8,
+      "price": 24.37,
+      "sales_velocity": 1.4,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-508873",
+      "sku": "SKU-C7409E1FD397",
+      "title": "Diary of a Wimpy Kid: Rodrick Rules",
+      "author": "Jeff Kinney",
+      "planogram_bay_id": "bay_f1",
+      "simulated_on_hand": 7,
+      "price": 25.86,
+      "sales_velocity": 1.7,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-476583CDD723",
       "title": "The Short Fiction Scenario",
       "author": "Sergei Eisenstein",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 11,
       "price": 22.41,
       "sales_velocity": 2.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-154909",
+      "sku": "SKU-DB67E3B7A33F",
       "title": "Summer Adventure Stories",
       "author": "Enid Blyton",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 1,
       "price": 25.76,
       "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 1 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-671433",
-      "title": "Mother Courage and Her Children",
-      "author": "Bertolt Brecht",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 9,
-      "price": 15.97,
-      "sales_velocity": 1.2,
-      "is_phantom_inventory": true,
-      "reason": "System shows 9 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-911460",
+      "sku": "SKU-32C5242D1DD9",
       "title": "The Wimpy Kid Do-It-Yourself Book",
       "author": "Jeff Kinney",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 9,
       "price": 15.76,
       "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 9 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-413868",
+      "sku": "SKU-A2042176F29F",
       "title": "The Nine Lives of Montezuma",
       "author": "Michael Morpurgo",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 8,
       "price": 18.77,
       "sales_velocity": 3.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-330608",
-      "title": "The Horse and His Boy",
-      "author": "C.S. Lewis",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 7,
-      "price": 15.22,
-      "sales_velocity": 3.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-424636",
-      "title": "The Magician's Nephew",
-      "author": "C.S. Lewis",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 4,
-      "price": 16.16,
-      "sales_velocity": 3.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-660853",
+      "sku": "SKU-FE8DEF51120A",
       "title": "Srilaaji",
       "author": "Shobhaa De",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 8,
       "price": 16.36,
       "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-787289",
+      "sku": "SKU-E91CAE146B98",
       "title": "मेघनाद",
       "author": "केविन मिसल (Kevin Missal)",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 10,
       "price": 14.17,
       "sales_velocity": 2.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 10 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-479768",
+      "sku": "SKU-C008401D7B38",
+      "title": "लाइफ के कड़वे सच",
+      "author": "श्वेताभ गंगवार",
+      "planogram_bay_id": "bay_f1",
+      "simulated_on_hand": 6,
+      "price": 29.86,
+      "sales_velocity": 3.4,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-5114C6CA3202",
       "title": "The Woman in White",
       "author": "Wilkie Collins",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 7,
       "price": 27.34,
       "sales_velocity": 2.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-457131",
-      "title": "Agent 21: Codebreaker",
-      "author": "Chris Ryan",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 2,
-      "price": 17.78,
-      "sales_velocity": 1.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-631176",
+      "sku": "SKU-D83AF64A8449",
       "title": "The Girl Who Takes an Eye for an Eye",
       "author": "David Lagercrantz",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 11,
       "price": 28.08,
       "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-597841",
+      "sku": "SKU-55AD474B1B03",
       "title": "Dirty Bertie: Worms!",
       "author": "Alan MacDonald",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 5,
       "price": 29.55,
       "sales_velocity": 3.2,
-      "is_phantom_inventory": true,
-      "reason": "System shows 5 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-337751",
+      "sku": "SKU-6D649E1A57D3",
       "title": "Viking at School",
       "author": "Jeremy Strong",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 7,
       "price": 16.87,
       "sales_velocity": 2.8,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-273505",
+      "sku": "SKU-F73FF1A44C49",
       "title": "The Owls of Blossom Wood: To the Rescue",
       "author": "Catherine Coe",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 4,
       "price": 29.7,
       "sales_velocity": 3.3,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-688281",
-      "title": "Magic Ballerina: Delphie and the Magic Spell",
-      "author": "Darcey Bussell",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 6,
-      "price": 17.59,
-      "sales_velocity": 3.5,
-      "is_phantom_inventory": true,
-      "reason": "System shows 6 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-017189",
+      "sku": "SKU-4C220A6A6CDA",
       "title": "Silas Marner",
       "author": "George Eliot",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 7,
       "price": 18.01,
       "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-425257",
-      "title": "Tom Gates: Everything's Amazing (Sort Of)",
-      "author": "Liz Pichon",
-      "planogram_bay_id": "bay_f1",
-      "simulated_on_hand": 6,
-      "price": 26.23,
-      "sales_velocity": 3.3,
-      "is_phantom_inventory": true,
-      "reason": "System shows 6 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-731731",
+      "sku": "SKU-E53BE6401B77",
       "title": "Riding the Storm",
       "author": "Lucy Daniels",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 5,
       "price": 17.21,
       "sales_velocity": 3.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 5 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-471001",
+      "sku": "SKU-E8572AFE57AE",
       "title": "The Troublesome Offspring of Cardinal Guzman",
       "author": "Louis de Bernières",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 6,
       "price": 14.69,
       "sales_velocity": 2.5,
-      "is_phantom_inventory": true,
-      "reason": "System shows 6 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-543162",
+      "sku": "SKU-0414D24BBCEF",
       "title": "Horrible Science: Disgusting Digestion",
       "author": "Nick Arnold",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 10,
       "price": 27.11,
       "sales_velocity": 1.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 10 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-694115",
+      "sku": "SKU-A83E22AE6207",
       "title": "Hunted",
       "author": "P.C. Cast & Kristin Cast",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 10,
       "price": 31.72,
       "sales_velocity": 1.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 10 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-454451",
+      "sku": "SKU-3B08EF9AD1C8",
       "title": "Ah, Sweet Mystery of Life",
       "author": "Roald Dahl",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 7,
       "price": 17.42,
       "sales_velocity": 0.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-776864",
+      "sku": "SKU-AAAB17C54CD7",
       "title": "The Wind in the Willows",
       "author": "Kenneth Grahame",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 9,
       "price": 14.03,
       "sales_velocity": 3.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 9 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-501790",
+      "sku": "SKU-971C393ECB58",
       "title": "The Midnight Library",
       "author": "Matt Haig",
       "planogram_bay_id": "bay_f1",
       "simulated_on_hand": 8,
       "price": 16.99,
       "sales_velocity": 3.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-302707",
+      "sku": "SKU-C74FB917B0B8",
       "title": "Klara and the Sun",
       "author": "Kazuo Ishiguro",
       "planogram_bay_id": "bay_f1",
@@ -3277,11 +2956,12 @@
       "price": 19.99,
       "sales_velocity": 1.5,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-763509",
+      "sku": "SKU-B48603A98089",
       "title": "A Gentleman in Moscow",
       "author": "Amor Towles",
       "planogram_bay_id": "bay_f1",
@@ -3289,484 +2969,448 @@
       "price": 17.5,
       "sales_velocity": 1.8,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
-    }
-  ],
-  "misplaced_items": [
-    {
-      "id": "item-73",
-      "title": "Star Wars Episode V: The Empire Strikes Back",
-      "author": "Ryder Windham",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.8,
-        "left": 0.311,
-        "width": 0.28,
-        "height": 0.018,
-        "shelf_tier": 4,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay D1 · Sci-Fi & Media Arts",
-      "target_bay_name": "Bay D1 · Sci-Fi & Media Arts",
-      "sku": null,
-      "price": 25.76
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     }
   ],
   "action_tasks": [
     {
-      "id": "alert-record-error-The_Giver_of_Stars",
-      "type": "record_error",
-      "severity": "high",
-      "badge": "📋 Record Error",
-      "title": "The Giver of Stars",
-      "author": "Jojo Moyes",
-      "headline": "Found on shelf, but store record shows 0 (item blocked online)",
-      "suggested_action": "Correct record to 1 to restore online availability",
-      "system_on_hand": 0,
-      "shelf_count": 1
-    },
-    {
-      "id": "alert-missing-SKU-343273",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Winner Stands Alone",
-      "author": "Paulo Coelho",
-      "sku": "SKU-343273",
-      "headline": "Missing from shelf · System shows 12 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 12,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-225910",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Spiritual Practices of Rumi",
-      "author": "Will Johnson",
-      "sku": "SKU-225910",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-957503",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The War of Jenkins' Ear",
-      "author": "Michael Morpurgo",
-      "sku": "SKU-957503",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-535223",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "साबरमती का संत",
-      "author": "यशपाल जैन",
-      "sku": "SKU-535223",
-      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 9,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-635152",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "डेरे वाले",
-      "author": "शैलेश मटियानी",
-      "sku": "SKU-635152",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-191492",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "I Don't Love You Anymore",
-      "author": "Rithvik Singh",
-      "sku": "SKU-191492",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-508873",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Short Fiction Scenario",
-      "author": "Sergei Eisenstein",
-      "sku": "SKU-508873",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-154909",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Summer Adventure Stories",
-      "author": "Enid Blyton",
-      "sku": "SKU-154909",
-      "headline": "Missing from shelf · System shows 1 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 1,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-671433",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Mother Courage and Her Children",
-      "author": "Bertolt Brecht",
-      "sku": "SKU-671433",
-      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 9,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-911460",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Wimpy Kid Do-It-Yourself Book",
+      "id": "bay_f1-review-56",
+      "type": "recognition_review",
+      "severity": "medium",
+      "badge": "Reading needs review",
+      "title": "Diary of a Wimpy Kid: Rodrick Rules",
       "author": "Jeff Kinney",
-      "sku": "SKU-911460",
-      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 9,
-      "shelf_count": 0
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_f1-item-56",
+      "requires_review": true
     },
     {
-      "id": "alert-missing-SKU-413868",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Nine Lives of Montezuma",
-      "author": "Michael Morpurgo",
-      "sku": "SKU-413868",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-330608",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Horse and His Boy",
-      "author": "C.S. Lewis",
-      "sku": "SKU-330608",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-424636",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Magician's Nephew",
-      "author": "C.S. Lewis",
-      "sku": "SKU-424636",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-660853",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Srilaaji",
-      "author": "Shobhaa De",
-      "sku": "SKU-660853",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-787289",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "मेघनाद",
-      "author": "केविन मिसल (Kevin Missal)",
-      "sku": "SKU-787289",
-      "headline": "Missing from shelf · System shows 10 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 10,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-479768",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Woman in White",
-      "author": "Wilkie Collins",
-      "sku": "SKU-479768",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-457131",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Agent 21: Codebreaker",
-      "author": "Chris Ryan",
-      "sku": "SKU-457131",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-631176",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Girl Who Takes an Eye for an Eye",
-      "author": "David Lagercrantz",
-      "sku": "SKU-631176",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-597841",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Dirty Bertie: Worms!",
-      "author": "Alan MacDonald",
-      "sku": "SKU-597841",
-      "headline": "Missing from shelf · System shows 5 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 5,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-337751",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Viking at School",
-      "author": "Jeremy Strong",
-      "sku": "SKU-337751",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-273505",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Owls of Blossom Wood: To the Rescue",
-      "author": "Catherine Coe",
-      "sku": "SKU-273505",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-688281",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Magic Ballerina: Delphie and the Magic Spell",
-      "author": "Darcey Bussell",
-      "sku": "SKU-688281",
-      "headline": "Missing from shelf · System shows 6 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 6,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-017189",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Silas Marner",
-      "author": "George Eliot",
-      "sku": "SKU-017189",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-425257",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Tom Gates: Everything's Amazing (Sort Of)",
-      "author": "Liz Pichon",
-      "sku": "SKU-425257",
-      "headline": "Missing from shelf · System shows 6 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 6,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-731731",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Riding the Storm",
-      "author": "Lucy Daniels",
-      "sku": "SKU-731731",
-      "headline": "Missing from shelf · System shows 5 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 5,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-471001",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Troublesome Offspring of Cardinal Guzman",
-      "author": "Louis de Bernières",
-      "sku": "SKU-471001",
-      "headline": "Missing from shelf · System shows 6 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 6,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-543162",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Horrible Science: Disgusting Digestion",
-      "author": "Nick Arnold",
-      "sku": "SKU-543162",
-      "headline": "Missing from shelf · System shows 10 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 10,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-694115",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Hunted",
-      "author": "P.C. Cast & Kristin Cast",
-      "sku": "SKU-694115",
-      "headline": "Missing from shelf · System shows 10 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 10,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-454451",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Ah, Sweet Mystery of Life",
-      "author": "Roald Dahl",
-      "sku": "SKU-454451",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-776864",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Wind in the Willows",
-      "author": "Kenneth Grahame",
-      "sku": "SKU-776864",
-      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 9,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-501790",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Midnight Library",
-      "author": "Matt Haig",
-      "sku": "SKU-501790",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-302707",
-      "type": "missing_item",
+      "id": "bay_f1-review-57",
+      "type": "recognition_review",
       "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "Klara and the Sun",
-      "author": "Kazuo Ishiguro",
-      "sku": "SKU-302707",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
+      "badge": "Reading needs review",
+      "title": "Diary of a Wimpy Kid: The Long Haul",
+      "author": "Jeff Kinney",
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_f1-item-57",
+      "requires_review": true
     },
     {
-      "id": "alert-missing-SKU-763509",
-      "type": "missing_item",
-      "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "A Gentleman in Moscow",
-      "author": "Amor Towles",
-      "sku": "SKU-763509",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-misplaced-item-73",
+      "id": "bay_f1-move-SKU-595FDCB7BC08",
       "type": "misplaced_item",
       "severity": "warning",
-      "badge": "↔️ Misplaced Item",
+      "badge": "↔ Possible Misplacement",
       "title": "Star Wars Episode V: The Empire Strikes Back",
       "author": "Ryder Windham",
-      "headline": "Found on Bay F1 · General Fiction & Classics · Belongs to Bay D1 · Sci-Fi & Media Arts",
-      "suggested_action": "Move book to Bay D1 · Sci-Fi & Media Arts",
-      "shelf_count": 1
+      "sku": "SKU-595FDCB7BC08",
+      "headline": "Title read here; planogram assigns it to Bay D1 · Science & Astronomy.",
+      "suggested_action": "Confirm location and relocation",
+      "shelf_item_id": "bay_f1-item-77",
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-record-SKU-A6BAE242CA20",
+      "type": "record_error",
+      "severity": "high",
+      "badge": "Possible Record Error",
+      "title": "The Giver of Stars",
+      "author": "Jojo Moyes",
+      "sku": "SKU-A6BAE242CA20",
+      "headline": "Title read on shelf; simulated record shows 0. Verify the physical count.",
+      "suggested_action": "Confirm physical count and record check",
+      "system_on_hand": 0,
+      "shelf_item_id": "bay_f1-item-79",
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-37EAC1439CB5",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Winner Stands Alone",
+      "author": "Paulo Coelho",
+      "sku": "SKU-37EAC1439CB5",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 12. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 12,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-6FE5A6B5F296",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Spiritual Practices of Rumi",
+      "author": "Will Johnson",
+      "sku": "SKU-6FE5A6B5F296",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 4. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 4,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-9756EF407F65",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The War of Jenkins' Ear",
+      "author": "Michael Morpurgo",
+      "sku": "SKU-9756EF407F65",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-01434F4B7D4E",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "साबरमती का संत",
+      "author": "यशपाल जैन",
+      "sku": "SKU-01434F4B7D4E",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 9. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 9,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-2F8055B966C9",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "डेरे वाले",
+      "author": "शैलेश मटियानी",
+      "sku": "SKU-2F8055B966C9",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-CD85EF083431",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Diary of a Wimpy Kid: The Long Haul",
+      "author": "Jeff Kinney",
+      "sku": "SKU-CD85EF083431",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-C7409E1FD397",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Diary of a Wimpy Kid: Rodrick Rules",
+      "author": "Jeff Kinney",
+      "sku": "SKU-C7409E1FD397",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-476583CDD723",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Short Fiction Scenario",
+      "author": "Sergei Eisenstein",
+      "sku": "SKU-476583CDD723",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-DB67E3B7A33F",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Summer Adventure Stories",
+      "author": "Enid Blyton",
+      "sku": "SKU-DB67E3B7A33F",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 1. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 1,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-32C5242D1DD9",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Wimpy Kid Do-It-Yourself Book",
+      "author": "Jeff Kinney",
+      "sku": "SKU-32C5242D1DD9",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 9. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 9,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-A2042176F29F",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Nine Lives of Montezuma",
+      "author": "Michael Morpurgo",
+      "sku": "SKU-A2042176F29F",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-FE8DEF51120A",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Srilaaji",
+      "author": "Shobhaa De",
+      "sku": "SKU-FE8DEF51120A",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-E91CAE146B98",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "मेघनाद",
+      "author": "केविन मिसल (Kevin Missal)",
+      "sku": "SKU-E91CAE146B98",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 10. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 10,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-C008401D7B38",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "लाइफ के कड़वे सच",
+      "author": "श्वेताभ गंगवार",
+      "sku": "SKU-C008401D7B38",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 6. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 6,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-5114C6CA3202",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Woman in White",
+      "author": "Wilkie Collins",
+      "sku": "SKU-5114C6CA3202",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-D83AF64A8449",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Girl Who Takes an Eye for an Eye",
+      "author": "David Lagercrantz",
+      "sku": "SKU-D83AF64A8449",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-55AD474B1B03",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Dirty Bertie: Worms!",
+      "author": "Alan MacDonald",
+      "sku": "SKU-55AD474B1B03",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 5. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 5,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-6D649E1A57D3",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Viking at School",
+      "author": "Jeremy Strong",
+      "sku": "SKU-6D649E1A57D3",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-F73FF1A44C49",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Owls of Blossom Wood: To the Rescue",
+      "author": "Catherine Coe",
+      "sku": "SKU-F73FF1A44C49",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 4. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 4,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-4C220A6A6CDA",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Silas Marner",
+      "author": "George Eliot",
+      "sku": "SKU-4C220A6A6CDA",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-E53BE6401B77",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Riding the Storm",
+      "author": "Lucy Daniels",
+      "sku": "SKU-E53BE6401B77",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 5. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 5,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-E8572AFE57AE",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Troublesome Offspring of Cardinal Guzman",
+      "author": "Louis de Bernières",
+      "sku": "SKU-E8572AFE57AE",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 6. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 6,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-0414D24BBCEF",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Horrible Science: Disgusting Digestion",
+      "author": "Nick Arnold",
+      "sku": "SKU-0414D24BBCEF",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 10. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 10,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-A83E22AE6207",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Hunted",
+      "author": "P.C. Cast & Kristin Cast",
+      "sku": "SKU-A83E22AE6207",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 10. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 10,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-3B08EF9AD1C8",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Ah, Sweet Mystery of Life",
+      "author": "Roald Dahl",
+      "sku": "SKU-3B08EF9AD1C8",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-AAAB17C54CD7",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "sku": "SKU-AAAB17C54CD7",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 9. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 9,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-971C393ECB58",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Midnight Library",
+      "author": "Matt Haig",
+      "sku": "SKU-971C393ECB58",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-C74FB917B0B8",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Klara and the Sun",
+      "author": "Kazuo Ishiguro",
+      "sku": "SKU-C74FB917B0B8",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f1-unseen-SKU-B48603A98089",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "A Gentleman in Moscow",
+      "author": "Amor Towles",
+      "sku": "SKU-B48603A98089",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
     }
-  ]
+  ],
+  "metrics": {
+    "planogram_expected_items": 110,
+    "shelf_items_detected": 89,
+    "matched_count": 81,
+    "missing_count": 29,
+    "misplaced_count": 1,
+    "review_count": 2,
+    "planogram_compliance_pct": 73.6
+  }
 }

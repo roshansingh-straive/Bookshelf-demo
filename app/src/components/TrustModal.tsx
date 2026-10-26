@@ -1,122 +1,21 @@
-import React from 'react';
-import { X, ShieldCheck, Sparkles } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+import { X, ShieldCheck } from 'lucide-react';
+import type { ScanResult } from '../types';
 
-interface TrustModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-export const TrustModal: React.FC<TrustModalProps> = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
-      <div className="bg-white rounded-2xl max-w-xl w-full border border-slate-200 shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
-        {/* Modal Header */}
-        <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50">
-          <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center">
-              <ShieldCheck className="w-5 h-5" />
-            </div>
-            <div>
-              <h3 className="font-bold text-slate-900 text-sm">How AI Shelf Scanning Works</h3>
-              <p className="text-xs text-slate-500">Methodology, verification, and benchmark accuracy</p>
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
-        </div>
-
-        {/* Modal Body */}
-        <div className="p-6 space-y-5 overflow-y-auto text-xs text-slate-600 leading-relaxed">
-          {/* Headline Truth / Accuracy Card */}
-          <div className="p-4 bg-blue-50/70 border border-blue-200/80 rounded-xl">
-            <div className="font-bold text-slate-900 text-xs mb-1 flex items-center space-x-1.5">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span>Real Benchmark Results (Claude Opus 5.5)</span>
-            </div>
-            <p className="text-slate-600 text-xs mb-3">
-              Scored against 295 hand-verified book spines across 6 real shelf photographs in Straive's Bookshelf Benchmark.
-            </p>
-            <div className="grid grid-cols-3 gap-2 text-center">
-              <div className="bg-white p-2.5 rounded-lg border border-blue-200/60 shadow-2xs">
-                <div className="text-[10px] text-slate-500 font-medium">Precision</div>
-                <div className="text-base font-extrabold text-blue-900 tabular-nums">97%</div>
-                <div className="text-[9px] text-slate-400">Rarely hallucinates</div>
-              </div>
-              <div className="bg-white p-2.5 rounded-lg border border-blue-200/60 shadow-2xs">
-                <div className="text-[10px] text-slate-500 font-medium">Recall</div>
-                <div className="text-base font-extrabold text-blue-900 tabular-nums">82%</div>
-                <div className="text-[9px] text-slate-400">Books detected</div>
-              </div>
-              <div className="bg-white p-2.5 rounded-lg border border-blue-200/60 shadow-2xs">
-                <div className="text-[10px] text-slate-500 font-medium">Overall F1</div>
-                <div className="text-base font-extrabold text-blue-900 tabular-nums">0.89</div>
-                <div className="text-[9px] text-slate-400">Run 2 benchmark</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Three Key Architectural Pillars */}
-          <div className="space-y-3">
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">
-                ✓
-              </div>
-              <div>
-                <strong className="text-slate-900 block mb-0.5">AI reads the shelf; deterministic code compares with records</strong>
-                <p className="text-slate-600">
-                  The vision model is strictly tasked with reading visible titles and authors without guessing. Discrepancy checks (phantom inventory, record errors, misplaced items) are calculated deterministically against the store planogram.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">
-                ✓
-              </div>
-              <div>
-                <strong className="text-slate-900 block mb-0.5">Zoom-and-verify harness reduces missed items</strong>
-                <p className="text-slate-600">
-                  On crowded shelves, single-photo scans can miss titles. The production harness tiles the image into high-resolution overlapping sections, re-verifying ambiguous spines to maximize recall.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">
-                ✓
-              </div>
-              <div>
-                <strong className="text-slate-900 block mb-0.5">Human in the loop confirms every action</strong>
-                <p className="text-slate-600">
-                  No automated changes happen without human verification. Store associates confirm physical restocks or relocations with one tap, creating feedback loops that audit AI accuracy.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Simulated vs Real Boundary */}
-          <div className="p-3 bg-amber-50/80 border border-amber-200 rounded-lg text-amber-900 text-xs">
-            <strong>Data Disclosure:</strong> Shelf photos and AI recognition results come from real model executions. Store inventory counts, velocities, and planograms are simulated for demonstration.
-          </div>
-        </div>
-
-        {/* Footer with credit */}
-        <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-          <span>Based on Straive's Bookshelf Benchmark (by atharva-729)</span>
-          <button
-            onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition-colors"
-          >
-            Close
-          </button>
-        </div>
-      </div>
+interface TrustModalProps { isOpen: boolean; onClose: () => void; scan: ScanResult; }
+export const TrustModal: React.FC<TrustModalProps> = ({ isOpen, onClose, scan }) => {
+  const dialog = useRef<HTMLDialogElement>(null);
+  useEffect(() => { if (isOpen) dialog.current?.showModal(); else dialog.current?.close(); }, [isOpen]);
+  return <dialog ref={dialog} onCancel={onClose} aria-labelledby="accuracy-title" className="m-auto bg-white rounded-2xl max-w-xl w-[calc(100%-2rem)] border border-slate-200 shadow-2xl p-0 max-h-[90dvh] backdrop:bg-slate-900/60">
+    <div className="p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50"><div className="flex items-center gap-2.5"><ShieldCheck className="w-5 h-5 text-blue-600" /><div><h3 id="accuracy-title" className="font-bold text-slate-900 text-sm">Recognition &amp; accuracy</h3><p className="text-xs text-slate-500">What the analysis can tell you</p></div></div><button aria-label="Close accuracy information" onClick={onClose} className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-200"><X className="w-5 h-5" /></button></div>
+    <div className="p-5 space-y-5 text-xs text-slate-600 leading-relaxed">
+      <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl"><strong className="text-slate-900">{scan.source_kind === 'upload' ? 'Your uploaded photograph' : scan.mode === 'replay' ? 'Saved sample analysis' : 'New sample analysis'}</strong><p className="mt-1">{scan.source_kind === 'upload' ? 'Your original photo is used for recognition. Sample readings are never substituted for an uploaded photo.' : scan.mode === 'replay' ? 'This view uses a saved recognition reply from the reference benchmark. Loading it does not perform a new scan.' : 'This view uses a fresh reading of the selected sample photograph.'}</p></div>
+      <div><strong className="block text-slate-900 mb-1">A closer look at every section</strong><p>New analyses correct photo orientation, read overlapping sections at their original resolution, and independently reread each section after rotation. The two readings are compared before checking the shelf planogram.</p></div>
+      <div><strong className="block text-slate-900 mb-1">Uncertainty stays visible</strong><p>Unclear or conflicting titles are flagged for review. Agreement between readings does not guarantee correctness. A title that was not read may still be on the shelf, obscured or too small to identify.</p></div>
+      <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900"><strong>Review the original photo.</strong> The reference benchmark covers six photos and its answer key has known limitations. Its historical scores do not measure accuracy on your uploaded photo. No guaranteed accuracy percentage is claimed for this analysis.</div>
+      <div><strong className="block text-slate-900 mb-1">You confirm the next step</strong><p>Planograms, inventory counts and sales data in this demo are simulated. Suggested checks never automatically change inventory. Reviewing a task does not establish that a shelf issue has been physically fixed.</p></div>
+      {scan.source && <a className="text-blue-700 underline" href={`https://github.com/atharva-729/bookshelf-benchmark/blob/main/${scan.source.source_path}`} target="_blank" rel="noreferrer">View the saved recognition source</a>}
     </div>
-  );
+    <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3 text-xs text-slate-500"><a href="https://atharva-729.github.io/bookshelf-benchmark/" target="_blank" rel="noreferrer" className="text-blue-700 hover:underline">Read the reference benchmark</a><button onClick={onClose} className="px-4 py-1.5 rounded-lg bg-slate-900 text-white">Close</button></div>
+  </dialog>;
 };

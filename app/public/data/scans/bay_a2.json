@@ -4,23 +4,31 @@
   "bay_name": "Bay A2 · Classical Art & Renaissance",
   "photo_filename": "b.jpg",
   "photo_url": "/photos/b.jpg",
-  "scanned_at": "Today, 08:32 AM",
-  "model": "Claude Opus 5.5",
+  "mode": "replay",
+  "scanned_at": "2026-10-04",
+  "model": "Gemini 3.8 Flash",
   "effort": "high",
-  "inference_duration_seconds": 8.1,
-  "tokens_used": 3588,
-  "estimated_cost_usd": 0.05,
-  "metrics": {
-    "planogram_expected_items": 51,
-    "shelf_items_detected": 46,
-    "matched_count": 36,
-    "missing_count": 15,
-    "misplaced_count": 1,
-    "planogram_compliance_pct": 70.6
+  "inference_duration_seconds": null,
+  "tokens_used": null,
+  "estimated_cost_usd": null,
+  "selection_reason": "Use Flash extended thinking for easy shelves, Opus high for medium shelves, and the Opus high single-photo experiment for hard shelves. Selected by difficulty-level results, not per-photo best scores.",
+  "source": {
+    "source_path": "results/exp1-run2/details/gemini-3.8-flash__extended-thinking.json",
+    "interface": "Gemini web app (temporary chat), driven by Claude Code via Claude in Chrome (Brave)",
+    "original_mode": "extended-thinking",
+    "source_date": "2026-10-04"
   },
+  "harness": {
+    "native_resolution": false,
+    "tile_count": 0,
+    "calls_completed": 0,
+    "rotated_verification": false,
+    "measured_accuracy": null
+  },
+  "disclosure": "Saved benchmark predictions. No live model call or zoom verification. Book positions and confidence were not annotated; per-photo cost and latency were not measured.",
   "planogram_items": [
     {
-      "sku": "SKU-841625",
+      "sku": "SKU-67C797AF4F36",
       "title": "Art of the Renaissance",
       "author": "Germain Bazin",
       "assigned_bay_id": "bay_a2",
@@ -31,7 +39,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-297911",
+      "sku": "SKU-8BB8B6ECF48E",
       "title": "High Renaissance and Mannerism",
       "author": "Linda Murray",
       "assigned_bay_id": "bay_a2",
@@ -42,7 +50,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-060212",
+      "sku": "SKU-C73483DDE9BD",
       "title": "Pagan Mysteries in the Renaissance",
       "author": "Edgar Wind",
       "assigned_bay_id": "bay_a2",
@@ -53,7 +61,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-032374",
+      "sku": "SKU-3A5E2C4B61B7",
       "title": "The Birth and Rebirth of Pictorial Space",
       "author": "John White",
       "assigned_bay_id": "bay_a2",
@@ -64,7 +72,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-125417",
+      "sku": "SKU-C1CFDB3F8338",
       "title": "Romanticism and Realism: The Mythology of Nineteenth-Century Art",
       "author": "Charles Rosen & Henri Zerner",
       "assigned_bay_id": "bay_a2",
@@ -75,7 +83,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-778612",
+      "sku": "SKU-D63E73527794",
       "title": "Rococo to Revolution",
       "author": "Michael Levey",
       "assigned_bay_id": "bay_a2",
@@ -86,7 +94,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-734794",
+      "sku": "SKU-1E02D51E4075",
       "title": "The Social History of Art",
       "author": "Arnold Hauser",
       "assigned_bay_id": "bay_a2",
@@ -97,7 +105,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-917357",
+      "sku": "SKU-455C7BEE6F73",
       "title": "An Outline of English Painting",
       "author": "R.H. Wilenski",
       "assigned_bay_id": "bay_a2",
@@ -108,7 +116,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-378322",
+      "sku": "SKU-9A76326389C1",
       "title": "Memoirs of the Life of John Constable",
       "author": "C.R. Leslie",
       "assigned_bay_id": "bay_a2",
@@ -119,7 +127,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-483511",
+      "sku": "SKU-5A3A57322E63",
       "title": "Constable",
       "author": "Michael Rosenthal",
       "assigned_bay_id": "bay_a2",
@@ -130,7 +138,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-965844",
+      "sku": "SKU-4E8D53B3220C",
       "title": "The Necessity of Art",
       "author": "Ernst Fischer",
       "assigned_bay_id": "bay_a2",
@@ -141,7 +149,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-153699",
+      "sku": "SKU-1F1B330F2482",
       "title": "Art & Language",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -152,7 +160,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-952720",
+      "sku": "SKU-A2524598ED2A",
       "title": "Functions of Painting",
       "author": "Fernand Léger",
       "assigned_bay_id": "bay_a2",
@@ -163,7 +171,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-678307",
+      "sku": "SKU-8B8C03E0D2A9",
       "title": "The Thames and Hudson Dictionary of Art and Artists",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -174,7 +182,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-263419",
+      "sku": "SKU-3E111642D09F",
       "title": "The End of Art Theory: Criticism and Postmodernity",
       "author": "Victor Burgin",
       "assigned_bay_id": "bay_a2",
@@ -185,7 +193,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-049211",
+      "sku": "SKU-6E6A1F43666D",
       "title": "The Hidden Order of Art",
       "author": "Anton Ehrenzweig",
       "assigned_bay_id": "bay_a2",
@@ -196,7 +204,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-159169",
+      "sku": "SKU-0BAA320ABBB1",
       "title": "Renderings",
       "author": "Max Kozloff",
       "assigned_bay_id": "bay_a2",
@@ -207,7 +215,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-003089",
+      "sku": "SKU-CECBD29B4DCC",
       "title": "Landscapes of France: Impressionism and Its Rivals",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -218,7 +226,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-797323",
+      "sku": "SKU-2FE9AC1A5945",
       "title": "Modern Home Atlas",
       "author": "Philip",
       "assigned_bay_id": "bay_a2",
@@ -229,7 +237,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-710694",
+      "sku": "SKU-9A2623E09286",
       "title": "The Great Age of Exploration",
       "author": "Reader's Digest",
       "assigned_bay_id": "bay_a2",
@@ -240,7 +248,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-605623",
+      "sku": "SKU-93341A715035",
       "title": "William Blake",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -251,7 +259,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-370481",
+      "sku": "SKU-E43A57D54EDD",
       "title": "Our Friend the Atom",
       "author": "Heinz Haber",
       "assigned_bay_id": "bay_a2",
@@ -262,7 +270,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-568546",
+      "sku": "SKU-6A83DD1E9FB9",
       "title": "Perception: Mechanisms and Models",
       "author": "Scientific American",
       "assigned_bay_id": "bay_a2",
@@ -273,7 +281,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-561879",
+      "sku": "SKU-98C3F94FF87F",
       "title": "The Language of Pattern",
       "author": "Keith Albarn, Jenny Miall Smith, Stanford Steele, Dinah Walker",
       "assigned_bay_id": "bay_a2",
@@ -284,7 +292,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-172923",
+      "sku": "SKU-91C99E03F30A",
       "title": "Mathematics: An Introduction to Its Spirit and Use",
       "author": "Scientific American",
       "assigned_bay_id": "bay_a2",
@@ -295,7 +303,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-749415",
+      "sku": "SKU-DC1838C265B3",
       "title": "Towards a New Art: Essays on the Background to Abstract Art 1910–20",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -306,7 +314,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-131690",
+      "sku": "SKU-4D773BE47BA6",
       "title": "Pissarro",
       "author": "Arts Council",
       "assigned_bay_id": "bay_a2",
@@ -317,7 +325,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-844800",
+      "sku": "SKU-4913BCAFA32B",
       "title": "Cézanne: The Early Years 1859–1872",
       "author": "Lawrence Gowing",
       "assigned_bay_id": "bay_a2",
@@ -328,7 +336,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-448141",
+      "sku": "SKU-2DCE0EF195C8",
       "title": "Cézanne: Les dernières années (1895–1906)",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -339,7 +347,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-416153",
+      "sku": "SKU-BD937020FB85",
       "title": "Gustave Courbet",
       "author": "Arts Council 1978",
       "assigned_bay_id": "bay_a2",
@@ -350,7 +358,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-766067",
+      "sku": "SKU-89160F096404",
       "title": "The Absolute Bourgeois",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -361,7 +369,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-039341",
+      "sku": "SKU-D94CCB9E0984",
       "title": "The Painting of Modern Life",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -372,7 +380,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-382919",
+      "sku": "SKU-878B2E11BD38",
       "title": "Image of the People",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -383,7 +391,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-754385",
+      "sku": "SKU-86AC67D04186",
       "title": "Rembrandt's Enterprise",
       "author": "Svetlana Alpers",
       "assigned_bay_id": "bay_a2",
@@ -394,7 +402,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-918069",
+      "sku": "SKU-A4F32C42AAAB",
       "title": "Looking at the Overlooked",
       "author": "Norman Bryson",
       "assigned_bay_id": "bay_a2",
@@ -405,7 +413,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-914259",
+      "sku": "SKU-F323D4FC3167",
       "title": "Vision and Painting",
       "author": "Norman Bryson",
       "assigned_bay_id": "bay_a2",
@@ -416,7 +424,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-972254",
+      "sku": "SKU-36D4B0B3950B",
       "title": "Marcel Broodthaers",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -427,7 +435,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-836607",
+      "sku": "SKU-55920371903D",
       "title": "Modern Art and Modernism: A Critical Anthology",
       "author": "Edited by Francis Frascina and Charles Harrison",
       "assigned_bay_id": "bay_a2",
@@ -438,7 +446,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-838722",
+      "sku": "SKU-EBEA58476A82",
       "title": "Pollock and After: The Critical Debate",
       "author": "Edited by Francis Frascina",
       "assigned_bay_id": "bay_a2",
@@ -449,7 +457,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-927646",
+      "sku": "SKU-F1D37874D711",
       "title": "The Female Body",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -460,7 +468,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-783876",
+      "sku": "SKU-B9E95B1B2137",
       "title": "The Art of Describing",
       "author": "Svetlana Alpers",
       "assigned_bay_id": "bay_a2",
@@ -471,7 +479,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-387646",
+      "sku": "SKU-5118F4003A5E",
       "title": "Modernism, Criticism, Realism",
       "author": "Edited by Charles Harrison and Fred Orton",
       "assigned_bay_id": "bay_a2",
@@ -482,7 +490,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-205816",
+      "sku": "SKU-B43C499EEA62",
       "title": "Letters to His Son Lucien",
       "author": "Camille Pissarro (Edited by John Rewald)",
       "assigned_bay_id": "bay_a2",
@@ -493,7 +501,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-872459",
+      "sku": "SKU-E48FD3AC15B9",
       "title": "A Life of Picasso (Volume II: 1907–1917)",
       "author": "John Richardson",
       "assigned_bay_id": "bay_a2",
@@ -504,7 +512,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-687663",
+      "sku": "SKU-6B8FBAB5C1B4",
       "title": "A Life of Picasso (Volume III: 1917–1932)",
       "author": "John Richardson",
       "assigned_bay_id": "bay_a2",
@@ -515,7 +523,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-047435",
+      "sku": "SKU-3E110369B5B1",
       "title": "The Age of Neo-Classicism",
       "author": "Arts Council of Great Britain",
       "assigned_bay_id": "bay_a2",
@@ -526,7 +534,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-678263",
+      "sku": "SKU-686C084D97B5",
       "title": "The Dream of Icarus",
       "author": "Kenneth Coutts-Smith",
       "assigned_bay_id": "bay_a2",
@@ -537,7 +545,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-495182",
+      "sku": "SKU-A9A964810305",
       "title": "Rococo, Classicism and Romanticism",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -548,7 +556,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-130721",
+      "sku": "SKU-BB7F79CD8C6F",
       "title": "Lives of the Artists",
       "author": "Giorgio Vasari",
       "assigned_bay_id": "bay_a2",
@@ -560,7 +568,7 @@
       "days_since_stockout": 4
     },
     {
-      "sku": "SKU-699036",
+      "sku": "SKU-35BFFDB85B5A",
       "title": "The Story of Art",
       "author": "E.H. Gombrich",
       "assigned_bay_id": "bay_a2",
@@ -572,7 +580,7 @@
       "days_since_stockout": 2
     },
     {
-      "sku": "SKU-543083",
+      "sku": "SKU-AA356204A6B5",
       "title": "Leonardo da Vinci",
       "author": "Walter Isaacson",
       "assigned_bay_id": "bay_a2",
@@ -586,1085 +594,840 @@
   ],
   "shelf_items": [
     {
-      "id": "item-1",
       "title": "Letters to his son Lucien",
       "author": "Camille Pissarro",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.076,
-        "left": 0.06,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-1",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-205816",
-      "price": 28.64
+      "target_bay_name": null
     },
     {
-      "id": "item-2",
-      "title": "Modernism, Criticism, Realism",
-      "author": "Charles Harrison and Fred Orton (eds.)",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.078,
-        "left": 0.115,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "title": "MODERNISM CRITICISM REALISM",
+      "author": "Charles Harrison, Fred Orton",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-2",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-5118F4003A5E",
+      "price": 26.49,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-387646",
-      "price": 26.49
+      "target_bay_name": null
     },
     {
-      "id": "item-3",
       "title": "The Art of Describing",
       "author": "Svetlana Alpers",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.088,
-        "left": 0.17,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-3",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-B9E95B1B2137",
+      "price": 15.88,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-783876",
-      "price": 15.88
+      "target_bay_name": null
     },
     {
-      "id": "item-4",
-      "title": "The Female Body",
+      "title": "POLLOCK AND AFTER The critical debate",
+      "author": "Francis Frascina",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-4",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-EBEA58476A82",
+      "price": 28.66,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "MARCEL BROODTHAERS",
       "author": null,
-      "confidence": 0.95,
-      "box": {
-        "top": 0.087,
-        "left": 0.225,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-5",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-36D4B0B3950B",
+      "price": 22.47,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-927646",
-      "price": 20.26
+      "target_bay_name": null
     },
     {
-      "id": "item-5",
-      "title": "Marcel Broodthaers",
-      "author": "Tate Gallery",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.081,
-        "left": 0.28,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-972254",
-      "price": 22.47
-    },
-    {
-      "id": "item-6",
-      "title": "Vision and Painting",
+      "title": "VISION AND PAINTING",
       "author": "Norman Bryson",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.085,
-        "left": 0.335,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-6",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F323D4FC3167",
+      "price": 24.37,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-914259",
-      "price": 24.37
+      "target_bay_name": null
     },
     {
-      "id": "item-7",
       "title": "Looking at the Overlooked",
       "author": "Norman Bryson",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.086,
-        "left": 0.39,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-7",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A4F32C42AAAB",
+      "price": 31.99,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-918069",
-      "price": 31.99
+      "target_bay_name": null
     },
     {
-      "id": "item-8",
       "title": "Rembrandt's Enterprise",
       "author": "Svetlana Alpers",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.088,
-        "left": 0.445,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-8",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-86AC67D04186",
+      "price": 29.49,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-754385",
-      "price": 29.49
+      "target_bay_name": null
     },
     {
-      "id": "item-9",
       "title": "Image of the People",
       "author": "T.J. Clark",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.08,
-        "left": 0.5,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-9",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-878B2E11BD38",
+      "price": 15.64,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-382919",
-      "price": 15.64
+      "target_bay_name": null
     },
     {
-      "id": "item-10",
-      "title": "The Painting of Modern Life",
+      "title": "THE PAINTING OF MODERN LIFE",
       "author": "T.J. Clark",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.075,
-        "left": 0.555,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-10",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D94CCB9E0984",
+      "price": 27.22,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-039341",
-      "price": 27.22
+      "target_bay_name": null
     },
     {
-      "id": "item-11",
       "title": "The Absolute Bourgeois",
       "author": "T.J. Clark",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.08,
-        "left": 0.61,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-11",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-89160F096404",
+      "price": 21.88,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-766067",
-      "price": 21.88
+      "target_bay_name": null
     },
     {
-      "id": "item-12",
       "title": "Gustave Courbet",
-      "author": "Arts Council 1978",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.078,
-        "left": 0.665,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-416153",
-      "price": 30.97
-    },
-    {
-      "id": "item-13",
-      "title": "Cézanne: les dernières années (1895-1906)",
       "author": null,
-      "confidence": 0.98,
-      "box": {
-        "top": 0.083,
-        "left": 0.72,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-12",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-BD937020FB85",
+      "price": 30.97,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-448141",
-      "price": 22.44
+      "target_bay_name": null
     },
     {
-      "id": "item-14",
-      "title": "Cézanne: The Early Years 1859-1872",
+      "title": "Cézanne les dernières années (1895-1906)",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-13",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-2DCE0EF195C8",
+      "price": 22.44,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "CÉZANNE The Early Years 1859-1872",
       "author": "Lawrence Gowing",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.086,
-        "left": 0.775,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-14",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4913BCAFA32B",
+      "price": 24.25,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-844800",
-      "price": 24.25
+      "target_bay_name": null
     },
     {
-      "id": "item-15",
       "title": "Pissarro",
-      "author": "Arts Council",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.084,
-        "left": 0.83,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-15",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4D773BE47BA6",
+      "price": 28.27,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-131690",
-      "price": 28.27
+      "target_bay_name": null
     },
     {
-      "id": "item-16",
       "title": "Mathematics: An Introduction to its Spirit and Use",
-      "author": "Scientific American",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.087,
-        "left": 0.885,
-        "width": 0.05,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-16",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-91C99E03F30A",
+      "price": 23.8,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-172923",
-      "price": 23.8
+      "target_bay_name": null
     },
     {
-      "id": "item-17",
-      "title": "Perception: Mechanisms and Models",
-      "author": "Scientific American",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.378,
-        "left": 0.06,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-568546",
-      "price": 28.18
-    },
-    {
-      "id": "item-18",
       "title": "The Language of Pattern",
       "author": "Keith Albarn, Jenny Miall Smith, Stanford Steele, Dinah Walker",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.38,
-        "left": 0.119,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-17",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-98C3F94FF87F",
+      "price": 28.47,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-561879",
-      "price": 28.47
+      "target_bay_name": null
     },
     {
-      "id": "item-19",
-      "title": "Our Friend the Atom",
-      "author": "Heinz Haber",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.371,
-        "left": 0.177,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-370481",
-      "price": 15.28
-    },
-    {
-      "id": "item-20",
-      "title": "William Blake",
-      "author": "Tate Gallery",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.378,
-        "left": 0.236,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-605623",
-      "price": 26.73
-    },
-    {
-      "id": "item-21",
-      "title": "The Great Age of Exploration",
-      "author": "Reader's Digest",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.372,
-        "left": 0.295,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-710694",
-      "price": 22.46
-    },
-    {
-      "id": "item-22",
-      "title": "Modern Home Atlas",
-      "author": "Philip",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.373,
-        "left": 0.353,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-797323",
-      "price": 14.05
-    },
-    {
-      "id": "item-23",
-      "title": "Landscapes of France: Impressionism and its Rivals",
+      "title": "Perception: Mechanisms and Models",
       "author": null,
-      "confidence": 0.94,
-      "box": {
-        "top": 0.362,
-        "left": 0.412,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-18",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6A83DD1E9FB9",
+      "price": 28.18,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-003089",
-      "price": 18.32
+      "target_bay_name": null
     },
     {
-      "id": "item-24",
+      "title": "OUR FRIEND THE ATOM",
+      "author": "Heinz Haber",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-19",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-E43A57D54EDD",
+      "price": 15.28,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "WILLIAM BLAKE",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-20",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-93341A715035",
+      "price": 26.73,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "THE GREAT AGE OF EXPLORATION",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-21",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-9A2623E09286",
+      "price": 22.46,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Modern Home Atlas",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-22",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-2FE9AC1A5945",
+      "price": 14.05,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Renderings",
       "author": "Max Kozloff",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.369,
-        "left": 0.471,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-23",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0BAA320ABBB1",
+      "price": 17.8,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-159169",
-      "price": 17.8
+      "target_bay_name": null
     },
     {
-      "id": "item-25",
-      "title": "The Hidden Order of Art",
+      "title": "THE HIDDEN ORDER OF ART",
       "author": "Anton Ehrenzweig",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.377,
-        "left": 0.529,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-24",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6E6A1F43666D",
+      "price": 15.79,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-049211",
-      "price": 15.79
+      "target_bay_name": null
     },
     {
-      "id": "item-26",
-      "title": "The Thames and Hudson Dictionary of Art and Artists",
+      "title": "THE THAMES AND HUDSON DICTIONARY OF ART AND ARTISTS",
       "author": null,
-      "confidence": 0.94,
-      "box": {
-        "top": 0.364,
-        "left": 0.588,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-25",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-8B8C03E0D2A9",
+      "price": 24.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-678307",
-      "price": 24.59
+      "target_bay_name": null
     },
     {
-      "id": "item-27",
       "title": "Functions of Painting",
       "author": "Fernand Léger",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.365,
-        "left": 0.647,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-26",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A2524598ED2A",
+      "price": 22.11,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-952720",
-      "price": 22.11
+      "target_bay_name": null
     },
     {
-      "id": "item-28",
-      "title": "Art & Language",
+      "title": "ART & LANGUAGE",
       "author": null,
-      "confidence": 0.98,
-      "box": {
-        "top": 0.367,
-        "left": 0.705,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-27",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-1F1B330F2482",
+      "price": 25.13,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-153699",
-      "price": 25.13
+      "target_bay_name": null
     },
     {
-      "id": "item-29",
       "title": "The Necessity of Art",
       "author": "Ernst Fischer",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.369,
-        "left": 0.764,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-28",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4E8D53B3220C",
+      "price": 27.76,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-965844",
-      "price": 27.76
+      "target_bay_name": null
     },
     {
-      "id": "item-30",
       "title": "Constable",
       "author": "Michael Rosenthal",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.367,
-        "left": 0.823,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-29",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-5A3A57322E63",
+      "price": 15.53,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-483511",
-      "price": 15.53
+      "target_bay_name": null
     },
     {
-      "id": "item-31",
-      "title": "Memoirs of the Life of John Constable",
+      "title": "MEMOIRS OF THE LIFE OF JOHN CONSTABLE",
       "author": "C.R. Leslie",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.378,
-        "left": 0.881,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-30",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9A76326389C1",
+      "price": 16.69,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-378322",
-      "price": 16.69
+      "target_bay_name": null
     },
     {
-      "id": "item-32",
-      "title": "Rococo to Revolution",
+      "title": "AN OUTLINE OF ENGLISH PAINTING",
+      "author": "R.H. Wilenski",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-31",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-455C7BEE6F73",
+      "price": 24.39,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "ROCOCO TO REVOLUTION",
       "author": "Michael Levey",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.656,
-        "left": 0.06,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-32",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D63E73527794",
+      "price": 18.54,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-778612",
-      "price": 18.54
+      "target_bay_name": null
     },
     {
-      "id": "item-33",
-      "title": "The Birth and Rebirth of Pictorial Space",
+      "title": "THE BIRTH AND REBIRTH OF PICTORIAL SPACE",
       "author": "John White",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.669,
-        "left": 0.119,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-33",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-3A5E2C4B61B7",
+      "price": 29.71,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-032374",
-      "price": 29.71
+      "target_bay_name": null
     },
     {
-      "id": "item-34",
       "title": "Studies in Iconology",
       "author": "Erwin Panofsky",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.658,
-        "left": 0.177,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-34",
       "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay A4 · Cultural Studies & Iconography",
-      "target_bay_name": "Bay A4 · Cultural Studies & Iconography",
-      "sku": null,
-      "price": 22.11
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-9B6969441F8C",
+      "price": 25.48,
+      "misplaced_reason": "Planogram assigns to Bay A4 · Photography & Monograph",
+      "target_bay_name": "Bay A4 · Photography & Monograph"
     },
     {
-      "id": "item-35",
-      "title": "Pagan Mysteries in the Renaissance",
+      "title": "PAGAN MYSTERIES IN THE RENAISSANCE",
       "author": "Edgar Wind",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.667,
-        "left": 0.236,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-35",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-C73483DDE9BD",
+      "price": 23.96,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-060212",
-      "price": 23.96
+      "target_bay_name": null
     },
     {
-      "id": "item-36",
-      "title": "The High Renaissance and Mannerism",
+      "title": "High Renaissance and Mannerism",
       "author": "Linda Murray",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.659,
-        "left": 0.295,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-36",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-8BB8B6ECF48E",
+      "price": 16.28,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-297911",
-      "price": 16.28
+      "target_bay_name": null
     },
     {
-      "id": "item-37",
-      "title": "The Art of the Renaissance",
-      "author": "Peter and Linda Murray",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.665,
-        "left": 0.353,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
+      "title": "Art of the Renaissance",
+      "author": "Peter Murray and Linda Murray",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-37",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-841625",
-      "price": 19.44
+      "target_bay_name": null
     },
     {
-      "id": "item-38",
+      "title": "Dream of Icarus",
+      "author": "Kenneth Coutts-Smith",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-38",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-686C084D97B5",
+      "price": 23.77,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Modern Art and Modernism",
-      "author": "Francis Frascina and Charles Harrison (eds.)",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.651,
-        "left": 0.412,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "author": "Francis Frascina, Charles Harrison",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-39",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 17.27
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
     },
     {
-      "id": "item-39",
-      "title": "A Life of Picasso",
+      "title": "A LIFE OF PICASSO",
       "author": "John Richardson",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.669,
-        "left": 0.471,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-40",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 15.59
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
     },
     {
-      "id": "item-40",
-      "title": "Pollock and After",
-      "author": "Francis Frascina (ed.)",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.654,
-        "left": 0.529,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 28.66
-    },
-    {
-      "id": "item-41",
-      "title": "The End of Art Theory",
+      "title": "THE END OF ART THEORY",
       "author": "Victor Burgin",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.651,
-        "left": 0.588,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-41",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 15.79
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
     },
     {
-      "id": "item-42",
-      "title": "Romanticism and Realism",
-      "author": "Edited by Charles Harrison and Fred Orton",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.669,
-        "left": 0.647,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
+      "title": "TOWARDS A NEW ART The background to abstract art 1910-20",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-42",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-DC1838C265B3",
+      "price": 28.88,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 26.49
+      "target_bay_name": null
     },
     {
-      "id": "item-43",
-      "title": "Towards a New Art",
-      "author": "E.H. Gombrich",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.651,
-        "left": 0.705,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "title": "The Female Body in Western Culture",
+      "author": "Susan Rubin Suleiman",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-43",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 39.95
-    },
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    }
+  ],
+  "misplaced_items": [
     {
-      "id": "item-44",
-      "title": "Neo-Classicism",
-      "author": "Hugh Honour",
-      "confidence": 0.79,
-      "box": {
-        "top": 0.651,
-        "left": 0.764,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 28.85
-    },
-    {
-      "id": "item-45",
-      "title": "English Painting",
-      "author": "R.H. Wilenski",
-      "confidence": 0.78,
-      "box": {
-        "top": 0.655,
-        "left": 0.823,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 24.39
-    },
-    {
-      "id": "item-46",
-      "title": "The New Cézanne",
-      "author": "Ernst Fischer",
-      "confidence": 0.84,
-      "box": {
-        "top": 0.667,
-        "left": 0.881,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 27.76
+      "title": "Studies in Iconology",
+      "author": "Erwin Panofsky",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a2-item-34",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-9B6969441F8C",
+      "price": 25.48,
+      "misplaced_reason": "Planogram assigns to Bay A4 · Photography & Monograph",
+      "target_bay_name": "Bay A4 · Photography & Monograph"
     }
   ],
   "missing_items": [
     {
-      "sku": "SKU-125417",
+      "sku": "SKU-67C797AF4F36",
+      "title": "Art of the Renaissance",
+      "author": "Germain Bazin",
+      "planogram_bay_id": "bay_a2",
+      "simulated_on_hand": 0,
+      "price": 19.44,
+      "sales_velocity": 2.9,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-C1CFDB3F8338",
       "title": "Romanticism and Realism: The Mythology of Nineteenth-Century Art",
       "author": "Charles Rosen & Henri Zerner",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 1,
       "price": 22.62,
       "sales_velocity": 1.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 1 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-734794",
+      "sku": "SKU-1E02D51E4075",
       "title": "The Social History of Art",
       "author": "Arnold Hauser",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 2,
       "price": 28.8,
       "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-917357",
-      "title": "An Outline of English Painting",
-      "author": "R.H. Wilenski",
-      "planogram_bay_id": "bay_a2",
-      "simulated_on_hand": 3,
-      "price": 24.39,
-      "sales_velocity": 2.8,
-      "is_phantom_inventory": true,
-      "reason": "System shows 3 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-263419",
+      "sku": "SKU-3E111642D09F",
       "title": "The End of Art Theory: Criticism and Postmodernity",
       "author": "Victor Burgin",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 12,
       "price": 25.18,
       "sales_velocity": 2.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 12 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-749415",
-      "title": "Towards a New Art: Essays on the Background to Abstract Art 1910–20",
-      "author": "Tate Gallery",
+      "sku": "SKU-CECBD29B4DCC",
+      "title": "Landscapes of France: Impressionism and Its Rivals",
+      "author": null,
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 3,
-      "price": 28.88,
-      "sales_velocity": 0.8,
-      "is_phantom_inventory": true,
-      "reason": "System shows 3 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "price": 18.32,
+      "sales_velocity": 2.4,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-836607",
+      "sku": "SKU-55920371903D",
       "title": "Modern Art and Modernism: A Critical Anthology",
       "author": "Edited by Francis Frascina and Charles Harrison",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 11,
       "price": 17.27,
       "sales_velocity": 2.5,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-838722",
-      "title": "Pollock and After: The Critical Debate",
-      "author": "Edited by Francis Frascina",
+      "sku": "SKU-F1D37874D711",
+      "title": "The Female Body",
+      "author": null,
+      "planogram_bay_id": "bay_a2",
+      "simulated_on_hand": 11,
+      "price": 20.26,
+      "sales_velocity": 1.7,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-B43C499EEA62",
+      "title": "Letters to His Son Lucien",
+      "author": "Camille Pissarro (Edited by John Rewald)",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 8,
-      "price": 28.66,
-      "sales_velocity": 3.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "price": 28.64,
+      "sales_velocity": 2.4,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-872459",
+      "sku": "SKU-E48FD3AC15B9",
       "title": "A Life of Picasso (Volume II: 1907–1917)",
       "author": "John Richardson",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 2,
       "price": 15.59,
       "sales_velocity": 1.4,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-687663",
+      "sku": "SKU-6B8FBAB5C1B4",
       "title": "A Life of Picasso (Volume III: 1917–1932)",
       "author": "John Richardson",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 9,
       "price": 31.46,
       "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 9 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-047435",
+      "sku": "SKU-3E110369B5B1",
       "title": "The Age of Neo-Classicism",
       "author": "Arts Council of Great Britain",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 14,
       "price": 28.85,
       "sales_velocity": 0.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 14 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-678263",
-      "title": "The Dream of Icarus",
-      "author": "Kenneth Coutts-Smith",
-      "planogram_bay_id": "bay_a2",
-      "simulated_on_hand": 4,
-      "price": 23.77,
-      "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-495182",
+      "sku": "SKU-A9A964810305",
       "title": "Rococo, Classicism and Romanticism",
       "author": null,
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 8,
       "price": 23.33,
       "sales_velocity": 2.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-130721",
+      "sku": "SKU-BB7F79CD8C6F",
       "title": "Lives of the Artists",
       "author": "Giorgio Vasari",
       "planogram_bay_id": "bay_a2",
       "simulated_on_hand": 11,
       "price": 22.5,
       "sales_velocity": 1.3,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-699036",
+      "sku": "SKU-35BFFDB85B5A",
       "title": "The Story of Art",
       "author": "E.H. Gombrich",
       "planogram_bay_id": "bay_a2",
@@ -1672,11 +1435,12 @@
       "price": 39.95,
       "sales_velocity": 2.1,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-543083",
+      "sku": "SKU-AA356204A6B5",
       "title": "Leonardo da Vinci",
       "author": "Walter Isaacson",
       "planogram_bay_id": "bay_a2",
@@ -1684,250 +1448,252 @@
       "price": 25.0,
       "sales_velocity": 1.9,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
-    }
-  ],
-  "misplaced_items": [
-    {
-      "id": "item-34",
-      "title": "Studies in Iconology",
-      "author": "Erwin Panofsky",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.658,
-        "left": 0.177,
-        "width": 0.053,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay A4 · Cultural Studies & Iconography",
-      "target_bay_name": "Bay A4 · Cultural Studies & Iconography",
-      "sku": null,
-      "price": 22.11
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     }
   ],
   "action_tasks": [
     {
-      "id": "alert-record-error-Art_of_the_Renaissance",
-      "type": "record_error",
-      "severity": "high",
-      "badge": "📋 Record Error",
-      "title": "The Art of the Renaissance",
-      "author": "Peter and Linda Murray",
-      "headline": "Found on shelf, but store record shows 0 (item blocked online)",
-      "suggested_action": "Correct record to 1 to restore online availability",
-      "system_on_hand": 0,
-      "shelf_count": 1
-    },
-    {
-      "id": "alert-missing-SKU-125417",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Romanticism and Realism: The Mythology of Nineteenth-Century Art",
-      "author": "Charles Rosen & Henri Zerner",
-      "sku": "SKU-125417",
-      "headline": "Missing from shelf · System shows 1 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 1,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-734794",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Social History of Art",
-      "author": "Arnold Hauser",
-      "sku": "SKU-734794",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-917357",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "An Outline of English Painting",
-      "author": "R.H. Wilenski",
-      "sku": "SKU-917357",
-      "headline": "Missing from shelf · System shows 3 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 3,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-263419",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The End of Art Theory: Criticism and Postmodernity",
-      "author": "Victor Burgin",
-      "sku": "SKU-263419",
-      "headline": "Missing from shelf · System shows 12 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 12,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-749415",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Towards a New Art: Essays on the Background to Abstract Art 1910–20",
-      "author": "Tate Gallery",
-      "sku": "SKU-749415",
-      "headline": "Missing from shelf · System shows 3 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 3,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-836607",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Modern Art and Modernism: A Critical Anthology",
-      "author": "Edited by Francis Frascina and Charles Harrison",
-      "sku": "SKU-836607",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-838722",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Pollock and After: The Critical Debate",
-      "author": "Edited by Francis Frascina",
-      "sku": "SKU-838722",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-872459",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "A Life of Picasso (Volume II: 1907–1917)",
-      "author": "John Richardson",
-      "sku": "SKU-872459",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-687663",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "A Life of Picasso (Volume III: 1917–1932)",
-      "author": "John Richardson",
-      "sku": "SKU-687663",
-      "headline": "Missing from shelf · System shows 9 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 9,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-047435",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Age of Neo-Classicism",
-      "author": "Arts Council of Great Britain",
-      "sku": "SKU-047435",
-      "headline": "Missing from shelf · System shows 14 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 14,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-678263",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Dream of Icarus",
-      "author": "Kenneth Coutts-Smith",
-      "sku": "SKU-678263",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-495182",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Rococo, Classicism and Romanticism",
-      "author": null,
-      "sku": "SKU-495182",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-130721",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Lives of the Artists",
-      "author": "Giorgio Vasari",
-      "sku": "SKU-130721",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-699036",
-      "type": "missing_item",
+      "id": "bay_a2-review-1",
+      "type": "recognition_review",
       "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "The Story of Art",
-      "author": "E.H. Gombrich",
-      "sku": "SKU-699036",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
+      "badge": "Reading needs review",
+      "title": "Letters to his son Lucien",
+      "author": "Camille Pissarro",
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_a2-item-1",
+      "requires_review": true
     },
     {
-      "id": "alert-missing-SKU-543083",
-      "type": "missing_item",
-      "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "Leonardo da Vinci",
-      "author": "Walter Isaacson",
-      "sku": "SKU-543083",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-misplaced-item-34",
+      "id": "bay_a2-move-SKU-9B6969441F8C",
       "type": "misplaced_item",
       "severity": "warning",
-      "badge": "↔️ Misplaced Item",
+      "badge": "↔ Possible Misplacement",
       "title": "Studies in Iconology",
       "author": "Erwin Panofsky",
-      "headline": "Found on Bay A2 · Classical Art & Renaissance · Belongs to Bay A4 · Cultural Studies & Iconography",
-      "suggested_action": "Move book to Bay A4 · Cultural Studies & Iconography",
-      "shelf_count": 1
+      "sku": "SKU-9B6969441F8C",
+      "headline": "Title read here; planogram assigns it to Bay A4 · Photography & Monograph.",
+      "suggested_action": "Confirm location and relocation",
+      "shelf_item_id": "bay_a2-item-34",
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-review-37",
+      "type": "recognition_review",
+      "severity": "medium",
+      "badge": "Reading needs review",
+      "title": "Art of the Renaissance",
+      "author": "Peter Murray and Linda Murray",
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_a2-item-37",
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-67C797AF4F36",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Art of the Renaissance",
+      "author": "Germain Bazin",
+      "sku": "SKU-67C797AF4F36",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-C1CFDB3F8338",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Romanticism and Realism: The Mythology of Nineteenth-Century Art",
+      "author": "Charles Rosen & Henri Zerner",
+      "sku": "SKU-C1CFDB3F8338",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 1. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 1,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-1E02D51E4075",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Social History of Art",
+      "author": "Arnold Hauser",
+      "sku": "SKU-1E02D51E4075",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-3E111642D09F",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The End of Art Theory: Criticism and Postmodernity",
+      "author": "Victor Burgin",
+      "sku": "SKU-3E111642D09F",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 12. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 12,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-CECBD29B4DCC",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Landscapes of France: Impressionism and Its Rivals",
+      "author": null,
+      "sku": "SKU-CECBD29B4DCC",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 3. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 3,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-55920371903D",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Modern Art and Modernism: A Critical Anthology",
+      "author": "Edited by Francis Frascina and Charles Harrison",
+      "sku": "SKU-55920371903D",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-F1D37874D711",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Female Body",
+      "author": null,
+      "sku": "SKU-F1D37874D711",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-B43C499EEA62",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Letters to His Son Lucien",
+      "author": "Camille Pissarro (Edited by John Rewald)",
+      "sku": "SKU-B43C499EEA62",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-E48FD3AC15B9",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "A Life of Picasso (Volume II: 1907–1917)",
+      "author": "John Richardson",
+      "sku": "SKU-E48FD3AC15B9",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-6B8FBAB5C1B4",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "A Life of Picasso (Volume III: 1917–1932)",
+      "author": "John Richardson",
+      "sku": "SKU-6B8FBAB5C1B4",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 9. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 9,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-3E110369B5B1",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Age of Neo-Classicism",
+      "author": "Arts Council of Great Britain",
+      "sku": "SKU-3E110369B5B1",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 14. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 14,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-A9A964810305",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Rococo, Classicism and Romanticism",
+      "author": null,
+      "sku": "SKU-A9A964810305",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-BB7F79CD8C6F",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Lives of the Artists",
+      "author": "Giorgio Vasari",
+      "sku": "SKU-BB7F79CD8C6F",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-35BFFDB85B5A",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Story of Art",
+      "author": "E.H. Gombrich",
+      "sku": "SKU-35BFFDB85B5A",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a2-unseen-SKU-AA356204A6B5",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Leonardo da Vinci",
+      "author": "Walter Isaacson",
+      "sku": "SKU-AA356204A6B5",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
     }
-  ]
+  ],
+  "metrics": {
+    "planogram_expected_items": 51,
+    "shelf_items_detected": 43,
+    "matched_count": 36,
+    "missing_count": 15,
+    "misplaced_count": 1,
+    "review_count": 2,
+    "planogram_compliance_pct": 70.6
+  }
 }

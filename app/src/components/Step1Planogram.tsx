@@ -49,7 +49,7 @@ export const Step1Planogram: React.FC<Step1PlanogramProps> = ({
           </span>
         </div>
         <p className="text-xs text-slate-500">
-          The store's official planogram record. Specifies which books belong on this shelf and expected inventory.
+          Simulated store planogram: assigned titles and inventory records for comparison.
         </p>
 
         {/* Quick KPI stats */}
@@ -153,7 +153,7 @@ export const Step1Planogram: React.FC<Step1PlanogramProps> = ({
       {/* Footer Note */}
       <div className="p-2.5 bg-slate-50 border-t border-slate-200 text-center">
         <span className="text-[11px] text-slate-500 font-medium">
-          Source: Central ERP Planogram &bull; Seeded deterministic record
+          Source: Simulated store records
         </span>
       </div>
     </div>

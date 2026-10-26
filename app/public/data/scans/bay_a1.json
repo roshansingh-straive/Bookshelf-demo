@@ -4,23 +4,31 @@
   "bay_name": "Bay A1 · Art Theory & Philosophy",
   "photo_filename": "a.jpg",
   "photo_url": "/photos/a.jpg",
-  "scanned_at": "Today, 08:32 AM",
-  "model": "Claude Opus 5.5",
+  "mode": "replay",
+  "scanned_at": "2026-10-04",
+  "model": "Gemini 3.8 Flash",
   "effort": "high",
-  "inference_duration_seconds": 5.4,
-  "tokens_used": 3610,
-  "estimated_cost_usd": 0.05,
-  "metrics": {
-    "planogram_expected_items": 67,
-    "shelf_items_detected": 60,
-    "matched_count": 57,
-    "missing_count": 10,
-    "misplaced_count": 1,
-    "planogram_compliance_pct": 85.1
+  "inference_duration_seconds": null,
+  "tokens_used": null,
+  "estimated_cost_usd": null,
+  "selection_reason": "Use Flash extended thinking for easy shelves, Opus high for medium shelves, and the Opus high single-photo experiment for hard shelves. Selected by difficulty-level results, not per-photo best scores.",
+  "source": {
+    "source_path": "results/exp1-run2/details/gemini-3.8-flash__extended-thinking.json",
+    "interface": "Gemini web app (temporary chat), driven by Claude Code via Claude in Chrome (Brave)",
+    "original_mode": "extended-thinking",
+    "source_date": "2026-10-04"
   },
+  "harness": {
+    "native_resolution": false,
+    "tile_count": 0,
+    "calls_completed": 0,
+    "rotated_verification": false,
+    "measured_accuracy": null
+  },
+  "disclosure": "Saved benchmark predictions. No live model call or zoom verification. Book positions and confidence were not annotated; per-photo cost and latency were not measured.",
   "planogram_items": [
     {
-      "sku": "SKU-012715",
+      "sku": "SKU-6244D525DB16",
       "title": "Deconstruction: Theory and Practice",
       "author": "Christopher Norris",
       "assigned_bay_id": "bay_a1",
@@ -31,7 +39,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-156947",
+      "sku": "SKU-EC27D7550008",
       "title": "Synchronicity",
       "author": "C.G. Jung",
       "assigned_bay_id": "bay_a1",
@@ -42,7 +50,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-579694",
+      "sku": "SKU-0CA240360392",
       "title": "Freedom from the Known",
       "author": "J. Krishnamurti",
       "assigned_bay_id": "bay_a1",
@@ -53,7 +61,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-358639",
+      "sku": "SKU-D0E724179DA1",
       "title": "Colour",
       "author": "Hazel Rossotti",
       "assigned_bay_id": "bay_a1",
@@ -64,7 +72,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-474474",
+      "sku": "SKU-4E88F116CFCB",
       "title": "On Growth and Form",
       "author": "D'Arcy Thompson",
       "assigned_bay_id": "bay_a1",
@@ -75,7 +83,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-485126",
+      "sku": "SKU-CA3EA3E795E3",
       "title": "Fallacies in Mathematics",
       "author": "E.A. Maxwell",
       "assigned_bay_id": "bay_a1",
@@ -86,7 +94,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-380956",
+      "sku": "SKU-7E90238A9C47",
       "title": "Art and Culture",
       "author": "Clement Greenberg",
       "assigned_bay_id": "bay_a1",
@@ -97,7 +105,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-713690",
+      "sku": "SKU-693477CB8BEA",
       "title": "The Letters of Vincent van Gogh",
       "author": "Edited by Mark Roskill",
       "assigned_bay_id": "bay_a1",
@@ -108,7 +116,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-372332",
+      "sku": "SKU-1D0547070AFD",
       "title": "A History of England and Great Britain",
       "author": "Professor Meiklejohn",
       "assigned_bay_id": "bay_a1",
@@ -119,7 +127,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-031057",
+      "sku": "SKU-44D60422D9AE",
       "title": "Selected Writings on Art and Literature",
       "author": "Charles Baudelaire",
       "assigned_bay_id": "bay_a1",
@@ -130,7 +138,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-095295",
+      "sku": "SKU-1367FD41C824",
       "title": "Concepts of Modern Mathematics",
       "author": "Ian Stewart",
       "assigned_bay_id": "bay_a1",
@@ -141,7 +149,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-406601",
+      "sku": "SKU-177592A169A7",
       "title": "Recodings",
       "author": "Hal Foster",
       "assigned_bay_id": "bay_a1",
@@ -152,7 +160,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-054465",
+      "sku": "SKU-95997FDBB640",
       "title": "Practical Plane and Solid Geometry",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -163,7 +171,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-483005",
+      "sku": "SKU-A33D0EDF2E0B",
       "title": "The Psychology of Perception",
       "author": "M.D. Vernon",
       "assigned_bay_id": "bay_a1",
@@ -174,7 +182,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-704204",
+      "sku": "SKU-CEB9040C2754",
       "title": "Mathematics and Logic",
       "author": "Mark Kac and Stanislaw M. Ulam",
       "assigned_bay_id": "bay_a1",
@@ -185,7 +193,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-175601",
+      "sku": "SKU-134CF37F1E52",
       "title": "The Origin of Species",
       "author": "Charles Darwin",
       "assigned_bay_id": "bay_a1",
@@ -196,7 +204,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-709346",
+      "sku": "SKU-50A4B446B857",
       "title": "Spanish Short Stories 1",
       "author": "Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -207,7 +215,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-078997",
+      "sku": "SKU-B6BD8479DC8F",
       "title": "Spanish Short Stories 2",
       "author": "Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -218,7 +226,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-982759",
+      "sku": "SKU-5F743DCC4CED",
       "title": "Painting and Experience in Fifteenth-Century Italy",
       "author": "Michael Baxandall",
       "assigned_bay_id": "bay_a1",
@@ -229,7 +237,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-256112",
+      "sku": "SKU-FF83E9D94A84",
       "title": "The Penguin Dictionary of Psychology",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -240,7 +248,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-654529",
+      "sku": "SKU-6B771CBD9DCB",
       "title": "Cybernetics",
       "author": "Norbert Wiener",
       "assigned_bay_id": "bay_a1",
@@ -251,7 +259,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-132155",
+      "sku": "SKU-6630DF0F69E4",
       "title": "Essays on the Theory of Numbers",
       "author": "Richard Dedekind",
       "assigned_bay_id": "bay_a1",
@@ -262,7 +270,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-007588",
+      "sku": "SKU-63C70856842F",
       "title": "Introduction to Numerical Analysis",
       "author": "F.B. Hildebrand",
       "assigned_bay_id": "bay_a1",
@@ -273,7 +281,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-587765",
+      "sku": "SKU-F95D6B305895",
       "title": "Theory of Sets",
       "author": "E. Kamke",
       "assigned_bay_id": "bay_a1",
@@ -284,7 +292,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-786685",
+      "sku": "SKU-154CFAA794B5",
       "title": "Geometry and the Liberal Arts",
       "author": "Dan Pedoe",
       "assigned_bay_id": "bay_a1",
@@ -295,7 +303,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-970797",
+      "sku": "SKU-7045D34DE47B",
       "title": "Meaning in the Visual Arts",
       "author": "Erwin Panofsky",
       "assigned_bay_id": "bay_a1",
@@ -306,7 +314,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-286042",
+      "sku": "SKU-CF35963D6AD9",
       "title": "Realism",
       "author": "Linda Nochlin",
       "assigned_bay_id": "bay_a1",
@@ -317,7 +325,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-836910",
+      "sku": "SKU-996ABCC8E5D3",
       "title": "Nature and Its Symbols",
       "author": "Lucia Impelluso",
       "assigned_bay_id": "bay_a1",
@@ -328,7 +336,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-606241",
+      "sku": "SKU-D745D4A5274F",
       "title": "The High Renaissance and Mannerism",
       "author": "Linda Murray",
       "assigned_bay_id": "bay_a1",
@@ -339,7 +347,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-539982",
+      "sku": "SKU-2CA64AFAB3D9",
       "title": "Dutch Painting",
       "author": "R.H. Fuchs",
       "assigned_bay_id": "bay_a1",
@@ -350,7 +358,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-484184",
+      "sku": "SKU-35A608A7B75B",
       "title": "Verbos Españoles Conjugados",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -361,7 +369,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-297266",
+      "sku": "SKU-658137BB256D",
       "title": "Romantic Art",
       "author": "William Vaughan",
       "assigned_bay_id": "bay_a1",
@@ -372,7 +380,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-126043",
+      "sku": "SKU-59E15B7646A1",
       "title": "The Thames and Hudson Encyclopaedia of British Art",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -383,7 +391,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-125569",
+      "sku": "SKU-7310320B264A",
       "title": "101 Spanish Proverbs",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -394,7 +402,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-627420",
+      "sku": "SKU-0B9AE322D8DC",
       "title": "101 Spanish Idioms",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -405,7 +413,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-925827",
+      "sku": "SKU-7E093993423D",
       "title": "As One Is",
       "author": "J. Krishnamurti",
       "assigned_bay_id": "bay_a1",
@@ -416,7 +424,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-718864",
+      "sku": "SKU-EDA2A63EF068",
       "title": "Modern Judgements: Racine",
       "author": "R.C. Knight (ed.)",
       "assigned_bay_id": "bay_a1",
@@ -427,7 +435,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-571495",
+      "sku": "SKU-B25ED798C015",
       "title": "Postmodernism: ICA Documents",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -438,7 +446,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-377194",
+      "sku": "SKU-4627443CCE50",
       "title": "Visual Theory",
       "author": "Norman Bryson, Michael Ann Holly, and Keith Moxey",
       "assigned_bay_id": "bay_a1",
@@ -449,7 +457,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-662152",
+      "sku": "SKU-22277237A9B2",
       "title": "Speech and Language in Psychoanalysis",
       "author": "Jacques Lacan & Anthony Wilden",
       "assigned_bay_id": "bay_a1",
@@ -460,7 +468,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-521152",
+      "sku": "SKU-C47879A54B63",
       "title": "Romantic Art Theories",
       "author": "August Wiedmann",
       "assigned_bay_id": "bay_a1",
@@ -471,7 +479,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-268290",
+      "sku": "SKU-471C2B4C9805",
       "title": "The Works of Jacques Lacan",
       "author": "Malcolm Bowie",
       "assigned_bay_id": "bay_a1",
@@ -482,7 +490,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-964291",
+      "sku": "SKU-E6FFAA17ED5D",
       "title": "Lacan",
       "author": "Malcolm Bowie",
       "assigned_bay_id": "bay_a1",
@@ -493,7 +501,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-891919",
+      "sku": "SKU-8407A7ADCE9F",
       "title": "The Truth in Painting",
       "author": "Jacques Derrida",
       "assigned_bay_id": "bay_a1",
@@ -504,7 +512,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-906123",
+      "sku": "SKU-682435A800D7",
       "title": "Reading Landscape: Country-City-Capital",
       "author": "Simon Pugh (ed.)",
       "assigned_bay_id": "bay_a1",
@@ -515,7 +523,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-202326",
+      "sku": "SKU-D3B4631E4D7D",
       "title": "Patterns of Intention",
       "author": "Michael Baxandall",
       "assigned_bay_id": "bay_a1",
@@ -526,7 +534,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-765507",
+      "sku": "SKU-7BEC7DB1F179",
       "title": "Art and Psyche",
       "author": "Ellen Handler Spitz",
       "assigned_bay_id": "bay_a1",
@@ -537,7 +545,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-069976",
+      "sku": "SKU-31E2ED5B1E9A",
       "title": "The Politics of Procrustes",
       "author": "Antony Flew",
       "assigned_bay_id": "bay_a1",
@@ -548,7 +556,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-825551",
+      "sku": "SKU-9662640EB12B",
       "title": "Aspects of Form",
       "author": "Lancelot Law Whyte",
       "assigned_bay_id": "bay_a1",
@@ -559,7 +567,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-952196",
+      "sku": "SKU-76F9F93BB9F1",
       "title": "Elementary Particles",
       "author": "Gerald L. Wick",
       "assigned_bay_id": "bay_a1",
@@ -570,7 +578,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-494630",
+      "sku": "SKU-4223396851F9",
       "title": "Relativity",
       "author": "John Marks",
       "assigned_bay_id": "bay_a1",
@@ -581,7 +589,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-054154",
+      "sku": "SKU-EB4113284D82",
       "title": "Cells: Form and Function",
       "author": "John Stares",
       "assigned_bay_id": "bay_a1",
@@ -592,7 +600,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-991291",
+      "sku": "SKU-09E7E7A055EB",
       "title": "Molecules of Life",
       "author": "John Stares",
       "assigned_bay_id": "bay_a1",
@@ -603,7 +611,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-321753",
+      "sku": "SKU-BCF9A96978BB",
       "title": "Western Architecture",
       "author": "R. Furneaux Jordan",
       "assigned_bay_id": "bay_a1",
@@ -614,7 +622,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-295346",
+      "sku": "SKU-786EF088FE67",
       "title": "The Selfish Gene",
       "author": "Richard Dawkins",
       "assigned_bay_id": "bay_a1",
@@ -625,7 +633,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-617884",
+      "sku": "SKU-D35115C222FF",
       "title": "Analytical Psychology",
       "author": "C.G. Jung",
       "assigned_bay_id": "bay_a1",
@@ -636,7 +644,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-666958",
+      "sku": "SKU-01B25D571B22",
       "title": "Art and Imagination",
       "author": "Roger Scruton",
       "assigned_bay_id": "bay_a1",
@@ -647,7 +655,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-296863",
+      "sku": "SKU-BEDAF1CF1A34",
       "title": "Artists Handbook",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -658,7 +666,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-931824",
+      "sku": "SKU-B7920EDD88A9",
       "title": "Art and Its Objects",
       "author": "Richard Wollheim",
       "assigned_bay_id": "bay_a1",
@@ -669,7 +677,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-475466",
+      "sku": "SKU-A35EB90B0D86",
       "title": "The Essentials of Psycho-Analysis",
       "author": "Sigmund Freud",
       "assigned_bay_id": "bay_a1",
@@ -680,7 +688,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-306365",
+      "sku": "SKU-E5CB941FB724",
       "title": "Short Stories in Spanish / Cuentos en Español",
       "author": "New Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -691,7 +699,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-570775",
+      "sku": "SKU-FA601E539326",
       "title": "System and Structure",
       "author": "Anthony Wilden",
       "assigned_bay_id": "bay_a1",
@@ -702,7 +710,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-755333",
+      "sku": "SKU-FD9266EE16E0",
       "title": "Inquiries into the Fundamentals of Aesthetics",
       "author": "Stefan Morawski",
       "assigned_bay_id": "bay_a1",
@@ -713,7 +721,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-924058",
+      "sku": "SKU-FE7FD625607E",
       "title": "Edward Hopper: An Intimate Biography",
       "author": "Gail Levin",
       "assigned_bay_id": "bay_a1",
@@ -724,7 +732,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-936734",
+      "sku": "SKU-BEBE3DF3FD22",
       "title": "Ways of Seeing",
       "author": "John Berger",
       "assigned_bay_id": "bay_a1",
@@ -736,7 +744,7 @@
       "days_since_stockout": 3
     },
     {
-      "sku": "SKU-473465",
+      "sku": "SKU-6639146362D0",
       "title": "Simulacra and Simulation",
       "author": "Jean Baudrillard",
       "assigned_bay_id": "bay_a1",
@@ -748,7 +756,7 @@
       "days_since_stockout": 5
     },
     {
-      "sku": "SKU-989540",
+      "sku": "SKU-6DF1A32DC09D",
       "title": "The Medium is the Massage",
       "author": "Marshall McLuhan",
       "assigned_bay_id": "bay_a1",
@@ -762,1305 +770,1067 @@
   ],
   "shelf_items": [
     {
-      "id": "item-1",
       "title": "Art and Its Objects",
       "author": "Richard Wollheim",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.071,
-        "left": 0.06,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-1",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-B7920EDD88A9",
+      "price": 18.53,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-931824",
-      "price": 18.53
+      "target_bay_name": null
     },
     {
-      "id": "item-2",
-      "title": "The Selfish Gene",
-      "author": "Richard Dawkins",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.083,
-        "left": 0.104,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-295346",
-      "price": 26.45
-    },
-    {
-      "id": "item-3",
       "title": "Art and Imagination",
       "author": "Roger Scruton",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.077,
-        "left": 0.148,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-2",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-01B25D571B22",
+      "price": 21.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-666958",
-      "price": 21.66
+      "target_bay_name": null
     },
     {
-      "id": "item-4",
-      "title": "Analytical Psychology",
+      "title": "ANALYTICAL PSYCHOLOGY",
       "author": "C.G. Jung",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.076,
-        "left": 0.192,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-3",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D35115C222FF",
+      "price": 20.64,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-617884",
-      "price": 20.64
+      "target_bay_name": null
     },
     {
-      "id": "item-5",
+      "title": "The Selfish Gene",
+      "author": "Richard Dawkins",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-4",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-786EF088FE67",
+      "price": 26.45,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Western Architecture",
       "author": "R. Furneaux Jordan",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.087,
-        "left": 0.236,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-5",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-BCF9A96978BB",
+      "price": 14.31,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-321753",
-      "price": 14.31
+      "target_bay_name": null
     },
     {
-      "id": "item-6",
-      "title": "Molecules of Life",
+      "title": "MOLECULES OF LIFE",
       "author": "John Stares",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.084,
-        "left": 0.28,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-6",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-09E7E7A055EB",
+      "price": 25.63,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-991291",
-      "price": 25.63
+      "target_bay_name": null
     },
     {
-      "id": "item-7",
-      "title": "Cells, Form & Function",
+      "title": "CELLS FORM & FUNCTION",
       "author": "John Stares",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.076,
-        "left": 0.324,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-7",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-EB4113284D82",
+      "price": 23.99,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-054154",
-      "price": 23.99
+      "target_bay_name": null
     },
     {
-      "id": "item-8",
-      "title": "Relativity",
+      "title": "RELATIVITY",
       "author": "John Marks",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.076,
-        "left": 0.368,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-8",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4223396851F9",
+      "price": 15.54,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-494630",
-      "price": 15.54
+      "target_bay_name": null
     },
     {
-      "id": "item-9",
-      "title": "Elementary Particles",
+      "title": "ELEMENTARY PARTICLES",
       "author": "Gerald L. Wick",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.078,
-        "left": 0.412,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-9",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-76F9F93BB9F1",
+      "price": 24.0,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-952196",
-      "price": 24.0
+      "target_bay_name": null
     },
     {
-      "id": "item-10",
-      "title": "Aspects of Form",
+      "title": "ASPECTS OF FORM",
       "author": "Lancelot Law Whyte",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.078,
-        "left": 0.456,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-10",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-9662640EB12B",
+      "price": 29.85,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-825551",
-      "price": 29.85
+      "target_bay_name": null
     },
     {
-      "id": "item-11",
-      "title": "The Politics of Procrustes",
+      "title": "The POLITICS of PROCRUSTES",
       "author": "Antony Flew",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.076,
-        "left": 0.5,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-11",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-31E2ED5B1E9A",
+      "price": 20.39,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-069976",
-      "price": 20.39
+      "target_bay_name": null
     },
     {
-      "id": "item-12",
       "title": "Art and Psyche",
       "author": "Ellen Handler Spitz",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.073,
-        "left": 0.544,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-12",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-7BEC7DB1F179",
+      "price": 29.32,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-765507",
-      "price": 29.32
+      "target_bay_name": null
     },
     {
-      "id": "item-13",
-      "title": "Patterns of Intention",
+      "title": "PATTERNS OF INTENTION",
       "author": "Michael Baxandall",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.078,
-        "left": 0.588,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-13",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D3B4631E4D7D",
+      "price": 26.03,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-202326",
-      "price": 26.03
+      "target_bay_name": null
     },
     {
-      "id": "item-14",
-      "title": "Reading Landscape: Country-city-capital",
-      "author": "Simon Pugh (ed.)",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.089,
-        "left": 0.632,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "title": "Reading landscape Country-city-capital",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-14",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-682435A800D7",
+      "price": 18.39,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-906123",
-      "price": 18.39
+      "target_bay_name": null
     },
     {
-      "id": "item-15",
-      "title": "The Truth in Painting",
+      "title": "THE TRUTH IN PAINTING",
       "author": "Jacques Derrida",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.084,
-        "left": 0.676,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-15",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-8407A7ADCE9F",
+      "price": 28.95,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-891919",
-      "price": 28.95
+      "target_bay_name": null
     },
     {
-      "id": "item-16",
-      "title": "Lacan",
+      "title": "THE WORKS OF JACQUES LACAN",
       "author": "Malcolm Bowie",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.088,
-        "left": 0.72,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-16",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-471C2B4C9805",
+      "price": 22.7,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-964291",
-      "price": 24.66
+      "target_bay_name": null
     },
     {
-      "id": "item-17",
-      "title": "The Works of Jacques Lacan",
-      "author": "Bice Benvenuto & Roger Kennedy",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.082,
-        "left": 0.764,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "title": "ROMANTIC ART THEORIES",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-17",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-C47879A54B63",
+      "price": 25.09,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-268290",
-      "price": 22.7
+      "target_bay_name": null
     },
     {
-      "id": "item-18",
-      "title": "Romantic Art Theories",
-      "author": "August Wiedmann",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.076,
-        "left": 0.808,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-521152",
-      "price": 25.09
-    },
-    {
-      "id": "item-19",
-      "title": "Speech and Language in Psychoanalysis",
+      "title": "SPEECH AND LANGUAGE IN PSYCHOANALYSIS",
       "author": "Jacques Lacan",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.081,
-        "left": 0.852,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-18",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-662152",
-      "price": 27.21
+      "target_bay_name": null
     },
     {
-      "id": "item-20",
-      "title": "Visual Theory",
-      "author": "Bryson, Holly & Moxey",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.07,
-        "left": 0.896,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 1,
-        "orientation": "vertical"
-      },
+      "title": "VISUAL THEORY",
+      "author": "Norman Bryson, Michael Ann Holly, Keith Moxey",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-19",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4627443CCE50",
+      "price": 22.28,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-377194",
-      "price": 22.28
+      "target_bay_name": null
     },
     {
-      "id": "item-21",
-      "title": "System and Structure",
-      "author": "Anthony Wilden",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.366,
-        "left": 0.06,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-570775",
-      "price": 22.72
-    },
-    {
-      "id": "item-22",
-      "title": "As One Is",
+      "title": "AS ONE IS",
       "author": "J. Krishnamurti",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.369,
-        "left": 0.104,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-20",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-7E093993423D",
+      "price": 23.11,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-925827",
-      "price": 23.11
+      "target_bay_name": null
     },
     {
-      "id": "item-23",
       "title": "101 Spanish Idioms",
       "author": null,
-      "confidence": 0.98,
-      "box": {
-        "top": 0.372,
-        "left": 0.148,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-21",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0B9AE322D8DC",
+      "price": 23.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-627420",
-      "price": 23.59
+      "target_bay_name": null
     },
     {
-      "id": "item-24",
       "title": "101 Spanish Proverbs",
       "author": null,
-      "confidence": 0.95,
-      "box": {
-        "top": 0.373,
-        "left": 0.192,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-22",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-7310320B264A",
+      "price": 31.71,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-125569",
-      "price": 31.71
+      "target_bay_name": null
     },
     {
-      "id": "item-25",
       "title": "The Thames and Hudson Encyclopaedia of British Art",
-      "author": null,
-      "confidence": 0.94,
-      "box": {
-        "top": 0.369,
-        "left": 0.236,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "author": "David Bindman",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-23",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-59E15B7646A1",
+      "price": 26.32,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-126043",
-      "price": 26.32
+      "target_bay_name": null
     },
     {
-      "id": "item-26",
       "title": "Romantic Art",
       "author": "William Vaughan",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.369,
-        "left": 0.28,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-24",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-658137BB256D",
+      "price": 15.83,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-297266",
-      "price": 15.83
+      "target_bay_name": null
     },
     {
-      "id": "item-27",
       "title": "Verbos españoles conjugados",
       "author": "Paloma Rubio",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.364,
-        "left": 0.324,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-25",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-35A608A7B75B",
+      "price": 24.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-484184",
-      "price": 24.66
+      "target_bay_name": null
     },
     {
-      "id": "item-28",
       "title": "Dutch Painting",
       "author": "R.H. Fuchs",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.369,
-        "left": 0.368,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-26",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-2CA64AFAB3D9",
+      "price": 21.14,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-539982",
-      "price": 21.14
+      "target_bay_name": null
     },
     {
-      "id": "item-29",
-      "title": "The High Renaissance and Mannerism",
-      "author": "Linda Murray",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.378,
-        "left": 0.412,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "title": "THE HIGH RENAISSANCE AND MANNERISM",
+      "author": "Peter Murray and Linda Murray",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-27",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D745D4A5274F",
+      "price": 24.36,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-606241",
-      "price": 24.36
+      "target_bay_name": null
     },
     {
-      "id": "item-30",
-      "title": "Edward Hopper: An Intimate Biography",
-      "author": "Gail Levin",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.376,
-        "left": 0.456,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-924058",
-      "price": 28.99
-    },
-    {
-      "id": "item-31",
-      "title": "Nature and Its Symbols",
+      "title": "Nature and its Symbols",
       "author": "Lucia Impelluso",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.363,
-        "left": 0.5,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-28",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-996ABCC8E5D3",
+      "price": 15.95,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-836910",
-      "price": 15.95
+      "target_bay_name": null
     },
     {
-      "id": "item-32",
-      "title": "Meaning in the Visual Arts",
+      "title": "Realism",
+      "author": "Linda Nochlin",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-29",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-CF35963D6AD9",
+      "price": 28.0,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "MEANING IN THE VISUAL ARTS",
       "author": "Erwin Panofsky",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.362,
-        "left": 0.544,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-30",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-7045D34DE47B",
+      "price": 24.93,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-970797",
-      "price": 24.93
+      "target_bay_name": null
     },
     {
-      "id": "item-33",
-      "title": "Geometry and the Liberal Arts",
+      "title": "GEOMETRY AND THE LIBERAL ARTS",
       "author": "Dan Pedoe",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.37,
-        "left": 0.588,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-31",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-154CFAA794B5",
+      "price": 18.61,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-786685",
-      "price": 18.61
+      "target_bay_name": null
     },
     {
-      "id": "item-34",
-      "title": "Theory of Sets",
+      "title": "THEORY OF SETS",
       "author": "E. Kamke",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.373,
-        "left": 0.632,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-32",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F95D6B305895",
+      "price": 24.15,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-587765",
-      "price": 24.15
+      "target_bay_name": null
     },
     {
-      "id": "item-35",
-      "title": "Essays on the Theory of Numbers",
+      "title": "INTRODUCTION TO NUMERICAL ANALYSIS",
+      "author": "F.B. Hildebrand",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-33",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-63C70856842F",
+      "price": 18.29,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "ESSAYS ON THE THEORY OF NUMBERS",
       "author": "Richard Dedekind",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.367,
-        "left": 0.676,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-34",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6630DF0F69E4",
+      "price": 17.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-132155",
-      "price": 17.59
+      "target_bay_name": null
     },
     {
-      "id": "item-36",
       "title": "Cybernetics",
       "author": "Norbert Wiener",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.376,
-        "left": 0.72,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-35",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6B771CBD9DCB",
+      "price": 14.72,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-654529",
-      "price": 14.72
+      "target_bay_name": null
     },
     {
-      "id": "item-37",
-      "title": "The Penguin Dictionary of Psychology",
-      "author": null,
-      "confidence": 0.96,
-      "box": {
-        "top": 0.375,
-        "left": 0.764,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "title": "THE PENGUIN DICTIONARY OF PSYCHOLOGY",
+      "author": "Arthur S. Reber",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-36",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-FF83E9D94A84",
+      "price": 18.04,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-256112",
-      "price": 18.04
+      "target_bay_name": null
     },
     {
-      "id": "item-38",
       "title": "Painting and Experience in Fifteenth-Century Italy",
       "author": "Michael Baxandall",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.373,
-        "left": 0.808,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-37",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-5F743DCC4CED",
+      "price": 27.48,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-982759",
-      "price": 27.48
+      "target_bay_name": null
     },
     {
-      "id": "item-39",
       "title": "Spanish Short Stories 2",
-      "author": "Penguin Parallel Text",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.364,
-        "left": 0.852,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-38",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-B6BD8479DC8F",
+      "price": 18.54,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-078997",
-      "price": 18.54
+      "target_bay_name": null
     },
     {
-      "id": "item-40",
       "title": "Spanish Short Stories 1",
-      "author": "Penguin Parallel Text",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.364,
-        "left": 0.896,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 2,
-        "orientation": "vertical"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-39",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-50A4B446B857",
+      "price": 19.01,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-709346",
-      "price": 19.01
+      "target_bay_name": null
     },
     {
-      "id": "item-41",
       "title": "The Origin of Species",
       "author": "Charles Darwin",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.65,
-        "left": 0.06,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-40",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-134CF37F1E52",
+      "price": 19.88,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-175601",
-      "price": 19.88
+      "target_bay_name": null
     },
     {
-      "id": "item-42",
-      "title": "Mathematics and Logic",
+      "title": "MATHEMATICS AND LOGIC",
       "author": "Mark Kac and Stanislaw M. Ulam",
-      "confidence": 0.99,
-      "box": {
-        "top": 0.655,
-        "left": 0.104,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-41",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-CEB9040C2754",
+      "price": 18.68,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-704204",
-      "price": 18.68
+      "target_bay_name": null
     },
     {
-      "id": "item-43",
-      "title": "Practical Plane and Solid Geometry",
-      "author": null,
-      "confidence": 0.94,
-      "box": {
-        "top": 0.66,
-        "left": 0.148,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-054465",
-      "price": 25.93
-    },
-    {
-      "id": "item-44",
-      "title": "Recodings",
-      "author": "Hal Foster",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.667,
-        "left": 0.192,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-406601",
-      "price": 14.49
-    },
-    {
-      "id": "item-45",
       "title": "The Psychology of Perception",
       "author": "M.D. Vernon",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.651,
-        "left": 0.236,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-42",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-A33D0EDF2E0B",
+      "price": 16.44,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-483005",
-      "price": 16.44
+      "target_bay_name": null
     },
     {
-      "id": "item-46",
+      "title": "PRACTICAL PLANE AND SOLID GEOMETRY",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-43",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-95997FDBB640",
+      "price": 25.93,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Concepts of Modern Mathematics",
       "author": "Ian Stewart",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.658,
-        "left": 0.28,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-44",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-1367FD41C824",
+      "price": 30.55,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-095295",
-      "price": 30.55
+      "target_bay_name": null
     },
     {
-      "id": "item-47",
-      "title": "Short Stories in Spanish / Cuentos en español",
-      "author": "New Penguin Parallel Text",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.663,
-        "left": 0.324,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-306365",
-      "price": 26.42
-    },
-    {
-      "id": "item-48",
       "title": "The Letters of Vincent van Gogh",
-      "author": "Mark Roskill (ed.)",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.654,
-        "left": 0.368,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
+      "author": "Vincent van Gogh",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-45",
+      "status": "needs_review",
+      "status_label": "Reading needs review",
+      "sku": null,
+      "price": null,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-713690",
-      "price": 17.95
+      "target_bay_name": null
     },
     {
-      "id": "item-49",
-      "title": "Art and Culture",
+      "title": "ART AND CULTURE",
       "author": "Clement Greenberg",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.664,
-        "left": 0.412,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-46",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-7E90238A9C47",
+      "price": 28.4,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-380956",
-      "price": 28.4
+      "target_bay_name": null
     },
     {
-      "id": "item-50",
       "title": "Fallacies in Mathematics",
       "author": "E.A. Maxwell",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.66,
-        "left": 0.456,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-47",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-CA3EA3E795E3",
+      "price": 21.54,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-485126",
-      "price": 21.54
+      "target_bay_name": null
     },
     {
-      "id": "item-51",
       "title": "On Growth and Form",
       "author": "D'Arcy Thompson",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.655,
-        "left": 0.5,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-48",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4E88F116CFCB",
+      "price": 27.56,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-474474",
-      "price": 27.56
+      "target_bay_name": null
     },
     {
-      "id": "item-52",
-      "title": "Colour",
+      "title": "COLOUR",
       "author": "Hazel Rossotti",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.663,
-        "left": 0.544,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-49",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D0E724179DA1",
+      "price": 22.59,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-358639",
-      "price": 22.59
+      "target_bay_name": null
     },
     {
-      "id": "item-53",
-      "title": "The Essentials of Psycho-Analysis",
-      "author": "Sigmund Freud",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.65,
-        "left": 0.588,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-475466",
-      "price": 19.68
-    },
-    {
-      "id": "item-54",
-      "title": "Freedom from the Known",
+      "title": "FREEDOM from the KNOWN",
       "author": "J. Krishnamurti",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.665,
-        "left": 0.632,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-50",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-0CA240360392",
+      "price": 29.42,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-579694",
-      "price": 29.42
+      "target_bay_name": null
     },
     {
-      "id": "item-55",
       "title": "Synchronicity",
       "author": "C.G. Jung",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.665,
-        "left": 0.676,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-51",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-EC27D7550008",
+      "price": 27.86,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-156947",
-      "price": 27.86
+      "target_bay_name": null
     },
     {
-      "id": "item-56",
-      "title": "Deconstruction: Theory & Practice",
+      "title": "DECONSTRUCTION Theory & Practice",
       "author": "Christopher Norris",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.652,
-        "left": 0.72,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-52",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-6244D525DB16",
+      "price": 28.99,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-012715",
-      "price": 28.99
+      "target_bay_name": null
     },
     {
-      "id": "item-57",
       "title": "Russische Avantgarde aus der Sammlung Costakis",
-      "author": "Stefan Morawski",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.659,
-        "left": 0.764,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay A3 · Classical & Avant-Garde",
-      "target_bay_name": "Bay A3 · Classical & Avant-Garde",
-      "sku": null,
-      "price": 23.44
-    },
-    {
-      "id": "item-58",
-      "title": "History of England and Great Britain",
-      "author": "Professor Meiklejohn",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.654,
-        "left": 0.808,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-372332",
-      "price": 21.0
-    },
-    {
-      "id": "item-59",
-      "title": "Postmodernism",
       "author": null,
-      "confidence": 0.97,
-      "box": {
-        "top": 0.669,
-        "left": 0.852,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 31.29
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-53",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-46A5317F46DE",
+      "price": 23.77,
+      "misplaced_reason": "Planogram assigns to Bay A3 · Sculpture & Design",
+      "target_bay_name": "Bay A3 · Sculpture & Design"
     },
     {
-      "id": "item-60",
-      "title": "Selected Writings on Art and Artists",
-      "author": "Charles Baudelaire",
-      "confidence": 0.77,
-      "box": {
-        "top": 0.66,
-        "left": 0.896,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
+      "title": "HISTORY OF ENGLAND AND GREAT BRITAIN",
+      "author": "J.M.D. Meiklejohn",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-54",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-1D0547070AFD",
+      "price": 21.0,
       "misplaced_reason": null,
-      "target_bay_name": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "POSTMODERNISM",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-55",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 21.28
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Racine",
+      "author": "R.C. Knight",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-56",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "THE ESSENTIALS OF PSYCHOANALYSIS",
+      "author": "Sigmund Freud",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-57",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-A35EB90B0D86",
+      "price": 19.68,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "RECORDINGS",
+      "author": "Hal Foster",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-58",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-177592A169A7",
+      "price": 14.49,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "SELECTED WRITINGS ON ART AND ARTISTS",
+      "author": "Charles Baudelaire",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-59",
+      "status": "unexpected",
+      "status_label": "Unmatched title",
+      "sku": null,
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    }
+  ],
+  "misplaced_items": [
+    {
+      "title": "Russische Avantgarde aus der Sammlung Costakis",
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_a1-item-53",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-46A5317F46DE",
+      "price": 23.77,
+      "misplaced_reason": "Planogram assigns to Bay A3 · Sculpture & Design",
+      "target_bay_name": "Bay A3 · Sculpture & Design"
     }
   ],
   "missing_items": [
     {
-      "sku": "SKU-031057",
+      "sku": "SKU-693477CB8BEA",
+      "title": "The Letters of Vincent van Gogh",
+      "author": "Edited by Mark Roskill",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 1,
+      "price": 17.95,
+      "sales_velocity": 2.0,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-44D60422D9AE",
       "title": "Selected Writings on Art and Literature",
       "author": "Charles Baudelaire",
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 8,
       "price": 21.28,
       "sales_velocity": 1.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-007588",
-      "title": "Introduction to Numerical Analysis",
-      "author": "F.B. Hildebrand",
-      "planogram_bay_id": "bay_a1",
-      "simulated_on_hand": 2,
-      "price": 18.29,
-      "sales_velocity": 2.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-286042",
-      "title": "Realism",
-      "author": "Linda Nochlin",
-      "planogram_bay_id": "bay_a1",
-      "simulated_on_hand": 5,
-      "price": 28.0,
-      "sales_velocity": 1.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 5 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-718864",
+      "sku": "SKU-EDA2A63EF068",
       "title": "Modern Judgements: Racine",
       "author": "R.C. Knight (ed.)",
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 7,
       "price": 21.56,
       "sales_velocity": 2.2,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-571495",
+      "sku": "SKU-B25ED798C015",
       "title": "Postmodernism: ICA Documents",
       "author": null,
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 14,
       "price": 31.29,
       "sales_velocity": 2.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 14 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-296863",
+      "sku": "SKU-22277237A9B2",
+      "title": "Speech and Language in Psychoanalysis",
+      "author": "Jacques Lacan & Anthony Wilden",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 5,
+      "price": 27.21,
+      "sales_velocity": 3.7,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-E6FFAA17ED5D",
+      "title": "Lacan",
+      "author": "Malcolm Bowie",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 4,
+      "price": 24.66,
+      "sales_velocity": 1.6,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-BEDAF1CF1A34",
       "title": "Artists Handbook",
       "author": null,
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 5,
       "price": 20.33,
       "sales_velocity": 2.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 5 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-755333",
+      "sku": "SKU-E5CB941FB724",
+      "title": "Short Stories in Spanish / Cuentos en Español",
+      "author": "New Penguin Parallel Text",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 12,
+      "price": 26.42,
+      "sales_velocity": 1.2,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-FA601E539326",
+      "title": "System and Structure",
+      "author": "Anthony Wilden",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 13,
+      "price": 22.72,
+      "sales_velocity": 2.9,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-FD9266EE16E0",
       "title": "Inquiries into the Fundamentals of Aesthetics",
       "author": "Stefan Morawski",
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 2,
       "price": 23.44,
       "sales_velocity": 1.5,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-936734",
+      "sku": "SKU-FE7FD625607E",
+      "title": "Edward Hopper: An Intimate Biography",
+      "author": "Gail Levin",
+      "planogram_bay_id": "bay_a1",
+      "simulated_on_hand": 6,
+      "price": 28.99,
+      "sales_velocity": 1.5,
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
+    },
+    {
+      "sku": "SKU-BEBE3DF3FD22",
       "title": "Ways of Seeing",
       "author": "John Berger",
       "planogram_bay_id": "bay_a1",
       "simulated_on_hand": 6,
       "price": 18.0,
       "sales_velocity": 2.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 6 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-473465",
+      "sku": "SKU-6639146362D0",
       "title": "Simulacra and Simulation",
       "author": "Jean Baudrillard",
       "planogram_bay_id": "bay_a1",
@@ -2068,11 +1838,12 @@
       "price": 24.0,
       "sales_velocity": 1.2,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-989540",
+      "sku": "SKU-6DF1A32DC09D",
       "title": "The Medium is the Massage",
       "author": "Marshall McLuhan",
       "planogram_bay_id": "bay_a1",
@@ -2080,185 +1851,253 @@
       "price": 19.5,
       "sales_velocity": 1.4,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
-    }
-  ],
-  "misplaced_items": [
-    {
-      "id": "item-57",
-      "title": "Russische Avantgarde aus der Sammlung Costakis",
-      "author": "Stefan Morawski",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.659,
-        "left": 0.764,
-        "width": 0.04,
-        "height": 0.27,
-        "shelf_tier": 3,
-        "orientation": "vertical"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay A3 · Classical & Avant-Garde",
-      "target_bay_name": "Bay A3 · Classical & Avant-Garde",
-      "sku": null,
-      "price": 23.44
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     }
   ],
   "action_tasks": [
     {
-      "id": "alert-record-error-Deconstruction:_Theory_and_Practice",
+      "id": "bay_a1-review-18",
+      "type": "recognition_review",
+      "severity": "medium",
+      "badge": "Reading needs review",
+      "title": "SPEECH AND LANGUAGE IN PSYCHOANALYSIS",
+      "author": "Jacques Lacan",
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_a1-item-18",
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-review-45",
+      "type": "recognition_review",
+      "severity": "medium",
+      "badge": "Reading needs review",
+      "title": "The Letters of Vincent van Gogh",
+      "author": "Vincent van Gogh",
+      "headline": "Reading was uncertain, disagreed between passes, or matched multiple catalogue entries.",
+      "suggested_action": "Inspect photo and confirm title",
+      "shelf_item_id": "bay_a1-item-45",
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-record-SKU-6244D525DB16",
       "type": "record_error",
       "severity": "high",
-      "badge": "📋 Record Error",
-      "title": "Deconstruction: Theory & Practice",
+      "badge": "Possible Record Error",
+      "title": "DECONSTRUCTION Theory & Practice",
       "author": "Christopher Norris",
-      "headline": "Found on shelf, but store record shows 0 (item blocked online)",
-      "suggested_action": "Correct record to 1 to restore online availability",
+      "sku": "SKU-6244D525DB16",
+      "headline": "Title read on shelf; simulated record shows 0. Verify the physical count.",
+      "suggested_action": "Confirm physical count and record check",
       "system_on_hand": 0,
-      "shelf_count": 1
+      "shelf_item_id": "bay_a1-item-52",
+      "requires_review": true
     },
     {
-      "id": "alert-missing-SKU-031057",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Selected Writings on Art and Literature",
-      "author": "Charles Baudelaire",
-      "sku": "SKU-031057",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-007588",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Introduction to Numerical Analysis",
-      "author": "F.B. Hildebrand",
-      "sku": "SKU-007588",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-286042",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Realism",
-      "author": "Linda Nochlin",
-      "sku": "SKU-286042",
-      "headline": "Missing from shelf · System shows 5 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 5,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-718864",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Modern Judgements: Racine",
-      "author": "R.C. Knight (ed.)",
-      "sku": "SKU-718864",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-571495",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Postmodernism: ICA Documents",
-      "author": null,
-      "sku": "SKU-571495",
-      "headline": "Missing from shelf · System shows 14 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 14,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-296863",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Artists Handbook",
-      "author": null,
-      "sku": "SKU-296863",
-      "headline": "Missing from shelf · System shows 5 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 5,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-755333",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Inquiries into the Fundamentals of Aesthetics",
-      "author": "Stefan Morawski",
-      "sku": "SKU-755333",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-936734",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Ways of Seeing",
-      "author": "John Berger",
-      "sku": "SKU-936734",
-      "headline": "Missing from shelf · System shows 6 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 6,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-473465",
-      "type": "missing_item",
-      "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "Simulacra and Simulation",
-      "author": "Jean Baudrillard",
-      "sku": "SKU-473465",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-989540",
-      "type": "missing_item",
-      "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "The Medium is the Massage",
-      "author": "Marshall McLuhan",
-      "sku": "SKU-989540",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-misplaced-item-57",
+      "id": "bay_a1-move-SKU-46A5317F46DE",
       "type": "misplaced_item",
       "severity": "warning",
-      "badge": "↔️ Misplaced Item",
+      "badge": "↔ Possible Misplacement",
       "title": "Russische Avantgarde aus der Sammlung Costakis",
+      "author": null,
+      "sku": "SKU-46A5317F46DE",
+      "headline": "Title read here; planogram assigns it to Bay A3 · Sculpture & Design.",
+      "suggested_action": "Confirm location and relocation",
+      "shelf_item_id": "bay_a1-item-53",
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-693477CB8BEA",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Letters of Vincent van Gogh",
+      "author": "Edited by Mark Roskill",
+      "sku": "SKU-693477CB8BEA",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 1. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 1,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-44D60422D9AE",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Selected Writings on Art and Literature",
+      "author": "Charles Baudelaire",
+      "sku": "SKU-44D60422D9AE",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-EDA2A63EF068",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Modern Judgements: Racine",
+      "author": "R.C. Knight (ed.)",
+      "sku": "SKU-EDA2A63EF068",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-B25ED798C015",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Postmodernism: ICA Documents",
+      "author": null,
+      "sku": "SKU-B25ED798C015",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 14. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 14,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-22277237A9B2",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Speech and Language in Psychoanalysis",
+      "author": "Jacques Lacan & Anthony Wilden",
+      "sku": "SKU-22277237A9B2",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 5. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 5,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-E6FFAA17ED5D",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Lacan",
+      "author": "Malcolm Bowie",
+      "sku": "SKU-E6FFAA17ED5D",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 4. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 4,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-BEDAF1CF1A34",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Artists Handbook",
+      "author": null,
+      "sku": "SKU-BEDAF1CF1A34",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 5. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 5,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-E5CB941FB724",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Short Stories in Spanish / Cuentos en Español",
+      "author": "New Penguin Parallel Text",
+      "sku": "SKU-E5CB941FB724",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 12. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 12,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-FA601E539326",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "System and Structure",
+      "author": "Anthony Wilden",
+      "sku": "SKU-FA601E539326",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 13. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 13,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-FD9266EE16E0",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Inquiries into the Fundamentals of Aesthetics",
       "author": "Stefan Morawski",
-      "headline": "Found on Bay A1 · Art Theory & Philosophy · Belongs to Bay A3 · Classical & Avant-Garde",
-      "suggested_action": "Move book to Bay A3 · Classical & Avant-Garde",
-      "shelf_count": 1
+      "sku": "SKU-FD9266EE16E0",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-FE7FD625607E",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Edward Hopper: An Intimate Biography",
+      "author": "Gail Levin",
+      "sku": "SKU-FE7FD625607E",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 6. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 6,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-BEBE3DF3FD22",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Ways of Seeing",
+      "author": "John Berger",
+      "sku": "SKU-BEBE3DF3FD22",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 6. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 6,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-6639146362D0",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Simulacra and Simulation",
+      "author": "Jean Baudrillard",
+      "sku": "SKU-6639146362D0",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
+    },
+    {
+      "id": "bay_a1-unseen-SKU-6DF1A32DC09D",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Medium is the Massage",
+      "author": "Marshall McLuhan",
+      "sku": "SKU-6DF1A32DC09D",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
     }
-  ]
+  ],
+  "metrics": {
+    "planogram_expected_items": 67,
+    "shelf_items_detected": 59,
+    "matched_count": 53,
+    "missing_count": 14,
+    "misplaced_count": 1,
+    "review_count": 2,
+    "planogram_compliance_pct": 79.1
+  }
 }

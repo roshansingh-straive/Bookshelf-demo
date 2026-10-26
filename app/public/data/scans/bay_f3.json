@@ -4,23 +4,31 @@
   "bay_name": "Bay F3 · Fiction & Bestsellers",
   "photo_filename": "f.jpg",
   "photo_url": "/photos/f.jpg",
-  "scanned_at": "Today, 08:32 AM",
+  "mode": "replay",
+  "scanned_at": null,
   "model": "Claude Opus 5.5",
   "effort": "high",
-  "inference_duration_seconds": 9.1,
-  "tokens_used": 4336,
-  "estimated_cost_usd": 0.05,
-  "metrics": {
-    "planogram_expected_items": 39,
-    "shelf_items_detected": 28,
-    "matched_count": 20,
-    "missing_count": 19,
-    "misplaced_count": 3,
-    "planogram_compliance_pct": 51.3
+  "inference_duration_seconds": null,
+  "tokens_used": null,
+  "estimated_cost_usd": null,
+  "selection_reason": "Use Flash extended thinking for easy shelves, Opus high for medium shelves, and the Opus high single-photo experiment for hard shelves. Selected by difficulty-level results, not per-photo best scores.",
+  "source": {
+    "source_path": "results/exp2-one-photo/details/claude-opus-5.5__high.json",
+    "interface": "Claude.ai web app",
+    "original_mode": "high",
+    "source_date": null
   },
+  "harness": {
+    "native_resolution": false,
+    "tile_count": 0,
+    "calls_completed": 0,
+    "rotated_verification": false,
+    "measured_accuracy": null
+  },
+  "disclosure": "Saved benchmark predictions. No live model call or zoom verification. Book positions and confidence were not annotated; per-photo cost and latency were not measured.",
   "planogram_items": [
     {
-      "sku": "SKU-728973",
+      "sku": "SKU-D613C8840DE9",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
       "assigned_bay_id": "bay_f3",
@@ -31,7 +39,18 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-209773",
+      "sku": "SKU-D317541F941D",
+      "title": "$100M Money Models",
+      "author": "Alex Hormozi",
+      "assigned_bay_id": "bay_f3",
+      "price": 18.41,
+      "sales_velocity_units_per_day": 1.0,
+      "simulated_on_hand": 2,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-8AEFCB1D4728",
       "title": "Dad, I Want to Hear Your Story",
       "author": "Jeffrey Mason",
       "assigned_bay_id": "bay_f3",
@@ -42,7 +61,18 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-213835",
+      "sku": "SKU-70B17CF8689A",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "assigned_bay_id": "bay_f3",
+      "price": 17.94,
+      "sales_velocity_units_per_day": 2.2,
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock_in_system",
+      "physically_on_shelf": true
+    },
+    {
+      "sku": "SKU-94F37F0BCA6C",
       "title": "Your Fault",
       "author": "Mercedes Ron",
       "assigned_bay_id": "bay_f3",
@@ -53,7 +83,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-417874",
+      "sku": "SKU-E453BF8ED41C",
       "title": "Expert Secrets",
       "author": "Russell Brunson",
       "assigned_bay_id": "bay_f3",
@@ -64,7 +94,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-227999",
+      "sku": "SKU-743B02A41853",
       "title": "You Can",
       "author": "George Matthew Adams",
       "assigned_bay_id": "bay_f3",
@@ -75,7 +105,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-383383",
+      "sku": "SKU-434A2FAA31B8",
       "title": "12 Months to $1 Million",
       "author": "Ryan Daniel Moran",
       "assigned_bay_id": "bay_f3",
@@ -86,7 +116,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-882069",
+      "sku": "SKU-AADD91272BD6",
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "assigned_bay_id": "bay_f3",
@@ -97,7 +127,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-962618",
+      "sku": "SKU-4A2DEFAEB0A3",
       "title": "The Great Indian Novel",
       "author": "Shashi Tharoor",
       "assigned_bay_id": "bay_f3",
@@ -108,7 +138,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-865135",
+      "sku": "SKU-465A585341A9",
       "title": "The Secret of Secrets",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f3",
@@ -119,7 +149,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-548197",
+      "sku": "SKU-F858C84125C1",
       "title": "The Mistake",
       "author": "Elle Kennedy",
       "assigned_bay_id": "bay_f3",
@@ -130,7 +160,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-472437",
+      "sku": "SKU-D784EB392505",
       "title": "The Villain",
       "author": "L.J. Shen",
       "assigned_bay_id": "bay_f3",
@@ -141,7 +171,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-995688",
+      "sku": "SKU-5ACEFF57E20D",
       "title": "The Secret",
       "author": "Rhonda Byrne",
       "assigned_bay_id": "bay_f3",
@@ -152,7 +182,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-997331",
+      "sku": "SKU-C34D74B2AB8D",
       "title": "The Guest List",
       "author": "Lucy Foley",
       "assigned_bay_id": "bay_f3",
@@ -163,7 +193,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-610873",
+      "sku": "SKU-4F9DF1A04777",
       "title": "The Last Queen",
       "author": "Chitra Banerjee Divakaruni",
       "assigned_bay_id": "bay_f3",
@@ -174,7 +204,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-786259",
+      "sku": "SKU-CB2E73F68006",
       "title": "Limitless",
       "author": "Jim Kwik",
       "assigned_bay_id": "bay_f3",
@@ -185,7 +215,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-670080",
+      "sku": "SKU-B4EBC3D06D56",
       "title": "Those Who Live Without Discipline Die Without Honor",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -196,7 +226,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-452247",
+      "sku": "SKU-352BDF13587C",
       "title": "Timmy Failure",
       "author": "Stephan Pastis",
       "assigned_bay_id": "bay_f3",
@@ -207,7 +237,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-697934",
+      "sku": "SKU-38D4BDBE3E6E",
       "title": "Hunt the Villain",
       "author": "Rina Kent",
       "assigned_bay_id": "bay_f3",
@@ -218,7 +248,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-030097",
+      "sku": "SKU-C737D1BAFC66",
       "title": "Good Vibes, Good Life",
       "author": "Vex King",
       "assigned_bay_id": "bay_f3",
@@ -229,7 +259,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-230665",
+      "sku": "SKU-F9414C48369C",
       "title": "The Prophet",
       "author": "Kahlil Gibran",
       "assigned_bay_id": "bay_f3",
@@ -240,7 +270,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-886996",
+      "sku": "SKU-FE5A1F7FDFAD",
       "title": "Three Weeks in Paris",
       "author": "Barbara Taylor Bradford",
       "assigned_bay_id": "bay_f3",
@@ -251,7 +281,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-753333",
+      "sku": "SKU-3C097ADF1779",
       "title": "Leaders Eat Last",
       "author": "Simon Sinek",
       "assigned_bay_id": "bay_f3",
@@ -262,7 +292,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-030222",
+      "sku": "SKU-9A25E8D20D3A",
       "title": "Placebo",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -273,7 +303,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-907203",
+      "sku": "SKU-4CAD823C9F21",
       "title": "My First Ruskin Bond Collection",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -284,7 +314,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-664563",
+      "sku": "SKU-51516D3C9052",
       "title": "The Diary of a Young Girl",
       "author": "Anne Frank",
       "assigned_bay_id": "bay_f3",
@@ -295,7 +325,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-716623",
+      "sku": "SKU-64F46E0E2FE8",
       "title": "The Reappearance of Rachel Price",
       "author": "Holly Jackson",
       "assigned_bay_id": "bay_f3",
@@ -306,7 +336,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-103197",
+      "sku": "SKU-D3F9F3182498",
       "title": "Wild Fictions",
       "author": "Amitav Ghosh",
       "assigned_bay_id": "bay_f3",
@@ -317,7 +347,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-583835",
+      "sku": "SKU-167267255407",
       "title": "Chip War",
       "author": "Chris Miller",
       "assigned_bay_id": "bay_f3",
@@ -328,7 +358,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-012051",
+      "sku": "SKU-06627B2BC91F",
       "title": "The Diary of a CEO",
       "author": "Steven Bartlett",
       "assigned_bay_id": "bay_f3",
@@ -339,7 +369,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-460092",
+      "sku": "SKU-DB387650FFE7",
       "title": "Think Like a Monk",
       "author": "Jay Shetty",
       "assigned_bay_id": "bay_f3",
@@ -350,7 +380,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-160468",
+      "sku": "SKU-76AB8707431C",
       "title": "The 4-Hour Work Week",
       "author": "Tim Ferriss",
       "assigned_bay_id": "bay_f3",
@@ -361,7 +391,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-015967",
+      "sku": "SKU-9C63F3600D3F",
       "title": "Leather & Lark",
       "author": "Brynne Weaver",
       "assigned_bay_id": "bay_f3",
@@ -372,7 +402,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-297990",
+      "sku": "SKU-D6FF4AFF0AAA",
       "title": "Breaking Dawn",
       "author": "Stephenie Meyer",
       "assigned_bay_id": "bay_f3",
@@ -383,7 +413,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-597319",
+      "sku": "SKU-EF6A56C5BB68",
       "title": "When the Night Agrees to Speak to Me",
       "author": "Ananda Devi",
       "assigned_bay_id": "bay_f3",
@@ -394,7 +424,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-310678",
+      "sku": "SKU-1B5A1ED6F801",
       "title": "Breaking the Mould",
       "author": "Raghuram G. Rajan & Rohit Lamba",
       "assigned_bay_id": "bay_f3",
@@ -405,7 +435,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-959605",
+      "sku": "SKU-2E8F5742DB45",
       "title": "Essentialism",
       "author": "Greg McKeown",
       "assigned_bay_id": "bay_f3",
@@ -416,7 +446,7 @@
       "physically_on_shelf": true
     },
     {
-      "sku": "SKU-907952",
+      "sku": "SKU-210ADD6EFA2B",
       "title": "The Silent Patient",
       "author": "Alex Michaelides",
       "assigned_bay_id": "bay_f3",
@@ -428,7 +458,7 @@
       "days_since_stockout": 4
     },
     {
-      "sku": "SKU-771339",
+      "sku": "SKU-2CD49296BB77",
       "title": "Where the Crawdads Sing",
       "author": "Delia Owens",
       "assigned_bay_id": "bay_f3",
@@ -440,7 +470,7 @@
       "days_since_stockout": 3
     },
     {
-      "sku": "SKU-740717",
+      "sku": "SKU-83D1D211A936",
       "title": "Tomorrow, and Tomorrow, and Tomorrow",
       "author": "Gabrielle Zevin",
       "assigned_bay_id": "bay_f3",
@@ -454,757 +484,643 @@
   ],
   "shelf_items": [
     {
-      "id": "item-1",
-      "title": "Breaking Dawn",
-      "author": "Stephenie Meyer",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.55,
-        "left": 0.01,
-        "width": 0.11,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
-      "status": "matched",
-      "status_label": "Correctly Placed",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-297990",
-      "price": 15.64
-    },
-    {
-      "id": "item-2",
-      "title": "The Magic of the Lost Earrings",
-      "author": "Sudha Murty",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.64,
-        "left": 0.0,
-        "width": 0.12,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay C2 · Illustrated & Children's",
-      "target_bay_name": "Bay C2 · Illustrated & Children's",
-      "sku": null,
-      "price": 25.51
-    },
-    {
-      "id": "item-3",
       "title": "Essentialism",
       "author": "Greg McKeown",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.73,
-        "left": 0.0,
-        "width": 0.13,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-1",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-2E8F5742DB45",
+      "price": 24.73,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-959605",
-      "price": 24.73
+      "target_bay_name": null
     },
     {
-      "id": "item-4",
-      "title": "$100M Money Models",
-      "author": "Alex Hormozi",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.86,
-        "left": 0.0,
-        "width": 0.1,
-        "height": 0.1,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Planogram assigns to Bay F2 · Manga & Pop Culture",
-      "target_bay_name": "Bay F2 · Manga & Pop Culture",
-      "sku": null,
-      "price": 27.66
-    },
-    {
-      "id": "item-5",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.38,
-        "left": 0.16,
-        "width": 0.11,
-        "height": 0.07,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-2",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-D613C8840DE9",
+      "price": 25.51,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-728973",
-      "price": 25.51
+      "target_bay_name": null
     },
     {
-      "id": "item-6",
+      "title": "$100M Money Models",
+      "author": "Alex Hormozi",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-3",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-D317541F941D",
+      "price": 18.41,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Three Weeks in Paris",
       "author": "Barbara Taylor Bradford",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.44,
-        "left": 0.17,
-        "width": 0.12,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-4",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-FE5A1F7FDFAD",
+      "price": 18.41,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-886996",
-      "price": 18.41
+      "target_bay_name": null
     },
     {
-      "id": "item-7",
+      "title": "The Magic of the Lost Earrings",
+      "author": "Sudha Murty",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-5",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-1EFFA231C1A2",
+      "price": 26.18,
+      "misplaced_reason": "Planogram assigns to Bay C2 · Illustrated & Children's",
+      "target_bay_name": "Bay C2 · Illustrated & Children's"
+    },
+    {
+      "title": "Breaking Dawn",
+      "author": "Stephenie Meyer",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-6",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-D6FF4AFF0AAA",
+      "price": 15.64,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Dad, I Want to Hear Your Story",
-      "author": "Jeffrey Mason",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.47,
-        "left": 0.22,
-        "width": 0.12,
-        "height": 0.07,
-        "orientation": "horizontal"
-      },
+      "author": null,
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-7",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-8AEFCB1D4728",
+      "price": 24.63,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-209773",
-      "price": 24.63
+      "target_bay_name": null
     },
     {
-      "id": "item-8",
       "title": "Good Vibes, Good Life",
       "author": "Vex King",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.54,
-        "left": 0.18,
-        "width": 0.1,
-        "height": 0.07,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-8",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-C737D1BAFC66",
+      "price": 26.63,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-030097",
-      "price": 26.63
+      "target_bay_name": null
     },
     {
-      "id": "item-9",
       "title": "Your Fault",
       "author": "Mercedes Ron",
-      "confidence": 0.95,
-      "box": {
-        "top": 0.38,
-        "left": 0.36,
-        "width": 0.11,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-9",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-94F37F0BCA6C",
+      "price": 14.48,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-213835",
-      "price": 14.48
+      "target_bay_name": null
     },
     {
-      "id": "item-10",
       "title": "Expert Secrets",
       "author": "Russell Brunson",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.44,
-        "left": 0.34,
-        "width": 0.12,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-10",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-E453BF8ED41C",
+      "price": 26.62,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-417874",
-      "price": 26.62
+      "target_bay_name": null
     },
     {
-      "id": "item-11",
       "title": "Timmy Failure",
       "author": "Stephan Pastis",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.49,
-        "left": 0.41,
-        "width": 0.11,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-11",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-352BDF13587C",
+      "price": 22.16,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-452247",
-      "price": 22.16
+      "target_bay_name": null
     },
     {
-      "id": "item-12",
       "title": "Atomic Habits",
       "author": "James Clear",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.56,
-        "left": 0.44,
-        "width": 0.09,
-        "height": 0.07,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Planogram assigns to Bay F1 · General Fiction & Classics",
-      "target_bay_name": "Bay F1 · General Fiction & Classics",
-      "sku": null,
-      "price": 20.12
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-12",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-70B17CF8689A",
+      "price": 17.94,
+      "misplaced_reason": null,
+      "target_bay_name": null
     },
     {
-      "id": "item-13",
       "title": "The Mistake",
       "author": "Elle Kennedy",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.66,
-        "left": 0.39,
-        "width": 0.09,
-        "height": 0.09,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-13",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F858C84125C1",
+      "price": 28.53,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-548197",
-      "price": 28.53
+      "target_bay_name": null
     },
     {
-      "id": "item-14",
       "title": "The Prophet",
       "author": "Kahlil Gibran",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.76,
-        "left": 0.39,
-        "width": 0.1,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-14",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-F9414C48369C",
+      "price": 24.96,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-230665",
-      "price": 24.96
+      "target_bay_name": null
     },
     {
-      "id": "item-15",
       "title": "12 Months to $1 Million",
       "author": "Ryan Daniel Moran",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.38,
-        "left": 0.54,
-        "width": 0.11,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-15",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-434A2FAA31B8",
+      "price": 27.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-383383",
-      "price": 27.66
+      "target_bay_name": null
     },
     {
-      "id": "item-16",
       "title": "Those Who Live Without Discipline Die Without Honor",
       "author": null,
-      "confidence": 0.96,
-      "box": {
-        "top": 0.46,
-        "left": 0.53,
-        "width": 0.1,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-16",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-B4EBC3D06D56",
+      "price": 18.19,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-670080",
-      "price": 18.19
+      "target_bay_name": null
     },
     {
-      "id": "item-17",
       "title": "Hunt the Villain",
       "author": "Rina Kent",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.52,
-        "left": 0.51,
-        "width": 0.1,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-17",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-38D4BDBE3E6E",
+      "price": 20.66,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-697934",
-      "price": 20.66
+      "target_bay_name": null
     },
     {
-      "id": "item-18",
+      "title": "The Diary of a Young Girl",
+      "author": "Anne Frank",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-18",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-51516D3C9052",
+      "price": 28.49,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "You Can",
       "author": "George Matthew Adams",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.62,
-        "left": 0.47,
-        "width": 0.1,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-19",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-743B02A41853",
+      "price": 24.61,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-227999",
-      "price": 24.61
+      "target_bay_name": null
     },
     {
-      "id": "item-19",
+      "title": "The 4-Hour Work Week",
+      "author": "Timothy Ferriss",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-20",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-76AB8707431C",
+      "price": 30.16,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Chip War",
+      "author": "Chris Miller",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-21",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-167267255407",
+      "price": 29.92,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
+      "title": "Think Like a Monk",
+      "author": "Jay Shetty",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-22",
+      "status": "matched",
+      "status_label": "Title matched",
+      "sku": "SKU-DB387650FFE7",
+      "price": 23.7,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    },
+    {
       "title": "Limitless",
       "author": "Jim Kwik",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.55,
-        "left": 0.72,
-        "width": 0.15,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-23",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-CB2E73F68006",
+      "price": 27.92,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-786259",
-      "price": 27.92
+      "target_bay_name": null
     },
     {
-      "id": "item-20",
       "title": "The Guest List",
       "author": "Lucy Foley",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.64,
-        "left": 0.62,
-        "width": 0.16,
-        "height": 0.12,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-24",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-C34D74B2AB8D",
+      "price": 29.94,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-997331",
-      "price": 29.94
+      "target_bay_name": null
     },
     {
-      "id": "item-21",
       "title": "The Last Queen",
       "author": "Chitra Banerjee Divakaruni",
-      "confidence": 0.98,
-      "box": {
-        "top": 0.61,
-        "left": 0.73,
-        "width": 0.09,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-25",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-4F9DF1A04777",
+      "price": 26.68,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-610873",
-      "price": 26.68
+      "target_bay_name": null
     },
     {
-      "id": "item-22",
       "title": "Leaders Eat Last",
       "author": "Simon Sinek",
-      "confidence": 0.97,
-      "box": {
-        "top": 0.72,
-        "left": 0.46,
-        "width": 0.16,
-        "height": 0.16,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-26",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-3C097ADF1779",
+      "price": 31.81,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-753333",
-      "price": 31.81
+      "target_bay_name": null
     },
     {
-      "id": "item-23",
       "title": "The Diary of a CEO",
       "author": "Steven Bartlett",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.79,
-        "left": 0.8,
-        "width": 0.19,
-        "height": 0.16,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-27",
       "status": "matched",
-      "status_label": "Correctly Placed",
+      "status_label": "Title matched",
+      "sku": "SKU-06627B2BC91F",
+      "price": 18.77,
       "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": "SKU-012051",
-      "price": 18.77
+      "target_bay_name": null
     },
     {
-      "id": "item-24",
-      "title": "Anne Frank: The Diary of a Young Girl",
-      "author": "Anne Frank",
-      "confidence": 0.93,
-      "box": {
-        "top": 0.81,
-        "left": 0.72,
-        "width": 0.1,
-        "height": 0.12,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 28.49
-    },
-    {
-      "id": "item-25",
       "title": "The Bitcoin Standard",
       "author": "Saifedean Ammous",
-      "confidence": 0.84,
-      "box": {
-        "top": 0.89,
-        "left": 0.48,
-        "width": 0.22,
-        "height": 0.1,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-28",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 28.53
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
     },
     {
-      "id": "item-26",
-      "title": "Jiggy McCue",
-      "author": "Michael Lawrence",
-      "confidence": 0.76,
-      "box": {
-        "top": 0.0,
-        "left": 0.66,
-        "width": 0.11,
-        "height": 0.06,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 22.16
-    },
-    {
-      "id": "item-27",
-      "title": "Coronavirus",
-      "author": "Dr Michael Mosley",
-      "confidence": 0.73,
-      "box": {
-        "top": 0.14,
-        "left": 0.63,
-        "width": 0.1,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
-      "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
-      "sku": null,
-      "price": 14.48
-    },
-    {
-      "id": "item-28",
       "title": "The Secret Life of Bees",
       "author": "Sue Monk Kidd",
-      "confidence": 0.73,
-      "box": {
-        "top": 0.08,
-        "left": 0.48,
-        "width": 0.09,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-29",
       "status": "unexpected",
-      "status_label": "Unexpected Item",
-      "misplaced_reason": null,
-      "target_bay_name": null,
+      "status_label": "Unmatched title",
       "sku": null,
-      "price": 20.46
+      "price": null,
+      "misplaced_reason": null,
+      "target_bay_name": null
+    }
+  ],
+  "misplaced_items": [
+    {
+      "title": "The Magic of the Lost Earrings",
+      "author": "Sudha Murty",
+      "confidence": null,
+      "box": null,
+      "box_source": "unavailable",
+      "verification_status": "benchmark_replay",
+      "id": "bay_f3-item-5",
+      "status": "misplaced",
+      "status_label": "Possible misplaced title",
+      "sku": "SKU-1EFFA231C1A2",
+      "price": 26.18,
+      "misplaced_reason": "Planogram assigns to Bay C2 · Illustrated & Children's",
+      "target_bay_name": "Bay C2 · Illustrated & Children's"
     }
   ],
   "missing_items": [
     {
-      "sku": "SKU-882069",
+      "sku": "SKU-AADD91272BD6",
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 13,
       "price": 20.12,
       "sales_velocity": 1.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 13 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-962618",
+      "sku": "SKU-4A2DEFAEB0A3",
       "title": "The Great Indian Novel",
       "author": "Shashi Tharoor",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 2,
       "price": 20.06,
       "sales_velocity": 0.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-865135",
+      "sku": "SKU-465A585341A9",
       "title": "The Secret of Secrets",
       "author": "Dan Brown",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 5,
       "price": 20.46,
       "sales_velocity": 1.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 5 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-472437",
+      "sku": "SKU-D784EB392505",
       "title": "The Villain",
       "author": "L.J. Shen",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 2,
       "price": 16.25,
       "sales_velocity": 3.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-995688",
+      "sku": "SKU-5ACEFF57E20D",
       "title": "The Secret",
       "author": "Rhonda Byrne",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 10,
       "price": 23.94,
       "sales_velocity": 3.3,
-      "is_phantom_inventory": true,
-      "reason": "System shows 10 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-030222",
+      "sku": "SKU-9A25E8D20D3A",
       "title": "Placebo",
       "author": null,
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 13,
       "price": 17.95,
       "sales_velocity": 1.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 13 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-907203",
+      "sku": "SKU-4CAD823C9F21",
       "title": "My First Ruskin Bond Collection",
       "author": null,
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 1,
       "price": 27.97,
       "sales_velocity": 1.3,
-      "is_phantom_inventory": true,
-      "reason": "System shows 1 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-664563",
-      "title": "The Diary of a Young Girl",
-      "author": "Anne Frank",
-      "planogram_bay_id": "bay_f3",
-      "simulated_on_hand": 2,
-      "price": 28.49,
-      "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 2 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-716623",
+      "sku": "SKU-64F46E0E2FE8",
       "title": "The Reappearance of Rachel Price",
       "author": "Holly Jackson",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 12,
       "price": 17.8,
       "sales_velocity": 3.6,
-      "is_phantom_inventory": true,
-      "reason": "System shows 12 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-103197",
+      "sku": "SKU-D3F9F3182498",
       "title": "Wild Fictions",
       "author": "Amitav Ghosh",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 7,
       "price": 19.66,
       "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-583835",
-      "title": "Chip War",
-      "author": "Chris Miller",
-      "planogram_bay_id": "bay_f3",
-      "simulated_on_hand": 3,
-      "price": 29.92,
-      "sales_velocity": 2.7,
-      "is_phantom_inventory": true,
-      "reason": "System shows 3 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-460092",
-      "title": "Think Like a Monk",
-      "author": "Jay Shetty",
-      "planogram_bay_id": "bay_f3",
-      "simulated_on_hand": 7,
-      "price": 23.7,
-      "sales_velocity": 3.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-160468",
-      "title": "The 4-Hour Work Week",
-      "author": "Tim Ferriss",
-      "planogram_bay_id": "bay_f3",
-      "simulated_on_hand": 4,
-      "price": 30.16,
-      "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
-    },
-    {
-      "sku": "SKU-015967",
+      "sku": "SKU-9C63F3600D3F",
       "title": "Leather & Lark",
       "author": "Brynne Weaver",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 8,
       "price": 31.95,
       "sales_velocity": 1.0,
-      "is_phantom_inventory": true,
-      "reason": "System shows 8 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-597319",
+      "sku": "SKU-EF6A56C5BB68",
       "title": "When the Night Agrees to Speak to Me",
       "author": "Ananda Devi",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 11,
       "price": 16.75,
       "sales_velocity": 1.1,
-      "is_phantom_inventory": true,
-      "reason": "System shows 11 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-310678",
+      "sku": "SKU-1B5A1ED6F801",
       "title": "Breaking the Mould",
       "author": "Raghuram G. Rajan & Rohit Lamba",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 7,
       "price": 21.6,
       "sales_velocity": 0.8,
-      "is_phantom_inventory": true,
-      "reason": "System shows 7 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-907952",
+      "sku": "SKU-210ADD6EFA2B",
       "title": "The Silent Patient",
       "author": "Alex Michaelides",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 12,
       "price": 17.99,
       "sales_velocity": 2.8,
-      "is_phantom_inventory": true,
-      "reason": "System shows 12 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-771339",
+      "sku": "SKU-2CD49296BB77",
       "title": "Where the Crawdads Sing",
       "author": "Delia Owens",
       "planogram_bay_id": "bay_f3",
       "simulated_on_hand": 4,
       "price": 18.0,
       "sales_velocity": 1.9,
-      "is_phantom_inventory": true,
-      "reason": "System shows 4 on hand, but spine missing from shelf",
-      "action": "Check backroom / adjust on-hand count"
+      "is_phantom_inventory": false,
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     },
     {
-      "sku": "SKU-740717",
+      "sku": "SKU-83D1D211A936",
       "title": "Tomorrow, and Tomorrow, and Tomorrow",
       "author": "Gabrielle Zevin",
       "planogram_bay_id": "bay_f3",
@@ -1212,361 +1128,242 @@
       "price": 22.0,
       "sales_velocity": 2.4,
       "is_phantom_inventory": false,
-      "reason": "Stockout: 0 on shelf, record confirms 0 on hand",
-      "action": "Replenish from warehouse"
-    }
-  ],
-  "misplaced_items": [
-    {
-      "id": "item-2",
-      "title": "The Magic of the Lost Earrings",
-      "author": "Sudha Murty",
-      "confidence": 0.92,
-      "box": {
-        "top": 0.64,
-        "left": 0.0,
-        "width": 0.12,
-        "height": 0.08,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Belongs to Bay C2 · Illustrated & Children's",
-      "target_bay_name": "Bay C2 · Illustrated & Children's",
-      "sku": null,
-      "price": 25.51
-    },
-    {
-      "id": "item-4",
-      "title": "$100M Money Models",
-      "author": "Alex Hormozi",
-      "confidence": 0.94,
-      "box": {
-        "top": 0.86,
-        "left": 0.0,
-        "width": 0.1,
-        "height": 0.1,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Planogram assigns to Bay F2 · Manga & Pop Culture",
-      "target_bay_name": "Bay F2 · Manga & Pop Culture",
-      "sku": null,
-      "price": 27.66
-    },
-    {
-      "id": "item-12",
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "confidence": 0.96,
-      "box": {
-        "top": 0.56,
-        "left": 0.44,
-        "width": 0.09,
-        "height": 0.07,
-        "orientation": "horizontal"
-      },
-      "status": "misplaced",
-      "status_label": "Misplaced",
-      "misplaced_reason": "Planogram assigns to Bay F1 · General Fiction & Classics",
-      "target_bay_name": "Bay F1 · General Fiction & Classics",
-      "sku": null,
-      "price": 20.12
+      "reason": "Title not confirmed by recognition; it may be unreadable or occluded.",
+      "action": "Check shelf and backroom before changing inventory",
+      "requires_review": true
     }
   ],
   "action_tasks": [
     {
-      "id": "alert-record-error-Atomic_Habits",
-      "type": "record_error",
-      "severity": "high",
-      "badge": "📋 Record Error",
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "headline": "Found on shelf, but store record shows 0 (item blocked online)",
-      "suggested_action": "Correct record to 1 to restore online availability",
-      "system_on_hand": 0,
-      "shelf_count": 1
-    },
-    {
-      "id": "alert-missing-SKU-882069",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "sku": "SKU-882069",
-      "headline": "Missing from shelf · System shows 13 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 13,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-962618",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Great Indian Novel",
-      "author": "Shashi Tharoor",
-      "sku": "SKU-962618",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-865135",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Secret of Secrets",
-      "author": "Dan Brown",
-      "sku": "SKU-865135",
-      "headline": "Missing from shelf · System shows 5 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 5,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-472437",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Villain",
-      "author": "L.J. Shen",
-      "sku": "SKU-472437",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-995688",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Secret",
-      "author": "Rhonda Byrne",
-      "sku": "SKU-995688",
-      "headline": "Missing from shelf · System shows 10 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 10,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-030222",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Placebo",
-      "author": null,
-      "sku": "SKU-030222",
-      "headline": "Missing from shelf · System shows 13 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 13,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-907203",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "My First Ruskin Bond Collection",
-      "author": null,
-      "sku": "SKU-907203",
-      "headline": "Missing from shelf · System shows 1 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 1,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-664563",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Diary of a Young Girl",
-      "author": "Anne Frank",
-      "sku": "SKU-664563",
-      "headline": "Missing from shelf · System shows 2 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 2,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-716623",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Reappearance of Rachel Price",
-      "author": "Holly Jackson",
-      "sku": "SKU-716623",
-      "headline": "Missing from shelf · System shows 12 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 12,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-103197",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Wild Fictions",
-      "author": "Amitav Ghosh",
-      "sku": "SKU-103197",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-583835",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Chip War",
-      "author": "Chris Miller",
-      "sku": "SKU-583835",
-      "headline": "Missing from shelf · System shows 3 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 3,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-460092",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Think Like a Monk",
-      "author": "Jay Shetty",
-      "sku": "SKU-460092",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-160468",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The 4-Hour Work Week",
-      "author": "Tim Ferriss",
-      "sku": "SKU-160468",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-015967",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Leather & Lark",
-      "author": "Brynne Weaver",
-      "sku": "SKU-015967",
-      "headline": "Missing from shelf · System shows 8 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 8,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-597319",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "When the Night Agrees to Speak to Me",
-      "author": "Ananda Devi",
-      "sku": "SKU-597319",
-      "headline": "Missing from shelf · System shows 11 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 11,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-310678",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Breaking the Mould",
-      "author": "Raghuram G. Rajan & Rohit Lamba",
-      "sku": "SKU-310678",
-      "headline": "Missing from shelf · System shows 7 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 7,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-907952",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "The Silent Patient",
-      "author": "Alex Michaelides",
-      "sku": "SKU-907952",
-      "headline": "Missing from shelf · System shows 12 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 12,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-771339",
-      "type": "missing_item",
-      "severity": "critical",
-      "badge": "👻 Phantom Inventory",
-      "title": "Where the Crawdads Sing",
-      "author": "Delia Owens",
-      "sku": "SKU-771339",
-      "headline": "Missing from shelf · System shows 4 on hand, but spine missing from shelf",
-      "suggested_action": "Check backroom / adjust on-hand count",
-      "system_on_hand": 4,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-missing-SKU-740717",
-      "type": "missing_item",
-      "severity": "medium",
-      "badge": "⚠️ Stockout",
-      "title": "Tomorrow, and Tomorrow, and Tomorrow",
-      "author": "Gabrielle Zevin",
-      "sku": "SKU-740717",
-      "headline": "Missing from shelf · Stockout: 0 on shelf, record confirms 0 on hand",
-      "suggested_action": "Replenish from warehouse",
-      "system_on_hand": 0,
-      "shelf_count": 0
-    },
-    {
-      "id": "alert-misplaced-item-2",
+      "id": "bay_f3-move-SKU-1EFFA231C1A2",
       "type": "misplaced_item",
       "severity": "warning",
-      "badge": "↔️ Misplaced Item",
+      "badge": "↔ Possible Misplacement",
       "title": "The Magic of the Lost Earrings",
       "author": "Sudha Murty",
-      "headline": "Found on Bay F3 · Fiction & Bestsellers · Belongs to Bay C2 · Illustrated & Children's",
-      "suggested_action": "Move book to Bay C2 · Illustrated & Children's",
-      "shelf_count": 1
+      "sku": "SKU-1EFFA231C1A2",
+      "headline": "Title read here; planogram assigns it to Bay C2 · Illustrated & Children's.",
+      "suggested_action": "Confirm location and relocation",
+      "shelf_item_id": "bay_f3-item-5",
+      "requires_review": true
     },
     {
-      "id": "alert-misplaced-item-4",
-      "type": "misplaced_item",
-      "severity": "warning",
-      "badge": "↔️ Misplaced Item",
-      "title": "$100M Money Models",
-      "author": "Alex Hormozi",
-      "headline": "Found on Bay F3 · Fiction & Bestsellers · Planogram assigns to Bay F2 · Manga & Pop Culture",
-      "suggested_action": "Move book to Bay F2 · Manga & Pop Culture",
-      "shelf_count": 1
-    },
-    {
-      "id": "alert-misplaced-item-12",
-      "type": "misplaced_item",
-      "severity": "warning",
-      "badge": "↔️ Misplaced Item",
+      "id": "bay_f3-record-SKU-70B17CF8689A",
+      "type": "record_error",
+      "severity": "high",
+      "badge": "Possible Record Error",
       "title": "Atomic Habits",
       "author": "James Clear",
-      "headline": "Found on Bay F3 · Fiction & Bestsellers · Planogram assigns to Bay F1 · General Fiction & Classics",
-      "suggested_action": "Move book to Bay F1 · General Fiction & Classics",
-      "shelf_count": 1
+      "sku": "SKU-70B17CF8689A",
+      "headline": "Title read on shelf; simulated record shows 0. Verify the physical count.",
+      "suggested_action": "Confirm physical count and record check",
+      "system_on_hand": 0,
+      "shelf_item_id": "bay_f3-item-12",
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-AADD91272BD6",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "sku": "SKU-AADD91272BD6",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 13. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 13,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-4A2DEFAEB0A3",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Great Indian Novel",
+      "author": "Shashi Tharoor",
+      "sku": "SKU-4A2DEFAEB0A3",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-465A585341A9",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Secret of Secrets",
+      "author": "Dan Brown",
+      "sku": "SKU-465A585341A9",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 5. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 5,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-D784EB392505",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Villain",
+      "author": "L.J. Shen",
+      "sku": "SKU-D784EB392505",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 2. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 2,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-5ACEFF57E20D",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Secret",
+      "author": "Rhonda Byrne",
+      "sku": "SKU-5ACEFF57E20D",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 10. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 10,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-9A25E8D20D3A",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Placebo",
+      "author": null,
+      "sku": "SKU-9A25E8D20D3A",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 13. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 13,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-4CAD823C9F21",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "My First Ruskin Bond Collection",
+      "author": null,
+      "sku": "SKU-4CAD823C9F21",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 1. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 1,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-64F46E0E2FE8",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Reappearance of Rachel Price",
+      "author": "Holly Jackson",
+      "sku": "SKU-64F46E0E2FE8",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 12. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 12,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-D3F9F3182498",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Wild Fictions",
+      "author": "Amitav Ghosh",
+      "sku": "SKU-D3F9F3182498",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-9C63F3600D3F",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Leather & Lark",
+      "author": "Brynne Weaver",
+      "sku": "SKU-9C63F3600D3F",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 8. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 8,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-EF6A56C5BB68",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "When the Night Agrees to Speak to Me",
+      "author": "Ananda Devi",
+      "sku": "SKU-EF6A56C5BB68",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 11. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 11,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-1B5A1ED6F801",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Breaking the Mould",
+      "author": "Raghuram G. Rajan & Rohit Lamba",
+      "sku": "SKU-1B5A1ED6F801",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 7. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 7,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-210ADD6EFA2B",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "sku": "SKU-210ADD6EFA2B",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 12. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 12,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-2CD49296BB77",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Where the Crawdads Sing",
+      "author": "Delia Owens",
+      "sku": "SKU-2CD49296BB77",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 4. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 4,
+      "requires_review": true
+    },
+    {
+      "id": "bay_f3-unseen-SKU-83D1D211A936",
+      "type": "missing_item",
+      "severity": "medium",
+      "badge": "Presence unconfirmed",
+      "title": "Tomorrow, and Tomorrow, and Tomorrow",
+      "author": "Gabrielle Zevin",
+      "sku": "SKU-83D1D211A936",
+      "headline": "Title not confirmed in the photo. Simulated on-hand: 0. This does not establish a stockout.",
+      "suggested_action": "Confirm shelf and backroom check",
+      "system_on_hand": 0,
+      "requires_review": true
     }
-  ]
+  ],
+  "metrics": {
+    "planogram_expected_items": 41,
+    "shelf_items_detected": 29,
+    "matched_count": 26,
+    "missing_count": 15,
+    "misplaced_count": 1,
+    "review_count": 0,
+    "planogram_compliance_pct": 63.4
+  }
 }

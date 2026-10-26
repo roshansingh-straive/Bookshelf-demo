@@ -18,6 +18,8 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
   tasks,
   metrics,
   onResolveTask,
+  hoveredItemId,
+  onHoverItem,
 }) => {
   const [activeTab, setActiveTab] = useState<'all' | 'misplaced' | 'missing' | 'resolved'>('all');
 
@@ -28,20 +30,15 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
     if (activeTab === 'resolved') return t.resolved;
     if (t.resolved) return false;
     if (activeTab === 'misplaced') return t.type === 'misplaced_item';
-    if (activeTab === 'missing') return t.type === 'missing_item' || t.type === 'record_error';
+    if (activeTab === 'missing') return t.type === 'missing_item';
     return true;
   });
 
   const missingCount = openTasks.filter((t) => t.type === 'missing_item').length;
   const misplacedCount = openTasks.filter((t) => t.type === 'misplaced_item').length;
 
-  // Compute live compliance percentage taking into account resolved tasks
-  const resolvedCount = resolvedTasks.length;
-  const totalPossible = metrics.missing_count + metrics.misplaced_count;
-  const compliance =
-    totalPossible === 0
-      ? 100
-      : Math.min(100, Math.round(metrics.planogram_compliance_pct + (resolvedCount / totalPossible) * 20));
+  // Reviewing a task is not a new observation of physical shelf coverage.
+  const compliance = metrics.planogram_compliance_pct;
 
   return (
     <div className="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden flex flex-col h-full">
@@ -55,27 +52,27 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
             <h2 className="text-sm font-bold text-slate-900 tracking-tight">Discrepancy &amp; Action Feed</h2>
           </div>
           <span className="text-xs px-2 py-0.5 rounded-full font-bold bg-amber-100 text-amber-800 border border-amber-200">
-            {openTasks.length} Issues Detected
+            {openTasks.length} Checks to Review
           </span>
         </div>
         <p className="text-xs text-slate-500">
-          AI detected mismatches between physical shelf and planogram record. One-tap actions fix inventory live.
+          Review possible discrepancies against the photo and physical shelf. Confirmations are saved for this demo session.
         </p>
 
         {/* Headline Discrepancy KPI Tiles */}
         <div className="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-200/60">
           <div className="bg-white p-2.5 rounded-lg border border-slate-200/80">
-            <div className="text-[11px] text-slate-500 font-medium">Compliance</div>
+            <div className="text-[11px] text-slate-500 font-medium">Titles matched</div>
             <div className="text-lg font-bold text-slate-900 tabular-nums">
               {compliance}%
             </div>
           </div>
           <div className="bg-white p-2.5 rounded-lg border border-slate-200/80">
-            <div className="text-[11px] text-slate-500 font-medium">Missing / OOS</div>
+            <div className="text-[11px] text-slate-500 font-medium">Unconfirmed</div>
             <div className="text-lg font-bold text-red-600 tabular-nums">{missingCount}</div>
           </div>
           <div className="bg-white p-2.5 rounded-lg border border-slate-200/80">
-            <div className="text-[11px] text-slate-500 font-medium">Misplaced</div>
+            <div className="text-[11px] text-slate-500 font-medium">Possible moves</div>
             <div className="text-lg font-bold text-amber-600 tabular-nums">{misplacedCount}</div>
           </div>
         </div>
@@ -91,7 +88,7 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
               : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
           }`}
         >
-          All Issues ({openTasks.length})
+          All Checks ({openTasks.length})
         </button>
         <button
           onClick={() => setActiveTab('misplaced')}
@@ -111,7 +108,7 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
               : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
           }`}
         >
-          Missing ({missingCount})
+          Unconfirmed ({missingCount})
         </button>
         {resolvedTasks.length > 0 && (
           <button
@@ -135,12 +132,12 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
               <CheckCircle2 className="w-5 h-5" />
             </div>
             <div className="text-xs font-bold text-slate-800">
-              {activeTab === 'resolved' ? 'No resolved tasks yet' : 'All detected shelf issues resolved!'}
+              {activeTab === 'resolved' ? 'No resolved tasks yet' : 'No open checks in this view'}
             </div>
             <p className="text-[11px] text-slate-500 mt-1">
               {activeTab === 'resolved'
                 ? 'Confirming tasks will log them here.'
-                : 'Physical shelf matches planogram record perfectly.'}
+                : 'A reviewed task does not establish full shelf accuracy. Rescan after physical changes.'}
             </p>
           </div>
         ) : (
@@ -170,7 +167,9 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
             return (
               <div
                 key={task.id}
-                className={`p-3 rounded-lg border transition-all shadow-2xs ${cardBorder}`}
+                onMouseEnter={() => onHoverItem?.(task.shelf_item_id ?? null)}
+                onMouseLeave={() => onHoverItem?.(null)}
+                className={`p-3 rounded-lg border transition-all shadow-2xs ${cardBorder} ${task.shelf_item_id && task.shelf_item_id === hoveredItemId ? 'ring-2 ring-blue-300' : ''}`}
               >
                 {/* Badge */}
                 <div className="flex items-center justify-between mb-1.5">
@@ -206,7 +205,7 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
                 ) : (
                   <div className="text-[11px] font-medium text-emerald-700 flex items-center space-x-1">
                     <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Store inventory record updated live</span>
+                    <span>Reviewed in this demo session</span>
                   </div>
                 )}
               </div>
@@ -218,7 +217,7 @@ export const Step3DiscrepancyView: React.FC<Step3DiscrepancyViewProps> = ({
       {/* Footer */}
       <div className="p-2.5 bg-slate-50 border-t border-slate-200 text-center">
         <span className="text-[11px] text-slate-500 font-medium">
-          Actions sync directly to store replenishment &amp; demand forecast
+          Review only · Inventory records are not changed · Rescan to refresh coverage
         </span>
       </div>
     </div>

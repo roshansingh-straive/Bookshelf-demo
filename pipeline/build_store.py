@@ -5,6 +5,7 @@ Generates:
 - pipeline/planted.json: Ground-truth record of planted exceptions (phantom, record error, misplaced)
 """
 import json
+import hashlib
 import random
 from pathlib import Path
 
@@ -152,6 +153,7 @@ CONTEXT_BAYS = [
 
 
 def build():
+    random.seed(RANDOM_SEED)
     with open(GT_PATH, encoding="utf-8") as f:
         gt_data = json.load(f)
 
@@ -221,7 +223,7 @@ def build():
                 system_status = "in_stock"
 
             item = {
-                "sku": f"SKU-{hash(title) % 1000000:06d}",
+                "sku": f"SKU-{hashlib.sha256(f'{bay_id}:{title}'.encode()).hexdigest()[:12].upper()}",
                 "title": title,
                 "author": author,
                 "assigned_bay_id": bay_cfg["misplaced_target_bay"] if title == bay_cfg.get("misplaced_title") else bay_id,
@@ -264,7 +266,7 @@ def build():
                 on_hand = 0
 
             item = {
-                "sku": f"SKU-{hash(title) % 1000000:06d}",
+                "sku": f"SKU-{hashlib.sha256(f'{bay_id}:{title}'.encode()).hexdigest()[:12].upper()}",
                 "title": title,
                 "author": author,
                 "assigned_bay_id": bay_id,
@@ -302,6 +304,10 @@ def build():
 
     # Combine all bays
     all_bays = scannable_bays + CONTEXT_BAYS
+    for bay in all_bays:
+        assigned = [item for item in full_catalogue.values() if item["assigned_bay_id"] == bay["id"]]
+        bay["catalogue_skus"] = [item["sku"] for item in assigned]
+        bay["expected_items_count"] = len(assigned)
 
     store_data = {
         "store_name": "Straive Demo Bookstore",

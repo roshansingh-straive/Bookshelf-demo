@@ -19,51 +19,50 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 4,
-      "expected_items_count": 42,
+      "expected_items_count": 41,
       "ground_truth_items_count": 39,
       "catalogue_skus": [
-        "SKU-728973",
-        "SKU-153908",
-        "SKU-746974",
-        "SKU-209773",
-        "SKU-471371",
-        "SKU-213835",
-        "SKU-417874",
-        "SKU-227999",
-        "SKU-383383",
-        "SKU-882069",
-        "SKU-962618",
-        "SKU-865135",
-        "SKU-548197",
-        "SKU-472437",
-        "SKU-995688",
-        "SKU-997331",
-        "SKU-610873",
-        "SKU-786259",
-        "SKU-670080",
-        "SKU-452247",
-        "SKU-697934",
-        "SKU-030097",
-        "SKU-230665",
-        "SKU-886996",
-        "SKU-753333",
-        "SKU-030222",
-        "SKU-907203",
-        "SKU-664563",
-        "SKU-716623",
-        "SKU-103197",
-        "SKU-583835",
-        "SKU-012051",
-        "SKU-460092",
-        "SKU-160468",
-        "SKU-015967",
-        "SKU-297990",
-        "SKU-597319",
-        "SKU-310678",
-        "SKU-959605",
-        "SKU-907952",
-        "SKU-771339",
-        "SKU-740717"
+        "SKU-D613C8840DE9",
+        "SKU-D317541F941D",
+        "SKU-8AEFCB1D4728",
+        "SKU-70B17CF8689A",
+        "SKU-94F37F0BCA6C",
+        "SKU-E453BF8ED41C",
+        "SKU-743B02A41853",
+        "SKU-434A2FAA31B8",
+        "SKU-AADD91272BD6",
+        "SKU-4A2DEFAEB0A3",
+        "SKU-465A585341A9",
+        "SKU-F858C84125C1",
+        "SKU-D784EB392505",
+        "SKU-5ACEFF57E20D",
+        "SKU-C34D74B2AB8D",
+        "SKU-4F9DF1A04777",
+        "SKU-CB2E73F68006",
+        "SKU-B4EBC3D06D56",
+        "SKU-352BDF13587C",
+        "SKU-38D4BDBE3E6E",
+        "SKU-C737D1BAFC66",
+        "SKU-F9414C48369C",
+        "SKU-FE5A1F7FDFAD",
+        "SKU-3C097ADF1779",
+        "SKU-9A25E8D20D3A",
+        "SKU-4CAD823C9F21",
+        "SKU-51516D3C9052",
+        "SKU-64F46E0E2FE8",
+        "SKU-D3F9F3182498",
+        "SKU-167267255407",
+        "SKU-06627B2BC91F",
+        "SKU-DB387650FFE7",
+        "SKU-76AB8707431C",
+        "SKU-9C63F3600D3F",
+        "SKU-D6FF4AFF0AAA",
+        "SKU-EF6A56C5BB68",
+        "SKU-1B5A1ED6F801",
+        "SKU-2E8F5742DB45",
+        "SKU-210ADD6EFA2B",
+        "SKU-2CD49296BB77",
+        "SKU-83D1D211A936"
       ]
     },
     {
@@ -79,120 +78,119 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 3,
-      "expected_items_count": 111,
+      "expected_items_count": 110,
       "ground_truth_items_count": 108,
       "catalogue_skus": [
-        "SKU-819537",
-        "SKU-907153",
-        "SKU-821391",
-        "SKU-343273",
-        "SKU-216511",
-        "SKU-861253",
-        "SKU-471371",
-        "SKU-163872",
-        "SKU-854003",
-        "SKU-640452",
-        "SKU-120067",
-        "SKU-225910",
-        "SKU-705233",
-        "SKU-679060",
-        "SKU-957503",
-        "SKU-675020",
-        "SKU-726473",
-        "SKU-467719",
-        "SKU-839986",
-        "SKU-535223",
-        "SKU-635152",
-        "SKU-617424",
-        "SKU-673552",
-        "SKU-599047",
-        "SKU-959693",
-        "SKU-404729",
-        "SKU-956791",
-        "SKU-283149",
-        "SKU-191492",
-        "SKU-457919",
-        "SKU-508873",
-        "SKU-154909",
-        "SKU-062316",
-        "SKU-671433",
-        "SKU-765139",
-        "SKU-993168",
-        "SKU-502697",
-        "SKU-911460",
-        "SKU-858199",
-        "SKU-217123",
-        "SKU-488024",
-        "SKU-287391",
-        "SKU-413868",
-        "SKU-339689",
-        "SKU-436595",
-        "SKU-276883",
-        "SKU-123954",
-        "SKU-371938",
-        "SKU-933422",
-        "SKU-420538",
-        "SKU-142923",
-        "SKU-330608",
-        "SKU-424636",
-        "SKU-986340",
-        "SKU-151536",
-        "SKU-915196",
-        "SKU-132427",
-        "SKU-660853",
-        "SKU-858243",
-        "SKU-787289",
-        "SKU-176065",
-        "SKU-292237",
-        "SKU-160412",
-        "SKU-451297",
-        "SKU-037166",
-        "SKU-581081",
-        "SKU-757412",
-        "SKU-549130",
-        "SKU-419455",
-        "SKU-015271",
-        "SKU-690823",
-        "SKU-970406",
-        "SKU-425192",
-        "SKU-705221",
-        "SKU-600401",
-        "SKU-479768",
-        "SKU-334572",
-        "SKU-743637",
-        "SKU-761417",
-        "SKU-976546",
-        "SKU-332083",
-        "SKU-457131",
-        "SKU-308311",
-        "SKU-745469",
-        "SKU-981032",
-        "SKU-975825",
-        "SKU-083828",
-        "SKU-631176",
-        "SKU-597841",
-        "SKU-337751",
-        "SKU-273505",
-        "SKU-688281",
-        "SKU-701217",
-        "SKU-017189",
-        "SKU-458636",
-        "SKU-169094",
-        "SKU-425257",
-        "SKU-666166",
-        "SKU-731731",
-        "SKU-471001",
-        "SKU-543162",
-        "SKU-694115",
-        "SKU-454451",
-        "SKU-776864",
-        "SKU-216598",
-        "SKU-089761",
-        "SKU-912260",
-        "SKU-898338",
-        "SKU-501790",
-        "SKU-302707",
-        "SKU-763509"
+        "SKU-DA4FB1F31D9E",
+        "SKU-A6BAE242CA20",
+        "SKU-49550AF16F26",
+        "SKU-37EAC1439CB5",
+        "SKU-532A79DC6ED6",
+        "SKU-56691846B9D2",
+        "SKU-9DEF818A286E",
+        "SKU-8E833229F4D8",
+        "SKU-D8E336573247",
+        "SKU-9AFB2E0DB1C9",
+        "SKU-6FE5A6B5F296",
+        "SKU-02E264BFC82E",
+        "SKU-0D759FD6366F",
+        "SKU-9756EF407F65",
+        "SKU-A1D8021FA05E",
+        "SKU-97DA3E0C2539",
+        "SKU-AFC52A8D2C20",
+        "SKU-E69EEC124772",
+        "SKU-01434F4B7D4E",
+        "SKU-2F8055B966C9",
+        "SKU-3DB4C0067586",
+        "SKU-3FEF64C0D6B5",
+        "SKU-86991647BE78",
+        "SKU-EFC67DB78EE8",
+        "SKU-535310F20242",
+        "SKU-675407E2700F",
+        "SKU-CD85EF083431",
+        "SKU-0F05ABCCA8B9",
+        "SKU-C7409E1FD397",
+        "SKU-476583CDD723",
+        "SKU-DB67E3B7A33F",
+        "SKU-1818F6009555",
+        "SKU-E23FAB8B2853",
+        "SKU-9567A5271B32",
+        "SKU-A8F53F3762D7",
+        "SKU-0B4FB47CEE2D",
+        "SKU-32C5242D1DD9",
+        "SKU-A7F468C2E3A5",
+        "SKU-714FB132CB86",
+        "SKU-F014ECBFE8CA",
+        "SKU-0ADF5BC930D8",
+        "SKU-A2042176F29F",
+        "SKU-99E87EDB39A4",
+        "SKU-4FC5E16CC1FD",
+        "SKU-946B078C1A47",
+        "SKU-D988B052FB67",
+        "SKU-815DA4B0F2B3",
+        "SKU-52B6A22CD3AC",
+        "SKU-CA334EBA60C2",
+        "SKU-082BB678135C",
+        "SKU-3DDF762026B3",
+        "SKU-7FDD37926618",
+        "SKU-AD7467F85AD2",
+        "SKU-EEC4BEFBFFCF",
+        "SKU-923C904F4A86",
+        "SKU-A800572F305C",
+        "SKU-FE8DEF51120A",
+        "SKU-86A1FC75CD9E",
+        "SKU-E91CAE146B98",
+        "SKU-D0847E2B6296",
+        "SKU-045C5818B1D7",
+        "SKU-C008401D7B38",
+        "SKU-B9BB253D38FE",
+        "SKU-CC50BAF792EF",
+        "SKU-80C89B2047F7",
+        "SKU-6480E9917F7F",
+        "SKU-4B8F8BF229F0",
+        "SKU-063809F84D4F",
+        "SKU-714454088089",
+        "SKU-63CF1D02952B",
+        "SKU-4D11661AE410",
+        "SKU-AD8DF0B67EF2",
+        "SKU-0D2AB0BC0BBE",
+        "SKU-A2FDB7F09299",
+        "SKU-5114C6CA3202",
+        "SKU-503EECBB4309",
+        "SKU-F7D4A7BB8C45",
+        "SKU-A289155DF152",
+        "SKU-4730212AED36",
+        "SKU-95368E800A77",
+        "SKU-7417162A358F",
+        "SKU-9B7BC446C2F5",
+        "SKU-397062FEB7D4",
+        "SKU-D1F7C4441EB1",
+        "SKU-D44D447334CE",
+        "SKU-F94A52192BE8",
+        "SKU-D83AF64A8449",
+        "SKU-55AD474B1B03",
+        "SKU-6D649E1A57D3",
+        "SKU-F73FF1A44C49",
+        "SKU-79C07D2B7C7F",
+        "SKU-4A381FF41438",
+        "SKU-4C220A6A6CDA",
+        "SKU-17DAA8F4FAEE",
+        "SKU-14DD54976AA0",
+        "SKU-240DDEBBD071",
+        "SKU-52F11A3DBD3E",
+        "SKU-E53BE6401B77",
+        "SKU-E8572AFE57AE",
+        "SKU-0414D24BBCEF",
+        "SKU-A83E22AE6207",
+        "SKU-3B08EF9AD1C8",
+        "SKU-AAAB17C54CD7",
+        "SKU-70CBE527C7C0",
+        "SKU-E3F0E814F81F",
+        "SKU-C2F13A51CBB4",
+        "SKU-490C1E090D67",
+        "SKU-971C393ECB58",
+        "SKU-C74FB917B0B8",
+        "SKU-B48603A98089"
       ]
     },
     {
@@ -208,38 +206,37 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 3,
-      "expected_items_count": 29,
+      "expected_items_count": 28,
       "ground_truth_items_count": 26,
       "catalogue_skus": [
-        "SKU-153851",
-        "SKU-337760",
-        "SKU-434950",
-        "SKU-592283",
-        "SKU-563329",
-        "SKU-677250",
-        "SKU-755328",
-        "SKU-800769",
-        "SKU-236967",
-        "SKU-251336",
-        "SKU-053700",
-        "SKU-065274",
-        "SKU-695939",
-        "SKU-163042",
-        "SKU-941384",
-        "SKU-416787",
-        "SKU-205537",
-        "SKU-636581",
-        "SKU-847913",
-        "SKU-187822",
-        "SKU-586799",
-        "SKU-663346",
-        "SKU-153908",
-        "SKU-856804",
-        "SKU-013639",
-        "SKU-175997",
-        "SKU-698821",
-        "SKU-692003",
-        "SKU-151322"
+        "SKU-5C37196E2546",
+        "SKU-54D87B99454F",
+        "SKU-DDF509B177F3",
+        "SKU-A8E35D8586F8",
+        "SKU-4C497F6697C4",
+        "SKU-31642E1A9DEC",
+        "SKU-FE3DAE4BAE13",
+        "SKU-6107CD0851AB",
+        "SKU-09BAAF562C6C",
+        "SKU-D209A6A110CA",
+        "SKU-7ED440E62052",
+        "SKU-4586CA3E4677",
+        "SKU-25031BB13384",
+        "SKU-F6227279140E",
+        "SKU-57B417DD9A6C",
+        "SKU-42F05B2C33A7",
+        "SKU-FF8BDC5C3657",
+        "SKU-43B1FA8F1920",
+        "SKU-FA06E568EF42",
+        "SKU-F82EBEBC8BE2",
+        "SKU-E25DEAF0BB04",
+        "SKU-FDFB6D637F7B",
+        "SKU-D118D4877448",
+        "SKU-FAF5158C0654",
+        "SKU-C9244ADEFAF8",
+        "SKU-91B9DCF0A9FE",
+        "SKU-760443F332F2",
+        "SKU-824C4F86A80E"
       ]
     },
     {
@@ -255,20 +252,19 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 3,
-      "expected_items_count": 11,
+      "expected_items_count": 10,
       "ground_truth_items_count": 8,
       "catalogue_skus": [
-        "SKU-269436",
-        "SKU-789139",
-        "SKU-605160",
-        "SKU-155255",
-        "SKU-261098",
-        "SKU-939740",
-        "SKU-523139",
-        "SKU-183347",
-        "SKU-185663",
-        "SKU-701323",
-        "SKU-205537"
+        "SKU-DB9BFF24E22B",
+        "SKU-F9694EDA6023",
+        "SKU-A34A5C3F7EE8",
+        "SKU-DB481C7778B1",
+        "SKU-69A0C4E40E3C",
+        "SKU-C96B40A69086",
+        "SKU-43EF97B950A3",
+        "SKU-62E1E290A1B7",
+        "SKU-9A91F76E6EE0",
+        "SKU-B16B729E4938"
       ]
     },
     {
@@ -284,77 +280,76 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 3,
-      "expected_items_count": 68,
+      "expected_items_count": 67,
       "ground_truth_items_count": 65,
       "catalogue_skus": [
-        "SKU-370356",
-        "SKU-012715",
-        "SKU-156947",
-        "SKU-579694",
-        "SKU-358639",
-        "SKU-474474",
-        "SKU-485126",
-        "SKU-380956",
-        "SKU-713690",
-        "SKU-372332",
-        "SKU-031057",
-        "SKU-095295",
-        "SKU-406601",
-        "SKU-054465",
-        "SKU-483005",
-        "SKU-704204",
-        "SKU-175601",
-        "SKU-709346",
-        "SKU-078997",
-        "SKU-982759",
-        "SKU-256112",
-        "SKU-654529",
-        "SKU-132155",
-        "SKU-007588",
-        "SKU-587765",
-        "SKU-786685",
-        "SKU-970797",
-        "SKU-286042",
-        "SKU-836910",
-        "SKU-606241",
-        "SKU-539982",
-        "SKU-484184",
-        "SKU-297266",
-        "SKU-126043",
-        "SKU-125569",
-        "SKU-627420",
-        "SKU-925827",
-        "SKU-718864",
-        "SKU-571495",
-        "SKU-377194",
-        "SKU-662152",
-        "SKU-521152",
-        "SKU-268290",
-        "SKU-964291",
-        "SKU-891919",
-        "SKU-906123",
-        "SKU-202326",
-        "SKU-765507",
-        "SKU-069976",
-        "SKU-825551",
-        "SKU-952196",
-        "SKU-494630",
-        "SKU-054154",
-        "SKU-991291",
-        "SKU-321753",
-        "SKU-295346",
-        "SKU-617884",
-        "SKU-666958",
-        "SKU-296863",
-        "SKU-931824",
-        "SKU-475466",
-        "SKU-306365",
-        "SKU-570775",
-        "SKU-755333",
-        "SKU-924058",
-        "SKU-936734",
-        "SKU-473465",
-        "SKU-989540"
+        "SKU-6244D525DB16",
+        "SKU-EC27D7550008",
+        "SKU-0CA240360392",
+        "SKU-D0E724179DA1",
+        "SKU-4E88F116CFCB",
+        "SKU-CA3EA3E795E3",
+        "SKU-7E90238A9C47",
+        "SKU-693477CB8BEA",
+        "SKU-1D0547070AFD",
+        "SKU-44D60422D9AE",
+        "SKU-1367FD41C824",
+        "SKU-177592A169A7",
+        "SKU-95997FDBB640",
+        "SKU-A33D0EDF2E0B",
+        "SKU-CEB9040C2754",
+        "SKU-134CF37F1E52",
+        "SKU-50A4B446B857",
+        "SKU-B6BD8479DC8F",
+        "SKU-5F743DCC4CED",
+        "SKU-FF83E9D94A84",
+        "SKU-6B771CBD9DCB",
+        "SKU-6630DF0F69E4",
+        "SKU-63C70856842F",
+        "SKU-F95D6B305895",
+        "SKU-154CFAA794B5",
+        "SKU-7045D34DE47B",
+        "SKU-CF35963D6AD9",
+        "SKU-996ABCC8E5D3",
+        "SKU-D745D4A5274F",
+        "SKU-2CA64AFAB3D9",
+        "SKU-35A608A7B75B",
+        "SKU-658137BB256D",
+        "SKU-59E15B7646A1",
+        "SKU-7310320B264A",
+        "SKU-0B9AE322D8DC",
+        "SKU-7E093993423D",
+        "SKU-EDA2A63EF068",
+        "SKU-B25ED798C015",
+        "SKU-4627443CCE50",
+        "SKU-22277237A9B2",
+        "SKU-C47879A54B63",
+        "SKU-471C2B4C9805",
+        "SKU-E6FFAA17ED5D",
+        "SKU-8407A7ADCE9F",
+        "SKU-682435A800D7",
+        "SKU-D3B4631E4D7D",
+        "SKU-7BEC7DB1F179",
+        "SKU-31E2ED5B1E9A",
+        "SKU-9662640EB12B",
+        "SKU-76F9F93BB9F1",
+        "SKU-4223396851F9",
+        "SKU-EB4113284D82",
+        "SKU-09E7E7A055EB",
+        "SKU-BCF9A96978BB",
+        "SKU-786EF088FE67",
+        "SKU-D35115C222FF",
+        "SKU-01B25D571B22",
+        "SKU-BEDAF1CF1A34",
+        "SKU-B7920EDD88A9",
+        "SKU-A35EB90B0D86",
+        "SKU-E5CB941FB724",
+        "SKU-FA601E539326",
+        "SKU-FD9266EE16E0",
+        "SKU-FE7FD625607E",
+        "SKU-BEBE3DF3FD22",
+        "SKU-6639146362D0",
+        "SKU-6DF1A32DC09D"
       ]
     },
     {
@@ -370,61 +365,60 @@
       "scanned_today": true,
       "last_scanned_at": "Today 08:30 AM",
       "open_exceptions": 3,
-      "expected_items_count": 52,
+      "expected_items_count": 51,
       "ground_truth_items_count": 49,
       "catalogue_skus": [
-        "SKU-841625",
-        "SKU-297911",
-        "SKU-060212",
-        "SKU-353447",
-        "SKU-032374",
-        "SKU-125417",
-        "SKU-778612",
-        "SKU-734794",
-        "SKU-917357",
-        "SKU-378322",
-        "SKU-483511",
-        "SKU-965844",
-        "SKU-153699",
-        "SKU-952720",
-        "SKU-678307",
-        "SKU-263419",
-        "SKU-049211",
-        "SKU-159169",
-        "SKU-003089",
-        "SKU-797323",
-        "SKU-710694",
-        "SKU-605623",
-        "SKU-370481",
-        "SKU-568546",
-        "SKU-561879",
-        "SKU-172923",
-        "SKU-749415",
-        "SKU-131690",
-        "SKU-844800",
-        "SKU-448141",
-        "SKU-416153",
-        "SKU-766067",
-        "SKU-039341",
-        "SKU-382919",
-        "SKU-754385",
-        "SKU-918069",
-        "SKU-914259",
-        "SKU-972254",
-        "SKU-836607",
-        "SKU-838722",
-        "SKU-927646",
-        "SKU-783876",
-        "SKU-387646",
-        "SKU-205816",
-        "SKU-872459",
-        "SKU-687663",
-        "SKU-047435",
-        "SKU-678263",
-        "SKU-495182",
-        "SKU-130721",
-        "SKU-699036",
-        "SKU-543083"
+        "SKU-67C797AF4F36",
+        "SKU-8BB8B6ECF48E",
+        "SKU-C73483DDE9BD",
+        "SKU-3A5E2C4B61B7",
+        "SKU-C1CFDB3F8338",
+        "SKU-D63E73527794",
+        "SKU-1E02D51E4075",
+        "SKU-455C7BEE6F73",
+        "SKU-9A76326389C1",
+        "SKU-5A3A57322E63",
+        "SKU-4E8D53B3220C",
+        "SKU-1F1B330F2482",
+        "SKU-A2524598ED2A",
+        "SKU-8B8C03E0D2A9",
+        "SKU-3E111642D09F",
+        "SKU-6E6A1F43666D",
+        "SKU-0BAA320ABBB1",
+        "SKU-CECBD29B4DCC",
+        "SKU-2FE9AC1A5945",
+        "SKU-9A2623E09286",
+        "SKU-93341A715035",
+        "SKU-E43A57D54EDD",
+        "SKU-6A83DD1E9FB9",
+        "SKU-98C3F94FF87F",
+        "SKU-91C99E03F30A",
+        "SKU-DC1838C265B3",
+        "SKU-4D773BE47BA6",
+        "SKU-4913BCAFA32B",
+        "SKU-2DCE0EF195C8",
+        "SKU-BD937020FB85",
+        "SKU-89160F096404",
+        "SKU-D94CCB9E0984",
+        "SKU-878B2E11BD38",
+        "SKU-86AC67D04186",
+        "SKU-A4F32C42AAAB",
+        "SKU-F323D4FC3167",
+        "SKU-36D4B0B3950B",
+        "SKU-55920371903D",
+        "SKU-EBEA58476A82",
+        "SKU-F1D37874D711",
+        "SKU-B9E95B1B2137",
+        "SKU-5118F4003A5E",
+        "SKU-B43C499EEA62",
+        "SKU-E48FD3AC15B9",
+        "SKU-6B8FBAB5C1B4",
+        "SKU-3E110369B5B1",
+        "SKU-686C084D97B5",
+        "SKU-A9A964810305",
+        "SKU-BB7F79CD8C6F",
+        "SKU-35BFFDB85B5A",
+        "SKU-AA356204A6B5"
       ]
     },
     {
@@ -435,7 +429,11 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.96
+      "on_shelf_availability": 0.96,
+      "catalogue_skus": [
+        "SKU-46A5317F46DE"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_a4",
@@ -445,7 +443,11 @@
       "status": "unscanned",
       "scanned_today": false,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.91
+      "on_shelf_availability": 0.91,
+      "catalogue_skus": [
+        "SKU-9B6969441F8C"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_b1",
@@ -455,7 +457,11 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.95
+      "on_shelf_availability": 0.95,
+      "catalogue_skus": [
+        "SKU-38BEA5675677"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_b2",
@@ -465,7 +471,11 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.98
+      "on_shelf_availability": 0.98,
+      "catalogue_skus": [
+        "SKU-551AC8B4A43F"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_b3",
@@ -475,7 +485,9 @@
       "status": "unscanned",
       "scanned_today": false,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.89
+      "on_shelf_availability": 0.89,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     },
     {
       "id": "bay_c1",
@@ -485,7 +497,9 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.97
+      "on_shelf_availability": 0.97,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     },
     {
       "id": "bay_c2",
@@ -495,7 +509,11 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.94
+      "on_shelf_availability": 0.94,
+      "catalogue_skus": [
+        "SKU-1EFFA231C1A2"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_d1",
@@ -505,7 +523,11 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.95
+      "on_shelf_availability": 0.95,
+      "catalogue_skus": [
+        "SKU-595FDCB7BC08"
+      ],
+      "expected_items_count": 1
     },
     {
       "id": "bay_d2",
@@ -515,7 +537,9 @@
       "status": "unscanned",
       "scanned_today": false,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.9
+      "on_shelf_availability": 0.9,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     },
     {
       "id": "bay_e1",
@@ -525,7 +549,9 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.96
+      "on_shelf_availability": 0.96,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     },
     {
       "id": "bay_e2",
@@ -535,7 +561,9 @@
       "status": "unscanned",
       "scanned_today": false,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.92
+      "on_shelf_availability": 0.92,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     },
     {
       "id": "bay_n1",
@@ -545,12 +573,14 @@
       "status": "healthy",
       "scanned_today": true,
       "open_exceptions": 0,
-      "on_shelf_availability": 0.97
+      "on_shelf_availability": 0.97,
+      "catalogue_skus": [],
+      "expected_items_count": 0
     }
   ],
   "catalogue": {
-    "SKU-728973": {
-      "sku": "SKU-728973",
+    "SKU-D613C8840DE9": {
+      "sku": "SKU-D613C8840DE9",
       "title": "The Lord of the Rings",
       "author": "J.R.R. Tolkien",
       "assigned_bay_id": "bay_f3",
@@ -560,19 +590,19 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-153908": {
-      "sku": "SKU-153908",
+    "SKU-D317541F941D": {
+      "sku": "SKU-D317541F941D",
       "title": "$100M Money Models",
       "author": "Alex Hormozi",
-      "assigned_bay_id": "bay_f2",
-      "price": 22.22,
-      "sales_velocity_units_per_day": 3.2,
-      "simulated_on_hand": 11,
+      "assigned_bay_id": "bay_f3",
+      "price": 18.41,
+      "sales_velocity_units_per_day": 1.0,
+      "simulated_on_hand": 2,
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-746974": {
-      "sku": "SKU-746974",
+    "SKU-1EFFA231C1A2": {
+      "sku": "SKU-1EFFA231C1A2",
       "title": "The Magic of the Lost Earrings",
       "author": "Sudha Murty",
       "assigned_bay_id": "bay_c2",
@@ -582,8 +612,8 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-209773": {
-      "sku": "SKU-209773",
+    "SKU-8AEFCB1D4728": {
+      "sku": "SKU-8AEFCB1D4728",
       "title": "Dad, I Want to Hear Your Story",
       "author": "Jeffrey Mason",
       "assigned_bay_id": "bay_f3",
@@ -593,19 +623,19 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-471371": {
-      "sku": "SKU-471371",
+    "SKU-70B17CF8689A": {
+      "sku": "SKU-70B17CF8689A",
       "title": "Atomic Habits",
       "author": "James Clear",
-      "assigned_bay_id": "bay_f1",
-      "price": 29.15,
+      "assigned_bay_id": "bay_f3",
+      "price": 17.94,
       "sales_velocity_units_per_day": 2.2,
-      "simulated_on_hand": 4,
-      "system_status": "in_stock",
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-213835": {
-      "sku": "SKU-213835",
+    "SKU-94F37F0BCA6C": {
+      "sku": "SKU-94F37F0BCA6C",
       "title": "Your Fault",
       "author": "Mercedes Ron",
       "assigned_bay_id": "bay_f3",
@@ -615,8 +645,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-417874": {
-      "sku": "SKU-417874",
+    "SKU-E453BF8ED41C": {
+      "sku": "SKU-E453BF8ED41C",
       "title": "Expert Secrets",
       "author": "Russell Brunson",
       "assigned_bay_id": "bay_f3",
@@ -626,8 +656,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-227999": {
-      "sku": "SKU-227999",
+    "SKU-743B02A41853": {
+      "sku": "SKU-743B02A41853",
       "title": "You Can",
       "author": "George Matthew Adams",
       "assigned_bay_id": "bay_f3",
@@ -637,8 +667,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-383383": {
-      "sku": "SKU-383383",
+    "SKU-434A2FAA31B8": {
+      "sku": "SKU-434A2FAA31B8",
       "title": "12 Months to $1 Million",
       "author": "Ryan Daniel Moran",
       "assigned_bay_id": "bay_f3",
@@ -648,8 +678,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-882069": {
-      "sku": "SKU-882069",
+    "SKU-AADD91272BD6": {
+      "sku": "SKU-AADD91272BD6",
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "assigned_bay_id": "bay_f3",
@@ -659,8 +689,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-962618": {
-      "sku": "SKU-962618",
+    "SKU-4A2DEFAEB0A3": {
+      "sku": "SKU-4A2DEFAEB0A3",
       "title": "The Great Indian Novel",
       "author": "Shashi Tharoor",
       "assigned_bay_id": "bay_f3",
@@ -670,8 +700,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-865135": {
-      "sku": "SKU-865135",
+    "SKU-465A585341A9": {
+      "sku": "SKU-465A585341A9",
       "title": "The Secret of Secrets",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f3",
@@ -681,8 +711,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-548197": {
-      "sku": "SKU-548197",
+    "SKU-F858C84125C1": {
+      "sku": "SKU-F858C84125C1",
       "title": "The Mistake",
       "author": "Elle Kennedy",
       "assigned_bay_id": "bay_f3",
@@ -692,8 +722,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-472437": {
-      "sku": "SKU-472437",
+    "SKU-D784EB392505": {
+      "sku": "SKU-D784EB392505",
       "title": "The Villain",
       "author": "L.J. Shen",
       "assigned_bay_id": "bay_f3",
@@ -703,8 +733,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-995688": {
-      "sku": "SKU-995688",
+    "SKU-5ACEFF57E20D": {
+      "sku": "SKU-5ACEFF57E20D",
       "title": "The Secret",
       "author": "Rhonda Byrne",
       "assigned_bay_id": "bay_f3",
@@ -714,8 +744,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-997331": {
-      "sku": "SKU-997331",
+    "SKU-C34D74B2AB8D": {
+      "sku": "SKU-C34D74B2AB8D",
       "title": "The Guest List",
       "author": "Lucy Foley",
       "assigned_bay_id": "bay_f3",
@@ -725,8 +755,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-610873": {
-      "sku": "SKU-610873",
+    "SKU-4F9DF1A04777": {
+      "sku": "SKU-4F9DF1A04777",
       "title": "The Last Queen",
       "author": "Chitra Banerjee Divakaruni",
       "assigned_bay_id": "bay_f3",
@@ -736,8 +766,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-786259": {
-      "sku": "SKU-786259",
+    "SKU-CB2E73F68006": {
+      "sku": "SKU-CB2E73F68006",
       "title": "Limitless",
       "author": "Jim Kwik",
       "assigned_bay_id": "bay_f3",
@@ -747,8 +777,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-670080": {
-      "sku": "SKU-670080",
+    "SKU-B4EBC3D06D56": {
+      "sku": "SKU-B4EBC3D06D56",
       "title": "Those Who Live Without Discipline Die Without Honor",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -758,8 +788,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-452247": {
-      "sku": "SKU-452247",
+    "SKU-352BDF13587C": {
+      "sku": "SKU-352BDF13587C",
       "title": "Timmy Failure",
       "author": "Stephan Pastis",
       "assigned_bay_id": "bay_f3",
@@ -769,8 +799,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-697934": {
-      "sku": "SKU-697934",
+    "SKU-38D4BDBE3E6E": {
+      "sku": "SKU-38D4BDBE3E6E",
       "title": "Hunt the Villain",
       "author": "Rina Kent",
       "assigned_bay_id": "bay_f3",
@@ -780,8 +810,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-030097": {
-      "sku": "SKU-030097",
+    "SKU-C737D1BAFC66": {
+      "sku": "SKU-C737D1BAFC66",
       "title": "Good Vibes, Good Life",
       "author": "Vex King",
       "assigned_bay_id": "bay_f3",
@@ -791,8 +821,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-230665": {
-      "sku": "SKU-230665",
+    "SKU-F9414C48369C": {
+      "sku": "SKU-F9414C48369C",
       "title": "The Prophet",
       "author": "Kahlil Gibran",
       "assigned_bay_id": "bay_f3",
@@ -802,8 +832,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-886996": {
-      "sku": "SKU-886996",
+    "SKU-FE5A1F7FDFAD": {
+      "sku": "SKU-FE5A1F7FDFAD",
       "title": "Three Weeks in Paris",
       "author": "Barbara Taylor Bradford",
       "assigned_bay_id": "bay_f3",
@@ -813,8 +843,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-753333": {
-      "sku": "SKU-753333",
+    "SKU-3C097ADF1779": {
+      "sku": "SKU-3C097ADF1779",
       "title": "Leaders Eat Last",
       "author": "Simon Sinek",
       "assigned_bay_id": "bay_f3",
@@ -824,8 +854,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-030222": {
-      "sku": "SKU-030222",
+    "SKU-9A25E8D20D3A": {
+      "sku": "SKU-9A25E8D20D3A",
       "title": "Placebo",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -835,8 +865,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-907203": {
-      "sku": "SKU-907203",
+    "SKU-4CAD823C9F21": {
+      "sku": "SKU-4CAD823C9F21",
       "title": "My First Ruskin Bond Collection",
       "author": null,
       "assigned_bay_id": "bay_f3",
@@ -846,8 +876,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-664563": {
-      "sku": "SKU-664563",
+    "SKU-51516D3C9052": {
+      "sku": "SKU-51516D3C9052",
       "title": "The Diary of a Young Girl",
       "author": "Anne Frank",
       "assigned_bay_id": "bay_f3",
@@ -857,8 +887,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-716623": {
-      "sku": "SKU-716623",
+    "SKU-64F46E0E2FE8": {
+      "sku": "SKU-64F46E0E2FE8",
       "title": "The Reappearance of Rachel Price",
       "author": "Holly Jackson",
       "assigned_bay_id": "bay_f3",
@@ -868,8 +898,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-103197": {
-      "sku": "SKU-103197",
+    "SKU-D3F9F3182498": {
+      "sku": "SKU-D3F9F3182498",
       "title": "Wild Fictions",
       "author": "Amitav Ghosh",
       "assigned_bay_id": "bay_f3",
@@ -879,8 +909,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-583835": {
-      "sku": "SKU-583835",
+    "SKU-167267255407": {
+      "sku": "SKU-167267255407",
       "title": "Chip War",
       "author": "Chris Miller",
       "assigned_bay_id": "bay_f3",
@@ -890,8 +920,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-012051": {
-      "sku": "SKU-012051",
+    "SKU-06627B2BC91F": {
+      "sku": "SKU-06627B2BC91F",
       "title": "The Diary of a CEO",
       "author": "Steven Bartlett",
       "assigned_bay_id": "bay_f3",
@@ -901,8 +931,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-460092": {
-      "sku": "SKU-460092",
+    "SKU-DB387650FFE7": {
+      "sku": "SKU-DB387650FFE7",
       "title": "Think Like a Monk",
       "author": "Jay Shetty",
       "assigned_bay_id": "bay_f3",
@@ -912,8 +942,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-160468": {
-      "sku": "SKU-160468",
+    "SKU-76AB8707431C": {
+      "sku": "SKU-76AB8707431C",
       "title": "The 4-Hour Work Week",
       "author": "Tim Ferriss",
       "assigned_bay_id": "bay_f3",
@@ -923,8 +953,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-015967": {
-      "sku": "SKU-015967",
+    "SKU-9C63F3600D3F": {
+      "sku": "SKU-9C63F3600D3F",
       "title": "Leather & Lark",
       "author": "Brynne Weaver",
       "assigned_bay_id": "bay_f3",
@@ -934,8 +964,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-297990": {
-      "sku": "SKU-297990",
+    "SKU-D6FF4AFF0AAA": {
+      "sku": "SKU-D6FF4AFF0AAA",
       "title": "Breaking Dawn",
       "author": "Stephenie Meyer",
       "assigned_bay_id": "bay_f3",
@@ -945,8 +975,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-597319": {
-      "sku": "SKU-597319",
+    "SKU-EF6A56C5BB68": {
+      "sku": "SKU-EF6A56C5BB68",
       "title": "When the Night Agrees to Speak to Me",
       "author": "Ananda Devi",
       "assigned_bay_id": "bay_f3",
@@ -956,8 +986,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-310678": {
-      "sku": "SKU-310678",
+    "SKU-1B5A1ED6F801": {
+      "sku": "SKU-1B5A1ED6F801",
       "title": "Breaking the Mould",
       "author": "Raghuram G. Rajan & Rohit Lamba",
       "assigned_bay_id": "bay_f3",
@@ -967,8 +997,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-959605": {
-      "sku": "SKU-959605",
+    "SKU-2E8F5742DB45": {
+      "sku": "SKU-2E8F5742DB45",
       "title": "Essentialism",
       "author": "Greg McKeown",
       "assigned_bay_id": "bay_f3",
@@ -978,8 +1008,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-907952": {
-      "sku": "SKU-907952",
+    "SKU-210ADD6EFA2B": {
+      "sku": "SKU-210ADD6EFA2B",
       "title": "The Silent Patient",
       "author": "Alex Michaelides",
       "assigned_bay_id": "bay_f3",
@@ -990,8 +1020,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 4
     },
-    "SKU-771339": {
-      "sku": "SKU-771339",
+    "SKU-2CD49296BB77": {
+      "sku": "SKU-2CD49296BB77",
       "title": "Where the Crawdads Sing",
       "author": "Delia Owens",
       "assigned_bay_id": "bay_f3",
@@ -1002,8 +1032,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 3
     },
-    "SKU-740717": {
-      "sku": "SKU-740717",
+    "SKU-83D1D211A936": {
+      "sku": "SKU-83D1D211A936",
       "title": "Tomorrow, and Tomorrow, and Tomorrow",
       "author": "Gabrielle Zevin",
       "assigned_bay_id": "bay_f3",
@@ -1014,8 +1044,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 2
     },
-    "SKU-819537": {
-      "sku": "SKU-819537",
+    "SKU-DA4FB1F31D9E": {
+      "sku": "SKU-DA4FB1F31D9E",
       "title": "After You",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -1025,8 +1055,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-907153": {
-      "sku": "SKU-907153",
+    "SKU-A6BAE242CA20": {
+      "sku": "SKU-A6BAE242CA20",
       "title": "The Giver of Stars",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -1036,8 +1066,8 @@
       "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-821391": {
-      "sku": "SKU-821391",
+    "SKU-49550AF16F26": {
+      "sku": "SKU-49550AF16F26",
       "title": "Still Me",
       "author": "Jojo Moyes",
       "assigned_bay_id": "bay_f1",
@@ -1047,8 +1077,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-343273": {
-      "sku": "SKU-343273",
+    "SKU-37EAC1439CB5": {
+      "sku": "SKU-37EAC1439CB5",
       "title": "The Winner Stands Alone",
       "author": "Paulo Coelho",
       "assigned_bay_id": "bay_f1",
@@ -1058,8 +1088,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-216511": {
-      "sku": "SKU-216511",
+    "SKU-532A79DC6ED6": {
+      "sku": "SKU-532A79DC6ED6",
       "title": "Nasty Nature",
       "author": "Nick Arnold",
       "assigned_bay_id": "bay_f1",
@@ -1069,8 +1099,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-861253": {
-      "sku": "SKU-861253",
+    "SKU-595FDCB7BC08": {
+      "sku": "SKU-595FDCB7BC08",
       "title": "Star Wars Episode V: The Empire Strikes Back",
       "author": "Ryder Windham",
       "assigned_bay_id": "bay_d1",
@@ -1080,8 +1110,19 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-163872": {
-      "sku": "SKU-163872",
+    "SKU-56691846B9D2": {
+      "sku": "SKU-56691846B9D2",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "assigned_bay_id": "bay_f1",
+      "price": 29.15,
+      "sales_velocity_units_per_day": 2.2,
+      "simulated_on_hand": 4,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    "SKU-9DEF818A286E": {
+      "sku": "SKU-9DEF818A286E",
       "title": "The Small House at Allington",
       "author": "Anthony Trollope",
       "assigned_bay_id": "bay_f1",
@@ -1091,8 +1132,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-854003": {
-      "sku": "SKU-854003",
+    "SKU-8E833229F4D8": {
+      "sku": "SKU-8E833229F4D8",
       "title": "Jane Austen",
       "author": "David Nokes",
       "assigned_bay_id": "bay_f1",
@@ -1102,8 +1143,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-640452": {
-      "sku": "SKU-640452",
+    "SKU-D8E336573247": {
+      "sku": "SKU-D8E336573247",
       "title": "The Witches",
       "author": "Roald Dahl",
       "assigned_bay_id": "bay_f1",
@@ -1113,8 +1154,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-120067": {
-      "sku": "SKU-120067",
+    "SKU-9AFB2E0DB1C9": {
+      "sku": "SKU-9AFB2E0DB1C9",
       "title": "Wish You Were Dead",
       "author": "Peter James",
       "assigned_bay_id": "bay_f1",
@@ -1124,8 +1165,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-225910": {
-      "sku": "SKU-225910",
+    "SKU-6FE5A6B5F296": {
+      "sku": "SKU-6FE5A6B5F296",
       "title": "The Spiritual Practices of Rumi",
       "author": "Will Johnson",
       "assigned_bay_id": "bay_f1",
@@ -1135,8 +1176,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-705233": {
-      "sku": "SKU-705233",
+    "SKU-02E264BFC82E": {
+      "sku": "SKU-02E264BFC82E",
       "title": "The Secret Garden",
       "author": "Frances Hodgson Burnett",
       "assigned_bay_id": "bay_f1",
@@ -1146,8 +1187,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-679060": {
-      "sku": "SKU-679060",
+    "SKU-0D759FD6366F": {
+      "sku": "SKU-0D759FD6366F",
       "title": "Harry Potter and the Cursed Child",
       "author": "J.K. Rowling",
       "assigned_bay_id": "bay_f1",
@@ -1157,8 +1198,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-957503": {
-      "sku": "SKU-957503",
+    "SKU-9756EF407F65": {
+      "sku": "SKU-9756EF407F65",
       "title": "The War of Jenkins' Ear",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -1168,8 +1209,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-675020": {
-      "sku": "SKU-675020",
+    "SKU-A1D8021FA05E": {
+      "sku": "SKU-A1D8021FA05E",
       "title": "The Personal MBA",
       "author": "Josh Kaufman",
       "assigned_bay_id": "bay_f1",
@@ -1179,8 +1220,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-726473": {
-      "sku": "SKU-726473",
+    "SKU-97DA3E0C2539": {
+      "sku": "SKU-97DA3E0C2539",
       "title": "Rotten Romans",
       "author": "Terry Deary",
       "assigned_bay_id": "bay_f1",
@@ -1190,8 +1231,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-467719": {
-      "sku": "SKU-467719",
+    "SKU-AFC52A8D2C20": {
+      "sku": "SKU-AFC52A8D2C20",
       "title": "Way of the Warrior Kid",
       "author": "Jocko Willink",
       "assigned_bay_id": "bay_f1",
@@ -1201,8 +1242,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-839986": {
-      "sku": "SKU-839986",
+    "SKU-E69EEC124772": {
+      "sku": "SKU-E69EEC124772",
       "title": "Lorna Doone",
       "author": "R.D. Blackmore",
       "assigned_bay_id": "bay_f1",
@@ -1212,8 +1253,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-535223": {
-      "sku": "SKU-535223",
+    "SKU-01434F4B7D4E": {
+      "sku": "SKU-01434F4B7D4E",
       "title": "साबरमती का संत",
       "author": "यशपाल जैन",
       "assigned_bay_id": "bay_f1",
@@ -1223,8 +1264,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-635152": {
-      "sku": "SKU-635152",
+    "SKU-2F8055B966C9": {
+      "sku": "SKU-2F8055B966C9",
       "title": "डेरे वाले",
       "author": "शैलेश मटियानी",
       "assigned_bay_id": "bay_f1",
@@ -1234,8 +1275,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-617424": {
-      "sku": "SKU-617424",
+    "SKU-3DB4C0067586": {
+      "sku": "SKU-3DB4C0067586",
       "title": "The Lost Symbol",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -1245,8 +1286,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-673552": {
-      "sku": "SKU-673552",
+    "SKU-3FEF64C0D6B5": {
+      "sku": "SKU-3FEF64C0D6B5",
       "title": "One Hundred Names",
       "author": "Cecelia Ahern",
       "assigned_bay_id": "bay_f1",
@@ -1256,8 +1297,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-599047": {
-      "sku": "SKU-599047",
+    "SKU-86991647BE78": {
+      "sku": "SKU-86991647BE78",
       "title": "Long Way Home",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -1267,8 +1308,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-959693": {
-      "sku": "SKU-959693",
+    "SKU-EFC67DB78EE8": {
+      "sku": "SKU-EFC67DB78EE8",
       "title": "Bad Day for Badger",
       "author": null,
       "assigned_bay_id": "bay_f1",
@@ -1278,8 +1319,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-404729": {
-      "sku": "SKU-404729",
+    "SKU-535310F20242": {
+      "sku": "SKU-535310F20242",
       "title": "Everyday Confidence",
       "author": null,
       "assigned_bay_id": "bay_f1",
@@ -1289,8 +1330,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-956791": {
-      "sku": "SKU-956791",
+    "SKU-675407E2700F": {
+      "sku": "SKU-675407E2700F",
       "title": "The Audacity of Hope",
       "author": "Barack Obama",
       "assigned_bay_id": "bay_f1",
@@ -1300,8 +1341,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-283149": {
-      "sku": "SKU-283149",
+    "SKU-CD85EF083431": {
+      "sku": "SKU-CD85EF083431",
       "title": "Diary of a Wimpy Kid: The Long Haul",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -1311,8 +1352,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-191492": {
-      "sku": "SKU-191492",
+    "SKU-0F05ABCCA8B9": {
+      "sku": "SKU-0F05ABCCA8B9",
       "title": "I Don't Love You Anymore",
       "author": "Rithvik Singh",
       "assigned_bay_id": "bay_f1",
@@ -1322,8 +1363,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-457919": {
-      "sku": "SKU-457919",
+    "SKU-C7409E1FD397": {
+      "sku": "SKU-C7409E1FD397",
       "title": "Diary of a Wimpy Kid: Rodrick Rules",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -1333,8 +1374,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-508873": {
-      "sku": "SKU-508873",
+    "SKU-476583CDD723": {
+      "sku": "SKU-476583CDD723",
       "title": "The Short Fiction Scenario",
       "author": "Sergei Eisenstein",
       "assigned_bay_id": "bay_f1",
@@ -1344,8 +1385,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-154909": {
-      "sku": "SKU-154909",
+    "SKU-DB67E3B7A33F": {
+      "sku": "SKU-DB67E3B7A33F",
       "title": "Summer Adventure Stories",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -1355,8 +1396,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-062316": {
-      "sku": "SKU-062316",
+    "SKU-1818F6009555": {
+      "sku": "SKU-1818F6009555",
       "title": "Chocolat",
       "author": "Joanne Harris",
       "assigned_bay_id": "bay_f1",
@@ -1366,8 +1407,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-671433": {
-      "sku": "SKU-671433",
+    "SKU-E23FAB8B2853": {
+      "sku": "SKU-E23FAB8B2853",
       "title": "Mother Courage and Her Children",
       "author": "Bertolt Brecht",
       "assigned_bay_id": "bay_f1",
@@ -1377,8 +1418,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-765139": {
-      "sku": "SKU-765139",
+    "SKU-9567A5271B32": {
+      "sku": "SKU-9567A5271B32",
       "title": "Don't Let's Go to the Dogs Tonight",
       "author": "Alexandra Fuller",
       "assigned_bay_id": "bay_f1",
@@ -1388,8 +1429,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-993168": {
-      "sku": "SKU-993168",
+    "SKU-A8F53F3762D7": {
+      "sku": "SKU-A8F53F3762D7",
       "title": "Frankenstein",
       "author": "Mary Shelley",
       "assigned_bay_id": "bay_f1",
@@ -1399,8 +1440,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-502697": {
-      "sku": "SKU-502697",
+    "SKU-0B4FB47CEE2D": {
+      "sku": "SKU-0B4FB47CEE2D",
       "title": "White Fang",
       "author": "Jack London",
       "assigned_bay_id": "bay_f1",
@@ -1410,8 +1451,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-911460": {
-      "sku": "SKU-911460",
+    "SKU-32C5242D1DD9": {
+      "sku": "SKU-32C5242D1DD9",
       "title": "The Wimpy Kid Do-It-Yourself Book",
       "author": "Jeff Kinney",
       "assigned_bay_id": "bay_f1",
@@ -1421,8 +1462,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-858199": {
-      "sku": "SKU-858199",
+    "SKU-A7F468C2E3A5": {
+      "sku": "SKU-A7F468C2E3A5",
       "title": "A Certain Justice",
       "author": "P.D. James",
       "assigned_bay_id": "bay_f1",
@@ -1432,8 +1473,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-217123": {
-      "sku": "SKU-217123",
+    "SKU-714FB132CB86": {
+      "sku": "SKU-714FB132CB86",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "assigned_bay_id": "bay_f1",
@@ -1443,8 +1484,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-488024": {
-      "sku": "SKU-488024",
+    "SKU-F014ECBFE8CA": {
+      "sku": "SKU-F014ECBFE8CA",
       "title": "Stranger Things: Suspicious Minds",
       "author": "Gwenda Bond",
       "assigned_bay_id": "bay_f1",
@@ -1454,8 +1495,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-287391": {
-      "sku": "SKU-287391",
+    "SKU-0ADF5BC930D8": {
+      "sku": "SKU-0ADF5BC930D8",
       "title": "The Lottie Project",
       "author": "Jacqueline Wilson",
       "assigned_bay_id": "bay_f1",
@@ -1465,8 +1506,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-413868": {
-      "sku": "SKU-413868",
+    "SKU-A2042176F29F": {
+      "sku": "SKU-A2042176F29F",
       "title": "The Nine Lives of Montezuma",
       "author": "Michael Morpurgo",
       "assigned_bay_id": "bay_f1",
@@ -1476,8 +1517,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-339689": {
-      "sku": "SKU-339689",
+    "SKU-99E87EDB39A4": {
+      "sku": "SKU-99E87EDB39A4",
       "title": "Venus on Fire, Mars on Ice",
       "author": "John Gray",
       "assigned_bay_id": "bay_f1",
@@ -1487,8 +1528,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-436595": {
-      "sku": "SKU-436595",
+    "SKU-4FC5E16CC1FD": {
+      "sku": "SKU-4FC5E16CC1FD",
       "title": "Angels & Demons",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -1498,8 +1539,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-276883": {
-      "sku": "SKU-276883",
+    "SKU-946B078C1A47": {
+      "sku": "SKU-946B078C1A47",
       "title": "The Girl with the Dragon Tattoo",
       "author": "Stieg Larsson",
       "assigned_bay_id": "bay_f1",
@@ -1509,8 +1550,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-123954": {
-      "sku": "SKU-123954",
+    "SKU-D988B052FB67": {
+      "sku": "SKU-D988B052FB67",
       "title": "The Herbal Alchemist's Handbook",
       "author": "Karen Harrison",
       "assigned_bay_id": "bay_f1",
@@ -1520,8 +1561,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-371938": {
-      "sku": "SKU-371938",
+    "SKU-815DA4B0F2B3": {
+      "sku": "SKU-815DA4B0F2B3",
       "title": "Mappillai",
       "author": "Carlo Pizzati",
       "assigned_bay_id": "bay_f1",
@@ -1531,8 +1572,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-933422": {
-      "sku": "SKU-933422",
+    "SKU-52B6A22CD3AC": {
+      "sku": "SKU-52B6A22CD3AC",
       "title": "Alice in Wonderland",
       "author": "Lewis Carroll",
       "assigned_bay_id": "bay_f1",
@@ -1542,8 +1583,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-420538": {
-      "sku": "SKU-420538",
+    "SKU-CA334EBA60C2": {
+      "sku": "SKU-CA334EBA60C2",
       "title": "Inferno",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -1553,8 +1594,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-142923": {
-      "sku": "SKU-142923",
+    "SKU-082BB678135C": {
+      "sku": "SKU-082BB678135C",
       "title": "Prince Caspian",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -1564,8 +1605,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-330608": {
-      "sku": "SKU-330608",
+    "SKU-3DDF762026B3": {
+      "sku": "SKU-3DDF762026B3",
       "title": "The Horse and His Boy",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -1575,8 +1616,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-424636": {
-      "sku": "SKU-424636",
+    "SKU-7FDD37926618": {
+      "sku": "SKU-7FDD37926618",
       "title": "The Magician's Nephew",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -1586,8 +1627,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-986340": {
-      "sku": "SKU-986340",
+    "SKU-AD7467F85AD2": {
+      "sku": "SKU-AD7467F85AD2",
       "title": "The Lion, the Witch and the Wardrobe",
       "author": "C.S. Lewis",
       "assigned_bay_id": "bay_f1",
@@ -1597,8 +1638,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-151536": {
-      "sku": "SKU-151536",
+    "SKU-EEC4BEFBFFCF": {
+      "sku": "SKU-EEC4BEFBFFCF",
       "title": "Leading",
       "author": "Alex Ferguson with Michael Moritz",
       "assigned_bay_id": "bay_f1",
@@ -1608,8 +1649,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-915196": {
-      "sku": "SKU-915196",
+    "SKU-923C904F4A86": {
+      "sku": "SKU-923C904F4A86",
       "title": "The Da Vinci Code",
       "author": "Dan Brown",
       "assigned_bay_id": "bay_f1",
@@ -1619,8 +1660,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-132427": {
-      "sku": "SKU-132427",
+    "SKU-A800572F305C": {
+      "sku": "SKU-A800572F305C",
       "title": "The Scorch Trials",
       "author": "James Dashner",
       "assigned_bay_id": "bay_f1",
@@ -1630,8 +1671,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-660853": {
-      "sku": "SKU-660853",
+    "SKU-FE8DEF51120A": {
+      "sku": "SKU-FE8DEF51120A",
       "title": "Srilaaji",
       "author": "Shobhaa De",
       "assigned_bay_id": "bay_f1",
@@ -1641,8 +1682,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-858243": {
-      "sku": "SKU-858243",
+    "SKU-86A1FC75CD9E": {
+      "sku": "SKU-86A1FC75CD9E",
       "title": "The Fry Chronicles",
       "author": "Stephen Fry",
       "assigned_bay_id": "bay_f1",
@@ -1652,8 +1693,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-787289": {
-      "sku": "SKU-787289",
+    "SKU-E91CAE146B98": {
+      "sku": "SKU-E91CAE146B98",
       "title": "मेघनाद",
       "author": "केविन मिसल (Kevin Missal)",
       "assigned_bay_id": "bay_f1",
@@ -1663,8 +1704,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-176065": {
-      "sku": "SKU-176065",
+    "SKU-D0847E2B6296": {
+      "sku": "SKU-D0847E2B6296",
       "title": "Our Game",
       "author": "John le Carré",
       "assigned_bay_id": "bay_f1",
@@ -1674,8 +1715,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-292237": {
-      "sku": "SKU-292237",
+    "SKU-045C5818B1D7": {
+      "sku": "SKU-045C5818B1D7",
       "title": "The Girls' Book of Spells",
       "author": "Rachel Elliot",
       "assigned_bay_id": "bay_f1",
@@ -1685,8 +1726,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-160412": {
-      "sku": "SKU-160412",
+    "SKU-C008401D7B38": {
+      "sku": "SKU-C008401D7B38",
       "title": "लाइफ के कड़वे सच",
       "author": "श्वेताभ गंगवार",
       "assigned_bay_id": "bay_f1",
@@ -1696,8 +1737,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-451297": {
-      "sku": "SKU-451297",
+    "SKU-B9BB253D38FE": {
+      "sku": "SKU-B9BB253D38FE",
       "title": "The Woman in the Window",
       "author": "A.J. Finn",
       "assigned_bay_id": "bay_f1",
@@ -1707,8 +1748,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-037166": {
-      "sku": "SKU-037166",
+    "SKU-CC50BAF792EF": {
+      "sku": "SKU-CC50BAF792EF",
       "title": "A Wing and a Prayer",
       "author": "Lyn Andrews",
       "assigned_bay_id": "bay_f1",
@@ -1718,8 +1759,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-581081": {
-      "sku": "SKU-581081",
+    "SKU-80C89B2047F7": {
+      "sku": "SKU-80C89B2047F7",
       "title": "The Stars Shine Down",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -1729,8 +1770,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-757412": {
-      "sku": "SKU-757412",
+    "SKU-6480E9917F7F": {
+      "sku": "SKU-6480E9917F7F",
       "title": "Tears of the Giraffe",
       "author": "Alexander McCall Smith",
       "assigned_bay_id": "bay_f1",
@@ -1740,8 +1781,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-549130": {
-      "sku": "SKU-549130",
+    "SKU-4B8F8BF229F0": {
+      "sku": "SKU-4B8F8BF229F0",
       "title": "When Coal Turned Gold",
       "author": "Partha Sarathi Bhattacharyya",
       "assigned_bay_id": "bay_f1",
@@ -1751,8 +1792,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-419455": {
-      "sku": "SKU-419455",
+    "SKU-063809F84D4F": {
+      "sku": "SKU-063809F84D4F",
       "title": "Maskerade",
       "author": "Terry Pratchett",
       "assigned_bay_id": "bay_f1",
@@ -1762,8 +1803,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-015271": {
-      "sku": "SKU-015271",
+    "SKU-714454088089": {
+      "sku": "SKU-714454088089",
       "title": "The Captain's Daughter",
       "author": "Leah Fleming",
       "assigned_bay_id": "bay_f1",
@@ -1773,8 +1814,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-690823": {
-      "sku": "SKU-690823",
+    "SKU-63CF1D02952B": {
+      "sku": "SKU-63CF1D02952B",
       "title": "The Doomsday Conspiracy",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -1784,8 +1825,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-970406": {
-      "sku": "SKU-970406",
+    "SKU-4D11661AE410": {
+      "sku": "SKU-4D11661AE410",
       "title": "The Inheritance of Loss",
       "author": "Kiran Desai",
       "assigned_bay_id": "bay_f1",
@@ -1795,8 +1836,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-425192": {
-      "sku": "SKU-425192",
+    "SKU-AD8DF0B67EF2": {
+      "sku": "SKU-AD8DF0B67EF2",
       "title": "Speaking for Myself",
       "author": "Cherie Blair",
       "assigned_bay_id": "bay_f1",
@@ -1806,8 +1847,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-705221": {
-      "sku": "SKU-705221",
+    "SKU-0D2AB0BC0BBE": {
+      "sku": "SKU-0D2AB0BC0BBE",
       "title": "The Gods of Guilt",
       "author": "Michael Connelly",
       "assigned_bay_id": "bay_f1",
@@ -1817,8 +1858,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-600401": {
-      "sku": "SKU-600401",
+    "SKU-A2FDB7F09299": {
+      "sku": "SKU-A2FDB7F09299",
       "title": "All Cheeses Great & Small",
       "author": "Alex James",
       "assigned_bay_id": "bay_f1",
@@ -1828,8 +1869,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-479768": {
-      "sku": "SKU-479768",
+    "SKU-5114C6CA3202": {
+      "sku": "SKU-5114C6CA3202",
       "title": "The Woman in White",
       "author": "Wilkie Collins",
       "assigned_bay_id": "bay_f1",
@@ -1839,8 +1880,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-334572": {
-      "sku": "SKU-334572",
+    "SKU-503EECBB4309": {
+      "sku": "SKU-503EECBB4309",
       "title": "Before I Go to Sleep",
       "author": "S.J. Watson",
       "assigned_bay_id": "bay_f1",
@@ -1850,8 +1891,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-743637": {
-      "sku": "SKU-743637",
+    "SKU-F7D4A7BB8C45": {
+      "sku": "SKU-F7D4A7BB8C45",
       "title": "Brilliance of the Moon",
       "author": "Lian Hearn",
       "assigned_bay_id": "bay_f1",
@@ -1861,8 +1902,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-761417": {
-      "sku": "SKU-761417",
+    "SKU-A289155DF152": {
+      "sku": "SKU-A289155DF152",
       "title": "Tell Me Your Dreams",
       "author": "Sidney Sheldon",
       "assigned_bay_id": "bay_f1",
@@ -1872,8 +1913,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-976546": {
-      "sku": "SKU-976546",
+    "SKU-4730212AED36": {
+      "sku": "SKU-4730212AED36",
       "title": "Hannibal",
       "author": "Thomas Harris",
       "assigned_bay_id": "bay_f1",
@@ -1883,8 +1924,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-332083": {
-      "sku": "SKU-332083",
+    "SKU-95368E800A77": {
+      "sku": "SKU-95368E800A77",
       "title": "Sixteen Horses",
       "author": "Greg Buchanan",
       "assigned_bay_id": "bay_f1",
@@ -1894,8 +1935,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-457131": {
-      "sku": "SKU-457131",
+    "SKU-7417162A358F": {
+      "sku": "SKU-7417162A358F",
       "title": "Agent 21: Codebreaker",
       "author": "Chris Ryan",
       "assigned_bay_id": "bay_f1",
@@ -1905,8 +1946,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-308311": {
-      "sku": "SKU-308311",
+    "SKU-9B7BC446C2F5": {
+      "sku": "SKU-9B7BC446C2F5",
       "title": "Stolen",
       "author": "Lesley Pearse",
       "assigned_bay_id": "bay_f1",
@@ -1916,8 +1957,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-745469": {
-      "sku": "SKU-745469",
+    "SKU-397062FEB7D4": {
+      "sku": "SKU-397062FEB7D4",
       "title": "The High Lord",
       "author": "Trudi Canavan",
       "assigned_bay_id": "bay_f1",
@@ -1927,8 +1968,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-981032": {
-      "sku": "SKU-981032",
+    "SKU-D1F7C4441EB1": {
+      "sku": "SKU-D1F7C4441EB1",
       "title": "Harry Potter and the Goblet of Fire",
       "author": "J.K. Rowling",
       "assigned_bay_id": "bay_f1",
@@ -1938,8 +1979,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-975825": {
-      "sku": "SKU-975825",
+    "SKU-D44D447334CE": {
+      "sku": "SKU-D44D447334CE",
       "title": "Wolves of the Calla",
       "author": "Stephen King",
       "assigned_bay_id": "bay_f1",
@@ -1949,8 +1990,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-083828": {
-      "sku": "SKU-083828",
+    "SKU-F94A52192BE8": {
+      "sku": "SKU-F94A52192BE8",
       "title": "The Seven Husbands of Evelyn Hugo",
       "author": "Taylor Jenkins Reid",
       "assigned_bay_id": "bay_f1",
@@ -1960,8 +2001,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-631176": {
-      "sku": "SKU-631176",
+    "SKU-D83AF64A8449": {
+      "sku": "SKU-D83AF64A8449",
       "title": "The Girl Who Takes an Eye for an Eye",
       "author": "David Lagercrantz",
       "assigned_bay_id": "bay_f1",
@@ -1971,8 +2012,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-597841": {
-      "sku": "SKU-597841",
+    "SKU-55AD474B1B03": {
+      "sku": "SKU-55AD474B1B03",
       "title": "Dirty Bertie: Worms!",
       "author": "Alan MacDonald",
       "assigned_bay_id": "bay_f1",
@@ -1982,8 +2023,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-337751": {
-      "sku": "SKU-337751",
+    "SKU-6D649E1A57D3": {
+      "sku": "SKU-6D649E1A57D3",
       "title": "Viking at School",
       "author": "Jeremy Strong",
       "assigned_bay_id": "bay_f1",
@@ -1993,8 +2034,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-273505": {
-      "sku": "SKU-273505",
+    "SKU-F73FF1A44C49": {
+      "sku": "SKU-F73FF1A44C49",
       "title": "The Owls of Blossom Wood: To the Rescue",
       "author": "Catherine Coe",
       "assigned_bay_id": "bay_f1",
@@ -2004,8 +2045,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-688281": {
-      "sku": "SKU-688281",
+    "SKU-79C07D2B7C7F": {
+      "sku": "SKU-79C07D2B7C7F",
       "title": "Magic Ballerina: Delphie and the Magic Spell",
       "author": "Darcey Bussell",
       "assigned_bay_id": "bay_f1",
@@ -2015,8 +2056,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-701217": {
-      "sku": "SKU-701217",
+    "SKU-4A381FF41438": {
+      "sku": "SKU-4A381FF41438",
       "title": "The Mayor of Casterbridge",
       "author": "Thomas Hardy",
       "assigned_bay_id": "bay_f1",
@@ -2026,8 +2067,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-017189": {
-      "sku": "SKU-017189",
+    "SKU-4C220A6A6CDA": {
+      "sku": "SKU-4C220A6A6CDA",
       "title": "Silas Marner",
       "author": "George Eliot",
       "assigned_bay_id": "bay_f1",
@@ -2037,8 +2078,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-458636": {
-      "sku": "SKU-458636",
+    "SKU-17DAA8F4FAEE": {
+      "sku": "SKU-17DAA8F4FAEE",
       "title": "In the Fifth at Malory Towers",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -2048,8 +2089,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-169094": {
-      "sku": "SKU-169094",
+    "SKU-14DD54976AA0": {
+      "sku": "SKU-14DD54976AA0",
       "title": "First Term at Malory Towers",
       "author": "Enid Blyton",
       "assigned_bay_id": "bay_f1",
@@ -2059,8 +2100,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-425257": {
-      "sku": "SKU-425257",
+    "SKU-240DDEBBD071": {
+      "sku": "SKU-240DDEBBD071",
       "title": "Tom Gates: Everything's Amazing (Sort Of)",
       "author": "Liz Pichon",
       "assigned_bay_id": "bay_f1",
@@ -2070,8 +2111,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-666166": {
-      "sku": "SKU-666166",
+    "SKU-52F11A3DBD3E": {
+      "sku": "SKU-52F11A3DBD3E",
       "title": "Tom Gates: Excellent Excuses (and Other Good Stuff)",
       "author": "Liz Pichon",
       "assigned_bay_id": "bay_f1",
@@ -2081,8 +2122,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-731731": {
-      "sku": "SKU-731731",
+    "SKU-E53BE6401B77": {
+      "sku": "SKU-E53BE6401B77",
       "title": "Riding the Storm",
       "author": "Lucy Daniels",
       "assigned_bay_id": "bay_f1",
@@ -2092,8 +2133,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-471001": {
-      "sku": "SKU-471001",
+    "SKU-E8572AFE57AE": {
+      "sku": "SKU-E8572AFE57AE",
       "title": "The Troublesome Offspring of Cardinal Guzman",
       "author": "Louis de Bernières",
       "assigned_bay_id": "bay_f1",
@@ -2103,8 +2144,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-543162": {
-      "sku": "SKU-543162",
+    "SKU-0414D24BBCEF": {
+      "sku": "SKU-0414D24BBCEF",
       "title": "Horrible Science: Disgusting Digestion",
       "author": "Nick Arnold",
       "assigned_bay_id": "bay_f1",
@@ -2114,8 +2155,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-694115": {
-      "sku": "SKU-694115",
+    "SKU-A83E22AE6207": {
+      "sku": "SKU-A83E22AE6207",
       "title": "Hunted",
       "author": "P.C. Cast & Kristin Cast",
       "assigned_bay_id": "bay_f1",
@@ -2125,8 +2166,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-454451": {
-      "sku": "SKU-454451",
+    "SKU-3B08EF9AD1C8": {
+      "sku": "SKU-3B08EF9AD1C8",
       "title": "Ah, Sweet Mystery of Life",
       "author": "Roald Dahl",
       "assigned_bay_id": "bay_f1",
@@ -2136,8 +2177,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-776864": {
-      "sku": "SKU-776864",
+    "SKU-AAAB17C54CD7": {
+      "sku": "SKU-AAAB17C54CD7",
       "title": "The Wind in the Willows",
       "author": "Kenneth Grahame",
       "assigned_bay_id": "bay_f1",
@@ -2147,8 +2188,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-216598": {
-      "sku": "SKU-216598",
+    "SKU-70CBE527C7C0": {
+      "sku": "SKU-70CBE527C7C0",
       "title": "The Phantom Tollbooth",
       "author": "Norton Juster",
       "assigned_bay_id": "bay_f1",
@@ -2158,8 +2199,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-089761": {
-      "sku": "SKU-089761",
+    "SKU-E3F0E814F81F": {
+      "sku": "SKU-E3F0E814F81F",
       "title": "The Chamber",
       "author": "John Grisham",
       "assigned_bay_id": "bay_f1",
@@ -2169,8 +2210,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-912260": {
-      "sku": "SKU-912260",
+    "SKU-C2F13A51CBB4": {
+      "sku": "SKU-C2F13A51CBB4",
       "title": "What Katy Did",
       "author": "Susan M. Coolidge",
       "assigned_bay_id": "bay_f1",
@@ -2180,8 +2221,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-898338": {
-      "sku": "SKU-898338",
+    "SKU-490C1E090D67": {
+      "sku": "SKU-490C1E090D67",
       "title": "The Thirty-Nine Steps",
       "author": "John Buchan",
       "assigned_bay_id": "bay_f1",
@@ -2191,8 +2232,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-501790": {
-      "sku": "SKU-501790",
+    "SKU-971C393ECB58": {
+      "sku": "SKU-971C393ECB58",
       "title": "The Midnight Library",
       "author": "Matt Haig",
       "assigned_bay_id": "bay_f1",
@@ -2203,8 +2244,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 3
     },
-    "SKU-302707": {
-      "sku": "SKU-302707",
+    "SKU-C74FB917B0B8": {
+      "sku": "SKU-C74FB917B0B8",
       "title": "Klara and the Sun",
       "author": "Kazuo Ishiguro",
       "assigned_bay_id": "bay_f1",
@@ -2215,8 +2256,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 2
     },
-    "SKU-763509": {
-      "sku": "SKU-763509",
+    "SKU-B48603A98089": {
+      "sku": "SKU-B48603A98089",
       "title": "A Gentleman in Moscow",
       "author": "Amor Towles",
       "assigned_bay_id": "bay_f1",
@@ -2227,8 +2268,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 5
     },
-    "SKU-153851": {
-      "sku": "SKU-153851",
+    "SKU-38BEA5675677": {
+      "sku": "SKU-38BEA5675677",
       "title": "The Disciplined Trader",
       "author": "Mark Douglas",
       "assigned_bay_id": "bay_b1",
@@ -2238,8 +2279,8 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-337760": {
-      "sku": "SKU-337760",
+    "SKU-5C37196E2546": {
+      "sku": "SKU-5C37196E2546",
       "title": "Attitude is Your Superpower",
       "author": "Eduardo Clemente",
       "assigned_bay_id": "bay_f2",
@@ -2249,8 +2290,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-434950": {
-      "sku": "SKU-434950",
+    "SKU-54D87B99454F": {
+      "sku": "SKU-54D87B99454F",
       "title": "Attack on Titan: Omnibus (Volumes 1-2-3)",
       "author": "Hajime Isayama",
       "assigned_bay_id": "bay_f2",
@@ -2260,8 +2301,8 @@
       "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-592283": {
-      "sku": "SKU-592283",
+    "SKU-DDF509B177F3": {
+      "sku": "SKU-DDF509B177F3",
       "title": "The Perfect Us",
       "author": "Durjoy Datta",
       "assigned_bay_id": "bay_f2",
@@ -2271,8 +2312,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-563329": {
-      "sku": "SKU-563329",
+    "SKU-A8E35D8586F8": {
+      "sku": "SKU-A8E35D8586F8",
       "title": "The Book of Man",
       "author": "Osho",
       "assigned_bay_id": "bay_f2",
@@ -2282,8 +2323,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-677250": {
-      "sku": "SKU-677250",
+    "SKU-4C497F6697C4": {
+      "sku": "SKU-4C497F6697C4",
       "title": "Harry Potter and the Order of the Phoenix",
       "author": "J.K. Rowling",
       "assigned_bay_id": "bay_f2",
@@ -2293,8 +2334,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-755328": {
-      "sku": "SKU-755328",
+    "SKU-31642E1A9DEC": {
+      "sku": "SKU-31642E1A9DEC",
       "title": "The 48 Laws of Power",
       "author": "Robert Greene",
       "assigned_bay_id": "bay_f2",
@@ -2304,8 +2345,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-800769": {
-      "sku": "SKU-800769",
+    "SKU-FE3DAE4BAE13": {
+      "sku": "SKU-FE3DAE4BAE13",
       "title": "Tuesdays with Morrie",
       "author": "Mitch Albom",
       "assigned_bay_id": "bay_f2",
@@ -2315,8 +2356,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-236967": {
-      "sku": "SKU-236967",
+    "SKU-6107CD0851AB": {
+      "sku": "SKU-6107CD0851AB",
       "title": "The Art of Detachment",
       "author": "Shubham Kumar Singh",
       "assigned_bay_id": "bay_f2",
@@ -2326,8 +2367,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-251336": {
-      "sku": "SKU-251336",
+    "SKU-09BAAF562C6C": {
+      "sku": "SKU-09BAAF562C6C",
       "title": "Never Let Me Go",
       "author": "Kazuo Ishiguro",
       "assigned_bay_id": "bay_f2",
@@ -2337,8 +2378,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-053700": {
-      "sku": "SKU-053700",
+    "SKU-D209A6A110CA": {
+      "sku": "SKU-D209A6A110CA",
       "title": "Master Your Life",
       "author": "Nick Trenton",
       "assigned_bay_id": "bay_f2",
@@ -2348,8 +2389,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-065274": {
-      "sku": "SKU-065274",
+    "SKU-7ED440E62052": {
+      "sku": "SKU-7ED440E62052",
       "title": "Do Not Disturb",
       "author": "Freida McFadden",
       "assigned_bay_id": "bay_f2",
@@ -2359,8 +2400,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-695939": {
-      "sku": "SKU-695939",
+    "SKU-4586CA3E4677": {
+      "sku": "SKU-4586CA3E4677",
       "title": "Here, There and Everywhere",
       "author": "Sudha Murty",
       "assigned_bay_id": "bay_f2",
@@ -2370,8 +2411,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-163042": {
-      "sku": "SKU-163042",
+    "SKU-25031BB13384": {
+      "sku": "SKU-25031BB13384",
       "title": "Hostage",
       "author": "Eli Sharabi",
       "assigned_bay_id": "bay_f2",
@@ -2381,8 +2422,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-941384": {
-      "sku": "SKU-941384",
+    "SKU-F6227279140E": {
+      "sku": "SKU-F6227279140E",
       "title": "The Ex",
       "author": "Freida McFadden",
       "assigned_bay_id": "bay_f2",
@@ -2392,8 +2433,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-416787": {
-      "sku": "SKU-416787",
+    "SKU-57B417DD9A6C": {
+      "sku": "SKU-57B417DD9A6C",
       "title": "Manifest Now",
       "author": "Idil Ahmed",
       "assigned_bay_id": "bay_f2",
@@ -2403,20 +2444,19 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-205537": {
-      "sku": "SKU-205537",
+    "SKU-42F05B2C33A7": {
+      "sku": "SKU-42F05B2C33A7",
       "title": "Man's Search for Meaning",
       "author": "Viktor E. Frankl",
-      "assigned_bay_id": "bay_m1",
-      "price": 15.99,
-      "sales_velocity_units_per_day": 2.5,
-      "simulated_on_hand": 0,
-      "system_status": "out_of_stock",
-      "physically_on_shelf": false,
-      "days_since_stockout": 2
+      "assigned_bay_id": "bay_f2",
+      "price": 26.93,
+      "sales_velocity_units_per_day": 1.8,
+      "simulated_on_hand": 7,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
     },
-    "SKU-636581": {
-      "sku": "SKU-636581",
+    "SKU-FF8BDC5C3657": {
+      "sku": "SKU-FF8BDC5C3657",
       "title": "Don't Believe Everything You Think",
       "author": "Joseph Nguyen",
       "assigned_bay_id": "bay_f2",
@@ -2426,8 +2466,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-847913": {
-      "sku": "SKU-847913",
+    "SKU-43B1FA8F1920": {
+      "sku": "SKU-43B1FA8F1920",
       "title": "The Song of Achilles",
       "author": "Madeline Miller",
       "assigned_bay_id": "bay_f2",
@@ -2437,8 +2477,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-187822": {
-      "sku": "SKU-187822",
+    "SKU-FA06E568EF42": {
+      "sku": "SKU-FA06E568EF42",
       "title": "Ikigai",
       "author": "Héctor García & Francesc Miralles",
       "assigned_bay_id": "bay_f2",
@@ -2448,8 +2488,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-586799": {
-      "sku": "SKU-586799",
+    "SKU-F82EBEBC8BE2": {
+      "sku": "SKU-F82EBEBC8BE2",
       "title": "Reframe Your Brain",
       "author": "Scott Adams",
       "assigned_bay_id": "bay_f2",
@@ -2459,8 +2499,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-663346": {
-      "sku": "SKU-663346",
+    "SKU-E25DEAF0BB04": {
+      "sku": "SKU-E25DEAF0BB04",
       "title": "The Art of Reading Minds",
       "author": "Henrik Fexeus",
       "assigned_bay_id": "bay_f2",
@@ -2470,8 +2510,19 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-856804": {
-      "sku": "SKU-856804",
+    "SKU-FDFB6D637F7B": {
+      "sku": "SKU-FDFB6D637F7B",
+      "title": "$100M Money Models",
+      "author": "Alex Hormozi",
+      "assigned_bay_id": "bay_f2",
+      "price": 22.22,
+      "sales_velocity_units_per_day": 3.2,
+      "simulated_on_hand": 11,
+      "system_status": "in_stock",
+      "physically_on_shelf": true
+    },
+    "SKU-D118D4877448": {
+      "sku": "SKU-D118D4877448",
       "title": "Dragon Ball Super (Vol. 23)",
       "author": "Akira Toriyama / Toyotarou",
       "assigned_bay_id": "bay_f2",
@@ -2481,8 +2532,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-013639": {
-      "sku": "SKU-013639",
+    "SKU-FAF5158C0654": {
+      "sku": "SKU-FAF5158C0654",
       "title": "The Cruel Prince",
       "author": "Holly Black",
       "assigned_bay_id": "bay_f2",
@@ -2492,8 +2543,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-175997": {
-      "sku": "SKU-175997",
+    "SKU-C9244ADEFAF8": {
+      "sku": "SKU-C9244ADEFAF8",
       "title": "जादू (The Magic - Hindi Edition)",
       "author": "Rhonda Byrne",
       "assigned_bay_id": "bay_f2",
@@ -2503,8 +2554,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-698821": {
-      "sku": "SKU-698821",
+    "SKU-91B9DCF0A9FE": {
+      "sku": "SKU-91B9DCF0A9FE",
       "title": "Demon Slayer: Kimetsu no Yaiba, Vol. 1",
       "author": "Koyoharu Gotouge",
       "assigned_bay_id": "bay_f2",
@@ -2515,8 +2566,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 2
     },
-    "SKU-692003": {
-      "sku": "SKU-692003",
+    "SKU-760443F332F2": {
+      "sku": "SKU-760443F332F2",
       "title": "Chainsaw Man, Vol. 1",
       "author": "Tatsuki Fujimoto",
       "assigned_bay_id": "bay_f2",
@@ -2527,8 +2578,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 3
     },
-    "SKU-151322": {
-      "sku": "SKU-151322",
+    "SKU-824C4F86A80E": {
+      "sku": "SKU-824C4F86A80E",
       "title": "Jujutsu Kaisen, Vol. 1",
       "author": "Gege Akutami",
       "assigned_bay_id": "bay_f2",
@@ -2539,8 +2590,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 4
     },
-    "SKU-269436": {
-      "sku": "SKU-269436",
+    "SKU-DB9BFF24E22B": {
+      "sku": "SKU-DB9BFF24E22B",
       "title": "Win Your Inner Battles",
       "author": "Darius Foroux",
       "assigned_bay_id": "bay_m1",
@@ -2550,8 +2601,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-789139": {
-      "sku": "SKU-789139",
+    "SKU-F9694EDA6023": {
+      "sku": "SKU-F9694EDA6023",
       "title": "Fast Like a Girl",
       "author": "Mindy Pelz",
       "assigned_bay_id": "bay_m1",
@@ -2561,8 +2612,8 @@
       "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-605160": {
-      "sku": "SKU-605160",
+    "SKU-551AC8B4A43F": {
+      "sku": "SKU-551AC8B4A43F",
       "title": "Secret of the Nagas",
       "author": "Amish Tripathi",
       "assigned_bay_id": "bay_b2",
@@ -2572,8 +2623,8 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-155255": {
-      "sku": "SKU-155255",
+    "SKU-A34A5C3F7EE8": {
+      "sku": "SKU-A34A5C3F7EE8",
       "title": "The Obstacle Is the Way",
       "author": "Ryan Holiday",
       "assigned_bay_id": "bay_m1",
@@ -2583,8 +2634,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-261098": {
-      "sku": "SKU-261098",
+    "SKU-DB481C7778B1": {
+      "sku": "SKU-DB481C7778B1",
       "title": "All Religions Are Not the Same",
       "author": "Sanjay Dixit",
       "assigned_bay_id": "bay_m1",
@@ -2594,8 +2645,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-939740": {
-      "sku": "SKU-939740",
+    "SKU-69A0C4E40E3C": {
+      "sku": "SKU-69A0C4E40E3C",
       "title": "The Art of Thinking Clearly",
       "author": "Rolf Dobelli",
       "assigned_bay_id": "bay_m1",
@@ -2605,8 +2656,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-523139": {
-      "sku": "SKU-523139",
+    "SKU-C96B40A69086": {
+      "sku": "SKU-C96B40A69086",
       "title": "Determined",
       "author": "Robert Sapolsky",
       "assigned_bay_id": "bay_m1",
@@ -2616,8 +2667,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-183347": {
-      "sku": "SKU-183347",
+    "SKU-43EF97B950A3": {
+      "sku": "SKU-43EF97B950A3",
       "title": "Rock Paper Scissors",
       "author": "Alice Feeney",
       "assigned_bay_id": "bay_m1",
@@ -2627,8 +2678,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-185663": {
-      "sku": "SKU-185663",
+    "SKU-62E1E290A1B7": {
+      "sku": "SKU-62E1E290A1B7",
       "title": "Deep Work",
       "author": "Cal Newport",
       "assigned_bay_id": "bay_m1",
@@ -2639,8 +2690,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 3
     },
-    "SKU-701323": {
-      "sku": "SKU-701323",
+    "SKU-9A91F76E6EE0": {
+      "sku": "SKU-9A91F76E6EE0",
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "assigned_bay_id": "bay_m1",
@@ -2651,8 +2702,20 @@
       "physically_on_shelf": false,
       "days_since_stockout": 4
     },
-    "SKU-370356": {
-      "sku": "SKU-370356",
+    "SKU-B16B729E4938": {
+      "sku": "SKU-B16B729E4938",
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "assigned_bay_id": "bay_m1",
+      "price": 15.99,
+      "sales_velocity_units_per_day": 2.5,
+      "simulated_on_hand": 0,
+      "system_status": "out_of_stock",
+      "physically_on_shelf": false,
+      "days_since_stockout": 2
+    },
+    "SKU-46A5317F46DE": {
+      "sku": "SKU-46A5317F46DE",
       "title": "Russische Avantgarde aus der Sammlung Costakis",
       "author": "Kestner-Gesellschaft",
       "assigned_bay_id": "bay_a3",
@@ -2662,8 +2725,8 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-012715": {
-      "sku": "SKU-012715",
+    "SKU-6244D525DB16": {
+      "sku": "SKU-6244D525DB16",
       "title": "Deconstruction: Theory and Practice",
       "author": "Christopher Norris",
       "assigned_bay_id": "bay_a1",
@@ -2673,8 +2736,8 @@
       "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-156947": {
-      "sku": "SKU-156947",
+    "SKU-EC27D7550008": {
+      "sku": "SKU-EC27D7550008",
       "title": "Synchronicity",
       "author": "C.G. Jung",
       "assigned_bay_id": "bay_a1",
@@ -2684,8 +2747,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-579694": {
-      "sku": "SKU-579694",
+    "SKU-0CA240360392": {
+      "sku": "SKU-0CA240360392",
       "title": "Freedom from the Known",
       "author": "J. Krishnamurti",
       "assigned_bay_id": "bay_a1",
@@ -2695,8 +2758,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-358639": {
-      "sku": "SKU-358639",
+    "SKU-D0E724179DA1": {
+      "sku": "SKU-D0E724179DA1",
       "title": "Colour",
       "author": "Hazel Rossotti",
       "assigned_bay_id": "bay_a1",
@@ -2706,8 +2769,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-474474": {
-      "sku": "SKU-474474",
+    "SKU-4E88F116CFCB": {
+      "sku": "SKU-4E88F116CFCB",
       "title": "On Growth and Form",
       "author": "D'Arcy Thompson",
       "assigned_bay_id": "bay_a1",
@@ -2717,8 +2780,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-485126": {
-      "sku": "SKU-485126",
+    "SKU-CA3EA3E795E3": {
+      "sku": "SKU-CA3EA3E795E3",
       "title": "Fallacies in Mathematics",
       "author": "E.A. Maxwell",
       "assigned_bay_id": "bay_a1",
@@ -2728,8 +2791,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-380956": {
-      "sku": "SKU-380956",
+    "SKU-7E90238A9C47": {
+      "sku": "SKU-7E90238A9C47",
       "title": "Art and Culture",
       "author": "Clement Greenberg",
       "assigned_bay_id": "bay_a1",
@@ -2739,8 +2802,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-713690": {
-      "sku": "SKU-713690",
+    "SKU-693477CB8BEA": {
+      "sku": "SKU-693477CB8BEA",
       "title": "The Letters of Vincent van Gogh",
       "author": "Edited by Mark Roskill",
       "assigned_bay_id": "bay_a1",
@@ -2750,8 +2813,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-372332": {
-      "sku": "SKU-372332",
+    "SKU-1D0547070AFD": {
+      "sku": "SKU-1D0547070AFD",
       "title": "A History of England and Great Britain",
       "author": "Professor Meiklejohn",
       "assigned_bay_id": "bay_a1",
@@ -2761,8 +2824,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-031057": {
-      "sku": "SKU-031057",
+    "SKU-44D60422D9AE": {
+      "sku": "SKU-44D60422D9AE",
       "title": "Selected Writings on Art and Literature",
       "author": "Charles Baudelaire",
       "assigned_bay_id": "bay_a1",
@@ -2772,8 +2835,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-095295": {
-      "sku": "SKU-095295",
+    "SKU-1367FD41C824": {
+      "sku": "SKU-1367FD41C824",
       "title": "Concepts of Modern Mathematics",
       "author": "Ian Stewart",
       "assigned_bay_id": "bay_a1",
@@ -2783,8 +2846,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-406601": {
-      "sku": "SKU-406601",
+    "SKU-177592A169A7": {
+      "sku": "SKU-177592A169A7",
       "title": "Recodings",
       "author": "Hal Foster",
       "assigned_bay_id": "bay_a1",
@@ -2794,8 +2857,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-054465": {
-      "sku": "SKU-054465",
+    "SKU-95997FDBB640": {
+      "sku": "SKU-95997FDBB640",
       "title": "Practical Plane and Solid Geometry",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -2805,8 +2868,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-483005": {
-      "sku": "SKU-483005",
+    "SKU-A33D0EDF2E0B": {
+      "sku": "SKU-A33D0EDF2E0B",
       "title": "The Psychology of Perception",
       "author": "M.D. Vernon",
       "assigned_bay_id": "bay_a1",
@@ -2816,8 +2879,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-704204": {
-      "sku": "SKU-704204",
+    "SKU-CEB9040C2754": {
+      "sku": "SKU-CEB9040C2754",
       "title": "Mathematics and Logic",
       "author": "Mark Kac and Stanislaw M. Ulam",
       "assigned_bay_id": "bay_a1",
@@ -2827,8 +2890,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-175601": {
-      "sku": "SKU-175601",
+    "SKU-134CF37F1E52": {
+      "sku": "SKU-134CF37F1E52",
       "title": "The Origin of Species",
       "author": "Charles Darwin",
       "assigned_bay_id": "bay_a1",
@@ -2838,8 +2901,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-709346": {
-      "sku": "SKU-709346",
+    "SKU-50A4B446B857": {
+      "sku": "SKU-50A4B446B857",
       "title": "Spanish Short Stories 1",
       "author": "Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -2849,8 +2912,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-078997": {
-      "sku": "SKU-078997",
+    "SKU-B6BD8479DC8F": {
+      "sku": "SKU-B6BD8479DC8F",
       "title": "Spanish Short Stories 2",
       "author": "Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -2860,8 +2923,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-982759": {
-      "sku": "SKU-982759",
+    "SKU-5F743DCC4CED": {
+      "sku": "SKU-5F743DCC4CED",
       "title": "Painting and Experience in Fifteenth-Century Italy",
       "author": "Michael Baxandall",
       "assigned_bay_id": "bay_a1",
@@ -2871,8 +2934,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-256112": {
-      "sku": "SKU-256112",
+    "SKU-FF83E9D94A84": {
+      "sku": "SKU-FF83E9D94A84",
       "title": "The Penguin Dictionary of Psychology",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -2882,8 +2945,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-654529": {
-      "sku": "SKU-654529",
+    "SKU-6B771CBD9DCB": {
+      "sku": "SKU-6B771CBD9DCB",
       "title": "Cybernetics",
       "author": "Norbert Wiener",
       "assigned_bay_id": "bay_a1",
@@ -2893,8 +2956,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-132155": {
-      "sku": "SKU-132155",
+    "SKU-6630DF0F69E4": {
+      "sku": "SKU-6630DF0F69E4",
       "title": "Essays on the Theory of Numbers",
       "author": "Richard Dedekind",
       "assigned_bay_id": "bay_a1",
@@ -2904,8 +2967,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-007588": {
-      "sku": "SKU-007588",
+    "SKU-63C70856842F": {
+      "sku": "SKU-63C70856842F",
       "title": "Introduction to Numerical Analysis",
       "author": "F.B. Hildebrand",
       "assigned_bay_id": "bay_a1",
@@ -2915,8 +2978,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-587765": {
-      "sku": "SKU-587765",
+    "SKU-F95D6B305895": {
+      "sku": "SKU-F95D6B305895",
       "title": "Theory of Sets",
       "author": "E. Kamke",
       "assigned_bay_id": "bay_a1",
@@ -2926,8 +2989,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-786685": {
-      "sku": "SKU-786685",
+    "SKU-154CFAA794B5": {
+      "sku": "SKU-154CFAA794B5",
       "title": "Geometry and the Liberal Arts",
       "author": "Dan Pedoe",
       "assigned_bay_id": "bay_a1",
@@ -2937,8 +3000,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-970797": {
-      "sku": "SKU-970797",
+    "SKU-7045D34DE47B": {
+      "sku": "SKU-7045D34DE47B",
       "title": "Meaning in the Visual Arts",
       "author": "Erwin Panofsky",
       "assigned_bay_id": "bay_a1",
@@ -2948,8 +3011,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-286042": {
-      "sku": "SKU-286042",
+    "SKU-CF35963D6AD9": {
+      "sku": "SKU-CF35963D6AD9",
       "title": "Realism",
       "author": "Linda Nochlin",
       "assigned_bay_id": "bay_a1",
@@ -2959,8 +3022,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-836910": {
-      "sku": "SKU-836910",
+    "SKU-996ABCC8E5D3": {
+      "sku": "SKU-996ABCC8E5D3",
       "title": "Nature and Its Symbols",
       "author": "Lucia Impelluso",
       "assigned_bay_id": "bay_a1",
@@ -2970,8 +3033,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-606241": {
-      "sku": "SKU-606241",
+    "SKU-D745D4A5274F": {
+      "sku": "SKU-D745D4A5274F",
       "title": "The High Renaissance and Mannerism",
       "author": "Linda Murray",
       "assigned_bay_id": "bay_a1",
@@ -2981,8 +3044,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-539982": {
-      "sku": "SKU-539982",
+    "SKU-2CA64AFAB3D9": {
+      "sku": "SKU-2CA64AFAB3D9",
       "title": "Dutch Painting",
       "author": "R.H. Fuchs",
       "assigned_bay_id": "bay_a1",
@@ -2992,8 +3055,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-484184": {
-      "sku": "SKU-484184",
+    "SKU-35A608A7B75B": {
+      "sku": "SKU-35A608A7B75B",
       "title": "Verbos Españoles Conjugados",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3003,8 +3066,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-297266": {
-      "sku": "SKU-297266",
+    "SKU-658137BB256D": {
+      "sku": "SKU-658137BB256D",
       "title": "Romantic Art",
       "author": "William Vaughan",
       "assigned_bay_id": "bay_a1",
@@ -3014,8 +3077,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-126043": {
-      "sku": "SKU-126043",
+    "SKU-59E15B7646A1": {
+      "sku": "SKU-59E15B7646A1",
       "title": "The Thames and Hudson Encyclopaedia of British Art",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3025,8 +3088,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-125569": {
-      "sku": "SKU-125569",
+    "SKU-7310320B264A": {
+      "sku": "SKU-7310320B264A",
       "title": "101 Spanish Proverbs",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3036,8 +3099,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-627420": {
-      "sku": "SKU-627420",
+    "SKU-0B9AE322D8DC": {
+      "sku": "SKU-0B9AE322D8DC",
       "title": "101 Spanish Idioms",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3047,8 +3110,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-925827": {
-      "sku": "SKU-925827",
+    "SKU-7E093993423D": {
+      "sku": "SKU-7E093993423D",
       "title": "As One Is",
       "author": "J. Krishnamurti",
       "assigned_bay_id": "bay_a1",
@@ -3058,8 +3121,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-718864": {
-      "sku": "SKU-718864",
+    "SKU-EDA2A63EF068": {
+      "sku": "SKU-EDA2A63EF068",
       "title": "Modern Judgements: Racine",
       "author": "R.C. Knight (ed.)",
       "assigned_bay_id": "bay_a1",
@@ -3069,8 +3132,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-571495": {
-      "sku": "SKU-571495",
+    "SKU-B25ED798C015": {
+      "sku": "SKU-B25ED798C015",
       "title": "Postmodernism: ICA Documents",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3080,8 +3143,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-377194": {
-      "sku": "SKU-377194",
+    "SKU-4627443CCE50": {
+      "sku": "SKU-4627443CCE50",
       "title": "Visual Theory",
       "author": "Norman Bryson, Michael Ann Holly, and Keith Moxey",
       "assigned_bay_id": "bay_a1",
@@ -3091,8 +3154,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-662152": {
-      "sku": "SKU-662152",
+    "SKU-22277237A9B2": {
+      "sku": "SKU-22277237A9B2",
       "title": "Speech and Language in Psychoanalysis",
       "author": "Jacques Lacan & Anthony Wilden",
       "assigned_bay_id": "bay_a1",
@@ -3102,8 +3165,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-521152": {
-      "sku": "SKU-521152",
+    "SKU-C47879A54B63": {
+      "sku": "SKU-C47879A54B63",
       "title": "Romantic Art Theories",
       "author": "August Wiedmann",
       "assigned_bay_id": "bay_a1",
@@ -3113,8 +3176,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-268290": {
-      "sku": "SKU-268290",
+    "SKU-471C2B4C9805": {
+      "sku": "SKU-471C2B4C9805",
       "title": "The Works of Jacques Lacan",
       "author": "Malcolm Bowie",
       "assigned_bay_id": "bay_a1",
@@ -3124,8 +3187,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-964291": {
-      "sku": "SKU-964291",
+    "SKU-E6FFAA17ED5D": {
+      "sku": "SKU-E6FFAA17ED5D",
       "title": "Lacan",
       "author": "Malcolm Bowie",
       "assigned_bay_id": "bay_a1",
@@ -3135,8 +3198,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-891919": {
-      "sku": "SKU-891919",
+    "SKU-8407A7ADCE9F": {
+      "sku": "SKU-8407A7ADCE9F",
       "title": "The Truth in Painting",
       "author": "Jacques Derrida",
       "assigned_bay_id": "bay_a1",
@@ -3146,8 +3209,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-906123": {
-      "sku": "SKU-906123",
+    "SKU-682435A800D7": {
+      "sku": "SKU-682435A800D7",
       "title": "Reading Landscape: Country-City-Capital",
       "author": "Simon Pugh (ed.)",
       "assigned_bay_id": "bay_a1",
@@ -3157,8 +3220,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-202326": {
-      "sku": "SKU-202326",
+    "SKU-D3B4631E4D7D": {
+      "sku": "SKU-D3B4631E4D7D",
       "title": "Patterns of Intention",
       "author": "Michael Baxandall",
       "assigned_bay_id": "bay_a1",
@@ -3168,8 +3231,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-765507": {
-      "sku": "SKU-765507",
+    "SKU-7BEC7DB1F179": {
+      "sku": "SKU-7BEC7DB1F179",
       "title": "Art and Psyche",
       "author": "Ellen Handler Spitz",
       "assigned_bay_id": "bay_a1",
@@ -3179,8 +3242,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-069976": {
-      "sku": "SKU-069976",
+    "SKU-31E2ED5B1E9A": {
+      "sku": "SKU-31E2ED5B1E9A",
       "title": "The Politics of Procrustes",
       "author": "Antony Flew",
       "assigned_bay_id": "bay_a1",
@@ -3190,8 +3253,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-825551": {
-      "sku": "SKU-825551",
+    "SKU-9662640EB12B": {
+      "sku": "SKU-9662640EB12B",
       "title": "Aspects of Form",
       "author": "Lancelot Law Whyte",
       "assigned_bay_id": "bay_a1",
@@ -3201,8 +3264,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-952196": {
-      "sku": "SKU-952196",
+    "SKU-76F9F93BB9F1": {
+      "sku": "SKU-76F9F93BB9F1",
       "title": "Elementary Particles",
       "author": "Gerald L. Wick",
       "assigned_bay_id": "bay_a1",
@@ -3212,8 +3275,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-494630": {
-      "sku": "SKU-494630",
+    "SKU-4223396851F9": {
+      "sku": "SKU-4223396851F9",
       "title": "Relativity",
       "author": "John Marks",
       "assigned_bay_id": "bay_a1",
@@ -3223,8 +3286,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-054154": {
-      "sku": "SKU-054154",
+    "SKU-EB4113284D82": {
+      "sku": "SKU-EB4113284D82",
       "title": "Cells: Form and Function",
       "author": "John Stares",
       "assigned_bay_id": "bay_a1",
@@ -3234,8 +3297,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-991291": {
-      "sku": "SKU-991291",
+    "SKU-09E7E7A055EB": {
+      "sku": "SKU-09E7E7A055EB",
       "title": "Molecules of Life",
       "author": "John Stares",
       "assigned_bay_id": "bay_a1",
@@ -3245,8 +3308,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-321753": {
-      "sku": "SKU-321753",
+    "SKU-BCF9A96978BB": {
+      "sku": "SKU-BCF9A96978BB",
       "title": "Western Architecture",
       "author": "R. Furneaux Jordan",
       "assigned_bay_id": "bay_a1",
@@ -3256,8 +3319,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-295346": {
-      "sku": "SKU-295346",
+    "SKU-786EF088FE67": {
+      "sku": "SKU-786EF088FE67",
       "title": "The Selfish Gene",
       "author": "Richard Dawkins",
       "assigned_bay_id": "bay_a1",
@@ -3267,8 +3330,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-617884": {
-      "sku": "SKU-617884",
+    "SKU-D35115C222FF": {
+      "sku": "SKU-D35115C222FF",
       "title": "Analytical Psychology",
       "author": "C.G. Jung",
       "assigned_bay_id": "bay_a1",
@@ -3278,8 +3341,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-666958": {
-      "sku": "SKU-666958",
+    "SKU-01B25D571B22": {
+      "sku": "SKU-01B25D571B22",
       "title": "Art and Imagination",
       "author": "Roger Scruton",
       "assigned_bay_id": "bay_a1",
@@ -3289,8 +3352,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-296863": {
-      "sku": "SKU-296863",
+    "SKU-BEDAF1CF1A34": {
+      "sku": "SKU-BEDAF1CF1A34",
       "title": "Artists Handbook",
       "author": null,
       "assigned_bay_id": "bay_a1",
@@ -3300,8 +3363,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-931824": {
-      "sku": "SKU-931824",
+    "SKU-B7920EDD88A9": {
+      "sku": "SKU-B7920EDD88A9",
       "title": "Art and Its Objects",
       "author": "Richard Wollheim",
       "assigned_bay_id": "bay_a1",
@@ -3311,8 +3374,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-475466": {
-      "sku": "SKU-475466",
+    "SKU-A35EB90B0D86": {
+      "sku": "SKU-A35EB90B0D86",
       "title": "The Essentials of Psycho-Analysis",
       "author": "Sigmund Freud",
       "assigned_bay_id": "bay_a1",
@@ -3322,8 +3385,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-306365": {
-      "sku": "SKU-306365",
+    "SKU-E5CB941FB724": {
+      "sku": "SKU-E5CB941FB724",
       "title": "Short Stories in Spanish / Cuentos en Español",
       "author": "New Penguin Parallel Text",
       "assigned_bay_id": "bay_a1",
@@ -3333,8 +3396,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-570775": {
-      "sku": "SKU-570775",
+    "SKU-FA601E539326": {
+      "sku": "SKU-FA601E539326",
       "title": "System and Structure",
       "author": "Anthony Wilden",
       "assigned_bay_id": "bay_a1",
@@ -3344,8 +3407,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-755333": {
-      "sku": "SKU-755333",
+    "SKU-FD9266EE16E0": {
+      "sku": "SKU-FD9266EE16E0",
       "title": "Inquiries into the Fundamentals of Aesthetics",
       "author": "Stefan Morawski",
       "assigned_bay_id": "bay_a1",
@@ -3355,8 +3418,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-924058": {
-      "sku": "SKU-924058",
+    "SKU-FE7FD625607E": {
+      "sku": "SKU-FE7FD625607E",
       "title": "Edward Hopper: An Intimate Biography",
       "author": "Gail Levin",
       "assigned_bay_id": "bay_a1",
@@ -3366,8 +3429,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-936734": {
-      "sku": "SKU-936734",
+    "SKU-BEBE3DF3FD22": {
+      "sku": "SKU-BEBE3DF3FD22",
       "title": "Ways of Seeing",
       "author": "John Berger",
       "assigned_bay_id": "bay_a1",
@@ -3378,8 +3441,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 3
     },
-    "SKU-473465": {
-      "sku": "SKU-473465",
+    "SKU-6639146362D0": {
+      "sku": "SKU-6639146362D0",
       "title": "Simulacra and Simulation",
       "author": "Jean Baudrillard",
       "assigned_bay_id": "bay_a1",
@@ -3390,8 +3453,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 5
     },
-    "SKU-989540": {
-      "sku": "SKU-989540",
+    "SKU-6DF1A32DC09D": {
+      "sku": "SKU-6DF1A32DC09D",
       "title": "The Medium is the Massage",
       "author": "Marshall McLuhan",
       "assigned_bay_id": "bay_a1",
@@ -3402,8 +3465,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 4
     },
-    "SKU-841625": {
-      "sku": "SKU-841625",
+    "SKU-67C797AF4F36": {
+      "sku": "SKU-67C797AF4F36",
       "title": "Art of the Renaissance",
       "author": "Germain Bazin",
       "assigned_bay_id": "bay_a2",
@@ -3413,8 +3476,8 @@
       "system_status": "out_of_stock_in_system",
       "physically_on_shelf": true
     },
-    "SKU-297911": {
-      "sku": "SKU-297911",
+    "SKU-8BB8B6ECF48E": {
+      "sku": "SKU-8BB8B6ECF48E",
       "title": "High Renaissance and Mannerism",
       "author": "Linda Murray",
       "assigned_bay_id": "bay_a2",
@@ -3424,8 +3487,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-060212": {
-      "sku": "SKU-060212",
+    "SKU-C73483DDE9BD": {
+      "sku": "SKU-C73483DDE9BD",
       "title": "Pagan Mysteries in the Renaissance",
       "author": "Edgar Wind",
       "assigned_bay_id": "bay_a2",
@@ -3435,8 +3498,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-353447": {
-      "sku": "SKU-353447",
+    "SKU-9B6969441F8C": {
+      "sku": "SKU-9B6969441F8C",
       "title": "Studies in Iconology",
       "author": "Erwin Panofsky",
       "assigned_bay_id": "bay_a4",
@@ -3446,8 +3509,8 @@
       "system_status": "misplaced",
       "physically_on_shelf": true
     },
-    "SKU-032374": {
-      "sku": "SKU-032374",
+    "SKU-3A5E2C4B61B7": {
+      "sku": "SKU-3A5E2C4B61B7",
       "title": "The Birth and Rebirth of Pictorial Space",
       "author": "John White",
       "assigned_bay_id": "bay_a2",
@@ -3457,8 +3520,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-125417": {
-      "sku": "SKU-125417",
+    "SKU-C1CFDB3F8338": {
+      "sku": "SKU-C1CFDB3F8338",
       "title": "Romanticism and Realism: The Mythology of Nineteenth-Century Art",
       "author": "Charles Rosen & Henri Zerner",
       "assigned_bay_id": "bay_a2",
@@ -3468,8 +3531,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-778612": {
-      "sku": "SKU-778612",
+    "SKU-D63E73527794": {
+      "sku": "SKU-D63E73527794",
       "title": "Rococo to Revolution",
       "author": "Michael Levey",
       "assigned_bay_id": "bay_a2",
@@ -3479,8 +3542,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-734794": {
-      "sku": "SKU-734794",
+    "SKU-1E02D51E4075": {
+      "sku": "SKU-1E02D51E4075",
       "title": "The Social History of Art",
       "author": "Arnold Hauser",
       "assigned_bay_id": "bay_a2",
@@ -3490,8 +3553,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-917357": {
-      "sku": "SKU-917357",
+    "SKU-455C7BEE6F73": {
+      "sku": "SKU-455C7BEE6F73",
       "title": "An Outline of English Painting",
       "author": "R.H. Wilenski",
       "assigned_bay_id": "bay_a2",
@@ -3501,8 +3564,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-378322": {
-      "sku": "SKU-378322",
+    "SKU-9A76326389C1": {
+      "sku": "SKU-9A76326389C1",
       "title": "Memoirs of the Life of John Constable",
       "author": "C.R. Leslie",
       "assigned_bay_id": "bay_a2",
@@ -3512,8 +3575,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-483511": {
-      "sku": "SKU-483511",
+    "SKU-5A3A57322E63": {
+      "sku": "SKU-5A3A57322E63",
       "title": "Constable",
       "author": "Michael Rosenthal",
       "assigned_bay_id": "bay_a2",
@@ -3523,8 +3586,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-965844": {
-      "sku": "SKU-965844",
+    "SKU-4E8D53B3220C": {
+      "sku": "SKU-4E8D53B3220C",
       "title": "The Necessity of Art",
       "author": "Ernst Fischer",
       "assigned_bay_id": "bay_a2",
@@ -3534,8 +3597,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-153699": {
-      "sku": "SKU-153699",
+    "SKU-1F1B330F2482": {
+      "sku": "SKU-1F1B330F2482",
       "title": "Art & Language",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3545,8 +3608,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-952720": {
-      "sku": "SKU-952720",
+    "SKU-A2524598ED2A": {
+      "sku": "SKU-A2524598ED2A",
       "title": "Functions of Painting",
       "author": "Fernand Léger",
       "assigned_bay_id": "bay_a2",
@@ -3556,8 +3619,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-678307": {
-      "sku": "SKU-678307",
+    "SKU-8B8C03E0D2A9": {
+      "sku": "SKU-8B8C03E0D2A9",
       "title": "The Thames and Hudson Dictionary of Art and Artists",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3567,8 +3630,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-263419": {
-      "sku": "SKU-263419",
+    "SKU-3E111642D09F": {
+      "sku": "SKU-3E111642D09F",
       "title": "The End of Art Theory: Criticism and Postmodernity",
       "author": "Victor Burgin",
       "assigned_bay_id": "bay_a2",
@@ -3578,8 +3641,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-049211": {
-      "sku": "SKU-049211",
+    "SKU-6E6A1F43666D": {
+      "sku": "SKU-6E6A1F43666D",
       "title": "The Hidden Order of Art",
       "author": "Anton Ehrenzweig",
       "assigned_bay_id": "bay_a2",
@@ -3589,8 +3652,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-159169": {
-      "sku": "SKU-159169",
+    "SKU-0BAA320ABBB1": {
+      "sku": "SKU-0BAA320ABBB1",
       "title": "Renderings",
       "author": "Max Kozloff",
       "assigned_bay_id": "bay_a2",
@@ -3600,8 +3663,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-003089": {
-      "sku": "SKU-003089",
+    "SKU-CECBD29B4DCC": {
+      "sku": "SKU-CECBD29B4DCC",
       "title": "Landscapes of France: Impressionism and Its Rivals",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3611,8 +3674,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-797323": {
-      "sku": "SKU-797323",
+    "SKU-2FE9AC1A5945": {
+      "sku": "SKU-2FE9AC1A5945",
       "title": "Modern Home Atlas",
       "author": "Philip",
       "assigned_bay_id": "bay_a2",
@@ -3622,8 +3685,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-710694": {
-      "sku": "SKU-710694",
+    "SKU-9A2623E09286": {
+      "sku": "SKU-9A2623E09286",
       "title": "The Great Age of Exploration",
       "author": "Reader's Digest",
       "assigned_bay_id": "bay_a2",
@@ -3633,8 +3696,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-605623": {
-      "sku": "SKU-605623",
+    "SKU-93341A715035": {
+      "sku": "SKU-93341A715035",
       "title": "William Blake",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -3644,8 +3707,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-370481": {
-      "sku": "SKU-370481",
+    "SKU-E43A57D54EDD": {
+      "sku": "SKU-E43A57D54EDD",
       "title": "Our Friend the Atom",
       "author": "Heinz Haber",
       "assigned_bay_id": "bay_a2",
@@ -3655,8 +3718,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-568546": {
-      "sku": "SKU-568546",
+    "SKU-6A83DD1E9FB9": {
+      "sku": "SKU-6A83DD1E9FB9",
       "title": "Perception: Mechanisms and Models",
       "author": "Scientific American",
       "assigned_bay_id": "bay_a2",
@@ -3666,8 +3729,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-561879": {
-      "sku": "SKU-561879",
+    "SKU-98C3F94FF87F": {
+      "sku": "SKU-98C3F94FF87F",
       "title": "The Language of Pattern",
       "author": "Keith Albarn, Jenny Miall Smith, Stanford Steele, Dinah Walker",
       "assigned_bay_id": "bay_a2",
@@ -3677,8 +3740,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-172923": {
-      "sku": "SKU-172923",
+    "SKU-91C99E03F30A": {
+      "sku": "SKU-91C99E03F30A",
       "title": "Mathematics: An Introduction to Its Spirit and Use",
       "author": "Scientific American",
       "assigned_bay_id": "bay_a2",
@@ -3688,8 +3751,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-749415": {
-      "sku": "SKU-749415",
+    "SKU-DC1838C265B3": {
+      "sku": "SKU-DC1838C265B3",
       "title": "Towards a New Art: Essays on the Background to Abstract Art 1910–20",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -3699,8 +3762,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-131690": {
-      "sku": "SKU-131690",
+    "SKU-4D773BE47BA6": {
+      "sku": "SKU-4D773BE47BA6",
       "title": "Pissarro",
       "author": "Arts Council",
       "assigned_bay_id": "bay_a2",
@@ -3710,8 +3773,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-844800": {
-      "sku": "SKU-844800",
+    "SKU-4913BCAFA32B": {
+      "sku": "SKU-4913BCAFA32B",
       "title": "Cézanne: The Early Years 1859–1872",
       "author": "Lawrence Gowing",
       "assigned_bay_id": "bay_a2",
@@ -3721,8 +3784,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-448141": {
-      "sku": "SKU-448141",
+    "SKU-2DCE0EF195C8": {
+      "sku": "SKU-2DCE0EF195C8",
       "title": "Cézanne: Les dernières années (1895–1906)",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3732,8 +3795,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-416153": {
-      "sku": "SKU-416153",
+    "SKU-BD937020FB85": {
+      "sku": "SKU-BD937020FB85",
       "title": "Gustave Courbet",
       "author": "Arts Council 1978",
       "assigned_bay_id": "bay_a2",
@@ -3743,8 +3806,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-766067": {
-      "sku": "SKU-766067",
+    "SKU-89160F096404": {
+      "sku": "SKU-89160F096404",
       "title": "The Absolute Bourgeois",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -3754,8 +3817,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-039341": {
-      "sku": "SKU-039341",
+    "SKU-D94CCB9E0984": {
+      "sku": "SKU-D94CCB9E0984",
       "title": "The Painting of Modern Life",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -3765,8 +3828,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-382919": {
-      "sku": "SKU-382919",
+    "SKU-878B2E11BD38": {
+      "sku": "SKU-878B2E11BD38",
       "title": "Image of the People",
       "author": "T.J. Clark",
       "assigned_bay_id": "bay_a2",
@@ -3776,8 +3839,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-754385": {
-      "sku": "SKU-754385",
+    "SKU-86AC67D04186": {
+      "sku": "SKU-86AC67D04186",
       "title": "Rembrandt's Enterprise",
       "author": "Svetlana Alpers",
       "assigned_bay_id": "bay_a2",
@@ -3787,8 +3850,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-918069": {
-      "sku": "SKU-918069",
+    "SKU-A4F32C42AAAB": {
+      "sku": "SKU-A4F32C42AAAB",
       "title": "Looking at the Overlooked",
       "author": "Norman Bryson",
       "assigned_bay_id": "bay_a2",
@@ -3798,8 +3861,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-914259": {
-      "sku": "SKU-914259",
+    "SKU-F323D4FC3167": {
+      "sku": "SKU-F323D4FC3167",
       "title": "Vision and Painting",
       "author": "Norman Bryson",
       "assigned_bay_id": "bay_a2",
@@ -3809,8 +3872,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-972254": {
-      "sku": "SKU-972254",
+    "SKU-36D4B0B3950B": {
+      "sku": "SKU-36D4B0B3950B",
       "title": "Marcel Broodthaers",
       "author": "Tate Gallery",
       "assigned_bay_id": "bay_a2",
@@ -3820,8 +3883,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-836607": {
-      "sku": "SKU-836607",
+    "SKU-55920371903D": {
+      "sku": "SKU-55920371903D",
       "title": "Modern Art and Modernism: A Critical Anthology",
       "author": "Edited by Francis Frascina and Charles Harrison",
       "assigned_bay_id": "bay_a2",
@@ -3831,8 +3894,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-838722": {
-      "sku": "SKU-838722",
+    "SKU-EBEA58476A82": {
+      "sku": "SKU-EBEA58476A82",
       "title": "Pollock and After: The Critical Debate",
       "author": "Edited by Francis Frascina",
       "assigned_bay_id": "bay_a2",
@@ -3842,8 +3905,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-927646": {
-      "sku": "SKU-927646",
+    "SKU-F1D37874D711": {
+      "sku": "SKU-F1D37874D711",
       "title": "The Female Body",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3853,8 +3916,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-783876": {
-      "sku": "SKU-783876",
+    "SKU-B9E95B1B2137": {
+      "sku": "SKU-B9E95B1B2137",
       "title": "The Art of Describing",
       "author": "Svetlana Alpers",
       "assigned_bay_id": "bay_a2",
@@ -3864,8 +3927,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-387646": {
-      "sku": "SKU-387646",
+    "SKU-5118F4003A5E": {
+      "sku": "SKU-5118F4003A5E",
       "title": "Modernism, Criticism, Realism",
       "author": "Edited by Charles Harrison and Fred Orton",
       "assigned_bay_id": "bay_a2",
@@ -3875,8 +3938,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-205816": {
-      "sku": "SKU-205816",
+    "SKU-B43C499EEA62": {
+      "sku": "SKU-B43C499EEA62",
       "title": "Letters to His Son Lucien",
       "author": "Camille Pissarro (Edited by John Rewald)",
       "assigned_bay_id": "bay_a2",
@@ -3886,8 +3949,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-872459": {
-      "sku": "SKU-872459",
+    "SKU-E48FD3AC15B9": {
+      "sku": "SKU-E48FD3AC15B9",
       "title": "A Life of Picasso (Volume II: 1907–1917)",
       "author": "John Richardson",
       "assigned_bay_id": "bay_a2",
@@ -3897,8 +3960,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-687663": {
-      "sku": "SKU-687663",
+    "SKU-6B8FBAB5C1B4": {
+      "sku": "SKU-6B8FBAB5C1B4",
       "title": "A Life of Picasso (Volume III: 1917–1932)",
       "author": "John Richardson",
       "assigned_bay_id": "bay_a2",
@@ -3908,8 +3971,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-047435": {
-      "sku": "SKU-047435",
+    "SKU-3E110369B5B1": {
+      "sku": "SKU-3E110369B5B1",
       "title": "The Age of Neo-Classicism",
       "author": "Arts Council of Great Britain",
       "assigned_bay_id": "bay_a2",
@@ -3919,8 +3982,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-678263": {
-      "sku": "SKU-678263",
+    "SKU-686C084D97B5": {
+      "sku": "SKU-686C084D97B5",
       "title": "The Dream of Icarus",
       "author": "Kenneth Coutts-Smith",
       "assigned_bay_id": "bay_a2",
@@ -3930,8 +3993,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-495182": {
-      "sku": "SKU-495182",
+    "SKU-A9A964810305": {
+      "sku": "SKU-A9A964810305",
       "title": "Rococo, Classicism and Romanticism",
       "author": null,
       "assigned_bay_id": "bay_a2",
@@ -3941,8 +4004,8 @@
       "system_status": "in_stock",
       "physically_on_shelf": true
     },
-    "SKU-130721": {
-      "sku": "SKU-130721",
+    "SKU-BB7F79CD8C6F": {
+      "sku": "SKU-BB7F79CD8C6F",
       "title": "Lives of the Artists",
       "author": "Giorgio Vasari",
       "assigned_bay_id": "bay_a2",
@@ -3953,8 +4016,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 4
     },
-    "SKU-699036": {
-      "sku": "SKU-699036",
+    "SKU-35BFFDB85B5A": {
+      "sku": "SKU-35BFFDB85B5A",
       "title": "The Story of Art",
       "author": "E.H. Gombrich",
       "assigned_bay_id": "bay_a2",
@@ -3965,8 +4028,8 @@
       "physically_on_shelf": false,
       "days_since_stockout": 2
     },
-    "SKU-543083": {
-      "sku": "SKU-543083",
+    "SKU-AA356204A6B5": {
+      "sku": "SKU-AA356204A6B5",
       "title": "Leonardo da Vinci",
       "author": "Walter Isaacson",
       "assigned_bay_id": "bay_a2",
@@ -3979,316 +4042,319 @@
     }
   },
   "initial_inventory": {
-    "SKU-728973": 5,
-    "SKU-153908": 11,
-    "SKU-746974": 2,
-    "SKU-209773": 2,
-    "SKU-471371": 4,
-    "SKU-213835": 11,
-    "SKU-417874": 8,
-    "SKU-227999": 1,
-    "SKU-383383": 7,
-    "SKU-882069": 13,
-    "SKU-962618": 2,
-    "SKU-865135": 5,
-    "SKU-548197": 9,
-    "SKU-472437": 2,
-    "SKU-995688": 10,
-    "SKU-997331": 4,
-    "SKU-610873": 4,
-    "SKU-786259": 14,
-    "SKU-670080": 5,
-    "SKU-452247": 3,
-    "SKU-697934": 5,
-    "SKU-030097": 2,
-    "SKU-230665": 12,
-    "SKU-886996": 5,
-    "SKU-753333": 9,
-    "SKU-030222": 13,
-    "SKU-907203": 1,
-    "SKU-664563": 2,
-    "SKU-716623": 12,
-    "SKU-103197": 7,
-    "SKU-583835": 3,
-    "SKU-012051": 9,
-    "SKU-460092": 7,
-    "SKU-160468": 4,
-    "SKU-015967": 8,
-    "SKU-297990": 2,
-    "SKU-597319": 11,
-    "SKU-310678": 7,
-    "SKU-959605": 5,
-    "SKU-907952": 12,
-    "SKU-771339": 4,
-    "SKU-740717": 0,
-    "SKU-819537": 9,
-    "SKU-907153": 0,
-    "SKU-821391": 3,
-    "SKU-343273": 12,
-    "SKU-216511": 3,
-    "SKU-861253": 5,
-    "SKU-163872": 9,
-    "SKU-854003": 1,
-    "SKU-640452": 2,
-    "SKU-120067": 14,
-    "SKU-225910": 4,
-    "SKU-705233": 2,
-    "SKU-679060": 13,
-    "SKU-957503": 11,
-    "SKU-675020": 5,
-    "SKU-726473": 4,
-    "SKU-467719": 12,
-    "SKU-839986": 11,
-    "SKU-535223": 9,
-    "SKU-635152": 2,
-    "SKU-617424": 4,
-    "SKU-673552": 12,
-    "SKU-599047": 1,
-    "SKU-959693": 4,
-    "SKU-404729": 9,
-    "SKU-956791": 10,
-    "SKU-283149": 8,
-    "SKU-191492": 2,
-    "SKU-457919": 7,
-    "SKU-508873": 11,
-    "SKU-154909": 1,
-    "SKU-062316": 14,
-    "SKU-671433": 9,
-    "SKU-765139": 5,
-    "SKU-993168": 2,
-    "SKU-502697": 9,
-    "SKU-911460": 9,
-    "SKU-858199": 13,
-    "SKU-217123": 8,
-    "SKU-488024": 1,
-    "SKU-287391": 7,
-    "SKU-413868": 8,
-    "SKU-339689": 12,
-    "SKU-436595": 12,
-    "SKU-276883": 4,
-    "SKU-123954": 9,
-    "SKU-371938": 1,
-    "SKU-933422": 14,
-    "SKU-420538": 9,
-    "SKU-142923": 10,
-    "SKU-330608": 7,
-    "SKU-424636": 4,
-    "SKU-986340": 2,
-    "SKU-151536": 9,
-    "SKU-915196": 11,
-    "SKU-132427": 7,
-    "SKU-660853": 8,
-    "SKU-858243": 2,
-    "SKU-787289": 10,
-    "SKU-176065": 4,
-    "SKU-292237": 6,
-    "SKU-160412": 6,
-    "SKU-451297": 9,
-    "SKU-037166": 13,
-    "SKU-581081": 14,
-    "SKU-757412": 2,
-    "SKU-549130": 2,
-    "SKU-419455": 3,
-    "SKU-015271": 12,
-    "SKU-690823": 14,
-    "SKU-970406": 14,
-    "SKU-425192": 14,
-    "SKU-705221": 13,
-    "SKU-600401": 3,
-    "SKU-479768": 7,
-    "SKU-334572": 12,
-    "SKU-743637": 14,
-    "SKU-761417": 7,
-    "SKU-976546": 13,
-    "SKU-332083": 6,
-    "SKU-457131": 2,
-    "SKU-308311": 14,
-    "SKU-745469": 3,
-    "SKU-981032": 3,
-    "SKU-975825": 7,
-    "SKU-083828": 6,
-    "SKU-631176": 11,
-    "SKU-597841": 5,
-    "SKU-337751": 7,
-    "SKU-273505": 4,
-    "SKU-688281": 6,
-    "SKU-701217": 4,
-    "SKU-017189": 7,
-    "SKU-458636": 13,
-    "SKU-169094": 7,
-    "SKU-425257": 6,
-    "SKU-666166": 5,
-    "SKU-731731": 5,
-    "SKU-471001": 6,
-    "SKU-543162": 10,
-    "SKU-694115": 10,
-    "SKU-454451": 7,
-    "SKU-776864": 9,
-    "SKU-216598": 12,
-    "SKU-089761": 2,
-    "SKU-912260": 10,
-    "SKU-898338": 12,
-    "SKU-501790": 8,
-    "SKU-302707": 0,
-    "SKU-763509": 0,
-    "SKU-153851": 6,
-    "SKU-337760": 3,
-    "SKU-434950": 0,
-    "SKU-592283": 3,
-    "SKU-563329": 9,
-    "SKU-677250": 4,
-    "SKU-755328": 11,
-    "SKU-800769": 11,
-    "SKU-236967": 13,
-    "SKU-251336": 5,
-    "SKU-053700": 6,
-    "SKU-065274": 4,
-    "SKU-695939": 4,
-    "SKU-163042": 8,
-    "SKU-941384": 8,
-    "SKU-416787": 4,
-    "SKU-205537": 0,
-    "SKU-636581": 1,
-    "SKU-847913": 2,
-    "SKU-187822": 13,
-    "SKU-586799": 1,
-    "SKU-663346": 2,
-    "SKU-856804": 6,
-    "SKU-013639": 10,
-    "SKU-175997": 7,
-    "SKU-698821": 12,
-    "SKU-692003": 0,
-    "SKU-151322": 0,
-    "SKU-269436": 14,
-    "SKU-789139": 0,
-    "SKU-605160": 8,
-    "SKU-155255": 2,
-    "SKU-261098": 6,
-    "SKU-939740": 3,
-    "SKU-523139": 3,
-    "SKU-183347": 7,
-    "SKU-185663": 9,
-    "SKU-701323": 0,
-    "SKU-370356": 4,
-    "SKU-012715": 0,
-    "SKU-156947": 1,
-    "SKU-579694": 7,
-    "SKU-358639": 5,
-    "SKU-474474": 14,
-    "SKU-485126": 9,
-    "SKU-380956": 8,
-    "SKU-713690": 1,
-    "SKU-372332": 13,
-    "SKU-031057": 8,
-    "SKU-095295": 9,
-    "SKU-406601": 10,
-    "SKU-054465": 7,
-    "SKU-483005": 1,
-    "SKU-704204": 8,
-    "SKU-175601": 7,
-    "SKU-709346": 7,
-    "SKU-078997": 1,
-    "SKU-982759": 6,
-    "SKU-256112": 11,
-    "SKU-654529": 4,
-    "SKU-132155": 3,
-    "SKU-007588": 2,
-    "SKU-587765": 12,
-    "SKU-786685": 10,
-    "SKU-970797": 2,
-    "SKU-286042": 5,
-    "SKU-836910": 5,
-    "SKU-606241": 7,
-    "SKU-539982": 2,
-    "SKU-484184": 4,
-    "SKU-297266": 14,
-    "SKU-126043": 13,
-    "SKU-125569": 6,
-    "SKU-627420": 2,
-    "SKU-925827": 14,
-    "SKU-718864": 7,
-    "SKU-571495": 14,
-    "SKU-377194": 3,
-    "SKU-662152": 5,
-    "SKU-521152": 13,
-    "SKU-268290": 12,
-    "SKU-964291": 4,
-    "SKU-891919": 8,
-    "SKU-906123": 10,
-    "SKU-202326": 8,
-    "SKU-765507": 4,
-    "SKU-069976": 5,
-    "SKU-825551": 5,
-    "SKU-952196": 4,
-    "SKU-494630": 8,
-    "SKU-054154": 8,
-    "SKU-991291": 13,
-    "SKU-321753": 7,
-    "SKU-295346": 10,
-    "SKU-617884": 6,
-    "SKU-666958": 6,
-    "SKU-296863": 5,
-    "SKU-931824": 4,
-    "SKU-475466": 13,
-    "SKU-306365": 12,
-    "SKU-570775": 13,
-    "SKU-755333": 2,
-    "SKU-924058": 6,
-    "SKU-936734": 6,
-    "SKU-473465": 0,
-    "SKU-989540": 0,
-    "SKU-841625": 0,
-    "SKU-297911": 1,
-    "SKU-060212": 3,
-    "SKU-353447": 2,
-    "SKU-032374": 8,
-    "SKU-125417": 1,
-    "SKU-778612": 2,
-    "SKU-734794": 2,
-    "SKU-917357": 3,
-    "SKU-378322": 5,
-    "SKU-483511": 9,
-    "SKU-965844": 13,
-    "SKU-153699": 7,
-    "SKU-952720": 14,
-    "SKU-678307": 10,
-    "SKU-263419": 12,
-    "SKU-049211": 11,
-    "SKU-159169": 3,
-    "SKU-003089": 3,
-    "SKU-797323": 10,
-    "SKU-710694": 5,
-    "SKU-605623": 8,
-    "SKU-370481": 5,
-    "SKU-568546": 11,
-    "SKU-561879": 2,
-    "SKU-172923": 5,
-    "SKU-749415": 3,
-    "SKU-131690": 14,
-    "SKU-844800": 2,
-    "SKU-448141": 7,
-    "SKU-416153": 8,
-    "SKU-766067": 7,
-    "SKU-039341": 1,
-    "SKU-382919": 14,
-    "SKU-754385": 1,
-    "SKU-918069": 5,
-    "SKU-914259": 3,
-    "SKU-972254": 5,
-    "SKU-836607": 11,
-    "SKU-838722": 8,
-    "SKU-927646": 11,
-    "SKU-783876": 7,
-    "SKU-387646": 7,
-    "SKU-205816": 8,
-    "SKU-872459": 2,
-    "SKU-687663": 9,
-    "SKU-047435": 14,
-    "SKU-678263": 4,
-    "SKU-495182": 8,
-    "SKU-130721": 11,
-    "SKU-699036": 0,
-    "SKU-543083": 0
+    "SKU-D613C8840DE9": 5,
+    "SKU-D317541F941D": 2,
+    "SKU-1EFFA231C1A2": 2,
+    "SKU-8AEFCB1D4728": 2,
+    "SKU-70B17CF8689A": 0,
+    "SKU-94F37F0BCA6C": 11,
+    "SKU-E453BF8ED41C": 8,
+    "SKU-743B02A41853": 1,
+    "SKU-434A2FAA31B8": 7,
+    "SKU-AADD91272BD6": 13,
+    "SKU-4A2DEFAEB0A3": 2,
+    "SKU-465A585341A9": 5,
+    "SKU-F858C84125C1": 9,
+    "SKU-D784EB392505": 2,
+    "SKU-5ACEFF57E20D": 10,
+    "SKU-C34D74B2AB8D": 4,
+    "SKU-4F9DF1A04777": 4,
+    "SKU-CB2E73F68006": 14,
+    "SKU-B4EBC3D06D56": 5,
+    "SKU-352BDF13587C": 3,
+    "SKU-38D4BDBE3E6E": 5,
+    "SKU-C737D1BAFC66": 2,
+    "SKU-F9414C48369C": 12,
+    "SKU-FE5A1F7FDFAD": 5,
+    "SKU-3C097ADF1779": 9,
+    "SKU-9A25E8D20D3A": 13,
+    "SKU-4CAD823C9F21": 1,
+    "SKU-51516D3C9052": 2,
+    "SKU-64F46E0E2FE8": 12,
+    "SKU-D3F9F3182498": 7,
+    "SKU-167267255407": 3,
+    "SKU-06627B2BC91F": 9,
+    "SKU-DB387650FFE7": 7,
+    "SKU-76AB8707431C": 4,
+    "SKU-9C63F3600D3F": 8,
+    "SKU-D6FF4AFF0AAA": 2,
+    "SKU-EF6A56C5BB68": 11,
+    "SKU-1B5A1ED6F801": 7,
+    "SKU-2E8F5742DB45": 5,
+    "SKU-210ADD6EFA2B": 12,
+    "SKU-2CD49296BB77": 4,
+    "SKU-83D1D211A936": 0,
+    "SKU-DA4FB1F31D9E": 9,
+    "SKU-A6BAE242CA20": 0,
+    "SKU-49550AF16F26": 3,
+    "SKU-37EAC1439CB5": 12,
+    "SKU-532A79DC6ED6": 3,
+    "SKU-595FDCB7BC08": 5,
+    "SKU-56691846B9D2": 4,
+    "SKU-9DEF818A286E": 9,
+    "SKU-8E833229F4D8": 1,
+    "SKU-D8E336573247": 2,
+    "SKU-9AFB2E0DB1C9": 14,
+    "SKU-6FE5A6B5F296": 4,
+    "SKU-02E264BFC82E": 2,
+    "SKU-0D759FD6366F": 13,
+    "SKU-9756EF407F65": 11,
+    "SKU-A1D8021FA05E": 5,
+    "SKU-97DA3E0C2539": 4,
+    "SKU-AFC52A8D2C20": 12,
+    "SKU-E69EEC124772": 11,
+    "SKU-01434F4B7D4E": 9,
+    "SKU-2F8055B966C9": 2,
+    "SKU-3DB4C0067586": 4,
+    "SKU-3FEF64C0D6B5": 12,
+    "SKU-86991647BE78": 1,
+    "SKU-EFC67DB78EE8": 4,
+    "SKU-535310F20242": 9,
+    "SKU-675407E2700F": 10,
+    "SKU-CD85EF083431": 8,
+    "SKU-0F05ABCCA8B9": 2,
+    "SKU-C7409E1FD397": 7,
+    "SKU-476583CDD723": 11,
+    "SKU-DB67E3B7A33F": 1,
+    "SKU-1818F6009555": 14,
+    "SKU-E23FAB8B2853": 9,
+    "SKU-9567A5271B32": 5,
+    "SKU-A8F53F3762D7": 2,
+    "SKU-0B4FB47CEE2D": 9,
+    "SKU-32C5242D1DD9": 9,
+    "SKU-A7F468C2E3A5": 13,
+    "SKU-714FB132CB86": 8,
+    "SKU-F014ECBFE8CA": 1,
+    "SKU-0ADF5BC930D8": 7,
+    "SKU-A2042176F29F": 8,
+    "SKU-99E87EDB39A4": 12,
+    "SKU-4FC5E16CC1FD": 12,
+    "SKU-946B078C1A47": 4,
+    "SKU-D988B052FB67": 9,
+    "SKU-815DA4B0F2B3": 1,
+    "SKU-52B6A22CD3AC": 14,
+    "SKU-CA334EBA60C2": 9,
+    "SKU-082BB678135C": 10,
+    "SKU-3DDF762026B3": 7,
+    "SKU-7FDD37926618": 4,
+    "SKU-AD7467F85AD2": 2,
+    "SKU-EEC4BEFBFFCF": 9,
+    "SKU-923C904F4A86": 11,
+    "SKU-A800572F305C": 7,
+    "SKU-FE8DEF51120A": 8,
+    "SKU-86A1FC75CD9E": 2,
+    "SKU-E91CAE146B98": 10,
+    "SKU-D0847E2B6296": 4,
+    "SKU-045C5818B1D7": 6,
+    "SKU-C008401D7B38": 6,
+    "SKU-B9BB253D38FE": 9,
+    "SKU-CC50BAF792EF": 13,
+    "SKU-80C89B2047F7": 14,
+    "SKU-6480E9917F7F": 2,
+    "SKU-4B8F8BF229F0": 2,
+    "SKU-063809F84D4F": 3,
+    "SKU-714454088089": 12,
+    "SKU-63CF1D02952B": 14,
+    "SKU-4D11661AE410": 14,
+    "SKU-AD8DF0B67EF2": 14,
+    "SKU-0D2AB0BC0BBE": 13,
+    "SKU-A2FDB7F09299": 3,
+    "SKU-5114C6CA3202": 7,
+    "SKU-503EECBB4309": 12,
+    "SKU-F7D4A7BB8C45": 14,
+    "SKU-A289155DF152": 7,
+    "SKU-4730212AED36": 13,
+    "SKU-95368E800A77": 6,
+    "SKU-7417162A358F": 2,
+    "SKU-9B7BC446C2F5": 14,
+    "SKU-397062FEB7D4": 3,
+    "SKU-D1F7C4441EB1": 3,
+    "SKU-D44D447334CE": 7,
+    "SKU-F94A52192BE8": 6,
+    "SKU-D83AF64A8449": 11,
+    "SKU-55AD474B1B03": 5,
+    "SKU-6D649E1A57D3": 7,
+    "SKU-F73FF1A44C49": 4,
+    "SKU-79C07D2B7C7F": 6,
+    "SKU-4A381FF41438": 4,
+    "SKU-4C220A6A6CDA": 7,
+    "SKU-17DAA8F4FAEE": 13,
+    "SKU-14DD54976AA0": 7,
+    "SKU-240DDEBBD071": 6,
+    "SKU-52F11A3DBD3E": 5,
+    "SKU-E53BE6401B77": 5,
+    "SKU-E8572AFE57AE": 6,
+    "SKU-0414D24BBCEF": 10,
+    "SKU-A83E22AE6207": 10,
+    "SKU-3B08EF9AD1C8": 7,
+    "SKU-AAAB17C54CD7": 9,
+    "SKU-70CBE527C7C0": 12,
+    "SKU-E3F0E814F81F": 2,
+    "SKU-C2F13A51CBB4": 10,
+    "SKU-490C1E090D67": 12,
+    "SKU-971C393ECB58": 8,
+    "SKU-C74FB917B0B8": 0,
+    "SKU-B48603A98089": 0,
+    "SKU-38BEA5675677": 6,
+    "SKU-5C37196E2546": 3,
+    "SKU-54D87B99454F": 0,
+    "SKU-DDF509B177F3": 3,
+    "SKU-A8E35D8586F8": 9,
+    "SKU-4C497F6697C4": 4,
+    "SKU-31642E1A9DEC": 11,
+    "SKU-FE3DAE4BAE13": 11,
+    "SKU-6107CD0851AB": 13,
+    "SKU-09BAAF562C6C": 5,
+    "SKU-D209A6A110CA": 6,
+    "SKU-7ED440E62052": 4,
+    "SKU-4586CA3E4677": 4,
+    "SKU-25031BB13384": 8,
+    "SKU-F6227279140E": 8,
+    "SKU-57B417DD9A6C": 4,
+    "SKU-42F05B2C33A7": 7,
+    "SKU-FF8BDC5C3657": 1,
+    "SKU-43B1FA8F1920": 2,
+    "SKU-FA06E568EF42": 13,
+    "SKU-F82EBEBC8BE2": 1,
+    "SKU-E25DEAF0BB04": 2,
+    "SKU-FDFB6D637F7B": 11,
+    "SKU-D118D4877448": 6,
+    "SKU-FAF5158C0654": 10,
+    "SKU-C9244ADEFAF8": 7,
+    "SKU-91B9DCF0A9FE": 12,
+    "SKU-760443F332F2": 0,
+    "SKU-824C4F86A80E": 0,
+    "SKU-DB9BFF24E22B": 14,
+    "SKU-F9694EDA6023": 0,
+    "SKU-551AC8B4A43F": 8,
+    "SKU-A34A5C3F7EE8": 2,
+    "SKU-DB481C7778B1": 6,
+    "SKU-69A0C4E40E3C": 3,
+    "SKU-C96B40A69086": 3,
+    "SKU-43EF97B950A3": 7,
+    "SKU-62E1E290A1B7": 9,
+    "SKU-9A91F76E6EE0": 0,
+    "SKU-B16B729E4938": 0,
+    "SKU-46A5317F46DE": 4,
+    "SKU-6244D525DB16": 0,
+    "SKU-EC27D7550008": 1,
+    "SKU-0CA240360392": 7,
+    "SKU-D0E724179DA1": 5,
+    "SKU-4E88F116CFCB": 14,
+    "SKU-CA3EA3E795E3": 9,
+    "SKU-7E90238A9C47": 8,
+    "SKU-693477CB8BEA": 1,
+    "SKU-1D0547070AFD": 13,
+    "SKU-44D60422D9AE": 8,
+    "SKU-1367FD41C824": 9,
+    "SKU-177592A169A7": 10,
+    "SKU-95997FDBB640": 7,
+    "SKU-A33D0EDF2E0B": 1,
+    "SKU-CEB9040C2754": 8,
+    "SKU-134CF37F1E52": 7,
+    "SKU-50A4B446B857": 7,
+    "SKU-B6BD8479DC8F": 1,
+    "SKU-5F743DCC4CED": 6,
+    "SKU-FF83E9D94A84": 11,
+    "SKU-6B771CBD9DCB": 4,
+    "SKU-6630DF0F69E4": 3,
+    "SKU-63C70856842F": 2,
+    "SKU-F95D6B305895": 12,
+    "SKU-154CFAA794B5": 10,
+    "SKU-7045D34DE47B": 2,
+    "SKU-CF35963D6AD9": 5,
+    "SKU-996ABCC8E5D3": 5,
+    "SKU-D745D4A5274F": 7,
+    "SKU-2CA64AFAB3D9": 2,
+    "SKU-35A608A7B75B": 4,
+    "SKU-658137BB256D": 14,
+    "SKU-59E15B7646A1": 13,
+    "SKU-7310320B264A": 6,
+    "SKU-0B9AE322D8DC": 2,
+    "SKU-7E093993423D": 14,
+    "SKU-EDA2A63EF068": 7,
+    "SKU-B25ED798C015": 14,
+    "SKU-4627443CCE50": 3,
+    "SKU-22277237A9B2": 5,
+    "SKU-C47879A54B63": 13,
+    "SKU-471C2B4C9805": 12,
+    "SKU-E6FFAA17ED5D": 4,
+    "SKU-8407A7ADCE9F": 8,
+    "SKU-682435A800D7": 10,
+    "SKU-D3B4631E4D7D": 8,
+    "SKU-7BEC7DB1F179": 4,
+    "SKU-31E2ED5B1E9A": 5,
+    "SKU-9662640EB12B": 5,
+    "SKU-76F9F93BB9F1": 4,
+    "SKU-4223396851F9": 8,
+    "SKU-EB4113284D82": 8,
+    "SKU-09E7E7A055EB": 13,
+    "SKU-BCF9A96978BB": 7,
+    "SKU-786EF088FE67": 10,
+    "SKU-D35115C222FF": 6,
+    "SKU-01B25D571B22": 6,
+    "SKU-BEDAF1CF1A34": 5,
+    "SKU-B7920EDD88A9": 4,
+    "SKU-A35EB90B0D86": 13,
+    "SKU-E5CB941FB724": 12,
+    "SKU-FA601E539326": 13,
+    "SKU-FD9266EE16E0": 2,
+    "SKU-FE7FD625607E": 6,
+    "SKU-BEBE3DF3FD22": 6,
+    "SKU-6639146362D0": 0,
+    "SKU-6DF1A32DC09D": 0,
+    "SKU-67C797AF4F36": 0,
+    "SKU-8BB8B6ECF48E": 1,
+    "SKU-C73483DDE9BD": 3,
+    "SKU-9B6969441F8C": 2,
+    "SKU-3A5E2C4B61B7": 8,
+    "SKU-C1CFDB3F8338": 1,
+    "SKU-D63E73527794": 2,
+    "SKU-1E02D51E4075": 2,
+    "SKU-455C7BEE6F73": 3,
+    "SKU-9A76326389C1": 5,
+    "SKU-5A3A57322E63": 9,
+    "SKU-4E8D53B3220C": 13,
+    "SKU-1F1B330F2482": 7,
+    "SKU-A2524598ED2A": 14,
+    "SKU-8B8C03E0D2A9": 10,
+    "SKU-3E111642D09F": 12,
+    "SKU-6E6A1F43666D": 11,
+    "SKU-0BAA320ABBB1": 3,
+    "SKU-CECBD29B4DCC": 3,
+    "SKU-2FE9AC1A5945": 10,
+    "SKU-9A2623E09286": 5,
+    "SKU-93341A715035": 8,
+    "SKU-E43A57D54EDD": 5,
+    "SKU-6A83DD1E9FB9": 11,
+    "SKU-98C3F94FF87F": 2,
+    "SKU-91C99E03F30A": 5,
+    "SKU-DC1838C265B3": 3,
+    "SKU-4D773BE47BA6": 14,
+    "SKU-4913BCAFA32B": 2,
+    "SKU-2DCE0EF195C8": 7,
+    "SKU-BD937020FB85": 8,
+    "SKU-89160F096404": 7,
+    "SKU-D94CCB9E0984": 1,
+    "SKU-878B2E11BD38": 14,
+    "SKU-86AC67D04186": 1,
+    "SKU-A4F32C42AAAB": 5,
+    "SKU-F323D4FC3167": 3,
+    "SKU-36D4B0B3950B": 5,
+    "SKU-55920371903D": 11,
+    "SKU-EBEA58476A82": 8,
+    "SKU-F1D37874D711": 11,
+    "SKU-B9E95B1B2137": 7,
+    "SKU-5118F4003A5E": 7,
+    "SKU-B43C499EEA62": 8,
+    "SKU-E48FD3AC15B9": 2,
+    "SKU-6B8FBAB5C1B4": 9,
+    "SKU-3E110369B5B1": 14,
+    "SKU-686C084D97B5": 4,
+    "SKU-A9A964810305": 8,
+    "SKU-BB7F79CD8C6F": 11,
+    "SKU-35BFFDB85B5A": 0,
+    "SKU-AA356204A6B5": 0
   },
   "summary": {
     "on_shelf_availability_pct": 91.4,

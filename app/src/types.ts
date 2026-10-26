@@ -10,9 +10,12 @@ export interface ShelfItem {
   id: string;
   title: string;
   author: string | null;
-  confidence: number;
-  box: BoundingBox;
-  status: 'matched' | 'misplaced' | 'unexpected';
+  confidence: number | null;
+  box: BoundingBox | null;
+  box_source?: 'unavailable' | 'model_estimate';
+  verification_status?: 'verified' | 'needs_review' | 'benchmark_replay';
+  visible_text?: string;
+  status: 'matched' | 'misplaced' | 'unexpected' | 'needs_review';
   status_label: string;
   misplaced_reason?: string | null;
   target_bay_name?: string | null;
@@ -48,7 +51,7 @@ export interface MissingItem {
 
 export interface ActionTask {
   id: string;
-  type: 'missing_item' | 'misplaced_item' | 'record_error';
+  type: 'missing_item' | 'misplaced_item' | 'record_error' | 'recognition_review';
   severity: 'critical' | 'warning' | 'high' | 'medium';
   badge: string;
   title: string;
@@ -59,6 +62,8 @@ export interface ActionTask {
   system_on_hand?: number;
   shelf_count?: number;
   resolved?: boolean;
+  shelf_item_id?: string;
+  requires_review?: boolean;
 }
 
 export interface ScanMetrics {
@@ -67,6 +72,7 @@ export interface ScanMetrics {
   matched_count: number;
   missing_count: number;
   misplaced_count: number;
+  review_count?: number;
   planogram_compliance_pct: number;
 }
 
@@ -76,18 +82,51 @@ export interface ScanResult {
   bay_name: string;
   photo_filename: string;
   photo_url: string;
-  scanned_at: string;
+  scanned_at: string | null;
+  mode: 'replay' | 'live';
+  source_kind?: 'upload' | 'sample';
+  upload_id?: string | null;
   model: string;
   effort: string;
-  inference_duration_seconds: number;
-  tokens_used: number;
-  estimated_cost_usd: number;
+  inference_duration_seconds: number | null;
+  tokens_used: number | null;
+  estimated_cost_usd: number | null;
+  disclosure?: string;
+  selection_reason?: string;
+  run_id?: string;
+  source?: { source_path: string; interface: string; original_mode: string; source_date: string | null };
+  harness?: { tile_count: number; calls_completed: number; rotated_verification: boolean };
   metrics: ScanMetrics;
   planogram_items: PlanogramItem[];
   shelf_items: ShelfItem[];
   missing_items: MissingItem[];
   misplaced_items: ShelfItem[];
   action_tasks: ActionTask[];
+}
+
+export interface ScanProgress {
+  step: number;
+  status: string;
+  message?: string;
+  completed_calls?: number;
+  total_calls?: number;
+  model?: string;
+  result?: ScanResult;
+}
+
+export interface ScanHealth {
+  upload_analysis_available?: boolean;
+  live_available_by_difficulty: Record<string, boolean>;
+  profiles_by_difficulty: Record<string, { name: string; reason: string }>;
+}
+
+export interface UploadedPhoto {
+  upload_id: string;
+  filename: string;
+  photo_url: string;
+  width: number;
+  height: number;
+  byte_size: number;
 }
 
 export interface Bay {

@@ -1,0 +1,293 @@
+{
+  "audit_date": "2026-10-26",
+  "scope": "The local frozen answer key and original six photos used by this app. Visual survey of every photo, with targeted high-resolution crops; not a certified re-annotation or individual author verification of all 295 entries.",
+  "answer_key_path": "/Users/roshansingh/Desktop/bookshelf_demo/reference/bookshelf-benchmark/data/ground_truth.json",
+  "answer_key_sha256_before": "7ffd22b754231c9b606edb769b4d60ad89b44d5de9d40a07f647360927eb5123",
+  "answer_key_sha256_after": "7ffd22b754231c9b606edb769b4d60ad89b44d5de9d40a07f647360927eb5123",
+  "original_key_modified": false,
+  "image_frame": "EXIF-corrected display orientation; pixel crop bounds refer to that frame. Rotation and enlargement are display aids only, with no generative enhancement.",
+  "entry_counts": {
+    "a.jpg": 65,
+    "b.jpg": 49,
+    "c.png": 26,
+    "d.jpg": 8,
+    "e.jpg": 108,
+    "f.jpg": 39
+  },
+  "total_entries": 295,
+  "normalized_duplicate_titles_per_photo": {
+    "c.png": [],
+    "d.jpg": [],
+    "e.jpg": [],
+    "f.jpg": [],
+    "a.jpg": [],
+    "b.jpg": []
+  },
+  "findings": [
+    {
+      "id": "AK-01",
+      "classification": "confirmed_author_error",
+      "photo": "a.jpg",
+      "key_entry_1_based": 43,
+      "key_title": "The Works of Jacques Lacan",
+      "key_author": "Malcolm Bowie",
+      "proposed_author": "Bice Benvenuto & Roger Kennedy",
+      "evidence_crop": "crops/a_works_lacan.png",
+      "source_bounds_xyxy": [
+        740,
+        475,
+        790,
+        850
+      ],
+      "rotation_ccw_degrees": 90,
+      "display_scale": 3,
+      "basis": "The pictured spine names Benvenuto and Kennedy. The adjacent separate book Lacan is by Malcolm Bowie. Wellcome Collection independently lists the former book by Bice Benvenuto and Roger Kennedy.",
+      "bibliographic_source": "https://wellcomecollection.org/works/q55u89xg",
+      "source_image_sha256": "4ec9a8c218b71998064b590a2f06047c3b094f534d2d125c9aee9338a5ff8d42"
+    },
+    {
+      "id": "AK-02",
+      "classification": "confirmed_readable_omission",
+      "photo": "b.jpg",
+      "title_as_read": "Images of Cornwall",
+      "author_as_read": "Alan Bennett",
+      "evidence_crop": "crops/b_cyan_spine.png",
+      "source_bounds_xyxy": [
+        843,
+        392,
+        870,
+        870
+      ],
+      "rotation_ccw_degrees": 90,
+      "display_scale": 3,
+      "basis": "The cyan spine between Marcel Broodthaers and Modern Art and Modernism shows the title and author. Neither this title nor an equivalent Cornwall entry appears in photo b in the key.",
+      "source_image_sha256": "a32ffeb4350caca867fb1cc74ae97f840eb2459936c32448413a99baef389855"
+    },
+    {
+      "id": "AK-03",
+      "classification": "confirmed_readable_omission",
+      "photo": "f.jpg",
+      "title_as_read": "One Piece, Vol. 22",
+      "author_as_read": null,
+      "bibliographic_author": "Eiichiro Oda",
+      "evidence_crop": "crops/f_one_piece.png",
+      "source_bounds_xyxy": [
+        2660,
+        2620,
+        3500,
+        3230
+      ],
+      "rotation_ccw_degrees": 0,
+      "display_scale": 1,
+      "basis": "The purple/red back cover near the centre-right visibly carries ONE PIECE and 22. Photo f has no One Piece entry. The author is independently corroborated by VIZ, not read from this crop.",
+      "bibliographic_source": "https://www.viz.com/manga-books/manga/one-piece-volume-22-0/product/1788",
+      "source_image_sha256": "a188141abed46faecea6b178493db6789141e633bdee420a378c595450d940b0"
+    },
+    {
+      "id": "AK-04",
+      "classification": "additional_label_review",
+      "photo": "b.jpg",
+      "title_as_read": "Van Gogh",
+      "author_as_read": null,
+      "evidence_crop": "crops/b_gold_spine.png",
+      "source_bounds_xyxy": [
+        452,
+        353,
+        495,
+        865
+      ],
+      "rotation_ccw_degrees": 90,
+      "display_scale": 3,
+      "basis": "VAN GOGH is readable on the pale spine above Pissarro. No Van Gogh title appears in photo b in the key. The edition and any longer full title are not established; retain as a review candidate rather than certifying a new complete bibliographic record.",
+      "source_image_sha256": "a32ffeb4350caca867fb1cc74ae97f840eb2459936c32448413a99baef389855"
+    },
+    {
+      "id": "AK-05",
+      "classification": "underspecified_existing_title",
+      "photo": "f.jpg",
+      "key_entry_1_based": 20,
+      "key_title": "Timmy Failure",
+      "proposed_title": "Timmy Failure: Mistakes Were Made",
+      "evidence_crop": "crops/f_timmy_subtitle.png",
+      "source_bounds_xyxy": [
+        960,
+        3190,
+        1430,
+        3560
+      ],
+      "rotation_ccw_degrees": 18,
+      "display_scale": 2,
+      "basis": "The red cover gives more specific title information than the generic series label in the key; compare with the publisher record. This is a title-specificity issue, not proof of a second physical book.",
+      "bibliographic_source": "https://www.candlewick.com/9780763669270/timmy-failure/",
+      "source_image_sha256": "a188141abed46faecea6b178493db6789141e633bdee420a378c595450d940b0"
+    },
+    {
+      "id": "AK-06",
+      "classification": "omnibus_annotation_review",
+      "photo": "e.jpg",
+      "key_entry_1_based": 92,
+      "key_title": "Magic Ballerina: Delphie and the Magic Spell",
+      "visible_additional_title": "Rosa and the Golden Bird",
+      "evidence_crop": "crops/e_children.png",
+      "source_bounds_xyxy": [
+        1290,
+        1780,
+        2560,
+        2110
+      ],
+      "rotation_ccw_degrees": 0,
+      "display_scale": 1,
+      "basis": "The same spine prints both Delphie and the Magic Spell and Rosa and the Golden Bird. The key records only the former. Define how two-story omnibus books are labelled before revising the record; do not automatically count them as two physical books.",
+      "source_image_sha256": "c0dcd33c0789b66178fd2dfef17d2a14e2dd731d60f1c713b540bcdd3d4b2e1f"
+    },
+    {
+      "id": "AK-07",
+      "classification": "unresolved_existing_label",
+      "photo": "f.jpg",
+      "key_entry_1_based": 14,
+      "key_title": "The Villain",
+      "key_author": "L.J. Shen",
+      "visible_distinct_title": "Hunt the Villain",
+      "visible_distinct_author": "Rina Kent",
+      "evidence_crop": "crops/f_villain.png",
+      "source_bounds_xyxy": [
+        1250,
+        2260,
+        2070,
+        3420
+      ],
+      "rotation_ccw_degrees": 0,
+      "display_scale": 1,
+      "basis": "The prominent black/gold book is Hunt the Villain by Rina Kent, already a separate key entry. I could not independently locate The Villain by L.J. Shen. Another obscured copy may exist elsewhere; this finding does not prove the key entry is false and does not justify deleting it.",
+      "source_image_sha256": "a188141abed46faecea6b178493db6789141e633bdee420a378c595450d940b0"
+    },
+    {
+      "id": "AK-08",
+      "classification": "omission_acknowledged_by_report",
+      "photo": "e.jpg",
+      "title": "The Secret Life of Bees",
+      "evidence_crop": "crops/e_bees.png",
+      "source_bounds_xyxy": [
+        1920,
+        2400,
+        2660,
+        2640
+      ],
+      "rotation_ccw_degrees": 0,
+      "display_scale": 1,
+      "basis": "The report explicitly lists this as a real book excluded from the key. Its dark partially occluded spine is a lower-visibility case; this is not presented as an equally clear independent reading to AK-02/03.",
+      "source": "https://atharva-729.github.io/bookshelf-benchmark/#caveats",
+      "source_image_sha256": "c0dcd33c0789b66178fd2dfef17d2a14e2dd731d60f1c713b540bcdd3d4b2e1f"
+    }
+  ],
+  "author_role_flags": [
+    {
+      "photo": "a.jpg",
+      "title": "Russische Avantgarde aus der Sammlung Costakis",
+      "author": "Kestner-Gesellschaft",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "a.jpg",
+      "title": "Spanish Short Stories 1",
+      "author": "Penguin Parallel Text",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "a.jpg",
+      "title": "Spanish Short Stories 2",
+      "author": "Penguin Parallel Text",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "a.jpg",
+      "title": "Short Stories in Spanish / Cuentos en Español",
+      "author": "New Penguin Parallel Text",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Modern Home Atlas",
+      "author": "Philip",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "The Great Age of Exploration",
+      "author": "Reader's Digest",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "William Blake",
+      "author": "Tate Gallery",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Perception: Mechanisms and Models",
+      "author": "Scientific American",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Mathematics: An Introduction to Its Spirit and Use",
+      "author": "Scientific American",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Towards a New Art: Essays on the Background to Abstract Art 1910–20",
+      "author": "Tate Gallery",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Pissarro",
+      "author": "Arts Council",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Gustave Courbet",
+      "author": "Arts Council 1978",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "Marcel Broodthaers",
+      "author": "Tate Gallery",
+      "status": "role_review_not_automatically_an_error"
+    },
+    {
+      "photo": "b.jpg",
+      "title": "The Age of Neo-Classicism",
+      "author": "Arts Council of Great Britain",
+      "status": "role_review_not_automatically_an_error"
+    }
+  ],
+  "scorer_sha256": "aaf7f36cef11d56935b6bd5ea8dcb094081988579ef69c20dac86c321cfe6829",
+  "scorer_reproductions": [
+    {
+      "predicted_title": "A Life of Picasso (Volume I: 1881–1906)",
+      "key_title": "A Life of Picasso (Volume III: 1917–1932)",
+      "title_score": 1.0,
+      "threshold": 0.85,
+      "accepted_as_match": true
+    },
+    {
+      "predicted_title": "Timmy Failure: We Meet Again",
+      "key_title": "Timmy Failure",
+      "title_score": 1.0,
+      "threshold": 0.85,
+      "accepted_as_match": true
+    },
+    {
+      "predicted_title": "Diary of a Wimpy Kid",
+      "key_title": "Diary of a Wimpy Kid: The Long Haul",
+      "title_score": 1.0,
+      "threshold": 0.85,
+      "accepted_as_match": true
+    }
+  ]
+}

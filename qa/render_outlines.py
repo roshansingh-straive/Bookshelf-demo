@@ -29,7 +29,8 @@ for bay_id in BAYS:
     draw = ImageDraw.Draw(img)
     w, h = img.size
 
-    for item in scan["shelf_items"]:
+    positioned = [item for item in scan["shelf_items"] if item.get("box")]
+    for item in positioned:
         box = item["box"]
         x1 = box["left"] * w
         y1 = box["top"] * h
@@ -57,4 +58,4 @@ for bay_id in BAYS:
     else:
         img.save(out_path)
 
-    print(f"Rendered {out_path} ({len(scan['shelf_items'])} outlines)")
+    print(f"Rendered {out_path} ({len(positioned)} available outlines)")
