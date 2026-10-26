@@ -1,128 +1,204 @@
-"""FastAPI server for Shelf Check demo."""
+"""FastAPI server for replay and actual bookshelf recognition."""
 import asyncio
+import contextlib
 import json
-import os
+import logging
 from pathlib import Path
-from typing import Optional
-from fastapi import FastAPI, HTTPException, Request
+from typing import Literal
+
+from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict, Field
+
+from server.accuracy import OVERLAP, TILE_EDGE, select_profile
+from server.comparison import compare_books
+from server.recognition import MAX_IMAGE_BYTES, RecognitionError, run_recognition
+from server.uploads import get_upload, save_upload, saved_analysis_path, upload_directory
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST_DIR = ROOT / "app" / "dist"
 DATA_DIR = ROOT / "app" / "public" / "data"
 PHOTOS_DIR = ROOT / "app" / "public" / "photos"
 
-# Load local untracked env if present
-env_file = ROOT / "server" / ".env"
-if env_file.exists():
-    for line in env_file.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if line and not line.startswith("#") and "=" in line:
-            k, v = line.split("=", 1)
-            os.environ.setdefault(k.strip(), v.strip().strip("'\""))
-
-app = FastAPI(title="Shelf Check API", version="1.0.0")
-
-# Security: CORS restricted to localhost
+app = FastAPI(title="Shelf Check API", version="2.0.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:8000", "http://127.0.0.1:8000"],
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["*"],
+    allow_origins=[f"http://{host}:{port}" for host in ("localhost", "127.0.0.1") for port in (3000, 5173, 8000, 8001)],
+    allow_methods=["GET", "POST", "OPTIONS"], allow_headers=["Authorization", "Content-Type"],
 )
+# One active live scan per server avoids accidentally multiplying paid crop runs.
+_live_scan_lock = asyncio.Lock()
 
 
 class ScanRequest(BaseModel):
-    bay_id: str
-    custom_image_b64: Optional[str] = None
-    provider: Optional[str] = "anthropic"
-    model_id: Optional[str] = "claude-opus-5-5"
+    model_config = ConfigDict(extra="forbid")
+    bay_id: str = Field(pattern=r"^bay_[a-z0-9]+$", max_length=40)
+    mode: Literal["replay", "live"] = "replay"
+    upload_id: str | None = Field(default=None, pattern=r"^[a-f0-9]{32}$")
 
 
 @app.get("/api/health")
 def health():
-    """Health status and active mode. Never exposes secret tokens."""
-    has_proxy_token = bool(os.environ.get("LLM_PROXY_TOKEN"))
-    has_anthropic = bool(os.environ.get("ANTHROPIC_API_KEY"))
-    has_openai = bool(os.environ.get("OPENAI_API_KEY"))
-    has_gemini = bool(os.environ.get("GEMINI_API_KEY"))
-
     return {
-        "status": "healthy",
-        "default_mode": "replay",
-        "default_model": "Claude Opus 5.5",
-        "keys_configured": {
-            "straive_foundry_proxy": has_proxy_token,
-            "anthropic": has_anthropic,
-            "openai": has_openai,
-            "gemini": has_gemini,
-        },
-        "live_mode_available": has_proxy_token or has_anthropic or has_gemini or has_openai,
+        "status": "healthy", "default_mode": "replay",
+        "live_mode_available": True,
+        "live_available_by_difficulty": {"easy": True, "medium": True, "hard": True},
+        "upload_analysis_available": True,
+        "inference_authentication_required": True,
+        "inference_access": "per-user-session",
+        "accuracy_settings": {"tile_edge": TILE_EDGE, "overlap": OVERLAP, "independent_rotated_verification": True},
         "disclaimer": "Simulated store data",
     }
 
 
 @app.get("/api/store")
 def get_store():
-    store_file = DATA_DIR / "store.json"
-    if not store_file.exists():
-        raise HTTPException(status_code=404, detail="Store data not generated")
-    return json.loads(store_file.read_text(encoding="utf-8"))
+    path = DATA_DIR / "store.json"
+    if not path.exists():
+        raise HTTPException(404, "Store data not generated")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def get_bay(bay_id):
+    store = get_store()
+    bay = next((b for b in store["bays"] if b["id"] == bay_id and b.get("scannable")), None)
+    if bay is None:
+        raise HTTPException(404, "Scannable bay not found")
+    return store, bay
 
 
 @app.get("/api/scan/{bay_id}")
 def get_bay_scan(bay_id: str):
-    scan_file = DATA_DIR / "scans" / f"{bay_id}.json"
-    if not scan_file.exists():
-        raise HTTPException(status_code=404, detail=f"No scan data for bay {bay_id}")
-    return json.loads(scan_file.read_text(encoding="utf-8"))
+    get_bay(bay_id)
+    path = DATA_DIR / "scans" / f"{bay_id}.json"
+    if not path.exists():
+        raise HTTPException(404, "Saved scan not generated")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+@app.post("/api/uploads", status_code=201)
+async def upload_photo(request: Request, filename: str = "shelf-photo"):
+    # Read incrementally so a misleading Content-Length cannot bypass the limit.
+    chunks, total = [], 0
+    async for chunk in request.stream():
+        total += len(chunk)
+        if total > MAX_IMAGE_BYTES:
+            raise HTTPException(413, "Choose an image smaller than 20 MB.")
+        chunks.append(chunk)
+    return await asyncio.to_thread(save_upload, b"".join(chunks), filename)
+
+
+@app.get("/api/uploads/{upload_id}")
+def uploaded_photo(upload_id: str):
+    return get_upload(upload_id)
+
+
+@app.get("/api/uploads/{upload_id}/image")
+def uploaded_image(upload_id: str):
+    metadata = get_upload(upload_id)
+    return FileResponse(upload_directory(upload_id) / "image", media_type=metadata["media_type"],
+                        headers={"Cache-Control": "private, no-store", "X-Content-Type-Options": "nosniff"})
+
+
+@app.get("/api/uploads/{upload_id}/analysis/{bay_id}")
+def uploaded_analysis(upload_id: str, bay_id: str):
+    get_bay(bay_id)
+    path = saved_analysis_path(upload_id, bay_id)
+    return {"result": json.loads(path.read_text(encoding="utf-8")) if path.exists() else None}
 
 
 @app.post("/api/scan/stream")
-async def stream_scan(req: ScanRequest):
-    """Stream live scan progress events via SSE. Falls back gracefully to replay data."""
-    bay_id = req.bay_id
-    scan_file = DATA_DIR / "scans" / f"{bay_id}.json"
-    if not scan_file.exists():
-        raise HTTPException(status_code=404, detail=f"Bay {bay_id} not found")
+async def stream_scan(req: ScanRequest, authorization: str | None = Header(default=None)):
+    store, bay = get_bay(req.bay_id)
+    upload = get_upload(req.upload_id) if req.upload_id else None
+    if upload and req.mode != "live":
+        raise HTTPException(422, "Uploaded photos require a new analysis. Sample results cannot be used for an uploaded photo.")
+    if req.mode == "replay":
+        result = get_bay_scan(req.bay_id)
 
-    replay_data = json.loads(scan_file.read_text(encoding="utf-8"))
-    model_name = req.model_id or "Claude Opus 5.5"
+        async def replay_events():
+            for event in (
+                {"step": 0, "status": "replay", "message": "Loading a saved benchmark reply. No model call or zoom verification is performed."},
+                {"step": 4, "status": "complete", "result": result},
+            ):
+                yield f"data: {json.dumps(event, ensure_ascii=False)}\n\n"
+        return StreamingResponse(replay_events(), media_type="text/event-stream", headers={"Cache-Control": "no-cache"})
 
-    async def event_generator():
-        yield f"data: {json.dumps({'step': 0, 'status': 'uploading', 'message': 'Uploading shelf photograph'})}\n\n"
-        await asyncio.sleep(0.5)
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(401, "Sign in to Straive LLM Foundry before starting live recognition.")
+    token = authorization[7:].strip()
+    if not token or len(token) > 4096 or "\r" in token or "\n" in token:
+        raise HTTPException(401, "Sign in to Straive LLM Foundry before starting live recognition.")
 
-        yield f"data: {json.dumps({'step': 1, 'status': 'scanning', 'message': f'Reading book spines with {model_name}'})}\n\n"
-        await asyncio.sleep(0.7)
+    profile = select_profile()
+    if _live_scan_lock.locked():
+        raise HTTPException(409, "A live shelf scan is already running. Wait for it to finish or cancel it.")
+    photo_path = upload_directory(req.upload_id) / "image" if upload else (PHOTOS_DIR / bay["photo"]).resolve()
+    if not upload and (photo_path.parent != PHOTOS_DIR.resolve() or not photo_path.is_file()):
+        raise HTTPException(404, "Shelf photograph not found")
+    raw = photo_path.read_bytes()
 
-        yield f"data: {json.dumps({'step': 2, 'status': 'verifying', 'message': 'Zoom-and-verify pass on uncertain titles'})}\n\n"
-        await asyncio.sleep(0.6)
+    async def events():
+        queue = asyncio.Queue()
 
-        yield f"data: {json.dumps({'step': 3, 'status': 'comparing', 'message': 'Cross-referencing against shelf planogram'})}\n\n"
-        await asyncio.sleep(0.4)
+        async def work():
+            # Recheck here to close the gap between HTTP validation and stream
+            # startup: a second request must fail, not queue another paid scan.
+            if _live_scan_lock.locked():
+                await queue.put({"status": "error", "message": "A live shelf scan is already running. No additional scan was queued."})
+                return
+            async with _live_scan_lock:
+                try:
+                    books, metadata = await run_recognition(raw, profile, queue.put, token)
+                    await queue.put({"step": 3, "status": "comparing", "message": "Matching independently read titles to the planogram; unconfirmed titles require review."})
+                    result = {"bay_id": bay["id"], "bay_code": bay["code"], "bay_name": bay["name"],
+                              "photo_filename": upload["filename"] if upload else bay["photo"],
+                              "photo_url": upload["photo_url"] if upload else f"/photos/{bay['photo']}",
+                              "source_kind": "upload" if upload else "sample", "upload_id": req.upload_id,
+                              **metadata, **compare_books(store, bay, books)}
+                    if upload:
+                        saved_analysis_path(req.upload_id, bay["id"]).write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
+                    await queue.put({"step": 4, "status": "complete", "result": result})
+                except RecognitionError as exc:
+                    await queue.put({"status": "error", "message": str(exc), "code": exc.code})
+                except Exception:
+                    logging.getLogger(__name__).exception("Live shelf scan failed")
+                    await queue.put({"status": "error", "message": "Live scan failed. Previous results are unchanged; no replay was substituted."})
 
-        # Send completed scan result
-        yield f"data: {json.dumps({'step': 4, 'status': 'complete', 'result': replay_data})}\n\n"
+        task = asyncio.create_task(work())
+        try:
+            while True:
+                try:
+                    event = await asyncio.wait_for(queue.get(), timeout=10)
+                except asyncio.TimeoutError:
+                    yield ": keepalive\n\n"
+                    continue
+                yield f"data: {json.dumps(event, ensure_ascii=False)}\n\n"
+                if event["status"] in {"complete", "error"}:
+                    break
+        finally:
+            task.cancel()
+            with contextlib.suppress(asyncio.CancelledError):
+                await task
 
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    return StreamingResponse(events(), media_type="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
 
 
-# Serve static frontend in production
 if DIST_DIR.exists():
-    app.mount("/assets", StaticFiles(directory=DIST_DIR / "assets"), name="assets")
-    if (DIST_DIR / "photos").exists():
-        app.mount("/photos", StaticFiles(directory=DIST_DIR / "photos"), name="photos")
-    if (DIST_DIR / "data").exists():
-        app.mount("/data", StaticFiles(directory=DIST_DIR / "data"), name="data")
+    for folder in ("assets", "photos", "data"):
+        if (DIST_DIR / folder).exists():
+            app.mount(f"/{folder}", StaticFiles(directory=DIST_DIR / folder), name=folder)
 
     @app.get("/{full_path:path}")
     def serve_frontend(full_path: str):
-        file_path = DIST_DIR / full_path
-        if file_path.exists() and file_path.is_file():
-            return FileResponse(file_path)
+        if full_path.startswith("api/"):
+            raise HTTPException(404, "API endpoint not found")
+        path = (DIST_DIR / full_path).resolve()
+        if DIST_DIR.resolve() not in path.parents:
+            if full_path:
+                raise HTTPException(404, "File not found")
+        if path.is_file():
+            return FileResponse(path)
         return FileResponse(DIST_DIR / "index.html")

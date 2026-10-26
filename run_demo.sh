@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DIR"
@@ -17,21 +17,20 @@ if [ ! -f "app/public/data/store.json" ]; then
 fi
 
 if [ ! -d "app/public/data/scans" ] || [ -z "$(ls -A app/public/data/scans 2>/dev/null)" ]; then
-    echo ">> Generating replay scan results from Claude Opus 5.5..."
+    echo ">> Generating saved benchmark replies..."
     ./.venv/bin/python3 pipeline/run_replay_scans.py
 fi
 
-# Ensure production bundle exists
-if [ ! -d "app/dist" ]; then
-    echo ">> Building web app bundle..."
-    (cd app && npm run build)
-fi
+# Always include source and replay changes in the served app.
+echo ">> Building web app bundle..."
+(cd app && npm run build)
 
 PORT="${PORT:-8000}"
 HOST="${HOST:-127.0.0.1}"
 
 echo ">> Starting Shelf Check local server at http://${HOST}:${PORT}"
-echo ">> Replay mode active: 100% offline & reliable."
+echo ">> Saved benchmark replies available offline."
+echo ">> Live mode uses your Straive LLM Foundry sign-in and paid model calls."
 echo ">> Press Ctrl+C to stop."
 echo ""
 
